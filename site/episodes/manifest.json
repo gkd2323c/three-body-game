@@ -1,0 +1,22 @@
+{
+  "title": "三体 · 互动文游",
+  "author": "刘慈欣 / 改编：gkd2323c",
+  "episodes": [
+    {
+      "id": "batch1",
+      "title": "序幕 + 疯狂年代",
+      "description": "从杨冬之死到叶文洁的往事——1967年批斗会、红岸基地、向宇宙发出信号。",
+      "nodes": 64,
+      "progress": "第1批 / 共12批",
+      "file": "batch1.json"
+    },
+    {
+      "id": "batch2",
+      "title": "三体游戏",
+      "description": "汪淼登录三体游戏——周文王/纣王、墨子、哥白尼的三日凌空。",
+      "nodes": 52,
+      "progress": "第2批 / 共12批",
+      "file": "batch2.json"
+    }
+  ]
+}
