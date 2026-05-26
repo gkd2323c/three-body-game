@@ -810,7 +810,8 @@
           }
         }
       ],
-      "next": "game_mozi_001"
+      "next": "game_mozi_001",
+      "progress": 35
     },
     "game_mozi_001": {
       "chapterTitle": "三体·墨子",
@@ -1200,7 +1201,7 @@
           }
         }
       ],
-      "next": "game_copernicus_001"
+      "next": "game_copernicus_transition"
     },
     "game_copernicus_001": {
       "chapterTitle": "三体·哥白尼",
@@ -1234,7 +1235,8 @@
           "text": "站在门口观察一下局势",
           "next": "game_copernicus_002"
         }
-      ]
+      ],
+      "next": "game_copernicus_002"
     },
     "game_copernicus_002": {
       "segments": [
@@ -1265,7 +1267,8 @@
           "text": "我在那里看到了东方学者们的努力。",
           "next": "game_copernicus_003"
         }
-      ]
+      ],
+      "next": "game_copernicus_003"
     },
     "game_copernicus_003": {
       "segments": [
@@ -1300,7 +1303,8 @@
           "text": "让我先说说我在东方看到的东西。",
           "next": "game_copernicus_004"
         }
-      ]
+      ],
+      "next": "game_copernicus_004"
     },
     "game_copernicus_004": {
       "segments": [
@@ -1334,7 +1338,8 @@
           "text": "停下来等他们的反应",
           "next": "game_copernicus_005"
         }
-      ]
+      ],
+      "next": "game_copernicus_005"
     },
     "game_copernicus_005": {
       "segments": [
@@ -1362,7 +1367,8 @@
           "text": "你们见过飞星吗？三颗飞星同时出现的时候？",
           "next": "game_copernicus_006"
         }
-      ]
+      ],
+      "next": "game_copernicus_006"
     },
     "game_copernicus_006": {
       "segments": [
@@ -1411,7 +1417,8 @@
             "余烬": 1
           }
         }
-      ]
+      ],
+      "next": "game_copernicus_007"
     },
     "game_copernicus_007": {
       "segments": [
@@ -1456,7 +1463,8 @@
             "余烬": 1
           }
         }
-      ]
+      ],
+      "next": "game_copernicus_008"
     },
     "game_copernicus_008": {
       "segments": [
@@ -1491,7 +1499,8 @@
           "text": "你被眼前的一幕震住了",
           "next": "game_copernicus_009"
         }
-      ]
+      ],
+      "next": "game_copernicus_009"
     },
     "game_copernicus_009": {
       "segments": [
@@ -1529,7 +1538,8 @@
             "余烬": -5
           }
         }
-      ]
+      ],
+      "next": "game_copernicus_010"
     },
     "game_copernicus_010": {
       "segments": [
@@ -1561,7 +1571,8 @@
           "text": "退出游戏",
           "next": "return_001",
           "changes": {
-            "game_depth": 5
+            "game_depth": 5,
+            "knows_truth": true
           }
         }
       ]
@@ -1592,7 +1603,10 @@
       "choices": [
         {
           "text": "\"好。\"",
-          "next": "return_002"
+          "next": "return_002",
+          "changes": {
+            "knows_truth": true
+          }
         },
         {
           "text": "你把手机握在手里，又看了一会儿窗外的日出",
@@ -1636,7 +1650,11 @@
     },
     "return_003": {
       "title": "第二批·完",
-      "scene": "黎明·北京",
+      "scene": {
+        "id": "beijing_dawn",
+        "name": "黎明·北京",
+        "description": "清晨的街道，微凉。早班车驶过，城市刚刚醒来。"
+      },
       "progress": 100,
       "segments": [
         {
