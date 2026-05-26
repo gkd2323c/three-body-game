@@ -7366,7 +7366,7 @@
 (function() {
   var params = new URLSearchParams(window.location.search);
   var loadAction = params.get('load');
-  var gamePath = params.get('game') || 'episodes/game.json';
+  var gamePath = params.get('game') || 'three-body-1/game.json';
 
   fetch('/' + gamePath)
     .then(function(r) { return r.json(); })
