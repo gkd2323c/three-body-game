@@ -4942,20 +4942,19 @@
       "choices": [
         {
           "text": "你开始怀疑自己的选择",
-          "next": "ending_coming_004",
+          "next": "ending_coming_closure",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "你告诉自己——已经没有回头路了",
-          "next": "ending_coming_004",
+          "next": "ending_coming_closure",
           "changes": {
             "val": -5
           }
         }
-      ],
-      "next": "ending_coming_004"
+      ]
     },
     "ending_coming_004": {
       "title": "降临（一厢情愿的救世）",
@@ -5022,11 +5021,10 @@
       "choices": [
         {
           "text": "——",
-          "next": "ending_hibernate_003",
+          "next": "ending_hibernate_closure",
           "effect": "blackout"
         }
-      ],
-      "next": "ending_hibernate_003"
+      ]
     },
     "ending_hibernate_003": {
       "title": "冬眠（错过的时代）",
@@ -5164,13 +5162,12 @@
       "choices": [
         {
           "text": "你选择了留下来",
-          "next": "ending_endless_003",
+          "next": "ending_endless_closure",
           "changes": {
             "val": -5
           }
         }
-      ],
-      "next": "ending_endless_003"
+      ]
     },
     "ending_endless_003": {
       "title": "无尽游戏（文明的抽屉）",
@@ -5243,13 +5240,12 @@
       "choices": [
         {
           "text": "你是唯一看出问题的人",
-          "next": "ending_wallbreaker_003",
+          "next": "ending_wallbreaker_closure",
           "changes": {
             "val": 5
           }
         }
-      ],
-      "next": "ending_wallbreaker_003"
+      ]
     },
     "ending_wallbreaker_003": {
       "title": "破壁人",
@@ -5276,6 +5272,50 @@
       ],
       "description": "你发现的不是一个答案——是一个问题。三体文明的信息中存在故意的矛盾，这意味着那个文明并不像ETO认为的那样铁板一块。他们有分歧、有派系、有不同的隐藏议程。这个发现可能毫无意义——也可能在某个关键时刻改变一切。你把这个发现藏在了心里。破壁人的工作——不是揭示真相——是等待真相自己浮出水面的那一天。",
       "closing": "很多年后，你偶尔还会打开那个文件夹。三组信息并排放在屏幕上。你看着它们，就像看着三颗太阳。你不知道哪一颗是真的——但你知道它们不可能都是真的。这个问题——值得用一生去追究。"
+    },
+    "ending_coming_closure": {
+      "segments": [
+        {
+          "text": "你坐在审讯室外的长椅上，等待被带走。走廊尽头有一扇窗户——外面是灰色的天空，偶尔有鸟飞过。你想起史强的眼神——那是你见过的最真实的失望。但你已经做出了选择。或者说——你早就做出了选择，只是现在才意识到。"
+        },
+        {
+          "text": "有人来叫你了。你站起来。走廊很长。"
+        }
+      ],
+      "next": "ending_coming_004"
+    },
+    "ending_hibernate_closure": {
+      "segments": [
+        {
+          "text": "液体漫过胸口的时候，你想起了很多东西。父亲的实验室、第一次看到电子显微镜下的原子结构、杨冬在学术会议上发言的样子——那些你以为早已忘记的画面，在最后一刻全部涌了上来。"
+        },
+        {
+          "text": "然后——什么都没有了。"
+        }
+      ],
+      "next": "ending_hibernate_003"
+    },
+    "ending_endless_closure": {
+      "segments": [
+        {
+          "text": "第200号文明的最后一缕灰烬在虚拟的风中消散了。你站在灰色的荒原上，头顶是那个永远不稳定的天空。你已经不再计算自己在这里待了多久——时间在三体世界里是另一种东西。"
+        },
+        {
+          "text": "系统提示在虚空中浮现。你看着那行字，很长一段时间没有动。"
+        }
+      ],
+      "next": "ending_endless_003"
+    },
+    "ending_wallbreaker_closure": {
+      "segments": [
+        {
+          "text": "你把三份文件并排摊在桌上。左、中、右。三个版本的真相。你把它们看了很久——久到窗外的天从亮变暗又变亮。"
+        },
+        {
+          "text": "然后你把它们收了起来。不是销毁——是保存。因为你知道——真相不是用来埋葬的。是用来等待的。"
+        }
+      ],
+      "next": "ending_wallbreaker_003"
     },
     "guzheng_exec_001": {
       "chapterTitle": "古筝行动",
