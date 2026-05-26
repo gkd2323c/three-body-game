@@ -144,7 +144,7 @@ site/
 
 | 部 | 批次输出 | 合并脚本 | 站点目录 | 方案文档 |
 |:--:|:--------:|:--------:|:--------:|:--------:|
-| 第一部 | `output/` | `scripts/merge-game.py` | `site/three-body-1/` | `docs/` |
+| 第一部 | `output/three-body-1/` | `scripts/merge-game.py` | `site/three-body-1/` | `docs/three-body-1/` |
 | 第二部 | `output/three-body-2/` | `scripts/merge-game-2.py` | `site/three-body-2/` | `docs/three-body-2/` |
 | 第三部 | `output/three-body-3/` | 待定 | `site/three-body-3/` | 待定 |
 

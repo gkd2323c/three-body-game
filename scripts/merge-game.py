@@ -11,7 +11,7 @@ Cloudflare Pages 构建命令：
 import json, os, sys, glob
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUTPUT_DIR = os.path.join(REPO_ROOT, "output")
+OUTPUT_DIR = os.path.join(REPO_ROOT, "output", "three-body-1")
 SITE_DIR = os.path.join(REPO_ROOT, "site", "three-body-1")
 VALIDATOR = os.path.join(REPO_ROOT, "skills", "scripts", "validate.py")
 
