@@ -846,6 +846,15 @@
           "changes": {
             "余烬": -3
           }
+        },
+        {
+          "text": "也许他们是对的——人类确实需要被拯救",
+          "next": "ending_coming_001",
+          "condition": {
+            "var": "despair_count",
+            "op": ">=",
+            "value": 3
+          }
         }
       ],
       "next": "eto_006"

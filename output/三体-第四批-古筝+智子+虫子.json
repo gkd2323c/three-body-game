@@ -153,6 +153,15 @@
         {
           "text": "你瘫坐在椅子上",
           "next": "guzheng_exec_005"
+        },
+        {
+          "text": "让我亲自去确认纳米线的参数",
+          "next": "ending_cut_001",
+          "condition": {
+            "var": "val",
+            "op": ">=",
+            "value": 70
+          }
         }
       ],
       "next": "guzheng_exec_005"
@@ -300,6 +309,24 @@
           "changes": {
             "余烬": -5
           }
+        },
+        {
+          "text": "等等——这个数据和之前的监听员叙述有矛盾",
+          "next": "ending_wallbreaker_001",
+          "condition": {
+            "all": [
+              {
+                "var": "despair_count",
+                "op": "<=",
+                "value": 1
+              },
+              {
+                "var": "val",
+                "op": ">=",
+                "value": 50
+              }
+            ]
+          }
         }
       ],
       "next": "sophon_001"
@@ -424,6 +451,15 @@
           "next": "bugs_001",
           "changes": {
             "余烬": -3
+          }
+        },
+        {
+          "text": "我做不到面对这一切",
+          "next": "ending_hibernate_001",
+          "condition": {
+            "var": "avoid_count",
+            "op": ">=",
+            "value": 2
           }
         }
       ],

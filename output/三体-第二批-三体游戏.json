@@ -1574,6 +1574,15 @@
             "game_depth": 5,
             "knows_truth": true
           }
+        },
+        {
+          "text": "你不想离开这个世界",
+          "next": "ending_endless_001",
+          "condition": {
+            "var": "game_depth",
+            "op": ">=",
+            "value": 5
+          }
         }
       ]
     },
