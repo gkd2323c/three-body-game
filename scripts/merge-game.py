@@ -19,6 +19,7 @@ VALIDATOR = os.path.join(REPO_ROOT, "skills", "scripts", "validate.py")
 # 每个批次的结束占位节点 → 下一批次的起始节点
 BATCH_TRANSITIONS = {
     "batch1_end": "transition_001",     # 第1批结束 → 第2批开始
+    "return_003": "chang_001",          # 第2批结束 → 第3批开始
 }
 
 
