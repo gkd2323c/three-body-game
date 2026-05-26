@@ -12,7 +12,7 @@ import json, os, sys, glob
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_DIR = os.path.join(REPO_ROOT, "output")
-SITE_DIR = os.path.join(REPO_ROOT, "site", "episodes")
+SITE_DIR = os.path.join(REPO_ROOT, "site", "three-body-1")
 VALIDATOR = os.path.join(REPO_ROOT, "skills", "scripts", "validate.py")
 
 # === 批次衔接配置 ===
@@ -21,6 +21,7 @@ BATCH_TRANSITIONS = {
     "batch1_end": "transition_001",     # 第1批结束 → 第2批开始
     "return_003": "chang_001",          # 第2批结束 → 第3批开始
     "batch3_end": "guzheng_exec_001",   # 第3批结束 → 第4批开始
+    "game_einstein_return2": "return_001", # 第6批结束 → 返回现实
 }
 
 

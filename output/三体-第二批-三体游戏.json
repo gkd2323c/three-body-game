@@ -245,7 +245,8 @@
           "text": "追随周文王",
           "next": "game_zhou_001",
           "changes": {
-            "val": 2
+            "val": 2,
+            "addFlag": "entered_game"
           }
         },
         {
@@ -1567,6 +1568,15 @@
         }
       ],
       "choices": [
+        {
+          "text": "继续探索第二级",
+          "next": "game_computer_001",
+          "condition": {
+            "var": "game_depth",
+            "op": ">=",
+            "value": 5
+          }
+        },
         {
           "text": "退出游戏",
           "next": "return_001",

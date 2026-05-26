@@ -1,0 +1,490 @@
+{
+  "meta": {
+    "title": "三体",
+    "author": "刘慈欣",
+    "version": "1.0.0-batch6",
+    "description": "一切都会逝去，只有死神永生。",
+    "theme": "night",
+    "ambient": "static",
+    "cover": {
+      "label": "三体",
+      "tagline": "宇宙是一片黑暗森林"
+    },
+    "variableName": "余烬",
+    "initialVariable": 35
+  },
+  "startNodeId": "game_computer_001",
+  "variables": {
+    "wenjie_trust": 5,
+    "game_depth": 6,
+    "knows_truth": true,
+    "eto_stance": "对抗",
+    "shi_qiang_bond": 3,
+    "despair_count": 0,
+    "avoid_count": 0
+  },
+  "achievements": {
+    "ant": {
+      "title": "最后的蚂蚁",
+      "description": "选择坚守，做最后一只有尊严的虫子"
+    }
+  },
+  "nodes": {
+    "game_computer_001": {
+      "chapterTitle": "三体·第二级",
+      "title": "人列计算机",
+      "scene": {
+        "id": "game_level2",
+        "name": "第二级·黎明",
+        "description": "你再次登录后，世界变了。仍然是那片荒原，但金字塔变成了东方风格——秦朝的建筑样式，黑色的巨石上刻着繁复的纹路。"
+      },
+      "progress": 45,
+      "segments": [
+        {
+          "text": "你选择了继续。游戏提示：您已进入第二级。"
+        },
+        {
+          "text": "远处传来金属撞击声。你循声走去，看到金字塔根基处有两个人在斗剑——欧洲十六七世纪的装束，在秦朝风格的金字塔前显得格格不入。"
+        },
+        {
+          "text": "个子矮的那人一剑挑飞了对手的武器。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "走近去看",
+          "next": "game_computer_002"
+        }
+      ],
+      "next": "game_computer_002"
+    },
+    "game_computer_002": {
+      "segments": [
+        {
+          "speaker": "胜利者",
+          "text": "他居然说微积分是他发明的！无耻之徒！"
+        },
+        {
+          "text": "他戴上假发，朝你行了鞠躬礼。"
+        },
+        {
+          "speaker": "伊萨克·牛顿",
+          "text": "力学三定律的发现，已经使我成为仅次于上帝的人。从星球运行到细胞分裂，无不遵从这三个伟大的定律。现在有了微积分——掌握三个太阳运行规律指日可待。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"没有那么简单。\"一个声音插进来。",
+          "next": "game_computer_003"
+        }
+      ],
+      "next": "game_computer_003"
+    },
+    "game_computer_003": {
+      "segments": [
+        {
+          "text": "一个穿着现代西装的人从金字塔的阴影中走出来。"
+        },
+        {
+          "speaker": "冯·诺依曼",
+          "text": "你考虑过计算量吗？那些微分方程不可能求出解析解，只能求数值解。计算量之大——全世界的数学家不停的算，算到世界末日也算不完。"
+        },
+        {
+          "speaker": "牛顿",
+          "text": "所以我们来东方了。我们需要秦始皇的军队。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"军队——用来计算？\"",
+          "next": "game_computer_004"
+        },
+        {
+          "text": "你隐约猜到了他们要做什么",
+          "next": "game_computer_004",
+          "changes": {
+            "val": 2
+          }
+        }
+      ],
+      "next": "game_computer_004"
+    },
+    "game_computer_004": {
+      "segments": [
+        {
+          "speaker": "冯·诺依曼",
+          "text": "用人。三千万人。组成一台人列计算机。"
+        },
+        {
+          "text": "他拿出一枝雪茄点上，说出了那个后来被写在所有三体游戏攻略里的方案：让三千万士兵排成阵列，每个人做一个最简单的逻辑运算——与门、或门、与非门。三千万个基本单元连接起来——就是一台通用图灵机。"
+        },
+        {
+          "text": "牛顿在旁边补充：\"秦始皇已经同意了，条件是算出来的第一件事必须是——长生不老药。\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "你被这个方案的疯狂和天才同时震撼了",
+          "next": "game_computer_005",
+          "changes": {
+            "val": 3
+          }
+        },
+        {
+          "text": "\"三千万人——怎么协调？\"",
+          "next": "game_computer_005"
+        }
+      ],
+      "next": "game_computer_005"
+    },
+    "game_computer_005": {
+      "title": "人列计算机启动",
+      "scene": {
+        "id": "game_computer_array",
+        "name": "人列计算机",
+        "description": "秦军的方阵铺满了整个平原。三千万人。每个士兵手中举着一面旗——红旗表示1，白旗表示0。军官站在高台上，用旗语传递指令。"
+      },
+      "segments": [
+        {
+          "text": "你站在观礼台上。秦始皇坐在你旁边，面无表情地看着下方那片由人组成的海洋。三千万面旗帜在三十分钟内全部就位。"
+        },
+        {
+          "speaker": "冯·诺依曼",
+          "text": "计算机启动。开始输入初始条件——三个太阳的当前位置和质量参数。",
+          "effect": "breath"
+        },
+        {
+          "text": "旗海开始翻涌。从观礼台看下去，那不是混乱——那是运算。红色和白色的波浪在不同的方阵间传递，像某种巨大的神经信号正在一个由血肉组成的脑中流动。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "你屏住呼吸看着这一切",
+          "next": "game_computer_006",
+          "changes": {
+            "val": 2
+          }
+        }
+      ],
+      "next": "game_computer_006"
+    },
+    "game_computer_006": {
+      "segments": [
+        {
+          "text": "运算持续了四天四夜。士兵们轮班操作，秦军高效的纪律被发挥到了极致。"
+        },
+        {
+          "text": "第五天清晨。结果出来了。"
+        },
+        {
+          "speaker": "冯·诺依曼",
+          "text": "计算结果：在三颗太阳的当前轨道参数下——三体运动不存在周期解。预测失败。"
+        },
+        {
+          "text": "秦始皇没有说话。牛顿把他的假发摘下来摔在了地上。"
+        },
+        {
+          "text": "但冯·诺依曼没有放弃。\"换一组初始条件。再算。\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "你感到一种巨大的悲壮——人类在宇宙面前太渺小了",
+          "next": "game_computer_007",
+          "changes": {
+            "val": -3
+          }
+        },
+        {
+          "text": "\"他们需要算多少次？\"",
+          "next": "game_computer_007"
+        }
+      ],
+      "next": "game_computer_007"
+    },
+    "game_computer_007": {
+      "segments": [
+        {
+          "text": "你退出了游戏。不是因为不想看——是因为你知道答案：他们会一直算下去，直到三日连珠降临，把三千万人和他们的旗子一起蒸发。"
+        },
+        {
+          "text": "你坐在椅子上，很久没有动。你的大脑里还在回放那面旗海的画面——红与白的波浪，像某种无声的呐喊。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "再次登录",
+          "next": "game_einstein_001",
+          "changes": {
+            "game_depth": 7
+          }
+        },
+        {
+          "text": "你需要出去走走",
+          "next": "game_einstein_001",
+          "changes": {
+            "val": -2
+          }
+        }
+      ],
+      "next": "game_einstein_001"
+    },
+    "game_einstein_001": {
+      "chapterTitle": "三体·大撕裂",
+      "title": "爱因斯坦",
+      "scene": {
+        "id": "game_einstein_plaza",
+        "name": "联合国大厦前",
+        "description": "金字塔消失了。取而代之的是一座现代建筑——联合国大厦。大厦前的广场上立着一架顶天立地的巨型单摆，金属摆锤在缓慢地摆动着。"
+      },
+      "progress": 50,
+      "segments": [
+        {
+          "text": "这一次登录后，世界完全变了样。不再是古代的荒原——这是一座现代化的广场。远处有摩天大楼的轮廓，但都笼罩在一层诡异的银白色光芒中。"
+        },
+        {
+          "text": "一阵小提琴声飘过来。莫扎特。曲子拉得不熟练，但有一种特别的韵味。"
+        },
+        {
+          "text": "一个白发苍苍的老人坐在联合国大厦的台阶上拉着小提琴。他面前放着一顶破礼帽，里面有几个零钱。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "走上前去",
+          "next": "game_einstein_002"
+        },
+        {
+          "text": "你被那架巨型单摆吸引了——它比所有建筑都高",
+          "next": "game_einstein_002",
+          "changes": {
+            "val": 2
+          }
+        }
+      ],
+      "next": "game_einstein_002"
+    },
+    "game_einstein_002": {
+      "segments": [
+        {
+          "speaker": "爱因斯坦",
+          "text": "尊敬的哥白尼，停一停您匆忙的脚步吧。这样您能欣赏一曲莫扎特——我也就有了午饭。"
+        },
+        {
+          "text": "你认出了那张脸。爱因斯坦。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"您怎么——\"",
+          "next": "game_einstein_003"
+        },
+        {
+          "text": "在礼帽里放了一些零钱",
+          "next": "game_einstein_003",
+          "changes": {
+            "val": 2
+          }
+        }
+      ],
+      "next": "game_einstein_003"
+    },
+    "game_einstein_003": {
+      "segments": [
+        {
+          "speaker": "爱因斯坦",
+          "text": "我被普林斯顿开除了。联合国教科文组织连个科学顾问都不给我。我甚至想去以色列当总统——但人家说他们改主意了。"
+        },
+        {
+          "text": "他叹了口气，继续拉琴。"
+        },
+        {
+          "speaker": "爱因斯坦",
+          "text": "你们用三千万人列计算机算的那玩意儿——方向是对的。但差的那一点点——是广义相对论。行星轨道的引力摄动。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"所以三体问题是有解的？\"",
+          "next": "game_einstein_004"
+        },
+        {
+          "text": "你意识到爱因斯坦在说真正的物理学",
+          "next": "game_einstein_004",
+          "changes": {
+            "val": 3
+          }
+        }
+      ],
+      "next": "game_einstein_004"
+    },
+    "game_einstein_004": {
+      "segments": [
+        {
+          "speaker": "爱因斯坦",
+          "text": "在经典力学范围内——没有。但加上引力摄动修正，你可以无限接近。精度足够了——至少能预测下一次恒纪元的到来。"
+        },
+        {
+          "text": "他指了指那架巨型单摆。"
+        },
+        {
+          "speaker": "爱因斯坦",
+          "text": "那东西叫大撕裂。三体人最后的科学成果。——也是唯一的结论。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"什么结论？\"",
+          "next": "game_einstein_005"
+        }
+      ],
+      "next": "game_einstein_005"
+    },
+    "game_einstein_005": {
+      "segments": [
+        {
+          "speaker": "爱因斯坦",
+          "text": "这个星系的行星——最终会被三颗太阳中的一颗吞噬。不是如果——是何时。以目前的轨道衰减速度，大约还有两万个三体年。"
+        },
+        {
+          "text": "他放下了小提琴。"
+        },
+        {
+          "speaker": "爱因斯坦",
+          "text": "所以三体文明必须离开。不是因为他们想走——是因为不走就得死。全族。两百个文明的遗产——全部。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "你感到一种从未有过的寒意——三体舰队不是在侵略，是在逃亡",
+          "next": "game_einstein_006",
+          "changes": {
+            "val": -5
+          }
+        },
+        {
+          "text": "你终于理解了叶文洁说的每一个字",
+          "next": "game_einstein_006",
+          "changes": {
+            "val": -3
+          }
+        }
+      ],
+      "next": "game_einstein_006"
+    },
+    "game_einstein_006": {
+      "segments": [
+        {
+          "text": "爱因斯坦又开始拉琴了。这一次拉的是一首更慢的曲子。"
+        },
+        {
+          "text": "你抬起头。天空中有三颗太阳——它们正在彼此靠近。你见过这个景象——在哥白尼的时代，那叫做三日凌空。"
+        },
+        {
+          "text": "爱因斯坦没有抬头。"
+        },
+        {
+          "speaker": "爱因斯坦",
+          "text": "这是最后一个文明了。第200号。三体文明已经全部撤离了。——我是最后一个。留下来告诉你这些。",
+          "effect": "breath"
+        }
+      ],
+      "choices": [
+        {
+          "text": "你站在爱因斯坦面前，听着他拉完那首曲子",
+          "next": "game_einstein_007",
+          "changes": {
+            "val": -3
+          }
+        }
+      ],
+      "next": "game_einstein_007"
+    },
+    "game_einstein_007": {
+      "title": "三体·终",
+      "effect": "silence",
+      "segments": [
+        {
+          "text": "三日凌空。大地变成白色。"
+        },
+        {
+          "speaker": "系统",
+          "text": "三体文明已进入星际移民阶段。本游戏模拟功能至此终止。",
+          "effect": "silence"
+        },
+        {
+          "speaker": "系统",
+          "text": "感谢您体验《三体》——一个文明两百次毁灭与重生的故事。"
+        }
+      ],
+      "progress": 55,
+      "choices": [
+        {
+          "text": "退出游戏",
+          "next": "game_einstein_return",
+          "changes": {
+            "addFlag": "learned_game_truth",
+            "game_depth": 8
+          }
+        }
+      ]
+    },
+    "game_einstein_return": {
+      "title": "黎明",
+      "scene": {
+        "id": "wangmiao_home_dawn",
+        "name": "家中·黎明"
+      },
+      "segments": [
+        {
+          "text": "你摘下V装具。窗外天已经亮了。"
+        },
+        {
+          "text": "你坐在椅子上一动不动。不是累——是你需要一点时间来重新确认自己在哪里。哪个世界才是真实的。那个有两百次毁灭的三体世界——还是这个只有一颗太阳的、温暖的早晨。"
+        },
+        {
+          "text": "电话响了。你拿起来。史强的声音——\"汪教授，常将军想见你。现在。\""
+        }
+      ],
+      "choices": [
+        {
+          "text": "\"我马上到。\"",
+          "next": "game_einstein_return2",
+          "changes": {
+            "val": 3,
+            "addFlag": "game_completed"
+          }
+        },
+        {
+          "text": "你在窗前站了一会儿才出门",
+          "next": "game_einstein_return2",
+          "changes": {
+            "addFlag": "game_completed"
+          }
+        }
+      ],
+      "next": "game_einstein_return2"
+    },
+    "game_einstein_return2": {
+      "title": "第六批·完",
+      "progress": 100,
+      "segments": [
+        {
+          "text": "你穿上外套。出门的时候太阳刚刚升起来。清晨的空气微凉。"
+        },
+        {
+          "text": "一切都一样。一切都不一样了。"
+        },
+        {
+          "text": "——第6批结束——"
+        }
+      ],
+      "choices": [
+        {
+          "text": "等待下一章",
+          "next": "game_einstein_return2"
+        }
+      ]
+    }
+  }
+}

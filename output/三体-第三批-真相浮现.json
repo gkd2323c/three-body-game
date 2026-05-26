@@ -381,7 +381,10 @@
       "choices": [
         {
           "text": "继续",
-          "next": "flicker_006"
+          "next": "flicker_006",
+          "changes": {
+            "addFlag": "saw_cosmic_flicker"
+          }
         }
       ],
       "next": "flicker_006"
@@ -724,7 +727,8 @@
           "text": "走到她身边",
           "next": "eto_002",
           "changes": {
-            "wenjie_trust": 1
+            "wenjie_trust": 1,
+            "addFlag": "attended_eto"
           }
         },
         {
@@ -854,6 +858,24 @@
             "var": "despair_count",
             "op": ">=",
             "value": 3
+          }
+        },
+        {
+          "text": "「他们是对的。人类确实需要被清除。」",
+          "next": "ending_abyss_001",
+          "condition": {
+            "all": [
+              {
+                "var": "despair_count",
+                "op": ">=",
+                "value": 4
+              },
+              {
+                "var": "val",
+                "op": "<=",
+                "value": 30
+              }
+            ]
           }
         }
       ],
