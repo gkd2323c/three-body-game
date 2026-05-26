@@ -66,11 +66,11 @@
       "choices": [
         {
           "text": "屏住呼吸",
-          "next": "guzheng_exec_002"
+          "next": "guzheng_exec_001_guzheng_exec_002_cb0"
         },
         {
           "text": "你不敢看——但移不开视线",
-          "next": "guzheng_exec_002",
+          "next": "guzheng_exec_001_guzheng_exec_002_cb1",
           "changes": {
             "val": -2
           }
@@ -125,14 +125,14 @@
       "choices": [
         {
           "text": "你僵住了",
-          "next": "guzheng_exec_004",
+          "next": "guzheng_exec_003_guzheng_exec_004_cb0",
           "changes": {
             "val": -5
           }
         },
         {
           "text": "你强迫自己保持冷静——信息，那些信息",
-          "next": "guzheng_exec_004",
+          "next": "guzheng_exec_003_guzheng_exec_004_cb1",
           "changes": {
             "val": 2
           }
@@ -245,14 +245,14 @@
       "choices": [
         {
           "text": "继续读下去",
-          "next": "decode_001a",
+          "next": "decode_001_decode_001a_cb0",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "你能感受到那个监听员的孤独",
-          "next": "decode_001a",
+          "next": "decode_001_decode_001a_cb1",
           "changes": {
             "val": -2
           }
@@ -276,14 +276,14 @@
       "choices": [
         {
           "text": "你明白了——三体人害怕人类的进化速度",
-          "next": "decode_003",
+          "next": "decode_002_decode_003_cb0",
           "changes": {
             "val": -2
           }
         },
         {
           "text": "继续读",
-          "next": "decode_003"
+          "next": "decode_002_decode_003_cb1"
         }
       ],
       "next": "decode_003"
@@ -305,14 +305,14 @@
       "choices": [
         {
           "text": "\"所以他们要锁死我们的科学。\"",
-          "next": "sophon_001",
+          "next": "decode_003_sophon_001_cb0",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "\"智子……\"",
-          "next": "sophon_001",
+          "next": "decode_003_sophon_001_cb1",
           "changes": {
             "val": -5
           }
@@ -382,14 +382,14 @@
       "choices": [
         {
           "text": "这不可能……但你知道这是真的",
-          "next": "sophon_003",
+          "next": "sophon_002_sophon_003_cb0",
           "changes": {
             "val": -5
           }
         },
         {
           "text": "继续读下去",
-          "next": "sophon_003",
+          "next": "sophon_002_sophon_003_cb1",
           "changes": {
             "val": -3
           }
@@ -415,14 +415,14 @@
       "choices": [
         {
           "text": "所以杨冬说的物理学的尽头什么都没有——是这个意思",
-          "next": "sophon_004",
+          "next": "sophon_003_sophon_004_cb0",
           "changes": {
             "val": -5
           }
         },
         {
           "text": "基础物理学——被一把锁锁死了",
-          "next": "sophon_004",
+          "next": "sophon_003_sophon_004_cb1",
           "changes": {
             "val": -8
           }
@@ -448,7 +448,7 @@
       "choices": [
         {
           "text": "\"我想去见丁仪。\"",
-          "next": "bugs_001",
+          "next": "sophon_004_bugs_001_cb0",
           "changes": {
             "val": -2,
             "addFlag": "knows_sophon"
@@ -456,7 +456,7 @@
         },
         {
           "text": "\"我需要喝一杯。\"",
-          "next": "bugs_001",
+          "next": "sophon_004_bugs_001_cb1",
           "changes": {
             "val": -3
           }
@@ -501,21 +501,21 @@
       "choices": [
         {
           "text": "\"明白。\"",
-          "next": "bugs_002",
+          "next": "bugs_001_bugs_002_cb0",
           "changes": {
             "val": -2
           }
         },
         {
           "text": "\"也许还有办法。\"",
-          "next": "bugs_002",
+          "next": "bugs_001_bugs_002_cb1",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "你沉默地接过酒杯",
-          "next": "bugs_002",
+          "next": "bugs_001_bugs_002_cb2",
           "changes": {
             "val": -3
           }
@@ -565,14 +565,14 @@
       "choices": [
         {
           "text": "\"所以——我们完了？\"",
-          "next": "bugs_004",
+          "next": "bugs_003_bugs_004_cb0",
           "changes": {
             "val": -5
           }
         },
         {
           "text": "你沉默了。你知道他说的是对的。",
-          "next": "bugs_004",
+          "next": "bugs_003_bugs_004_cb1",
           "changes": {
             "val": -3
           }
@@ -600,14 +600,14 @@
       "choices": [
         {
           "text": "史强——来得正好",
-          "next": "bugs_005",
+          "next": "bugs_004_bugs_005_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "你醉醺醺地看着他——你现在的样子大概很狼狈",
-          "next": "bugs_005"
+          "next": "bugs_004_bugs_005_cb1"
         }
       ],
       "next": "bugs_005"
@@ -637,14 +637,14 @@
       "choices": [
         {
           "text": "跟他走",
-          "next": "bugs_006",
+          "next": "bugs_005_bugs_006_cb0",
           "changes": {
             "shi_qiang_bond": 1
           }
         },
         {
           "text": "你不想动——但史强把你拽了起来",
-          "next": "bugs_006"
+          "next": "bugs_005_bugs_006_cb1"
         }
       ],
       "next": "bugs_006"
@@ -669,11 +669,11 @@
       "choices": [
         {
           "text": "\"你带我们来看蝗虫？\"",
-          "next": "bugs_007"
+          "next": "bugs_006_bugs_007_cb0"
         },
         {
           "text": "你明白了什么——但你等着他说出来",
-          "next": "bugs_007",
+          "next": "bugs_006_bugs_007_cb1",
           "changes": {
             "val": 2
           }
@@ -731,14 +731,14 @@
       "choices": [
         {
           "text": "你弯腰从地上拾起一根麦穗",
-          "next": "bugs_closure",
+          "next": "bugs_008_bugs_closure_cb0",
           "changes": {
             "val": 8
           }
         },
         {
           "text": "你深吸了一口气——空气里有什么东西不一样了",
-          "next": "bugs_closure",
+          "next": "bugs_008_bugs_closure_cb1",
           "changes": {
             "val": 5
           }
@@ -800,23 +800,279 @@
       "choices": [
         {
           "text": "你感到一种跨越光年的悲悯",
-          "next": "decode_002",
+          "next": "decode_001a_decode_002_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "你试图理性分析他行为的动机",
-          "next": "decode_002"
+          "next": "decode_001a_decode_002_cb1"
         },
         {
           "text": "你继续翻看下一份文件",
-          "next": "decode_002",
+          "next": "decode_001a_decode_002_cb2",
           "changes": {
             "val": -1
           }
         }
       ]
+    },
+    "guzheng_exec_001_guzheng_exec_002_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "guzheng_exec_002"
+    },
+    "guzheng_exec_001_guzheng_exec_002_cb1": {
+      "segments": [
+        {
+          "text": "你不敢看。"
+        }
+      ],
+      "next": "guzheng_exec_002"
+    },
+    "guzheng_exec_003_guzheng_exec_004_cb0": {
+      "segments": [
+        {
+          "text": "你僵住了。"
+        }
+      ],
+      "next": "guzheng_exec_004"
+    },
+    "guzheng_exec_003_guzheng_exec_004_cb1": {
+      "segments": [
+        {
+          "text": "你强迫自己保持冷静。"
+        }
+      ],
+      "next": "guzheng_exec_004"
+    },
+    "decode_001_decode_001a_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "decode_001a"
+    },
+    "decode_001_decode_001a_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "decode_001a"
+    },
+    "decode_002_decode_003_cb0": {
+      "segments": [
+        {
+          "text": "你明白了。"
+        }
+      ],
+      "next": "decode_003"
+    },
+    "decode_002_decode_003_cb1": {
+      "segments": [
+        {
+          "text": "你看完了。"
+        }
+      ],
+      "next": "decode_003"
+    },
+    "decode_003_sophon_001_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "sophon_001"
+    },
+    "decode_003_sophon_001_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "sophon_001"
+    },
+    "sophon_002_sophon_003_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "sophon_003"
+    },
+    "sophon_002_sophon_003_cb1": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "sophon_003"
+    },
+    "sophon_003_sophon_004_cb0": {
+      "segments": [
+        {
+          "text": "所以杨冬说的物理学的尽头什么都没有。"
+        }
+      ],
+      "next": "sophon_004"
+    },
+    "sophon_003_sophon_004_cb1": {
+      "segments": [
+        {
+          "text": "基础物理学。"
+        }
+      ],
+      "next": "sophon_004"
+    },
+    "sophon_004_bugs_001_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "bugs_001"
+    },
+    "sophon_004_bugs_001_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "bugs_001"
+    },
+    "bugs_001_bugs_002_cb0": {
+      "segments": [
+        {
+          "text": "一个新的念头在你脑海中成形。"
+        }
+      ],
+      "next": "bugs_002"
+    },
+    "bugs_001_bugs_002_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "bugs_002"
+    },
+    "bugs_001_bugs_002_cb2": {
+      "segments": [
+        {
+          "text": "你沉默地接过酒杯。"
+        }
+      ],
+      "next": "bugs_002"
+    },
+    "bugs_003_bugs_004_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "bugs_004"
+    },
+    "bugs_003_bugs_004_cb1": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "bugs_004"
+    },
+    "bugs_004_bugs_005_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "bugs_005"
+    },
+    "bugs_004_bugs_005_cb1": {
+      "segments": [
+        {
+          "text": "你醉醺醺地看着他。"
+        }
+      ],
+      "next": "bugs_005"
+    },
+    "bugs_005_bugs_006_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "bugs_006"
+    },
+    "bugs_005_bugs_006_cb1": {
+      "segments": [
+        {
+          "text": "你不想动。"
+        }
+      ],
+      "next": "bugs_006"
+    },
+    "bugs_006_bugs_007_cb0": {
+      "segments": [
+        {
+          "text": "你带我们来看蝗虫？。"
+        }
+      ],
+      "next": "bugs_007"
+    },
+    "bugs_006_bugs_007_cb1": {
+      "segments": [
+        {
+          "text": "你明白了什么。"
+        }
+      ],
+      "next": "bugs_007"
+    },
+    "bugs_008_bugs_closure_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "bugs_closure"
+    },
+    "bugs_008_bugs_closure_cb1": {
+      "segments": [
+        {
+          "text": "你深吸了一口气。"
+        }
+      ],
+      "next": "bugs_closure"
+    },
+    "decode_001a_decode_002_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "decode_002"
+    },
+    "decode_001a_decode_002_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "decode_002"
+    },
+    "decode_001a_decode_002_cb2": {
+      "segments": [
+        {
+          "text": "你看完了。"
+        }
+      ],
+      "next": "decode_002"
     }
   }
 }

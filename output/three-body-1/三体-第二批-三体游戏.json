@@ -61,11 +61,11 @@
       "choices": [
         {
           "text": "打开叶文洁给的文件夹",
-          "next": "transition_002"
+          "next": "transition_001_transition_002_cb0"
         },
         {
           "text": "先给史强打个电话",
-          "next": "transition_002",
+          "next": "transition_001_transition_002_cb1",
           "changes": {
             "shi_qiang_bond": 1
           }
@@ -88,14 +88,14 @@
       "choices": [
         {
           "text": "打开电脑，输入网址",
-          "next": "transition_003",
+          "next": "transition_002_transition_003_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "先查查申玉菲的背景",
-          "next": "transition_003"
+          "next": "transition_002_transition_003_cb1"
         }
       ],
       "next": "transition_003"
@@ -136,11 +136,11 @@
       "choices": [
         {
           "text": "\"V装具——去哪里弄？\"",
-          "next": "transition_005"
+          "next": "transition_004_transition_005_cb0"
         },
         {
           "text": "你感到一阵兴奋",
-          "next": "transition_005",
+          "next": "transition_004_transition_005_cb1",
           "changes": {
             "val": 3
           }
@@ -243,7 +243,7 @@
       "choices": [
         {
           "text": "追随周文王",
-          "next": "game_zhou_001",
+          "next": "game_login_002_game_zhou_001_cb0",
           "changes": {
             "val": 2,
             "addFlag": "entered_game"
@@ -251,7 +251,7 @@
         },
         {
           "text": "独自探索",
-          "next": "game_zhou_001",
+          "next": "game_login_002_game_zhou_001_cb1",
           "changes": {
             "val": -1
           }
@@ -284,15 +284,15 @@
       "choices": [
         {
           "text": "\"你找到了吗？\"",
-          "next": "game_zhou_002"
+          "next": "game_zhou_001_game_zhou_002_cb0"
         },
         {
           "text": "\"规律？什么规律？\"",
-          "next": "game_zhou_002"
+          "next": "game_zhou_001_game_zhou_002_cb1"
         },
         {
           "text": "保持警惕，不接话",
-          "next": "game_zhou_002"
+          "next": "game_zhou_001_game_zhou_002_cb2"
         }
       ],
       "next": "game_zhou_002"
@@ -318,14 +318,14 @@
       "choices": [
         {
           "text": "跟他走",
-          "next": "game_zhou_003",
+          "next": "game_zhou_002_game_zhou_003_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "\"见谁？\"",
-          "next": "game_zhou_003"
+          "next": "game_zhou_002_game_zhou_003_cb1"
         }
       ],
       "next": "game_zhou_003"
@@ -396,18 +396,18 @@
       "choices": [
         {
           "text": "你感到一种本能的警惕",
-          "next": "game_zhou_006"
+          "next": "game_zhou_005_game_zhou_006_cb0"
         },
         {
           "text": "保持冷静，观察他",
-          "next": "game_zhou_006",
+          "next": "game_zhou_005_game_zhou_006_cb1",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "你被这个世界的真实感震撼了",
-          "next": "game_zhou_006",
+          "next": "game_zhou_005_game_zhou_006_cb2",
           "changes": {
             "val": 1
           }
@@ -436,14 +436,14 @@
       "choices": [
         {
           "text": "\"什么是周期？\"",
-          "next": "game_zhou_007",
+          "next": "game_zhou_006_game_zhou_007_cb0",
           "changes": {
             "game_depth": 2
           }
         },
         {
           "text": "沉默地听",
-          "next": "game_zhou_007"
+          "next": "game_zhou_006_game_zhou_007_cb1"
         }
       ],
       "next": "game_zhou_007"
@@ -494,21 +494,21 @@
       "choices": [
         {
           "text": "你感到胃在翻涌",
-          "next": "game_zhou_009",
+          "next": "game_zhou_008_game_zhou_009_cb0",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "你强迫自己冷静地观察",
-          "next": "game_zhou_009",
+          "next": "game_zhou_008_game_zhou_009_cb1",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "你被深深震撼了，说不出话",
-          "next": "game_zhou_009",
+          "next": "game_zhou_008_game_zhou_009_cb2",
           "changes": {
             "val": -2
           }
@@ -533,14 +533,14 @@
       "choices": [
         {
           "text": "\"二百多次？\"",
-          "next": "game_zhou_010",
+          "next": "game_zhou_009_game_zhou_010_cb0",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "这不可能——但你知道这是真的",
-          "next": "game_zhou_010",
+          "next": "game_zhou_009_game_zhou_010_cb1",
           "changes": {
             "val": -2
           }
@@ -569,11 +569,11 @@
       "choices": [
         {
           "text": "\"那什么才能预测太阳？\"",
-          "next": "game_zhou_011"
+          "next": "game_zhou_010_game_zhou_011_cb0"
         },
         {
           "text": "你隐隐感到一个更大的答案正在浮现",
-          "next": "game_zhou_011",
+          "next": "game_zhou_010_game_zhou_011_cb1",
           "changes": {
             "val": 2
           }
@@ -609,14 +609,14 @@
       "choices": [
         {
           "text": "你感到一阵彻骨的寒意",
-          "next": "game_zhou_012",
+          "next": "game_zhou_011_game_zhou_012_cb0",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "你更加坚定了要弄清楚这一切的念头",
-          "next": "game_zhou_012",
+          "next": "game_zhou_011_game_zhou_012_cb1",
           "changes": {
             "val": 3
           }
@@ -667,14 +667,14 @@
       "choices": [
         {
           "text": "你希望他说的对",
-          "next": "game_zhou_014",
+          "next": "game_zhou_013_game_zhou_014_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "你有一种不祥的预感",
-          "next": "game_zhou_014",
+          "next": "game_zhou_013_game_zhou_014_cb1",
           "changes": {
             "val": -2
           }
@@ -720,11 +720,11 @@
       "choices": [
         {
           "text": "跑向金字塔",
-          "next": "game_zhou_016"
+          "next": "game_zhou_015_game_zhou_016_cb0"
         },
         {
           "text": "你被震惊得动弹不得",
-          "next": "game_zhou_016",
+          "next": "game_zhou_015_game_zhou_016_cb1",
           "changes": {
             "val": -3
           }
@@ -775,11 +775,11 @@
       "choices": [
         {
           "text": "查阅游戏日志，了解139号文明发生了什么",
-          "next": "game_zhou_018"
+          "next": "game_zhou_017_game_zhou_018_cb0"
         },
         {
           "text": "平复一下呼吸，准备再次登录",
-          "next": "game_zhou_018",
+          "next": "game_zhou_017_game_zhou_018_cb1",
           "changes": {
             "val": 2
           }
@@ -838,14 +838,14 @@
       "choices": [
         {
           "text": "走上前去看",
-          "next": "game_mozi_002",
+          "next": "game_mozi_001_game_mozi_002_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "\"你是——？\"",
-          "next": "game_mozi_002"
+          "next": "game_mozi_001_game_mozi_002_cb1"
         }
       ],
       "next": "game_mozi_002"
@@ -871,11 +871,11 @@
       "choices": [
         {
           "text": "\"你的模型能预测太阳吗？\"",
-          "next": "game_mozi_003"
+          "next": "game_mozi_002_game_mozi_003_cb0"
         },
         {
           "text": "你仔细观察那架机器",
-          "next": "game_mozi_003",
+          "next": "game_mozi_002_game_mozi_003_cb1",
           "changes": {
             "val": 2
           }
@@ -893,11 +893,11 @@
       "choices": [
         {
           "text": "\"那你相信这个模型最终能成功吗？\"",
-          "next": "game_mozi_004"
+          "next": "game_mozi_003_game_mozi_004_cb0"
         },
         {
           "text": "你感到一种悲壮——三千多次调整，仍然没有答案",
-          "next": "game_mozi_004",
+          "next": "game_mozi_003_game_mozi_004_cb1",
           "changes": {
             "val": -3
           }
@@ -929,18 +929,18 @@
       "choices": [
         {
           "text": "答应帮忙",
-          "next": "game_mozi_005",
+          "next": "game_mozi_004_game_mozi_005_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "\"什么排列？\"",
-          "next": "game_mozi_005"
+          "next": "game_mozi_004_game_mozi_005_cb1"
         },
         {
           "text": "你开始信任他的方法",
-          "next": "game_mozi_005",
+          "next": "game_mozi_004_game_mozi_005_cb2",
           "changes": {
             "val": 1
           }
@@ -964,11 +964,11 @@
       "choices": [
         {
           "text": "\"这意味着什么？\"",
-          "next": "game_mozi_006"
+          "next": "game_mozi_005_game_mozi_006_cb0"
         },
         {
           "text": "你盯着那三颗星，移不开视线",
-          "next": "game_mozi_006",
+          "next": "game_mozi_005_game_mozi_006_cb1",
           "changes": {
             "val": -2
           }
@@ -997,14 +997,14 @@
       "choices": [
         {
           "text": "\"你来这里之前——上一个文明留下了什么？\"",
-          "next": "game_mozi_007",
+          "next": "game_mozi_006_game_mozi_007_cb0",
           "changes": {
             "game_depth": 3
           }
         },
         {
           "text": "沉默。这个问题没有答案",
-          "next": "game_mozi_007",
+          "next": "game_mozi_006_game_mozi_007_cb1",
           "changes": {
             "val": -2
           }
@@ -1033,11 +1033,11 @@
       "choices": [
         {
           "text": "\"你相信吗？\"",
-          "next": "game_mozi_008"
+          "next": "game_mozi_007_game_mozi_008_cb0"
         },
         {
           "text": "你开始理解——这不是一个游戏，这是一个文明的真实困境",
-          "next": "game_mozi_008",
+          "next": "game_mozi_007_game_mozi_008_cb1",
           "changes": {
             "val": -3
           }
@@ -1069,14 +1069,14 @@
       "choices": [
         {
           "text": "你感到一阵深入骨髓的寒意",
-          "next": "game_mozi_009",
+          "next": "game_mozi_008_game_mozi_009_cb0",
           "changes": {
             "val": -5
           }
         },
         {
           "text": "你的科学家的本能被触动了——人列计算机？怎么实现的？",
-          "next": "game_mozi_009",
+          "next": "game_mozi_008_game_mozi_009_cb1",
           "changes": {
             "val": 2
           }
@@ -1105,14 +1105,14 @@
       "choices": [
         {
           "text": "\"你不能做点什么吗？\"",
-          "next": "game_mozi_010",
+          "next": "game_mozi_009_game_mozi_010_cb0",
           "changes": {
             "val": -2
           }
         },
         {
           "text": "你和他一起，安静地看着太阳们升起",
-          "next": "game_mozi_010",
+          "next": "game_mozi_009_game_mozi_010_cb1",
           "changes": {
             "val": -3
           }
@@ -1169,14 +1169,14 @@
       "choices": [
         {
           "text": "发送",
-          "next": "game_mozi_012",
+          "next": "game_mozi_011_game_mozi_012_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "删除——你还需要更多证据",
-          "next": "game_mozi_012"
+          "next": "game_mozi_011_game_mozi_012_cb1"
         }
       ],
       "next": "game_mozi_012"
@@ -1227,14 +1227,14 @@
       "choices": [
         {
           "text": "迎着他们的目光",
-          "next": "game_copernicus_002",
+          "next": "game_copernicus_001_game_copernicus_002_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "站在门口观察一下局势",
-          "next": "game_copernicus_002"
+          "next": "game_copernicus_001_game_copernicus_002_cb1"
         }
       ],
       "next": "game_copernicus_002"
@@ -1259,14 +1259,14 @@
       "choices": [
         {
           "text": "是的。我目睹过两次文明的毁灭。",
-          "next": "game_copernicus_003",
+          "next": "game_copernicus_002_game_copernicus_003_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "我在那里看到了东方学者们的努力。",
-          "next": "game_copernicus_003"
+          "next": "game_copernicus_002_game_copernicus_003_cb1"
         }
       ],
       "next": "game_copernicus_003"
@@ -1295,14 +1295,14 @@
       "choices": [
         {
           "text": "我带了一个模型——一个关于太阳运行的理论。",
-          "next": "game_copernicus_004",
+          "next": "game_copernicus_003_game_copernicus_004_cb0",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "让我先说说我在东方看到的东西。",
-          "next": "game_copernicus_004"
+          "next": "game_copernicus_003_game_copernicus_004_cb1"
         }
       ],
       "next": "game_copernicus_004"
@@ -1330,14 +1330,14 @@
       "choices": [
         {
           "text": "继续阐述三体理论",
-          "next": "game_copernicus_005",
+          "next": "game_copernicus_004_game_copernicus_005_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "停下来等他们的反应",
-          "next": "game_copernicus_005"
+          "next": "game_copernicus_004_game_copernicus_005_cb1"
         }
       ],
       "next": "game_copernicus_005"
@@ -1359,14 +1359,14 @@
       "choices": [
         {
           "text": "三颗太阳确实出现过——看到它们的人活不下来。",
-          "next": "game_copernicus_006",
+          "next": "game_copernicus_005_game_copernicus_006_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "你们见过飞星吗？三颗飞星同时出现的时候？",
-          "next": "game_copernicus_006"
+          "next": "game_copernicus_005_game_copernicus_006_cb1"
         }
       ],
       "next": "game_copernicus_006"
@@ -1406,14 +1406,14 @@
       "choices": [
         {
           "text": "等待他们的裁决",
-          "next": "game_copernicus_007",
+          "next": "game_copernicus_006_game_copernicus_007_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "补充更多观测证据",
-          "next": "game_copernicus_007",
+          "next": "game_copernicus_006_game_copernicus_007_cb1",
           "changes": {
             "val": 1
           }
@@ -1448,18 +1448,18 @@
       "choices": [
         {
           "text": "我说的是真理！",
-          "next": "game_copernicus_008",
+          "next": "game_copernicus_007_game_copernicus_008_cb0",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "冷静——你知道这只是游戏",
-          "next": "game_copernicus_008"
+          "next": "game_copernicus_007_game_copernicus_008_cb1"
         },
         {
           "text": "你奋力挣扎",
-          "next": "game_copernicus_008",
+          "next": "game_copernicus_007_game_copernicus_008_cb2",
           "changes": {
             "val": 1
           }
@@ -1494,11 +1494,11 @@
       "choices": [
         {
           "text": "挣脱绳索，冲出去",
-          "next": "game_copernicus_009"
+          "next": "game_copernicus_008_game_copernicus_009_cb0"
         },
         {
           "text": "你被眼前的一幕震住了",
-          "next": "game_copernicus_009"
+          "next": "game_copernicus_008_game_copernicus_009_cb1"
         }
       ],
       "next": "game_copernicus_009"
@@ -1623,14 +1623,14 @@
       "choices": [
         {
           "text": "\"好。\"",
-          "next": "return_002",
+          "next": "return_001_return_002_cb0",
           "changes": {
             "knows_truth": true
           }
         },
         {
           "text": "你把手机握在手里，又看了一会儿窗外的日出",
-          "next": "return_002",
+          "next": "return_001_return_002_cb1",
           "changes": {
             "val": 3
           }
@@ -1653,14 +1653,14 @@
       "choices": [
         {
           "text": "准备出门去见常伟思",
-          "next": "return_003",
+          "next": "return_002_return_003_cb0",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "你先坐下，整理一下思路——想清楚自己到底要说什么",
-          "next": "return_003",
+          "next": "return_002_return_003_cb1",
           "changes": {
             "val": 2
           }
@@ -1731,6 +1731,606 @@
           }
         }
       ]
+    },
+    "transition_001_transition_002_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "transition_002"
+    },
+    "transition_001_transition_002_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "transition_002"
+    },
+    "transition_002_transition_003_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "transition_003"
+    },
+    "transition_002_transition_003_cb1": {
+      "segments": [
+        {
+          "text": "你看完了。"
+        }
+      ],
+      "next": "transition_003"
+    },
+    "transition_004_transition_005_cb0": {
+      "segments": [
+        {
+          "text": "V装具。"
+        }
+      ],
+      "next": "transition_005"
+    },
+    "transition_004_transition_005_cb1": {
+      "segments": [
+        {
+          "text": "你感到一阵兴奋。"
+        }
+      ],
+      "next": "transition_005"
+    },
+    "game_login_002_game_zhou_001_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "game_zhou_001"
+    },
+    "game_login_002_game_zhou_001_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_001"
+    },
+    "game_zhou_001_game_zhou_002_cb0": {
+      "segments": [
+        {
+          "text": "你找到了吗？。"
+        }
+      ],
+      "next": "game_zhou_002"
+    },
+    "game_zhou_001_game_zhou_002_cb1": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_zhou_002"
+    },
+    "game_zhou_001_game_zhou_002_cb2": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_002"
+    },
+    "game_zhou_002_game_zhou_003_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "game_zhou_003"
+    },
+    "game_zhou_002_game_zhou_003_cb1": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_zhou_003"
+    },
+    "game_zhou_005_game_zhou_006_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_006"
+    },
+    "game_zhou_005_game_zhou_006_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_006"
+    },
+    "game_zhou_005_game_zhou_006_cb2": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_006"
+    },
+    "game_zhou_006_game_zhou_007_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_zhou_007"
+    },
+    "game_zhou_006_game_zhou_007_cb1": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "game_zhou_007"
+    },
+    "game_zhou_008_game_zhou_009_cb0": {
+      "segments": [
+        {
+          "text": "你感到胃在翻涌。"
+        }
+      ],
+      "next": "game_zhou_009"
+    },
+    "game_zhou_008_game_zhou_009_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_009"
+    },
+    "game_zhou_008_game_zhou_009_cb2": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_009"
+    },
+    "game_zhou_009_game_zhou_010_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_zhou_010"
+    },
+    "game_zhou_009_game_zhou_010_cb1": {
+      "segments": [
+        {
+          "text": "这不可能。"
+        }
+      ],
+      "next": "game_zhou_010"
+    },
+    "game_zhou_010_game_zhou_011_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_zhou_011"
+    },
+    "game_zhou_010_game_zhou_011_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_011"
+    },
+    "game_zhou_011_game_zhou_012_cb0": {
+      "segments": [
+        {
+          "text": "你花了几秒钟才消化这个信息。"
+        }
+      ],
+      "next": "game_zhou_012"
+    },
+    "game_zhou_011_game_zhou_012_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_012"
+    },
+    "game_zhou_013_game_zhou_014_cb0": {
+      "segments": [
+        {
+          "text": "你希望他说的对。"
+        }
+      ],
+      "next": "game_zhou_014"
+    },
+    "game_zhou_013_game_zhou_014_cb1": {
+      "segments": [
+        {
+          "text": "你有一种不祥的预感。"
+        }
+      ],
+      "next": "game_zhou_014"
+    },
+    "game_zhou_015_game_zhou_016_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_016"
+    },
+    "game_zhou_015_game_zhou_016_cb1": {
+      "segments": [
+        {
+          "text": "你被震惊得动弹不得。"
+        }
+      ],
+      "next": "game_zhou_016"
+    },
+    "game_zhou_017_game_zhou_018_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_zhou_018"
+    },
+    "game_zhou_017_game_zhou_018_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_zhou_018"
+    },
+    "game_mozi_001_game_mozi_002_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "game_mozi_002"
+    },
+    "game_mozi_001_game_mozi_002_cb1": {
+      "segments": [
+        {
+          "text": "你是——？。"
+        }
+      ],
+      "next": "game_mozi_002"
+    },
+    "game_mozi_002_game_mozi_003_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_mozi_003"
+    },
+    "game_mozi_002_game_mozi_003_cb1": {
+      "segments": [
+        {
+          "text": "你仔细观察那架机器。"
+        }
+      ],
+      "next": "game_mozi_003"
+    },
+    "game_mozi_003_game_mozi_004_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_mozi_004"
+    },
+    "game_mozi_003_game_mozi_004_cb1": {
+      "segments": [
+        {
+          "text": "你感到一种悲壮。"
+        }
+      ],
+      "next": "game_mozi_004"
+    },
+    "game_mozi_004_game_mozi_005_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_mozi_005"
+    },
+    "game_mozi_004_game_mozi_005_cb1": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_mozi_005"
+    },
+    "game_mozi_004_game_mozi_005_cb2": {
+      "segments": [
+        {
+          "text": "你开始信任他的方法。"
+        }
+      ],
+      "next": "game_mozi_005"
+    },
+    "game_mozi_005_game_mozi_006_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_mozi_006"
+    },
+    "game_mozi_005_game_mozi_006_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_mozi_006"
+    },
+    "game_mozi_006_game_mozi_007_cb0": {
+      "segments": [
+        {
+          "text": "你来这里之前。"
+        }
+      ],
+      "next": "game_mozi_007"
+    },
+    "game_mozi_006_game_mozi_007_cb1": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "game_mozi_007"
+    },
+    "game_mozi_007_game_mozi_008_cb0": {
+      "segments": [
+        {
+          "text": "你相信吗？。"
+        }
+      ],
+      "next": "game_mozi_008"
+    },
+    "game_mozi_007_game_mozi_008_cb1": {
+      "segments": [
+        {
+          "text": "你开始理解。"
+        }
+      ],
+      "next": "game_mozi_008"
+    },
+    "game_mozi_008_game_mozi_009_cb0": {
+      "segments": [
+        {
+          "text": "你花了几秒钟才消化这个信息。"
+        }
+      ],
+      "next": "game_mozi_009"
+    },
+    "game_mozi_008_game_mozi_009_cb1": {
+      "segments": [
+        {
+          "text": "你的科学家的本能被触动了。"
+        }
+      ],
+      "next": "game_mozi_009"
+    },
+    "game_mozi_009_game_mozi_010_cb0": {
+      "segments": [
+        {
+          "text": "你不能做点什么吗？。"
+        }
+      ],
+      "next": "game_mozi_010"
+    },
+    "game_mozi_009_game_mozi_010_cb1": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "game_mozi_010"
+    },
+    "game_mozi_011_game_mozi_012_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_mozi_012"
+    },
+    "game_mozi_011_game_mozi_012_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_mozi_012"
+    },
+    "game_copernicus_001_game_copernicus_002_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_copernicus_002"
+    },
+    "game_copernicus_001_game_copernicus_002_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_copernicus_002"
+    },
+    "game_copernicus_002_game_copernicus_003_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_copernicus_003"
+    },
+    "game_copernicus_002_game_copernicus_003_cb1": {
+      "segments": [
+        {
+          "text": "你看完了。"
+        }
+      ],
+      "next": "game_copernicus_003"
+    },
+    "game_copernicus_003_game_copernicus_004_cb0": {
+      "segments": [
+        {
+          "text": "我带了一个模型。"
+        }
+      ],
+      "next": "game_copernicus_004"
+    },
+    "game_copernicus_003_game_copernicus_004_cb1": {
+      "segments": [
+        {
+          "text": "你看完了。"
+        }
+      ],
+      "next": "game_copernicus_004"
+    },
+    "game_copernicus_004_game_copernicus_005_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_copernicus_005"
+    },
+    "game_copernicus_004_game_copernicus_005_cb1": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "game_copernicus_005"
+    },
+    "game_copernicus_005_game_copernicus_006_cb0": {
+      "segments": [
+        {
+          "text": "三颗太阳确实出现过。"
+        }
+      ],
+      "next": "game_copernicus_006"
+    },
+    "game_copernicus_005_game_copernicus_006_cb1": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_copernicus_006"
+    },
+    "game_copernicus_006_game_copernicus_007_cb0": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "game_copernicus_007"
+    },
+    "game_copernicus_006_game_copernicus_007_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_copernicus_007"
+    },
+    "game_copernicus_007_game_copernicus_008_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_copernicus_008"
+    },
+    "game_copernicus_007_game_copernicus_008_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_copernicus_008"
+    },
+    "game_copernicus_007_game_copernicus_008_cb2": {
+      "segments": [
+        {
+          "text": "你奋力挣扎。"
+        }
+      ],
+      "next": "game_copernicus_008"
+    },
+    "game_copernicus_008_game_copernicus_009_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "game_copernicus_009"
+    },
+    "game_copernicus_008_game_copernicus_009_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_copernicus_009"
+    },
+    "return_001_return_002_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "return_002"
+    },
+    "return_001_return_002_cb1": {
+      "segments": [
+        {
+          "text": "你看完了。"
+        }
+      ],
+      "next": "return_002"
+    },
+    "return_002_return_003_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "return_003"
+    },
+    "return_002_return_003_cb1": {
+      "segments": [
+        {
+          "text": "你先坐下，整理一下思路。"
+        }
+      ],
+      "next": "return_003"
     }
   }
 }

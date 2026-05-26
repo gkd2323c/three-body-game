@@ -97,11 +97,11 @@
       "choices": [
         {
           "text": "\"军队——用来计算？\"",
-          "next": "game_computer_004"
+          "next": "game_computer_003_game_computer_004_cb0"
         },
         {
           "text": "你隐约猜到了他们要做什么",
-          "next": "game_computer_004",
+          "next": "game_computer_003_game_computer_004_cb1",
           "changes": {
             "val": 2
           }
@@ -125,14 +125,14 @@
       "choices": [
         {
           "text": "你被这个方案的疯狂和天才同时震撼了",
-          "next": "game_computer_005",
+          "next": "game_computer_004_game_computer_005_cb0",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "\"三千万人——怎么协调？\"",
-          "next": "game_computer_005"
+          "next": "game_computer_004_game_computer_005_cb1"
         }
       ],
       "next": "game_computer_005"
@@ -190,14 +190,14 @@
       "choices": [
         {
           "text": "你感到一种巨大的悲壮——人类在宇宙面前太渺小了",
-          "next": "game_computer_007",
+          "next": "game_computer_006_game_computer_007_cb0",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "\"他们需要算多少次？\"",
-          "next": "game_computer_007"
+          "next": "game_computer_006_game_computer_007_cb1"
         }
       ],
       "next": "game_computer_007"
@@ -214,14 +214,14 @@
       "choices": [
         {
           "text": "再次登录",
-          "next": "game_einstein_001",
+          "next": "game_computer_007_game_einstein_001_cb0",
           "changes": {
             "game_depth": 7
           }
         },
         {
           "text": "你需要出去走走",
-          "next": "game_einstein_001",
+          "next": "game_computer_007_game_einstein_001_cb1",
           "changes": {
             "val": -2
           }
@@ -252,11 +252,11 @@
       "choices": [
         {
           "text": "走上前去",
-          "next": "game_einstein_002"
+          "next": "game_einstein_001_game_einstein_002_cb0"
         },
         {
           "text": "你被那架巨型单摆吸引了——它比所有建筑都高",
-          "next": "game_einstein_002",
+          "next": "game_einstein_001_game_einstein_002_cb1",
           "changes": {
             "val": 2
           }
@@ -277,11 +277,11 @@
       "choices": [
         {
           "text": "\"您怎么——\"",
-          "next": "game_einstein_003"
+          "next": "game_einstein_002_game_einstein_003_cb0"
         },
         {
           "text": "在礼帽里放了一些零钱",
-          "next": "game_einstein_003",
+          "next": "game_einstein_002_game_einstein_003_cb1",
           "changes": {
             "val": 2
           }
@@ -306,11 +306,11 @@
       "choices": [
         {
           "text": "\"所以三体问题是有解的？\"",
-          "next": "game_einstein_004"
+          "next": "game_einstein_003_game_einstein_004_cb0"
         },
         {
           "text": "你意识到爱因斯坦在说真正的物理学",
-          "next": "game_einstein_004",
+          "next": "game_einstein_003_game_einstein_004_cb1",
           "changes": {
             "val": 3
           }
@@ -357,14 +357,14 @@
       "choices": [
         {
           "text": "你感到一种从未有过的寒意——三体舰队不是在侵略，是在逃亡",
-          "next": "game_einstein_006",
+          "next": "game_einstein_005_game_einstein_006_cb0",
           "changes": {
             "val": -5
           }
         },
         {
           "text": "你终于理解了叶文洁说的每一个字",
-          "next": "game_einstein_006",
+          "next": "game_einstein_005_game_einstein_006_cb1",
           "changes": {
             "val": -3
           }
@@ -449,7 +449,7 @@
       "choices": [
         {
           "text": "\"我马上到。\"",
-          "next": "game_einstein_return2",
+          "next": "game_einstein_return_game_einstein_return2_cb0",
           "changes": {
             "val": 3,
             "addFlag": "game_completed"
@@ -457,7 +457,7 @@
         },
         {
           "text": "你在窗前站了一会儿才出门",
-          "next": "game_einstein_return2",
+          "next": "game_einstein_return_game_einstein_return2_cb1",
           "changes": {
             "addFlag": "game_completed"
           }
@@ -485,6 +485,150 @@
           "next": "game_einstein_return2"
         }
       ]
+    },
+    "game_computer_003_game_computer_004_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_computer_004"
+    },
+    "game_computer_003_game_computer_004_cb1": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_computer_004"
+    },
+    "game_computer_004_game_computer_005_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_computer_005"
+    },
+    "game_computer_004_game_computer_005_cb1": {
+      "segments": [
+        {
+          "text": "三千万人。"
+        }
+      ],
+      "next": "game_computer_005"
+    },
+    "game_computer_006_game_computer_007_cb0": {
+      "segments": [
+        {
+          "text": "你感到一种巨大的悲壮。"
+        }
+      ],
+      "next": "game_computer_007"
+    },
+    "game_computer_006_game_computer_007_cb1": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_computer_007"
+    },
+    "game_computer_007_game_einstein_001_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_einstein_001"
+    },
+    "game_computer_007_game_einstein_001_cb1": {
+      "segments": [
+        {
+          "text": "你需要出去走走。"
+        }
+      ],
+      "next": "game_einstein_001"
+    },
+    "game_einstein_001_game_einstein_002_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "game_einstein_002"
+    },
+    "game_einstein_001_game_einstein_002_cb1": {
+      "segments": [
+        {
+          "text": "你被那架巨型单摆吸引了。"
+        }
+      ],
+      "next": "game_einstein_002"
+    },
+    "game_einstein_002_game_einstein_003_cb0": {
+      "segments": [
+        {
+          "text": "您怎么。"
+        }
+      ],
+      "next": "game_einstein_003"
+    },
+    "game_einstein_002_game_einstein_003_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_einstein_003"
+    },
+    "game_einstein_003_game_einstein_004_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "game_einstein_004"
+    },
+    "game_einstein_003_game_einstein_004_cb1": {
+      "segments": [
+        {
+          "text": "一个新的念头在你脑海中成形。"
+        }
+      ],
+      "next": "game_einstein_004"
+    },
+    "game_einstein_005_game_einstein_006_cb0": {
+      "segments": [
+        {
+          "text": "你感到一种从未有过的寒意。"
+        }
+      ],
+      "next": "game_einstein_006"
+    },
+    "game_einstein_005_game_einstein_006_cb1": {
+      "segments": [
+        {
+          "text": "一个新的念头在你脑海中成形。"
+        }
+      ],
+      "next": "game_einstein_006"
+    },
+    "game_einstein_return_game_einstein_return2_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_einstein_return2"
+    },
+    "game_einstein_return_game_einstein_return2_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "game_einstein_return2"
     }
   }
 }

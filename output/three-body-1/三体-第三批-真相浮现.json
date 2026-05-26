@@ -58,21 +58,21 @@
       "choices": [
         {
           "text": "\"我登录了三体游戏。\"",
-          "next": "chang_002",
+          "next": "chang_001_chang_002_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "\"叶文洁告诉我的事——都是真的。\"",
-          "next": "chang_002",
+          "next": "chang_001_chang_002_cb1",
           "changes": {
             "val": 1
           }
         },
         {
           "text": "\"事情比我们想象的严重得多。\"",
-          "next": "chang_002"
+          "next": "chang_001_chang_002_cb2"
         }
       ],
       "next": "chang_002"
@@ -118,11 +118,11 @@
       "choices": [
         {
           "text": "\"我知道申玉菲。她给过我一个网址。\"",
-          "next": "chang_004"
+          "next": "chang_003_chang_004_cb0"
         },
         {
           "text": "\"宇宙背景辐射——她能预测这个？\"",
-          "next": "chang_004",
+          "next": "chang_003_chang_004_cb1",
           "changes": {
             "val": -2
           }
@@ -147,18 +147,18 @@
       "choices": [
         {
           "text": "\"好，我去。\"",
-          "next": "chang_005",
+          "next": "chang_004_chang_005_cb0",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "\"我需要联系叶文洁。\"",
-          "next": "chang_005"
+          "next": "chang_004_chang_005_cb1"
         },
         {
           "text": "\"如果真被她预测中了——那意味着什么？\"",
-          "next": "chang_005"
+          "next": "chang_004_chang_005_cb2"
         }
       ],
       "next": "chang_005"
@@ -180,14 +180,14 @@
       "choices": [
         {
           "text": "握他的手",
-          "next": "chang_006",
+          "next": "chang_005_chang_006_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "\"我尽量。\"",
-          "next": "chang_006"
+          "next": "chang_005_chang_006_cb1"
         }
       ],
       "next": "chang_006"
@@ -211,11 +211,11 @@
       "choices": [
         {
           "text": "\"你觉得会看到什么？\"",
-          "next": "flicker_001"
+          "next": "chang_006_flicker_001_cb0"
         },
         {
           "text": "你盯着屏幕上的数据曲线",
-          "next": "flicker_001",
+          "next": "chang_006_flicker_001_cb1",
           "changes": {
             "val": -2
           }
@@ -245,11 +245,11 @@
       "choices": [
         {
           "text": "盯着那条线看",
-          "next": "flicker_002"
+          "next": "flicker_001_flicker_002_cb0"
         },
         {
           "text": "你有一种预感——它马上就要变了",
-          "next": "flicker_002",
+          "next": "flicker_001_flicker_002_cb1",
           "changes": {
             "val": -2
           }
@@ -281,11 +281,11 @@
       "choices": [
         {
           "text": "\"是什么导致的？\"",
-          "next": "flicker_003"
+          "next": "flicker_002_flicker_003_cb0"
         },
         {
           "text": "你盯着那条波动的曲线，说不出话",
-          "next": "flicker_003",
+          "next": "flicker_002_flicker_003_cb1",
           "changes": {
             "val": -2
           }
@@ -310,11 +310,11 @@
       "choices": [
         {
           "text": "\"拨弄宇宙？\"",
-          "next": "flicker_004"
+          "next": "flicker_003_flicker_004_cb0"
         },
         {
           "text": "你感到一阵深入骨髓的寒意",
-          "next": "flicker_004",
+          "next": "flicker_003_flicker_004_cb1",
           "changes": {
             "val": -5
           }
@@ -341,14 +341,14 @@
       "choices": [
         {
           "text": "\"这是给我的。\"",
-          "next": "flicker_005",
+          "next": "flicker_004_flicker_005_cb0",
           "changes": {
             "val": -5
           }
         },
         {
           "text": "\"记录下所有数据。\"",
-          "next": "flicker_005",
+          "next": "flicker_004_flicker_005_cb1",
           "changes": {
             "val": 2
           }
@@ -414,11 +414,11 @@
       "choices": [
         {
           "text": "\"接下来怎么办？\"",
-          "next": "flicker_007"
+          "next": "flicker_006_flicker_007_cb0"
         },
         {
           "text": "你闭上眼睛——需要时间消化这一切",
-          "next": "flicker_007",
+          "next": "flicker_006_flicker_007_cb1",
           "changes": {
             "val": -2
           }
@@ -440,14 +440,14 @@
       "choices": [
         {
           "text": "\"魏成？他算出了什么？\"",
-          "next": "wei_001",
+          "next": "flicker_007_wei_001_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "\"申玉菲失踪了？什么时候？\"",
-          "next": "wei_001"
+          "next": "flicker_007_wei_001_cb1"
         }
       ],
       "next": "wei_001"
@@ -476,14 +476,14 @@
       "choices": [
         {
           "text": "蹲下来看他地上的图表",
-          "next": "wei_002",
+          "next": "wei_001_wei_002_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "等他先开口",
-          "next": "wei_002"
+          "next": "wei_001_wei_002_cb1"
         }
       ],
       "next": "wei_002"
@@ -505,11 +505,11 @@
       "choices": [
         {
           "text": "\"这些模式——能预测太阳的运行？\"",
-          "next": "wei_003"
+          "next": "wei_002_wei_003_cb0"
         },
         {
           "text": "你翻阅那些手稿，被它们的精确和庞大震撼了",
-          "next": "wei_003",
+          "next": "wei_002_wei_003_cb1",
           "changes": {
             "val": 2
           }
@@ -534,11 +534,11 @@
       "choices": [
         {
           "text": "\"她发给了谁？\"",
-          "next": "wei_004"
+          "next": "wei_003_wei_004_cb0"
         },
         {
           "text": "你心里已经有了答案——ETO",
-          "next": "wei_004",
+          "next": "wei_003_wei_004_cb1",
           "changes": {
             "val": -2
           }
@@ -563,14 +563,14 @@
       "choices": [
         {
           "text": "你背后一凉",
-          "next": "wei_005",
+          "next": "wei_004_wei_005_cb0",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "\"这说明——三体游戏里的数据是真实的。\"",
-          "next": "wei_005"
+          "next": "wei_004_wei_005_cb1"
         }
       ],
       "next": "wei_005"
@@ -596,11 +596,11 @@
       "choices": [
         {
           "text": "\"所以三体文明——他们正在迎来一段稳定期？\"",
-          "next": "wei_006"
+          "next": "wei_005_wei_006_cb0"
         },
         {
           "text": "你意识到这个信息可能比叶文洁说的任何事都重要",
-          "next": "wei_006",
+          "next": "wei_005_wei_006_cb1",
           "changes": {
             "val": -2
           }
@@ -625,11 +625,11 @@
       "choices": [
         {
           "text": "\"那些计算结果——能用来做什么？\"",
-          "next": "wei_007"
+          "next": "wei_006_wei_007_cb0"
         },
         {
           "text": "你明白了——那些ETO的人需要这些数据",
-          "next": "wei_007",
+          "next": "wei_006_wei_007_cb1",
           "changes": {
             "val": -2
           }
@@ -682,18 +682,18 @@
       "choices": [
         {
           "text": "\"我去。\"",
-          "next": "eto_001",
+          "next": "wei_008_eto_001_cb0",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "\"这可能是个陷阱。\"",
-          "next": "eto_001"
+          "next": "wei_008_eto_001_cb1"
         },
         {
           "text": "\"我需要先和常将军商量。\"",
-          "next": "eto_001",
+          "next": "wei_008_eto_001_cb2",
           "changes": {
             "val": -2
           }
@@ -725,7 +725,7 @@
       "choices": [
         {
           "text": "走到她身边",
-          "next": "eto_002",
+          "next": "eto_001_eto_002_cb0",
           "changes": {
             "wenjie_trust": 1,
             "addFlag": "attended_eto"
@@ -733,7 +733,7 @@
         },
         {
           "text": "站在人群边缘观察",
-          "next": "eto_002"
+          "next": "eto_001_eto_002_cb1"
         }
       ],
       "next": "eto_002"
@@ -753,11 +753,11 @@
       "choices": [
         {
           "text": "在人群中保持安静",
-          "next": "eto_003"
+          "next": "eto_002_eto_003_cb0"
         },
         {
           "text": "你也提出了一个问题——关于三体文明的真实意图",
-          "next": "eto_003",
+          "next": "eto_002_eto_003_cb1",
           "changes": {
             "val": -2
           }
@@ -781,15 +781,15 @@
       "choices": [
         {
           "text": "\"你说的真相——是什么？\"",
-          "next": "eto_004"
+          "next": "eto_003_eto_004_cb0"
         },
         {
           "text": "\"你在利用这些人。\"",
-          "next": "eto_004"
+          "next": "eto_003_eto_004_cb1"
         },
         {
           "text": "沉默——你等着她摊牌",
-          "next": "eto_004"
+          "next": "eto_003_eto_004_cb2"
         }
       ],
       "next": "eto_004"
@@ -811,11 +811,11 @@
       "choices": [
         {
           "text": "\"那他们来地球是为了什么？\"",
-          "next": "eto_005"
+          "next": "eto_004_eto_005_cb0"
         },
         {
           "text": "你被她的笃定动摇了——但你的疑虑更深了",
-          "next": "eto_005",
+          "next": "eto_004_eto_005_cb1",
           "changes": {
             "val": -3
           }
@@ -839,14 +839,14 @@
       "choices": [
         {
           "text": "\"如果他们真的这么高尚——为什么要锁死地球的基础科学？\"",
-          "next": "eto_006",
+          "next": "eto_005_eto_006_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "你沉默了——你开始理解这些人是真心相信的",
-          "next": "eto_006",
+          "next": "eto_005_eto_006_cb1",
           "changes": {
             "val": -3
           }
@@ -903,14 +903,14 @@
       "choices": [
         {
           "text": "站在原地",
-          "next": "eto_007",
+          "next": "eto_006_eto_007_cb0",
           "changes": {
             "shi_qiang_bond": 1
           }
         },
         {
           "text": "你被这阵仗惊住了",
-          "next": "eto_007"
+          "next": "eto_006_eto_007_cb1"
         }
       ],
       "next": "eto_007"
@@ -962,14 +962,14 @@
       "choices": [
         {
           "text": "你目送她被带走",
-          "next": "eto_009",
+          "next": "eto_008_eto_009_cb0",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "你追上去——\"等等，她不是主谋\"",
-          "next": "eto_009",
+          "next": "eto_008_eto_009_cb1",
           "changes": {
             "wenjie_trust": 2
           }
@@ -1072,11 +1072,11 @@
       "choices": [
         {
           "text": "你忍不住看向史强",
-          "next": "guzheng_004"
+          "next": "guzheng_003_guzheng_004_cb0"
         },
         {
           "text": "你感到一阵无力——技术上好像无解",
-          "next": "guzheng_004",
+          "next": "guzheng_003_guzheng_004_cb1",
           "changes": {
             "val": -3
           }
@@ -1104,14 +1104,14 @@
       "choices": [
         {
           "text": "你忍住没笑——但你知道他有主意了",
-          "next": "guzheng_005",
+          "next": "guzheng_004_guzheng_005_cb0",
           "changes": {
             "shi_qiang_bond": 1
           }
         },
         {
           "text": "等着他说下去",
-          "next": "guzheng_005"
+          "next": "guzheng_004_guzheng_005_cb1"
         }
       ],
       "next": "guzheng_005"
@@ -1162,14 +1162,14 @@
       "choices": [
         {
           "text": "\"你说的'邪招'——是用纳米线切割船体？\"",
-          "next": "guzheng_007",
+          "next": "guzheng_006_guzheng_007_cb0",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "你一瞬间理解了史强的思路——飞刃",
-          "next": "guzheng_007",
+          "next": "guzheng_006_guzheng_007_cb1",
           "changes": {
             "val": 2
           }
@@ -1197,14 +1197,14 @@
       "choices": [
         {
           "text": "继续解释技术细节",
-          "next": "guzheng_008",
+          "next": "guzheng_007_guzheng_008_cb0",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "沉默——让在场的军官们消化这个想法",
-          "next": "guzheng_008"
+          "next": "guzheng_007_guzheng_008_cb1"
         }
       ],
       "next": "guzheng_008"
@@ -1232,14 +1232,14 @@
       "choices": [
         {
           "text": "你感到一阵战栗——不是恐惧，是兴奋",
-          "next": "guzheng_009",
+          "next": "guzheng_008_guzheng_009_cb0",
           "changes": {
             "val": 5
           }
         },
         {
           "text": "你开始意识到这个方案意味着什么——巨大的成功或巨大的灾难",
-          "next": "guzheng_009"
+          "next": "guzheng_008_guzheng_009_cb1"
         }
       ],
       "next": "guzheng_009"
@@ -1261,14 +1261,14 @@
       "choices": [
         {
           "text": "你要求到现场去",
-          "next": "guzheng_010",
+          "next": "guzheng_009_guzheng_010_cb0",
           "changes": {
             "val": 2
           }
         },
         {
           "text": "你留在指挥中心，等待消息",
-          "next": "guzheng_010"
+          "next": "guzheng_009_guzheng_010_cb1"
         }
       ],
       "next": "guzheng_010"
@@ -1319,6 +1319,534 @@
           "next": "batch3_end"
         }
       ]
+    },
+    "chang_001_chang_002_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "chang_002"
+    },
+    "chang_001_chang_002_cb1": {
+      "segments": [
+        {
+          "text": "叶文洁告诉我的事。"
+        }
+      ],
+      "next": "chang_002"
+    },
+    "chang_001_chang_002_cb2": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "chang_002"
+    },
+    "chang_003_chang_004_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "chang_004"
+    },
+    "chang_003_chang_004_cb1": {
+      "segments": [
+        {
+          "text": "宇宙背景辐射。"
+        }
+      ],
+      "next": "chang_004"
+    },
+    "chang_004_chang_005_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "chang_005"
+    },
+    "chang_004_chang_005_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "chang_005"
+    },
+    "chang_004_chang_005_cb2": {
+      "segments": [
+        {
+          "text": "如果真被她预测中了。"
+        }
+      ],
+      "next": "chang_005"
+    },
+    "chang_005_chang_006_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "chang_006"
+    },
+    "chang_005_chang_006_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "chang_006"
+    },
+    "chang_006_flicker_001_cb0": {
+      "segments": [
+        {
+          "text": "你觉得会看到什么？。"
+        }
+      ],
+      "next": "flicker_001"
+    },
+    "chang_006_flicker_001_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "flicker_001"
+    },
+    "flicker_001_flicker_002_cb0": {
+      "segments": [
+        {
+          "text": "你看完了。"
+        }
+      ],
+      "next": "flicker_002"
+    },
+    "flicker_001_flicker_002_cb1": {
+      "segments": [
+        {
+          "text": "你有一种预感。"
+        }
+      ],
+      "next": "flicker_002"
+    },
+    "flicker_002_flicker_003_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "flicker_003"
+    },
+    "flicker_002_flicker_003_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "flicker_003"
+    },
+    "flicker_003_flicker_004_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "flicker_004"
+    },
+    "flicker_003_flicker_004_cb1": {
+      "segments": [
+        {
+          "text": "你花了几秒钟才消化这个信息。"
+        }
+      ],
+      "next": "flicker_004"
+    },
+    "flicker_004_flicker_005_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "flicker_005"
+    },
+    "flicker_004_flicker_005_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "flicker_005"
+    },
+    "flicker_006_flicker_007_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "flicker_007"
+    },
+    "flicker_006_flicker_007_cb1": {
+      "segments": [
+        {
+          "text": "你闭上眼睛。"
+        }
+      ],
+      "next": "flicker_007"
+    },
+    "flicker_007_wei_001_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "wei_001"
+    },
+    "flicker_007_wei_001_cb1": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "wei_001"
+    },
+    "wei_001_wei_002_cb0": {
+      "segments": [
+        {
+          "text": "你看完了。"
+        }
+      ],
+      "next": "wei_002"
+    },
+    "wei_001_wei_002_cb1": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "wei_002"
+    },
+    "wei_002_wei_003_cb0": {
+      "segments": [
+        {
+          "text": "这些模式。"
+        }
+      ],
+      "next": "wei_003"
+    },
+    "wei_002_wei_003_cb1": {
+      "segments": [
+        {
+          "text": "你看完了。"
+        }
+      ],
+      "next": "wei_003"
+    },
+    "wei_003_wei_004_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "wei_004"
+    },
+    "wei_003_wei_004_cb1": {
+      "segments": [
+        {
+          "text": "你心里已经有了答案。"
+        }
+      ],
+      "next": "wei_004"
+    },
+    "wei_004_wei_005_cb0": {
+      "segments": [
+        {
+          "text": "你背后一凉。"
+        }
+      ],
+      "next": "wei_005"
+    },
+    "wei_004_wei_005_cb1": {
+      "segments": [
+        {
+          "text": "这说明。"
+        }
+      ],
+      "next": "wei_005"
+    },
+    "wei_005_wei_006_cb0": {
+      "segments": [
+        {
+          "text": "所以三体文明。"
+        }
+      ],
+      "next": "wei_006"
+    },
+    "wei_005_wei_006_cb1": {
+      "segments": [
+        {
+          "text": "一个新的念头在你脑海中成形。"
+        }
+      ],
+      "next": "wei_006"
+    },
+    "wei_006_wei_007_cb0": {
+      "segments": [
+        {
+          "text": "那些计算结果。"
+        }
+      ],
+      "next": "wei_007"
+    },
+    "wei_006_wei_007_cb1": {
+      "segments": [
+        {
+          "text": "你明白了。"
+        }
+      ],
+      "next": "wei_007"
+    },
+    "wei_008_eto_001_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "eto_001"
+    },
+    "wei_008_eto_001_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "eto_001"
+    },
+    "wei_008_eto_001_cb2": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "eto_001"
+    },
+    "eto_001_eto_002_cb0": {
+      "segments": [
+        {
+          "text": "你动了。"
+        }
+      ],
+      "next": "eto_002"
+    },
+    "eto_001_eto_002_cb1": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "eto_002"
+    },
+    "eto_002_eto_003_cb0": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "eto_003"
+    },
+    "eto_002_eto_003_cb1": {
+      "segments": [
+        {
+          "text": "你也提出了一个问题。"
+        }
+      ],
+      "next": "eto_003"
+    },
+    "eto_003_eto_004_cb0": {
+      "segments": [
+        {
+          "text": "你说的真相。"
+        }
+      ],
+      "next": "eto_004"
+    },
+    "eto_003_eto_004_cb1": {
+      "segments": [
+        {
+          "text": "你在利用这些人。。"
+        }
+      ],
+      "next": "eto_004"
+    },
+    "eto_003_eto_004_cb2": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "eto_004"
+    },
+    "eto_004_eto_005_cb0": {
+      "segments": [
+        {
+          "text": "你在等待答案。"
+        }
+      ],
+      "next": "eto_005"
+    },
+    "eto_004_eto_005_cb1": {
+      "segments": [
+        {
+          "text": "你被她的笃定动摇了。"
+        }
+      ],
+      "next": "eto_005"
+    },
+    "eto_005_eto_006_cb0": {
+      "segments": [
+        {
+          "text": "如果他们真的这么高尚。"
+        }
+      ],
+      "next": "eto_006"
+    },
+    "eto_005_eto_006_cb1": {
+      "segments": [
+        {
+          "text": "你沉默了。"
+        }
+      ],
+      "next": "eto_006"
+    },
+    "eto_006_eto_007_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "eto_007"
+    },
+    "eto_006_eto_007_cb1": {
+      "segments": [
+        {
+          "text": "你被这阵仗惊住了。"
+        }
+      ],
+      "next": "eto_007"
+    },
+    "eto_008_eto_009_cb0": {
+      "segments": [
+        {
+          "text": "你目送她被带走。"
+        }
+      ],
+      "next": "eto_009"
+    },
+    "eto_008_eto_009_cb1": {
+      "segments": [
+        {
+          "text": "你追上去。"
+        }
+      ],
+      "next": "eto_009"
+    },
+    "guzheng_003_guzheng_004_cb0": {
+      "segments": [
+        {
+          "text": "你忍不住看向史强。"
+        }
+      ],
+      "next": "guzheng_004"
+    },
+    "guzheng_003_guzheng_004_cb1": {
+      "segments": [
+        {
+          "text": "你感到一阵无力。"
+        }
+      ],
+      "next": "guzheng_004"
+    },
+    "guzheng_004_guzheng_005_cb0": {
+      "segments": [
+        {
+          "text": "你忍住没笑。"
+        }
+      ],
+      "next": "guzheng_005"
+    },
+    "guzheng_004_guzheng_005_cb1": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "guzheng_005"
+    },
+    "guzheng_006_guzheng_007_cb0": {
+      "segments": [
+        {
+          "text": "你说的'邪招'。"
+        }
+      ],
+      "next": "guzheng_007"
+    },
+    "guzheng_006_guzheng_007_cb1": {
+      "segments": [
+        {
+          "text": "你一瞬间理解了史强的思路。"
+        }
+      ],
+      "next": "guzheng_007"
+    },
+    "guzheng_007_guzheng_008_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "guzheng_008"
+    },
+    "guzheng_007_guzheng_008_cb1": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "guzheng_008"
+    },
+    "guzheng_008_guzheng_009_cb0": {
+      "segments": [
+        {
+          "text": "你感到一阵战栗。"
+        }
+      ],
+      "next": "guzheng_009"
+    },
+    "guzheng_008_guzheng_009_cb1": {
+      "segments": [
+        {
+          "text": "你开始意识到这个方案意味着什么。"
+        }
+      ],
+      "next": "guzheng_009"
+    },
+    "guzheng_009_guzheng_010_cb0": {
+      "segments": [
+        {
+          "text": "你要求到现场去。"
+        }
+      ],
+      "next": "guzheng_010"
+    },
+    "guzheng_009_guzheng_010_cb1": {
+      "segments": [
+        {
+          "text": "你保持了沉默。"
+        }
+      ],
+      "next": "guzheng_010"
     }
   }
 }

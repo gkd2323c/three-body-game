@@ -111,14 +111,14 @@
       "choices": [
         {
           "text": "你开始怀疑自己的选择",
-          "next": "ending_coming_closure",
+          "next": "ending_coming_003_ending_coming_closure_cb0",
           "changes": {
             "val": -3
           }
         },
         {
           "text": "你告诉自己——已经没有回头路了",
-          "next": "ending_coming_closure",
+          "next": "ending_coming_003_ending_coming_closure_cb1",
           "changes": {
             "val": -5
           }
@@ -527,6 +527,22 @@
       ],
       "description": "你跨过了那条线。不是因为生存——是因为你真的相信。你相信人类文明已经走到尽头，需要一种更高等的力量来终结它。深渊回响的时候，你是那个听懂了回声的人。",
       "closing": "你最后一次见到史强是他来逮捕你的时候。你什么都没说。他也没有。他看你的眼神里没有愤怒——只有一种确认。好像在说「果然是你」。"
+    },
+    "ending_coming_003_ending_coming_closure_cb0": {
+      "segments": [
+        {
+          "text": "你做出了选择。"
+        }
+      ],
+      "next": "ending_coming_closure"
+    },
+    "ending_coming_003_ending_coming_closure_cb1": {
+      "segments": [
+        {
+          "text": "你告诉自己。"
+        }
+      ],
+      "next": "ending_coming_closure"
     }
   }
 }
