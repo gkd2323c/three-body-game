@@ -1572,7 +1572,8 @@
           "next": "return_001",
           "changes": {
             "game_depth": 5,
-            "knows_truth": true
+            "knows_truth": true,
+            "unlockAchievement": "civilization_witness"
           }
         },
         {

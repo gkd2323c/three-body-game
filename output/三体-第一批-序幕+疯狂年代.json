@@ -1848,7 +1848,10 @@
       "choices": [
         {
           "text": "收好文件夹",
-          "next": "memory_end_002"
+          "next": "memory_end_002",
+          "changes": {
+            "unlockAchievement": "red_coast_letter"
+          }
         },
         {
           "text": "\"谢谢您，叶老师。\"",
