@@ -1,3 +1,0 @@
-# Cloudflare Pages redirects
-/play/    /play/launcher.html   200
-/play/index.html    /play/launcher.html   200
