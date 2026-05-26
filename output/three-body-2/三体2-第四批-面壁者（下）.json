@@ -1,0 +1,519 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "version": "1.0.0",
+    "theme": "night",
+    "ambient": "wind",
+    "cover": {
+      "label": "黑暗森林",
+      "tagline": "给岁月以文明，而不是给文明以岁月。"
+    },
+    "variableName": "明暗",
+    "initialVariable": 40
+  },
+  "startNodeId": "ch3_zhang_001",
+  "variables": {
+    "trust_shi": 0,
+    "trust_zhuang": 0,
+    "route_zhang": "none",
+    "knows_dark_forest": "none",
+    "zhang_stealth": 50
+  },
+  "achievements": {
+    "dream_girl": {
+      "title": "天使在人间",
+      "description": "庄颜来到庄园。"
+    },
+    "taylor_end": {
+      "title": "萤火虫",
+      "description": "见证泰勒的终结。"
+    },
+    "truth_revealed": {
+      "title": "唯一的刺杀目标",
+      "description": "得知三体文明要杀的人——是你。"
+    }
+  },
+  "nodes": {
+    "ch3_zhang_001": {
+      "chapterTitle": "教堂与子弹",
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·客厅",
+        "type": "major",
+        "description": "壁炉里的火刚刚点上。窗外是阴雨初停的黄昏，湖面泛着铅灰色的光。远处雪山的轮廓在云层中若隐若现。",
+        "arrival": "罗辑已经在庄园里住了几个月。"
+      },
+      "progress": 1,
+      "segments": [
+        { "text": "你叫罗辑。你在等人。" },
+        { "speaker": "系统", "text": "数月前。" }
+      ],
+      "choices": [
+        { "text": "回忆史强离开的那天", "next": "ch3_dashi_001" }
+      ]
+    },
+    "ch3_dashi_001": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·客厅",
+        "arrival": "大史站在客厅门口，打量着这间屋子。"
+      },
+      "progress": 2,
+      "segments": [
+        { "text": "史强从遥远的那边赶来了，风尘仆仆，脸上的疲惫藏不住。" },
+        { "speaker": "罗辑", "text": "看上去无精打采的。" },
+        { "speaker": "史强", "text": "坐飞机时间太长了吧。这地方不错。" },
+        { "text": "他摇摇头，三面有林子，湖岸离房子太近，蛙人能摸上来。你的庄园在他嘴里是一个反恐漏洞清单。" }
+      ],
+      "choices": [
+        { "text": "「你就不能浪漫点儿吗？」", "next": "ch3_dashi_002", "changes": { "val": -3 } },
+        { "text": "笑着听他说完", "next": "ch3_dashi_002", "changes": { "val": 3 } }
+      ]
+    },
+    "ch3_dashi_002": {
+      "scene": "湖畔庄园·客厅",
+      "progress": 4,
+      "segments": [
+        { "speaker": "罗辑", "text": "我打算交给你一件浪漫的工作。" },
+        { "speaker": "史强", "text": "说说看。" },
+        { "speaker": "罗辑", "text": "帮我找一个人。一个二十岁左右的女孩儿。这是计划的一部分。" },
+        { "speaker": "史强", "text": "（看着他，停了几秒）梦见的？" },
+        { "speaker": "罗辑", "text": "包括白日梦。" }
+      ],
+      "choices": [
+        { "text": "「你怎么知道？」", "next": "ch3_dashi_003" }
+      ]
+    },
+    "ch3_dashi_003": {
+      "scene": "湖畔庄园·客厅",
+      "progress": 6,
+      "segments": [
+        { "speaker": "史强", "text": "说吧，她是个什么样的人。" },
+        { "text": "你发现自己居然真的在认真地描述一个只存在于梦境里的人。说到壁炉前的火光、雪后的田野、那瓶像晚霞的眼睛的葡萄酒——你说了很久。" },
+        { "text": "史强抽完一支烟，捻灭烟头。" },
+        { "speaker": "史强", "text": "嗯，基本上够了。她文化程度大学以上博士以下，高级知识分子家庭，喜欢穿素雅的衣服，个子不高，一米六左右。" }
+      ],
+      "choices": [
+        { "text": "「大史，你真是魔鬼。」", "next": "ch3_dashi_004", "changes": { "val": 5 } }
+      ]
+    },
+    "ch3_dashi_004": {
+      "scene": "湖畔庄园·客厅",
+      "progress": 8,
+      "segments": [
+        { "speaker": "史强", "text": "没那么玄乎。都是男人嘛。" },
+        { "text": "他打开笔记本电脑。几小时后，屏幕上的画像让你像中了魔咒一样动不了。" },
+        { "speaker": "史强", "text": "有什么不像的地方，我调。" },
+        { "text": "你盯着那张脸，无法回答。" },
+        { "speaker": "史强", "text": "（合上电脑）就行了。我去找人。" }
+      ],
+      "choices": [
+        { "text": "等待", "next": "ch3_zhuyan_001" }
+      ]
+    },
+    "ch3_zhuyan_001": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·客厅",
+        "arrival": "下雨的傍晚。你坐在没有生火的壁炉前，听着外面的雨声。"
+      },
+      "progress": 10,
+      "segments": [
+        { "speaker": "系统", "text": "一些天后。" },
+        { "text": "门外的汽车声在雨里由远及近。隐约有一声很轻的女声——说了谢谢，再见之类的。" },
+        { "text": "那声音让你触电一般颤抖了一下。" }
+      ],
+      "choices": [
+        { "text": "去开门", "next": "ch3_zhuyan_002" }
+      ]
+    },
+    "ch3_zhuyan_002": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·客厅",
+        "arrival": "门开了。一个纤细的身影随着雨的气息飘了进来。"
+      },
+      "progress": 11,
+      "segments": [
+        { "text": "她站在门口，白色的衣领在昏暗中很醒目。你蹲下生火，划火柴的时候手指几乎捏不住那根火柴。火焰升起来时，她在金色的光中显影了。" },
+        { "text": "大史，你他妈的到底是怎么找到她的。" }
+      ],
+      "choices": [
+        { "text": "「你好。」", "next": "ch3_zhuyan_003" }
+      ]
+    },
+    "ch3_zhuyan_003": {
+      "scene": "湖畔庄园·客厅",
+      "progress": 13,
+      "segments": [
+        { "speaker": "庄颜", "text": "罗老师好。" },
+        { "speaker": "罗辑", "text": "外面很冷吧。" },
+        { "speaker": "庄颜", "text": "在车里不冷的。这里真的有点冷——" },
+        { "text": "她看着壁炉里的火。" },
+        { "speaker": "庄颜", "text": "真暖和，真好。" },
+        { "text": "这话和你梦中听到的一模一样。" }
+      ],
+      "choices": [
+        { "text": "「你喜欢雪山吗？」", "next": "ch3_zhuyan_004" },
+        { "text": "沉默地看着她", "next": "ch3_zhuyan_004" }
+      ]
+    },
+    "ch3_zhuyan_004": {
+      "scene": "湖畔庄园·客厅",
+      "progress": 15,
+      "segments": [
+        { "speaker": "庄颜", "text": "罗老师，我的工作是什么呢？" },
+        { "speaker": "罗辑", "text": "你学的什么？" },
+        { "speaker": "庄颜", "text": "国画。在中央美术学院，刚毕业。" }
+      ],
+      "choices": [
+        { "text": "「明天再说。」", "next": "ch3_snow_001" },
+        { "text": "「你喜欢国画——那明天带你去个地方。」", "next": "ch3_snow_001" }
+      ]
+    },
+    "ch3_snow_001": {
+      "scene": {
+        "id": "snow_mountain",
+        "name": "雪山脚下",
+        "type": "major",
+        "description": "雪线以上的世界一片洁白。纯净的雪在阴影中呈现淡蓝色，仿佛在发着微弱的荧光。远方的雪峰在阳光中把银光撒向四方。公路到这里断了，前方的路牌写着：雪崩危险。",
+        "arrival": "你们穿过森林，经过草原，把车停在雪线前。"
+      },
+      "progress": 17,
+      "segments": [
+        { "speaker": "庄颜", "text": "我画过一幅画——远看就是一张白纸，画幅上几乎全是空白。近看左下角有几枝细小的芦苇，右上角有一只几乎要消失的飞鸟。空白的中央有两个小得不能再小的人儿。" },
+        { "speaker": "罗辑", "text": "能想象出来——那画儿一定很美。" }
+      ],
+      "choices": [
+        { "text": "「你的工作就是使自己幸福快乐。」", "next": "ch3_snow_002", "changes": { "val": 5 } },
+        { "text": "「这是计划的一部分。」", "next": "ch3_snow_002", "changes": { "val": -5 } }
+      ]
+    },
+    "ch3_snow_002": {
+      "scene": "雪山脚下",
+      "progress": 19,
+      "segments": [
+        { "text": "庄颜没有回答。她看着前方那片纯白——眼睛里映着雪峰的光芒。雪很静，静得能听见彼此呼吸的声音。" },
+        { "speaker": "庄颜", "text": "那……我该怎么做呢？" },
+        { "speaker": "罗辑", "text": "做你想做的事。去你想去的地方。过你想过的生活。" },
+        { "speaker": "庄颜", "text": "可我……我什么都不需要啊。罗老师——我真的什么都不需要。" }
+      ],
+      "choices": [
+        { "text": "「那你有梦想吗？」", "next": "ch3_snow_003" }
+      ]
+    },
+    "ch3_snow_003": {
+      "scene": "雪山脚下",
+      "progress": 21,
+      "segments": [
+        { "speaker": "庄颜", "text": "我画画是给自己看的。没想过办画展什么的。" },
+        { "speaker": "罗辑", "text": "那你总梦想过爱情吧？你现在有条件了，可以去寻找。" },
+        { "text": "她笑了——那笑容里有种让人心碎的东西。" },
+        { "speaker": "庄颜", "text": "罗老师，那是能找来的吗？" },
+        { "text": "你一时说不出话。" }
+      ],
+      "choices": [
+        { "text": "「那明天呢？明天你想去哪儿？」", "next": "ch3_snow_004" },
+        { "text": "沉默地陪她站着", "next": "ch3_snow_004" }
+      ]
+    },
+    "ch3_snow_004": {
+      "scene": "雪山脚下",
+      "progress": 23,
+      "segments": [
+        { "text": "她认真地想了很长时间。" },
+        { "speaker": "庄颜", "text": "罗老师——你能带我去卢浮宫吗？" }
+      ],
+      "choices": [
+        { "text": "「当然。」", "next": "ch3_louvre_001" }
+      ]
+    },
+    "ch3_louvre_001": {
+      "scene": {
+        "id": "louvre",
+        "name": "卢浮宫",
+        "type": "major",
+        "description": "夜。玻璃金字塔在月光下像银子做的。水池里的喷泉启动时，水声在空旷的庭院中回荡。展厅里柔和的灯光照着长长的走廊——两百米长的展厅里，脚步声轻轻回荡。实际上只有你的脚步声——她走路像猫一样无声。",
+        "arrival": "坎特安排你们晚上来。"
+      },
+      "progress": 25,
+      "segments": [
+        { "text": "她在油画前停住了——那些文艺复兴时期的圣母和天使。她看了很久。" },
+        { "speaker": "庄颜", "text": "那时的画家们第一次发现了人的美。他们画的时候一定很幸福——那感觉就像我第一次看到湖和雪山一样。" },
+        { "speaker": "罗辑", "text": "文艺复兴的人文精神——现在成了一种碍事的东西。" },
+        { "text": "她听懂了。她没有反驳。" }
+      ],
+      "choices": [
+        { "text": "「去看看东方的画？」", "next": "ch3_louvre_002" }
+      ]
+    },
+    "ch3_louvre_002": {
+      "scene": "卢浮宫",
+      "progress": 28,
+      "segments": [
+        { "text": "在敦煌壁画的展柜前，你说起了王道士。她听着，目光落在那些残缺的佛像上。" },
+        { "speaker": "庄颜", "text": "三体人会保存人类的文化遗产吗？他们根本不看重我们的文明。" },
+        { "speaker": "罗辑", "text": "看重一个种族或文明的最高表现形式是什么？——斩尽杀绝。这是对一个文明最高的重视。" }
+      ],
+      "choices": [
+        { "text": "去看蒙娜丽莎", "next": "ch3_louvre_003" }
+      ]
+    },
+    "ch3_louvre_003": {
+      "scene": "卢浮宫",
+      "progress": 30,
+      "segments": [
+        { "speaker": "庄颜", "text": "看到她我想到了你们——面壁者。" },
+        { "speaker": "罗辑", "text": "她跟面壁者有什么关系？" },
+        { "speaker": "庄颜", "text": "她的微笑是智子和三体人永远理解不了的。人类的表情太微妙了——能不能创造一种表情语言？用表情和目光说话——" }
+      ],
+      "choices": [
+        { "text": "认真思考她的提议", "next": "ch3_louvre_004", "changes": { "val": 5 } },
+        { "text": "微笑着摇头", "next": "ch3_louvre_004", "changes": { "val": -3 } }
+      ]
+    },
+    "ch3_louvre_004": {
+      "scene": "卢浮宫",
+      "progress": 32,
+      "segments": [
+        { "text": "你们试了。互相凝视，不到半分钟就都笑出来。" },
+        { "speaker": "罗辑", "text": "我的信息是：今晚想请你去香榭丽舍大街吃夜宵。" },
+        { "speaker": "庄颜", "text": "我的信息是：你该刮胡子了。" }
+      ],
+      "next": "ch3_louvre_005"
+    },
+    "ch3_louvre_005": {
+      "scene": {
+        "id": "louvre",
+        "name": "卢浮宫",
+        "arrival": "第二次尝试。不笑了。"
+      },
+      "progress": 33,
+      "segments": [
+        { "text": "你们再次相互凝视。这一次你没有想笑。她的目光太清澈了——清澈到你的心跳开始加速，加速到你能听见血液冲过耳膜的声音。卢浮宫在崩塌，砖石变成红亮的岩浆穿过你们的身体——" },
+        { "text": "你不知道自己站了多久。只知道一切都湮没在一种从未体验过的——什么东西里。你不愿意给它命名。" }
+      ],
+      "changes": {
+        "addFlag": "louvre_moment",
+        "unlockAchievement": "dream_girl"
+      },
+      "next": "ch3_taylor_001"
+    },
+    "ch3_taylor_001": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·草坪",
+        "type": "major",
+        "description": "黄昏。夕阳正在雪山的边缘沉下去，湖面被染成一片金灰色。庄颜带着孩子在不远处画画。孩子的笑声断断续续地传过来。",
+        "arrival": "又过了些日子。一天傍晚。"
+      },
+      "progress": 36,
+      "segments": [
+        { "text": "一辆车停在了庄园门口。你看到来人的时候，就知道有什么事情结束了。" },
+        { "text": "泰勒站在草坪边缘。他看庄颜和孩子的那种眼神——像是一个走了很远的路的人终于看到了可以坐下来的地方。" }
+      ],
+      "choices": [
+        { "text": "迎上去", "next": "ch3_taylor_002" }
+      ]
+    },
+    "ch3_taylor_002": {
+      "scene": "湖畔庄园·草坪",
+      "progress": 38,
+      "segments": [
+        { "speaker": "泰勒", "text": "四天前，我的破壁人出现了。" },
+        { "speaker": "罗辑", "text": "这么快。" },
+        { "text": "泰勒苦笑。" },
+        { "speaker": "泰勒", "text": "他说出来了。我的整个计划——让地球舰队变成量子幽灵。用宏原子聚变杀死他们，再让他们的量子鬼魂去对抗三体人。" },
+        { "speaker": "罗辑", "text": "但PDC不会当真。他们知道这是面壁者的工作——没人会当真。" },
+        { "speaker": "泰勒", "text": "（声音突然变大）我当着全世界的面承认了。我站在广场上大喊：我是面壁者弗雷德里克·泰勒！我要消灭地球舰队！我是魔鬼！" }
+      ],
+      "choices": [
+        { "text": "沉默。你知道那种感觉", "next": "ch3_taylor_003", "changes": { "val": 5 } },
+        { "text": "「然后呢？」", "next": "ch3_taylor_003", "changes": { "val": -3 } }
+      ]
+    },
+    "ch3_taylor_003": {
+      "scene": "湖畔庄园·草坪",
+      "progress": 40,
+      "segments": [
+        { "speaker": "泰勒", "text": "他们对面壁者微笑。他们说我装得真像。他们觉得我还在工作。" },
+        { "text": "泰勒大笑起来，那笑声里有你从未在一个人类脸上看到过的东西。" },
+        { "speaker": "泰勒", "text": "我们怎么会被置于如此滑稽的境地。罗辑博士——有办法脱身。真的有。" }
+      ],
+      "choices": [
+        { "text": "「你需要休息。」", "next": "ch3_taylor_004" }
+      ]
+    },
+    "ch3_taylor_004": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·湖边",
+        "arrival": "他说想去湖边走走。"
+      },
+      "progress": 42,
+      "segments": [
+        { "text": "你看着他走向湖边。暮色苍茫。他的背影越来越小。" },
+        { "text": "你站着没动。" }
+      ],
+      "choices": [
+        { "text": "追上去", "next": "ch3_taylor_005", "changes": { "val": 5 } },
+        { "text": "留在原地", "next": "ch3_taylor_005", "changes": { "val": -5 } }
+      ]
+    },
+    "ch3_taylor_005": {
+      "scene": "湖畔庄园·湖边",
+      "progress": 43,
+      "segments": [
+        { "text": "你追了几步。然后你听到了一声沉闷的响动——不很大，但在黄昏的寂静中格外清晰。" },
+        { "text": "是枪声。" }
+      ],
+      "changes": {
+        "addFlag": "seen_taylor_death",
+        "unlockAchievement": "taylor_end"
+      },
+      "next": "ch3_taylor_006"
+    },
+    "ch3_taylor_006": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·客厅",
+        "arrival": "深夜。壁炉里的火快熄了。"
+      },
+      "progress": 45,
+      "segments": [
+        { "text": "庄颜没有睡。她坐在壁炉前等你回来。你进门的时候，她没有问泰勒去了哪里。" },
+        { "speaker": "庄颜", "text": "我们这样生活，真的是面壁计划的一部分吗？" },
+        { "text": "你看着她——火光在她脸上跳动。" },
+        { "speaker": "罗辑", "text": "当然。这有什么疑问吗？" }
+      ],
+      "choices": [
+        { "text": "「你只需要幸福——这是你的责任。」", "next": "ch3_aftermath_001", "changes": { "val": -5 } },
+        { "text": "沉默。你不想再撒谎了", "next": "ch3_aftermath_001", "changes": { "val": 5, "addFlag": "zhuangyan_truth" } }
+      ]
+    },
+    "ch3_aftermath_001": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·客厅",
+        "arrival": "之后的几天。"
+      },
+      "progress": 47,
+      "segments": [
+        { "text": "泰勒的死没有上新闻。PDC把它定性为「面壁计划的一部分」。人类的第一个面壁者就这样消失了——像一颗投入深水的石子，波纹还没散开就被更大的浪吞没了。" },
+        { "text": "一天早上醒来——你觉得家里有什么不对。安静得过分了。" }
+      ],
+      "choices": [
+        { "text": "去育儿室", "next": "ch3_aftermath_002" }
+      ]
+    },
+    "ch3_aftermath_002": {
+      "scene": "湖畔庄园·育儿室",
+      "progress": 49,
+      "segments": [
+        { "text": "灯亮着。床已经收拾整齐。小床上放着一张画——那是庄颜画的两幅你最爱的画之一：几乎全白的画面上，左下角有几枝芦苇，右上角有一只飞鸟，中央有两个小得不能再小的人儿。" },
+        { "text": "空白中有一行娟秀的字：" }
+      ],
+      "choices": [
+        { "text": "读那行字", "next": "ch3_aftermath_003" }
+      ]
+    },
+    "ch3_aftermath_003": {
+      "scene": "湖畔庄园·育儿室",
+      "progress": 50,
+      "segments": [
+        { "text": "亲爱的，我们在末日等你。" },
+        { "text": "你拿着那幅画走进客厅。壁炉的余烬发着暗红色的光——一切都在融化。" },
+        { "text": "你伸手去拿电话——但门廊外传来了脚步声。" }
+      ],
+      "choices": [
+        { "text": "开门", "next": "ch3_saji_001" }
+      ]
+    },
+    "ch3_saji_001": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·门廊",
+        "arrival": "雨还没有停。"
+      },
+      "progress": 52,
+      "segments": [
+        { "text": "门廊上站着一个人。纤细的身影，不是庄颜。" },
+        { "speaker": "罗辑", "text": "您好。" },
+        { "speaker": "萨伊", "text": "罗辑博士。" }
+      ],
+      "choices": [
+        { "text": "「我妻子和孩子呢？」", "next": "ch3_saji_002" }
+      ]
+    },
+    "ch3_saji_002": {
+      "scene": "湖畔庄园·门廊",
+      "progress": 54,
+      "segments": [
+        { "speaker": "萨伊", "text": "她们在末日等你。" },
+        { "speaker": "罗辑", "text": "这是绑架——这是犯罪。" },
+        { "speaker": "萨伊", "text": "这是我们能让你工作的唯一方法。PDC经过全面考察，认为你的计划不是庄园和壁炉——所以要采取行动促使你工作。" }
+      ],
+      "choices": [
+        { "text": "「我说过这是计划的一部分！」", "next": "ch3_saji_003" }
+      ]
+    },
+    "ch3_saji_003": {
+      "scene": "湖畔庄园·门廊",
+      "progress": 56,
+      "segments": [
+        { "speaker": "萨伊", "text": "她们还在。在未来等你。你一直是一个冷静的人——在这种时候一定要更冷静。即使不为全人类，也为了她们。" },
+        { "text": "你靠着柱子滑坐下来。雨声很大。" }
+      ],
+      "choices": [
+        { "text": "「为什么是我？」", "next": "ch3_saji_004" }
+      ]
+    },
+    "ch3_saji_004": {
+      "scene": "湖畔庄园·门廊",
+      "progress": 58,
+      "segments": [
+        { "speaker": "萨伊", "text": "因为在全人类中，你是唯一一个三体文明要杀的人。" },
+        { "text": "你猛地抬起头。" }
+      ],
+      "choices": [
+        { "text": "「那起车祸——」", "next": "ch3_saji_005", "changes": { "addFlag": "saji_visited", "unlockAchievement": "truth_revealed" } }
+      ]
+    },
+    "ch3_saji_005": {
+      "scene": "湖畔庄园·门廊",
+      "progress": 60,
+      "segments": [
+        { "speaker": "萨伊", "text": "那起车祸其实是针对你的，只是意外撞中了你的女友。指令直接来自三体世界。这是它们迄今为止发出的唯一一次刺杀命令。" },
+        { "text": "你靠着柱子，努力回忆——但什么都想不出来。" },
+        { "speaker": "萨伊", "text": "你只是一个普通人。你没有超能力。但三体世界怕你。罗辑博士——请做自己的破壁人。找出这是为什么。" }
+      ],
+      "choices": [
+        { "text": "目送她离去", "next": "ch3_saji_006" }
+      ]
+    },
+    "ch3_saji_006": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园·门廊",
+        "arrival": "车灯消失在雨雾中。"
+      },
+      "progress": 62,
+      "segments": [
+        { "text": "你站在门廊下。雨渐渐停了。" },
+        { "text": "风大了起来，刮走了夜空中的乌云。当雪山和一轮明月都露出来的时候，整个庄园沐浴在一片银光中。" },
+        { "text": "你最后一次看了一眼这个伊甸园。" },
+        { "text": "该走了。" }
+      ],
+      "next": "ch3_batch4_end"
+    },
+    "ch3_batch4_end": {
+      "isEnding": true,
+      "title": "上部·面壁者（下）",
+      "type": "NORMAL ENDING",
+      "progress": 65,
+      "description": "罗辑终于知道了真相：三体世界只杀一个人——就是他。他不知道原因。但他知道，从现在起，那个在伊甸园里醉生梦死的罗辑已经死了。\n\n他的前方是冰湖、是星空、是一个他还没有完全想明白的念头——关于宇宙、关于森林、关于黑暗中的猎人。",
+      "closing": "面壁者罗辑，你是自己的破壁人。"
+    }
+  }
+}

@@ -8,7 +8,11 @@ SITE = os.path.join(REPO, "site", "three-body-2")
 VALIDATOR = os.path.join(REPO, "skills", "scripts", "validate.py")
 
 BATCH_TRANSITIONS = {
-    # "end_node": "next_start_node",
+    "batch1_end": "ch1_wu_001",           # 第一批(序章)→第二批
+    "ch1_batch2_end": "ch2_luoj_001",     # 第二批(上部·面壁者·上)→第三批
+    "ch2_batch3_end": "ch3_zhang_001",    # 第三批(上部·面壁者·中)→第四批
+    "ch3_batch4_end": "ch4_bunker_001",    # 第四批→第五批(咒语·上)
+    "ch4_batch5_end": "ch5_zhang_001",     # 第五批(咒语·上)→第六批
 }
 
 

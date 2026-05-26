@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "theme": "night",
+    "ambient": "wind",
+    "cover": {
+      "label": "黑暗森林",
+      "tagline": "给岁月以文明，而不是给文明以岁月。"
+    },
+    "variableName": "明暗",
+    "initialVariable": 40
+  },
+  "startNodeId": "ch4_bunker_001",
+  "variables": {
+    "trust_shi": 0,
+    "trust_zhuang": 0,
+    "route_zhang": "none",
+    "knows_dark_forest": "none",
+    "zhang_stealth": 50
+  },
+  "achievements": {
+    "ice_awakening": {
+      "title": "冰湖",
+      "description": "在冰湖中看见真相。"
+    },
+    "curse_caster": {
+      "title": "咒语",
+      "description": "向187J3X1发送咒语。"
+    },
+    "first_blood": {
+      "title": "基因导弹",
+      "description": "被ETO的基因武器击中，被迫冬眠。"
+    }
+  },
+  "nodes": {
+    "ch4_bunker_001": {
+      "chapterTitle": "第三章：咒语",
+      "scene": {
+        "id": "deep_bunker",
+        "name": "地下十层·指挥所",
+        "type": "major",
+        "description": "走廊里只有通风管的低沉嗡鸣。每一道门都是厚重的密封型，墙上隐约可见褪色的标语残迹——只能看清几个字：深挖洞、广积粮、不称霸。这里是冷战时期的人防工事，深入地下十层。",
+        "arrival": "你被带到了这里。"
+      },
+      "progress": 1,
+      "ambient": "static",
+      "segments": [
+        { "text": "你叫罗辑。庄颜和孩子已经被带走了三个星期。你不知道她们在哪里。萨伊说她们在未来等你。" },
+        { "text": "你站在这个地下房间的中央。墙壁是水泥的，没有窗。天花板上有一盏灯，发出惨白的光。角落里有一张行军床、一张桌子、一把椅子。笔记本电脑的屏幕亮着。" }
+      ],
+      "choices": [
+        { "text": "坐下，面对电脑", "next": "ch4_bunker_002" },
+        { "text": "在房间里来回走", "next": "ch4_bunker_002" }
+      ]
+    },
+    "ch4_bunker_002": {
+      "scene": "地下十层·指挥所",
+      "progress": 3,
+      "ambient": "static",
+      "segments": [
+        { "text": "无处可去，无处可逃。你只有一件事可做：思考。" },
+        { "text": "你重复着叶文洁的话，一遍又一遍。那些字已经被你磨得发亮：生存是文明的第一需要。文明不断增长和扩张，宇宙中的物质总量保持不变。" },
+        { "text": "只有两句话。但你知道，重要的东西就藏在这里面。" }
+      ],
+      "choices": [
+        { "text": "从两条公理开始推演", "next": "ch4_bunker_003", "changes": { "val": 5 } },
+        { "text": "先想叶文洁为什么找你", "next": "ch4_bunker_003", "changes": { "val": -3 } }
+      ]
+    },
+    "ch4_bunker_003": {
+      "scene": "地下十层·指挥所",
+      "progress": 5,
+      "segments": [
+        { "text": "几天过去了。你吃得很简单，睡得很少。笔记本电脑上记满了推演，但没有一条走得通。" },
+        { "text": "问题出在信息不足上。叶文洁提到了猜疑链和技术爆炸——但她说没有时间了，没来得及解释。" },
+        { "text": "你盯着天花板。混凝土的接缝处有一道细细的裂纹。你盯着它看了很久。" }
+      ],
+      "choices": [
+        { "text": "申请外出散步", "next": "ch4_lake_001" }
+      ]
+    },
+    "ch4_lake_001": {
+      "scene": {
+        "id": "estate_winter",
+        "name": "湖畔庄园·冬季",
+        "type": "major",
+        "description": "庄园被灰白色的天空压着。湖面结了薄冰，岸边的枯草在寒风中贴着地面。远方的雪山轮廓在低垂的云层中若隐若现。一切都褪了色。",
+        "arrival": "他们允许你每天在湖边散步一小时，在警卫的视线范围内。"
+      },
+      "progress": 7,
+      "ambient": "wind",
+      "segments": [
+        { "text": "你沿着湖岸走。枯草在脚下发出细碎的折断声。你低头走着，脑子里全是那些推演——猜疑链、技术爆炸、两条公理。" },
+        { "text": "一切都停在某个地方。你靠近了，但就是够不到。" }
+      ],
+      "choices": [
+        { "text": "继续沿着湖岸走", "next": "ch4_lake_002" }
+      ]
+    },
+    "ch4_lake_002": {
+      "scene": "湖畔庄园·冬季",
+      "progress": 9,
+      "ambient": "wind",
+      "segments": [
+        { "text": "你开始晚上出来。白天太吵——有警卫的脚步声、对讲机的电流声。夜里的湖面是漆黑的，只有远处的雪山反射着一点月光。" },
+        { "text": "寒冷让你的思维变得锐利。你发现自己不再焦躁了——恐惧还在，但被冻住了。" }
+      ],
+      "choices": [
+        { "text": "走上冰面", "next": "ch4_lake_003", "changes": { "val": 5 } },
+        { "text": "站在岸边看", "next": "ch4_lake_003", "changes": { "val": -3 } }
+      ]
+    },
+    "ch4_lake_003": {
+      "scene": {
+        "id": "estate_winter",
+        "name": "湖面",
+        "arrival": "你试探着迈出一步，冰面发出嘎吱声，但没有裂。"
+      },
+      "progress": 11,
+      "ambient": "wind",
+      "segments": [
+        { "text": "你慢慢走到湖心。四周的湖岸在夜色中模糊了。这是一个平滑的平面，一个寒冷而平整的思想平台。" },
+        { "text": "你站定。周围的一切都消失了。只有你和星空。" },
+        { "text": "然后你想通了。" }
+      ],
+      "next": "ch4_lake_004"
+    },
+    "ch4_lake_004": {
+      "scene": "湖面",
+      "progress": 12,
+      "effect": "cold",
+      "segments": [
+        { "text": "不是全部——只是一个方向。一条通往答案的路。但你已经能看到它的轮廓了。" },
+        { "text": "你感到脚下的冰在震动。很轻微——就像你第一次在杨冬墓前感到的那种震动。你还没来得及反应——" },
+        { "effect": "drown" },
+        { "text": "冰碎了。" }
+      ],
+      "choices": [
+        { "text": "挣扎着浮上来", "next": "ch4_lake_005" }
+      ]
+    },
+    "ch4_lake_005": {
+      "scene": "湖面",
+      "progress": 14,
+      "effect": "drown",
+      "segments": [
+        { "text": "刺骨的寒冷像闪电一样击穿了你。你下沉了大约两秒，撞到了水面——不深，但足够冷。冷到你的肺在胸腔里缩成了一团。" },
+        { "text": "你上浮，头冲出水面，吐出一口水。你想爬上冰面，但冰缘一压就碎。你试了三次。手已经开始失去知觉。" }
+      ],
+      "choices": [
+        { "text": "把羽绒服铺在冰面上再爬一次", "next": "ch4_lake_006" }
+      ]
+    },
+    "ch4_lake_006": {
+      "scene": "湖面",
+      "progress": 16,
+      "effect": "cold",
+      "segments": [
+        { "text": "你脱下羽绒服，铺在面前的冰面上，竭尽全力爬上去。这一次，冰没有碎。你趴在冰上，剧烈地喘气。" },
+        { "text": "你没有抬头。但你知道了——星空从这一刻起，在你的眼里已经是另一个样子了。" },
+        { "text": "面壁者罗辑。我是你的破壁人。" }
+      ],
+      "changes": {
+        "addFlag": "fell_into_ice",
+        "unlockAchievement": "ice_awakening"
+      },
+      "next": "ch4_bunker_004"
+    },
+    "ch4_bunker_004": {
+      "scene": "地下十层·指挥所",
+      "progress": 18,
+      "segments": [
+        { "text": "你裹着毯子坐在床上。笔记本电脑的屏幕光映在你的脸上。你在搜索：一颗50光年外的恒星——187J3X1——带有行星。" },
+        { "text": "你盯着那颗恒星的数据看了很久。然后你笑了——不是高兴，是一种「原来如此」的确认感。" },
+        { "speaker": "罗辑", "text": "我需要一个更安全的地方。" }
+      ],
+      "choices": [
+        { "text": "叫坎特来", "next": "ch4_bunker_005" }
+      ]
+    },
+    "ch4_bunker_005": {
+      "scene": {
+        "id": "deep_bunker",
+        "name": "地下十层·指挥所",
+        "arrival": "坎特来了。"
+      },
+      "progress": 20,
+      "segments": [
+        { "speaker": "罗辑", "text": "我需要跟天文学家谈谈。" },
+        { "text": "坎特看了你一眼，没有问原因。他知道你不说。他是专业的。" }
+      ],
+      "choices": [
+        { "text": "等待林格到来", "next": "ch4_linger_001" }
+      ]
+    },
+    "ch4_linger_001": {
+      "scene": "地下十层·指挥所",
+      "progress": 22,
+      "segments": [
+        { "text": "天文学家林格坐在你对面。你问了那个问题：地球的位置暴露了吗？" },
+        { "speaker": "林格", "text": "没有。银河系有近两千亿颗恒星。我们给三体人发的信息只能让他们知道大致方向，不能精确定位。就像在沙漠里喊一声，没人知道是哪粒沙在喊。" },
+        { "speaker": "罗辑", "text": "那如果我要向宇宙标示一颗恒星的位置——怎么做？" }
+      ],
+      "choices": [
+        { "text": "听完林格的解释", "next": "ch4_linger_002" }
+      ]
+    },
+    "ch4_linger_002": {
+      "scene": "地下十层·指挥所",
+      "progress": 24,
+      "segments": [
+        { "speaker": "林格", "text": "用恒星间的相对位置。找到目标恒星周围足够多的恒星，把它们的三维相对位置坐标发出去——这就像指纹，在宇宙中几乎是独一无二的。" },
+        { "speaker": "罗辑", "text": "接收者需要拥有银河系的全三维模型才能解读——" },
+        { "speaker": "林格", "text": "那当然。但这模型也不难建——对有能力收到你的信息的文明来说，这应该是基本功。" },
+        { "text": "你点了点头。就是这样。" }
+      ],
+      "choices": [
+        { "text": "准备你的咒语", "next": "ch4_pdc_001" }
+      ]
+    },
+    "ch4_pdc_001": {
+      "scene": {
+        "id": "un_hall",
+        "name": "联合国·行星防御理事会",
+        "type": "major",
+        "description": "大圆桌。各国代表的脸上表情不一——困惑、好奇、不耐烦。屏幕上实时显示着你的脸。你是通过视频参会的。",
+        "arrival": "你不打算亲自去。"
+      },
+      "progress": 27,
+      "segments": [
+        { "speaker": "PDC轮值主席", "text": "面壁者罗辑，请陈述你的计划。" },
+        { "text": "你说得很慢。" },
+        { "speaker": "罗辑", "text": "通过太阳的电波放大功能，向宇宙发送一份信息。信息只包括三幅简单的图形。以及一个标识——标明187J3X1的位置。" }
+      ],
+      "choices": [
+        { "text": "继续说", "next": "ch4_pdc_002" }
+      ]
+    },
+    "ch4_pdc_002": {
+      "scene": "联合国·行星防御理事会",
+      "progress": 29,
+      "segments": [
+        { "speaker": "美国代表", "text": "这是什么？" },
+        { "speaker": "罗辑", "text": "一句咒语。" },
+        { "text": "会场沉默了。" },
+        { "speaker": "PDC轮值主席", "text": "针对谁的咒语？" },
+        { "speaker": "罗辑", "text": "187J3X1恒星所拥有的行星。当然，也可能直接作用到恒星上。" },
+        { "speaker": "美国代表", "text": "（把文件扔到桌上）很好。我们终于有了一个神。" }
+      ],
+      "choices": [
+        { "text": "继续陈述", "next": "ch4_pdc_003" }
+      ]
+    },
+    "ch4_pdc_003": {
+      "scene": "联合国·行星防御理事会",
+      "progress": 31,
+      "segments": [
+        { "speaker": "罗辑", "text": "这是一次实验。用于证实我自己的战略设想。真正的实施要在末日之战到来时。" },
+        { "speaker": "PDC轮值主席", "text": "那在这一百年或更长的时间里——你打算做什么？" },
+        { "speaker": "罗辑", "text": "冬眠。当观测到咒语在187J3X1星系上发生作用时叫醒我。" }
+      ],
+      "next": "ch4_pdc_004"
+    },
+    "ch4_pdc_004": {
+      "scene": "联合国·行星防御理事会",
+      "progress": 32,
+      "segments": [
+        { "text": "没有人反对，也许是因为没有人当真。" },
+        { "text": "你关掉了视频。" }
+      ],
+      "changes": {
+        "addFlag": "curse_sent",
+        "unlockAchievement": "curse_caster"
+      },
+      "next": "ch4_sick_001"
+    },
+    "ch4_sick_001": {
+      "scene": {
+        "id": "deep_bunker",
+        "name": "地下十层·指挥所",
+        "arrival": "咒语发送的前一天——你开始流鼻涕。"
+      },
+      "progress": 33,
+      "segments": [
+        { "text": "你以为是感冒。轻流感——医生说三天就好。" },
+        { "text": "但到了夜里，温度计上的数字开始往上冲。你裹着被子发抖，牙齿在撞击中发出哒哒的声响。" }
+      ],
+      "choices": [
+        { "text": "叫医生", "next": "ch4_sick_002" }
+      ]
+    },
+    "ch4_sick_002": {
+      "scene": "地下十层·指挥所",
+      "progress": 35,
+      "segments": [
+        { "text": "你开始呕吐。不是普通的不舒服——是身体在对抗什么东西，而且在下风。" },
+        { "text": "你在半昏迷中听到门外有人在大喊大叫。很多脚步声。有人喊了一句你听不太清的话——好像是：基因武器。" },
+        { "effect": "blackout" },
+        { "text": "你最后的意识是：有人把你抬上了担架。天花板上的灯一盏一盏地掠过。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch4_sick_003" }
+      ]
+    },
+    "ch4_sick_003": {
+      "scene": {
+        "id": "hibernation_room",
+        "name": "冬眠中心",
+        "type": "major",
+        "description": "惨白的灯光照着整齐排列的冬眠舱。空气中有一股消毒水和冷凝剂混合的气味。几名穿白大褂的人在你身边忙碌着。",
+        "arrival": "你恢复了微弱的意识。"
+      },
+      "progress": 37,
+      "effect": "cold",
+      "segments": [
+        { "speaker": "一个声音", "text": "基因导弹——专门针对他的基因特征设计的病毒。对别人只是轻流感，对他——致命。" },
+        { "text": "你想说话，但喉咙里发不出声音。" },
+        { "speaker": "另一个声音", "text": "肝脏和心肺功能已经衰竭。现代医疗无能为力。" },
+        { "speaker": "第一个声音", "text": "尽快冬眠吧。" }
+      ],
+      "changes": {
+        "unlockAchievement": "first_blood"
+      },
+      "choices": [
+        { "text": "闭上眼睛", "next": "ch4_sick_004" }
+      ]
+    },
+    "ch4_sick_004": {
+      "scene": "冬眠中心",
+      "progress": 39,
+      "effect": "cold",
+      "segments": [
+        { "text": "你感到寒冷。从体内发出的寒冷——像光芒一样扩散出去，冻结了整个世界。" },
+        { "text": "雪白。你没有看到雪白。你本身就是雪白的一部分。在无边的白色之中，出现了一个小小的黑点——越来越近——是一个熟悉的身影。" },
+        { "text": "庄颜。她围着一条红色的围巾，牵着孩子的手。孩子在雪中向你拼命挥着两只小手。" }
+      ],
+      "choices": [
+        { "text": "想要追上去——但动不了", "next": "ch4_sick_005" }
+      ]
+    },
+    "ch4_sick_005": {
+      "scene": "冬眠中心",
+      "progress": 40,
+      "effect": "cold",
+      "segments": [
+        { "text": "她消失了。白色缩成一条极细的银丝，在无边的黑暗中，这细丝就是你残存意识的全部。" },
+        { "text": "这是时间之线。细丝本身是静止的，向两个方向无限延伸。你的灵魂穿在丝上，以恒定的速度轻轻滑向不可知的未来。" }
+      ],
+      "next": "ch4_sick_006"
+    },
+    "ch4_sick_006": {
+      "scene": {
+        "id": "hibernation_room",
+        "name": "冬眠中心",
+        "arrival": "——"
+      },
+      "progress": 42,
+      "effect": "breath",
+      "segments": [
+        { "speaker": "系统", "text": "两天后——" },
+        { "text": "一束地球发出的强功率电波射向太阳。电波穿透了对流层，到达辐射层的能量镜面，在增益反射中被放大了几亿倍。" },
+        { "text": "携带着面壁者罗辑的咒语，以光速飞向宇宙。" }
+      ],
+      "next": "ch4_batch5_end"
+    },
+    "ch4_batch5_end": {
+      "isEnding": true,
+      "title": "中部·咒语（上）",
+      "type": "NORMAL ENDING",
+      "progress": 45,
+      "description": "面壁者罗辑进入冬眠。他将在两个世纪后醒来——如果他还醒得过来的话。\n\n咒语已经在路上。以光速飞行五十年后，它将到达那个星系。至于会发生什么——没有人知道。连罗辑自己也不知道。他只是猜。\n\n在另一个地方，另一个人也在准备他自己的行动。他的咒语不是电波——是陨石。",
+      "closing": "发射。"
+    }
+  }
+}

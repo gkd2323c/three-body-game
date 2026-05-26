@@ -1,0 +1,705 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "version": "1.0.0",
+    "description": "宇宙就是一座黑暗森林，每个文明都是带枪的猎人。",
+    "theme": "noir",
+    "ambient": "static",
+    "cover": {
+      "label": "黑暗森林",
+      "tagline": "给岁月以文明，而不是给文明以岁月。"
+    },
+    "variableName": "明暗",
+    "initialVariable": 40
+  },
+  "startNodeId": "ch2_luoj_001",
+  "variables": {
+    "trust_shi": 0,
+    "trust_zhuang": 0,
+    "route_zhang": "none",
+    "knows_dark_forest": "none",
+    "zhang_stealth": 50
+  },
+  "achievements": {
+    "wallfacer_chosen": {
+      "title": "第四位面壁者",
+      "description": "被选为面壁者，人类历史上最诡异的使命。"
+    },
+    "paradise_found": {
+      "title": "计划的一部分",
+      "description": "在人间找到天堂。"
+    }
+  },
+  "nodes": {
+    "ch2_luoj_001": {
+      "chapterTitle": "罗辑",
+      "scene": {
+        "id": "hotel_room",
+        "name": "酒店房间",
+        "type": "major",
+        "description": "窗帘拉着，透进来的光把整个房间染成暖黄色。被单是白色的，空调嗡嗡响着。床头柜上放着一杯没喝完的红酒。",
+        "arrival": "你醒来的时候，阳光正从窗帘缝隙里漏进来——一道金色的线，恰好落在你的眼皮上。"
+      },
+      "progress": 1,
+      "ambient": "none",
+      "segments": [
+        { "text": "你叫罗辑。在大学里教社会学。" },
+        { "text": "你绵软地躺在床上，用没睡醒的眼睛看着一个正在穿衣服的背影。剪影映在窗帘上，像一部老黑白电影。很漂亮——但你死活想不起她的名字。" }
+      ],
+      "choices": [
+        { "text": "翻个身，不去想了", "next": "ch2_luoj_002", "changes": { "val": -2 } },
+        { "text": "坐起来，打开电视", "next": "ch2_luoj_002", "changes": { "val": 2 } }
+      ]
+    },
+    "ch2_luoj_002": {
+      "scene": "酒店房间",
+      "progress": 2,
+      "segments": [
+        { "text": "电视开着，没有声音。画面是联合国会场的圆桌——一大堆人在讨论什么。你看了几秒，不感兴趣。" },
+        { "speaker": "她（头也不回）", "text": "你好像真关心似的。" }
+      ],
+      "choices": [
+        { "text": "「关心一下嘛——我好歹是个学者。」", "next": "ch2_luoj_003", "changes": { "val": 2 } },
+        { "text": "「你说得对，不关心。」", "next": "ch2_luoj_003", "changes": { "val": -2 } }
+      ]
+    },
+    "ch2_luoj_003": {
+      "scene": "酒店房间",
+      "progress": 3,
+      "segments": [
+        { "text": "她从镜子里看着你——那种看透了你但又懒得说透的眼神。" },
+        { "speaker": "她", "text": "瞧你那德性，也算学者？" },
+        { "speaker": "你", "text": "青年学者。到现在没什么建树，那是因为我不屑于努力。其实我这人充满灵感，有时候我随便转一下脑子都比某些人穷经皓首一辈子强。" },
+        { "speaker": "她", "text": "因为你那个什么……宇宙社会学？" },
+        { "speaker": "你", "text": "你也知道？那是我差点儿出名的东西。" }
+      ],
+      "choices": [
+        { "text": "吹嘘一番", "next": "ch2_luoj_004", "changes": { "val": 3 } },
+        { "text": "算了，懒得说了", "next": "ch2_luoj_004", "changes": { "val": -3 } }
+      ]
+    },
+    "ch2_luoj_004": {
+      "scene": "酒店房间",
+      "progress": 5,
+      "segments": [
+        { "text": "她没接你的话。收拾好了，背着那个小包转过身来。" },
+        { "speaker": "她", "text": "走了。" },
+        { "speaker": "你", "text": "再见。" },
+        { "text": "你们简单握了手。她转身出门，那个小包甩了起来——" },
+        { "effect": "blur" },
+        { "text": "然后一切都变了。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch2_luoj_005" }
+      ]
+    },
+    "ch2_luoj_005": {
+      "scene": {
+        "id": "hotel_room",
+        "name": "酒店门口",
+        "arrival": "——"
+      },
+      "progress": 6,
+      "segments": [
+        { "effect": "flash" },
+        { "text": "一声巨响。两辆车在街心迎头相撞。" },
+        { "text": "后面一辆POLO为躲开事故车，高速直冲你们站的位置而来！" },
+        { "text": "你被那甩过来的小包绊了一下，仰面摔倒——恰恰躲过了那辆车的正面撞击。" },
+        { "text": "但你没有躲过那个声音。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch2_luoj_006" }
+      ]
+    },
+    "ch2_luoj_006": {
+      "scene": "酒店门口",
+      "progress": 7,
+      "ambient": "static",
+      "segments": [
+        { "effect": "silence" },
+        { "text": "她落在车后的路边。像一个没有骨骼的布娃娃。" },
+        { "text": "她滚过的地面上有一道血迹——形状像一个有意义的符号。看着这个血符，你在那一瞬间想起了她的名字。" },
+        { "text": "但那已经不重要了。" }
+      ],
+      "next": "ch2_bunker_001"
+    },
+    "ch2_bunker_001": {
+      "chapterTitle": "",
+      "scene": {
+        "id": "bunker",
+        "name": "地下人防工事",
+        "type": "major",
+        "description": "很深的地下。电梯是那种老式的、由人扳动一个手柄操作的货梯，楼层数字显示你降到了地下十层。房间不大，有一张单人床和一些简单的生活用品，角落里扔着一架落满灰的红色转盘电话机。空气里有股潮湿的霉味。",
+        "arrival": "你再次睁开眼睛的时候，天花板是灰色的。"
+      },
+      "progress": 10,
+      "ambient": "static",
+      "segments": [
+        { "text": "你不知道自己怎么到了这里。你只知道门开了，一个身材粗壮的中年人走了进来。" }
+      ],
+      "choices": [
+        { "text": "坐起来", "next": "ch2_bunker_002" },
+        { "text": "躺着不动", "next": "ch2_bunker_002" }
+      ]
+    },
+    "ch2_bunker_002": {
+      "scene": "地下人防工事",
+      "progress": 11,
+      "segments": [
+        { "speaker": "中年人", "text": "罗教授，我来陪陪你。不过你也就刚进来，不至于闷得慌吧。" },
+        { "speaker": "你", "text": "您是警察吗？" },
+        { "speaker": "中年人", "text": "以前是吧。我叫史强。" }
+      ],
+      "choices": [
+        { "text": "戒备地看着他", "next": "ch2_bunker_003", "changes": { "val": -3 } },
+        { "text": "放松一点", "next": "ch2_bunker_003", "changes": { "val": 3 } },
+        { "text": "不回答，等着", "next": "ch2_bunker_003", "changes": { "val": -1 } }
+      ]
+    },
+    "ch2_bunker_003": {
+      "scene": "地下人防工事",
+      "progress": 12,
+      "segments": [
+        { "text": "史强从兜里掏出烟来，四下看看应该往哪儿弹灰。他显然不把自己当外人。" },
+        { "speaker": "史强", "text": "坐飞机的时间太长了吧？你看起来无精打采的。" },
+        { "speaker": "你", "text": "我没坐飞机——我昨天还在酒店里。" },
+        { "speaker": "史强", "text": "哦。那可能是我记错了。" },
+        { "text": "他明显在装傻。但你不确定他为什么装傻。" }
+      ],
+      "choices": [
+        { "text": "「那起车祸——」", "next": "ch2_bunker_004" },
+        { "text": "沉默，等他先开口", "next": "ch2_bunker_004" }
+      ]
+    },
+    "ch2_bunker_004": {
+      "scene": "地下人防工事",
+      "progress": 13,
+      "segments": [
+        { "speaker": "你", "text": "那明明就是一场意外交通事故。先是两辆车相撞，后面那辆车为了躲闪才撞了她——" },
+        { "speaker": "史强", "text": "我可没提这事儿啊。是你先提的。" },
+        { "text": "他抬头看着你，那双似乎总带着笑意的眼神里藏着一股无形的杀气。你的后脊梁开始发凉。" }
+      ],
+      "choices": [
+        { "text": "「你们怀疑我？」", "next": "ch2_bunker_005", "changes": { "val": -5 } },
+        { "text": "往后靠，盯住他的眼睛", "next": "ch2_bunker_005", "changes": { "val": 5 } }
+      ]
+    },
+    "ch2_bunker_005": {
+      "scene": "地下人防工事",
+      "progress": 15,
+      "segments": [
+        { "speaker": "史强", "text": "没什么。你要相信组织，也要相信你自己。反正离上路还早，就在这儿凑合着睡会儿吧。" },
+        { "speaker": "你", "text": "上路？" },
+        { "text": "就在这时响起了敲门声。一个年轻人走进来，手里拎着一个大提包。" },
+        { "speaker": "年轻人", "text": "史队，提前了，现在就出发。" }
+      ],
+      "choices": [
+        { "text": "跟着走", "next": "ch2_bunker_006" }
+      ]
+    },
+    "ch2_bunker_006": {
+      "scene": {
+        "id": "bunker",
+        "name": "地下人防工事",
+        "arrival": "你被带到另一个出口。"
+      },
+      "progress": 16,
+      "segments": [
+        { "text": "你换上了一件厚重的夹克——防弹衣。史强迫不及待地把它套在你身上，拍了拍你的肩。" },
+        { "speaker": "史强", "text": "穿上吧，还算透气舒服的。" },
+        { "speaker": "你", "text": "有人要杀我？" },
+        { "speaker": "史强", "text": "（咧嘴笑）谁说得准呢。咱们走吧。" }
+      ],
+      "choices": [
+        { "text": "跟他走", "next": "ch2_bunker_007" }
+      ]
+    },
+    "ch2_bunker_007": {
+      "scene": {
+        "id": "bunker",
+        "name": "地下人防工事·出口大厅",
+        "arrival": "地下停车场改装的临时指挥部。"
+      },
+      "progress": 17,
+      "ambient": "static",
+      "segments": [
+        { "text": "这里停满了车，引擎发动的声音在低矮的空间里反复撞击。全副武装的士兵在车间穿行，有人在用步话机喊话。" },
+        { "speaker": "史强", "text": "沿路情况太复杂，你上车之后什么都别看，什么都别想。跟着我就行了。" }
+      ],
+      "choices": [
+        { "text": "上车", "next": "ch2_bunker_008" }
+      ]
+    },
+    "ch2_bunker_008": {
+      "scene": {
+        "id": "convoy_car",
+        "name": "防弹轿车内",
+        "type": "transient",
+        "description": "车窗小得不像话，厚厚的车壳几乎隔绝了所有外部声音。引擎的低频嗡鸣是唯一的背景音。"
+      },
+      "progress": 18,
+      "segments": [
+        { "text": "你坐在后排。史强在你旁边，步话机里断断续续传来各种汇报。" },
+        { "text": "窗帘拉着，你看不到外面。只有偶尔的路灯光线从窗帘缝隙里漏进来，在史强的脸上划过一条明暗的边界。" },
+        { "speaker": "你", "text": "事情比你说的要复杂。" },
+        { "speaker": "史强", "text": "(敷衍地)是啊。现在什么都变得复杂了。" }
+      ],
+      "choices": [
+        { "text": "沉默，靠在座椅上", "next": "ch2_bunker_009", "changes": { "trust_shi": 1 } },
+        { "text": "继续追问", "next": "ch2_bunker_009", "changes": { "trust_shi": -1 } }
+      ]
+    },
+    "ch2_bunker_009": {
+      "scene": {
+        "id": "convoy_car",
+        "name": "防弹轿车内",
+        "arrival": "车停了。"
+      },
+      "progress": 19,
+      "segments": [
+        { "text": "史强下车，示意你待在车内。几分钟后他拉开车门，" },
+        { "speaker": "史强", "text": "到了。下来吧。" }
+      ],
+      "choices": [
+        { "text": "下车", "next": "ch2_airport_001" }
+      ]
+    },
+    "ch2_airport_001": {
+      "scene": {
+        "id": "military_airport",
+        "name": "军用机场",
+        "type": "major",
+        "description": "夜。停机坪被探照灯照得通明——远处一排战斗机在月光下静默。一架大型客机停在跑道上，没有航空公司的标志。周围是十几辆车和几十名士兵构成的警戒圈。",
+        "arrival": "你下了车，冷风扑面而来。"
+      },
+      "progress": 20,
+      "ambient": "wind",
+      "segments": [
+        { "speaker": "史强", "text": "走吧，登机。" }
+      ],
+      "choices": [
+        { "text": "跟着他走上舷梯", "next": "ch2_plane_001" }
+      ]
+    },
+    "ch2_plane_001": {
+      "scene": {
+        "id": "plane",
+        "name": "专机内",
+        "type": "major",
+        "description": "前舱有四排空空的座椅，看上去和普通客机一样。但中舱是一间相当宽敞的办公室——沙发、办公桌、一个套间卧室。所有的椅子都有安全带。",
+        "arrival": "你被带进机舱。"
+      },
+      "progress": 22,
+      "segments": [
+        { "speaker": "工作人员", "text": "请你们随便坐——但一定要全程系好安全带。如果需要起来活动，请先通知机长。" },
+        { "speaker": "史强", "text": "这飞机有可能做特技飞行。" },
+        { "speaker": "工作人员", "text": "是的。" }
+      ],
+      "choices": [
+        { "text": "坐到沙发上", "next": "ch2_plane_002" }
+      ]
+    },
+    "ch2_plane_002": {
+      "scene": "专机内",
+      "progress": 23,
+      "segments": [
+        { "text": "引擎轰鸣起来。飞机滑向跑道。" },
+        { "text": "你看着舷窗外——夜幕下什么也看不清。史强靠过来，拉上了舷窗隔板。" },
+        { "speaker": "史强", "text": "没什么好看的。" }
+      ],
+      "choices": [
+        { "text": "「我们飞哪儿？」", "next": "ch2_plane_003" },
+        { "text": "闭眼休息", "next": "ch2_plane_003" }
+      ]
+    },
+    "ch2_plane_003": {
+      "scene": "专机内",
+      "progress": 24,
+      "segments": [
+        { "speaker": "史强", "text": "别问我，我知道的不比你多。不过陪你聊聊天倒是可以的。" },
+        { "text": "史强开始给你讲审讯技巧——拉单子、黑白脸。他讲得眉飞色舞，你听着却像掉进了冰窟窿。" }
+      ],
+      "choices": [
+        { "text": "打断他", "next": "ch2_plane_004", "changes": { "trust_shi": -1 } },
+        { "text": "听着，但不回应", "next": "ch2_plane_004", "changes": { "trust_shi": 1 } }
+      ]
+    },
+    "ch2_plane_004": {
+      "scene": "专机内",
+      "progress": 25,
+      "segments": [
+        { "speaker": "史强", "text": "罗兄，你必须成为那样的人——让所有人都看不起你，觉得你碍不了事。最高境界是让他们根本注意不到你——直到他们死在你手里前的一刹那，才回过味来。" },
+        { "text": "史强难得地认真起来。他抓住你的肩膀——有力得发疼。" }
+      ],
+      "choices": [
+        { "text": "「有必要吗？」", "next": "ch2_plane_005" },
+        { "text": "沉默", "next": "ch2_plane_005" }
+      ]
+    },
+    "ch2_plane_005": {
+      "scene": {
+        "id": "plane",
+        "name": "专机·卧室",
+        "arrival": "你被安排去卧室休息。"
+      },
+      "progress": 26,
+      "segments": [
+        { "text": "床很窄。安全扣把你固定在床上。引擎的嗡鸣在黑暗中无限放大。" },
+        { "text": "你睡不着。你想到了她——那个死在街头的人。你到现在才真正为她的死感到一点悲伤。这悲伤来得太迟了，迟得让你对自己感到厌恶。" },
+        { "text": "但就在这份厌恶之中，另一个人的轮廓开始在黑暗中浮现。不是在回忆里——是在想象里。一个你没见过的人。" }
+      ],
+      "choices": [
+        { "text": "放任思绪飘向那个人", "next": "ch2_plane_006", "changes": { "val": 5 } },
+        { "text": "强迫自己睡觉", "next": "ch2_plane_006", "changes": { "val": -5 } }
+      ]
+    },
+    "ch2_plane_006": {
+      "scene": "专机·卧室",
+      "progress": 28,
+      "segments": [
+        { "text": "后来，你终于睡着了。你梦见了一个女孩。她的面容很模糊。但你知道她很美——那种美不属于任何你见过的人。" }
+      ],
+      "next": "ch2_un_001"
+    },
+    "ch2_un_001": {
+      "chapterTitle": "面壁者",
+      "scene": {
+        "id": "un_hall",
+        "name": "联合国大会堂",
+        "type": "major",
+        "description": "正前方那面高高的黄色大壁以小于九十度的角度向前倾斜——像一面随时可能倾倒的悬崖。穹顶被设计成星空的样子，但与黄色大壁分离，从高处产生一种巨大的不稳定感。整个环境像一个随时都可能坍塌的空间。",
+        "arrival": "你被带进会堂的时候，里面已经坐满了人。"
+      },
+      "progress": 30,
+      "ambient": "static",
+      "segments": [
+        { "text": "你被安排在第五排靠通道的座位坐下。一个叫坎特的人带你进来的。他坐在第二排边缘，留你一个人。" },
+        { "text": "主席台上，联合国秘书长萨伊正在走向讲台。娇小的身材在那面巨大的、向前倾斜的墙壁下，显得格外无助。" }
+      ],
+      "choices": [
+        { "text": "尽量让自己显得不引人注目", "next": "ch2_un_002", "changes": { "val": -3 } },
+        { "text": "观察四周", "next": "ch2_un_002", "changes": { "val": 3 } }
+      ]
+    },
+    "ch2_un_002": {
+      "scene": "联合国大会堂",
+      "progress": 33,
+      "segments": [
+        { "speaker": "萨伊", "text": "面壁计划的核心，就是选定一批战略计划的制定者和领导者。他们完全依靠自己的思维制定战略计划，不与外界进行任何形式的交流。计划的真实战略思想、完成的步骤和最后目的都只藏在他们的大脑中——我们称他们为面壁者。" },
+        { "speaker": "萨伊", "text": "下面，我将以联合国的名义，公布由行星防御理事会最后选定的四位面壁者——" }
+      ],
+      "choices": [
+        { "text": "————", "next": "ch2_un_003" }
+      ]
+    },
+    "ch2_un_003": {
+      "scene": "联合国大会堂",
+      "progress": 35,
+      "segments": [
+        { "speaker": "萨伊", "text": "第一位面壁者：弗里德里克·泰勒。" },
+        { "text": "一个瘦长的男人从第一排站起来，走上主席台。泰勒——前美国国防部长。" },
+        { "speaker": "萨伊", "text": "第二位面壁者：曼努尔·雷迪亚兹。" },
+        { "text": "一个棕色皮肤、体型粗壮的男人站起来。委内瑞拉总统。" },
+        { "speaker": "萨伊", "text": "第三位面壁者：比尔·希恩斯。" },
+        { "text": "一个温文尔雅的英国人走上主席台。诺贝尔奖提名科学家。" },
+        { "text": "会场安静了。所有人都在等待第四位。" },
+        { "text": "萨伊的手没有指向第一排。她的手指向你。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch2_un_004" }
+      ]
+    },
+    "ch2_un_004": {
+      "scene": "联合国大会堂",
+      "progress": 38,
+      "segments": [
+        { "effect": "silence" },
+        { "speaker": "萨伊", "text": "第四位面壁者：罗辑。" },
+        { "text": "你僵住了。整个会堂鸦雀无声。几百双眼睛看着你。" }
+      ],
+      "choices": [
+        { "text": "站起来，走上主席台", "next": "ch2_un_005", "changes": { "val": 10 } },
+        { "text": "僵在原地，无法动弹", "next": "ch2_un_005", "changes": { "val": -5 } }
+      ]
+    },
+    "ch2_un_005": {
+      "scene": "联合国大会堂",
+      "progress": 40,
+      "segments": [
+        { "text": "你木然地站起来，迈着机械的步子向主席台走去。这条路很短——但你觉得自己在走一生。" },
+        { "text": "你站在主席台上，转身面向会场。几百双眼睛，代表着六十亿人——" },
+        { "text": "你一句话也说不出来。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch2_un_006" }
+      ]
+    },
+    "ch2_un_006": {
+      "scene": {
+        "id": "un_hall",
+        "name": "联合国大会堂",
+        "arrival": "会议结束了。但你不知道是怎么结束的。"
+      },
+      "progress": 42,
+      "segments": [
+        { "text": "人们开始散去。三位面壁者从你身边走过。你身边空无一人。" },
+        { "speaker": "萨伊（从主席台上）", "text": "罗辑博士，我想您有问题要问。" },
+        { "speaker": "你", "text": "是不是弄错了？" },
+        { "speaker": "萨伊", "text": "您认为这可能吗？" },
+        { "speaker": "你", "text": "为什么是我？" },
+        { "speaker": "萨伊", "text": "您需要自己找出答案。" }
+      ],
+      "choices": [
+        { "text": "「我拒绝。」", "next": "ch2_un_007", "changes": { "addFlag": "rejected_wallfacer" } }
+      ]
+    },
+    "ch2_un_007": {
+      "scene": "联合国大会堂",
+      "progress": 44,
+      "segments": [
+        { "speaker": "萨伊", "text": "可以。" },
+        { "text": "回答来得如此之快，几乎与你的话音无缝衔接。你反而愣住了。" },
+        { "speaker": "你", "text": "我放弃面壁者的身份——放弃被授予的所有权力。也不承担你们强加给我的任何责任。" },
+        { "speaker": "萨伊", "text": "可以。" },
+        { "speaker": "你", "text": "那我可以走了吗？" },
+        { "speaker": "萨伊", "text": "可以。您可以做任何事情。" }
+      ],
+      "choices": [
+        { "text": "转身离开", "next": "ch2_un_008" }
+      ]
+    },
+    "ch2_un_008": {
+      "scene": {
+        "id": "un_outside",
+        "name": "联合国广场",
+        "type": "major",
+        "description": "夜。广场很安静。但灯光把一切都照得清晰。远处有一尊雕塑——一个男人正在用铁锤砸一柄剑——「铸剑为犁」。",
+        "arrival": "你走出联合国大会堂。"
+      },
+      "progress": 46,
+      "ambient": "wind",
+      "segments": [
+        { "text": "你穿过空旷的走廊、前厅、大门。没有人拦你。" },
+        { "text": "你站在广场上。草坪、路灯、雕塑。一切都很正常——除了你的胸口。" },
+        { "text": "然后你的胸口被狠狠砸了一下。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch2_un_009" }
+      ]
+    },
+    "ch2_un_009": {
+      "scene": "联合国广场",
+      "progress": 47,
+      "segments": [
+        { "effect": "flash" },
+        { "text": "你仰面倒在草坪上。胸口剧痛——不是那尊雕塑的锤子。是子弹。" },
+        { "text": "刺眼的手电光在你眼前晃动。有人在喊。你被抬起来——放上担架。" },
+        { "text": "你最后看到的画面是史强的脸。" }
+      ],
+      "next": "ch2_hospital_001"
+    },
+    "ch2_hospital_001": {
+      "chapterTitle": "",
+      "scene": {
+        "id": "hospital",
+        "name": "病房",
+        "type": "major",
+        "description": "天花板是白色的。输液架在床头，药液一滴一滴地落下。空气里有消毒水的味道。",
+        "arrival": "你再次醒来时，不知道自己睡了多久。"
+      },
+      "progress": 50,
+      "segments": [
+        { "speaker": "医生", "text": "一根肋骨断了。轻微内出血。不严重——但你需要休息。" },
+        { "text": "史强坐在床边。脸上看不出什么表情。" },
+        { "speaker": "史强", "text": "穿防弹衣中枪——我有过三次。没事的。" },
+        { "speaker": "你", "text": "有人要杀我。" },
+        { "speaker": "史强", "text": "ETO的人。抓到了。" }
+      ],
+      "choices": [
+        { "text": "「我要见他。」", "next": "ch2_hospital_002" }
+      ]
+    },
+    "ch2_hospital_002": {
+      "scene": "病房",
+      "progress": 52,
+      "segments": [
+        { "text": "凶手被带进来。一个年轻人，有一张英俊的欧洲面孔——和一种让你极其不安的微笑。那微笑像是长在他脸上似的，从不消退。" },
+        { "speaker": "凶手", "text": "抱歉没杀了您。我本来以为在这样的会议上您是不会穿防弹衣的——没想到您是个为了保命不拘小节的人。" }
+      ],
+      "choices": [
+        { "text": "「我已经拒绝了面壁者身份。」", "next": "ch2_hospital_003", "changes": { "val": -5 } },
+        { "text": "冷冷地看着他", "next": "ch2_hospital_003", "changes": { "val": 5 } }
+      ]
+    },
+    "ch2_hospital_003": {
+      "scene": "病房",
+      "progress": 54,
+      "segments": [
+        { "speaker": "凶手", "text": "您真幽默。" },
+        { "speaker": "凶手", "text": "对于一个面壁者而言，您的智力是不合格的。看来我的生命真的是浪费了。" },
+        { "text": "他走了。你坐在床上，回味着他的话——有什么地方不对。但又说不上来。" },
+        { "text": "然后萨伊来了。联合国的秘书长站在你的病房里。她关上了门。" }
+      ],
+      "choices": [
+        { "text": "听她说什么", "next": "ch2_hospital_004" }
+      ]
+    },
+    "ch2_hospital_004": {
+      "scene": "病房",
+      "progress": 56,
+      "segments": [
+        { "speaker": "萨伊", "text": "在全人类中，你是唯一一个三体文明要杀的人。" },
+        { "text": "你愣住了。" },
+        { "speaker": "萨伊", "text": "那起车祸其实是针对你的。只是意外撞中了你的女友。ETO策划了很久。指令直接来自三体世界——通过智子传达。这是他们有史以来发出的唯一一次刺杀命令。" }
+      ],
+      "choices": [
+        { "text": "「为什么是我？」", "next": "ch2_hospital_005" }
+      ]
+    },
+    "ch2_hospital_005": {
+      "scene": "病房",
+      "progress": 58,
+      "segments": [
+        { "speaker": "萨伊", "text": "不知道。没有人知道。伊文斯可能知道——但他死了。" },
+        { "speaker": "萨伊", "text": "你做自己的破壁人。找出——为什么三体世界怕你。" },
+        { "text": "萨伊走了。你坐在床上，天花板上的灯管嗡嗡响着。怕你。三体世界——怕你。" },
+        { "text": "你想起了一个黄昏。一座墓碑前。一个白发老人对你说的那些话。" }
+      ],
+      "choices": [
+        { "text": "开始回想叶文洁说的每一句话", "next": "ch2_hospital_006", "changes": { "val": 5 } },
+        { "text": "闭上眼睛——现在什么都不想", "next": "ch2_hospital_006", "changes": { "val": -5 } }
+      ]
+    },
+    "ch2_hospital_006": {
+      "scene": "病房",
+      "progress": 60,
+      "segments": [
+        { "text": "你想起了叶文洁的面容。想起了她说的每一个字。" },
+        { "text": "「生存是文明的第一需要。」" },
+        { "text": "「文明不断增长和扩张，但宇宙中的物质总量保持不变。」" },
+        { "text": "「猜疑链。」「技术爆炸。」" },
+        { "text": "那一刻你隐约觉得——这就是答案。但你还说不清它通向哪里。" }
+      ],
+      "next": "ch2_pdc_001"
+    },
+    "ch2_pdc_001": {
+      "chapterTitle": "",
+      "scene": {
+        "id": "pdc_office",
+        "name": "行星防御理事会·主席办公室",
+        "type": "major",
+        "description": "办公室不大。巨大的办公桌后面坐着一位俄罗斯老人——白胡子，身材魁梧。",
+        "arrival": "你被带到了PDC轮值主席伽尔宁的办公室。"
+      },
+      "progress": 62,
+      "segments": [
+        { "speaker": "伽尔宁", "text": "您好，罗辑博士。另外三位面壁者都在忙着组建自己的参谋部——我建议您也尽快着手。" },
+        { "speaker": "你", "text": "我不需要参谋部。" },
+        { "speaker": "伽尔宁", "text": "如果您觉得这样更好……" }
+      ],
+      "choices": [
+        { "text": "「能用一下纸和笔吗？」", "next": "ch2_pdc_002" }
+      ]
+    },
+    "ch2_pdc_002": {
+      "scene": "PDC主席办公室",
+      "progress": 63,
+      "segments": [
+        { "speaker": "你", "text": "主席先生，您有梦想过自己住在某个很美的地方吗？" },
+        { "speaker": "伽尔宁", "text": "（苦笑）我这辈子就是奔波的命——每年在家的时间不超过三个月。" },
+        { "text": "你拿起铅笔，在白纸上画了起来。" },
+        { "speaker": "你", "text": "这里有雪山，很险峻的那种。雪山前面有一片湖泊，水是蓝的。湖的周围要有森林和草原。在湖边，有一栋庄园——" },
+        { "speaker": "伽尔宁", "text": "谁会是这里的主人？" },
+        { "speaker": "你", "text": "我。" }
+      ],
+      "choices": [
+        { "text": "继续说下去", "next": "ch2_pdc_003", "changes": { "val": 5 } },
+        { "text": "把笔放下，等他回答", "next": "ch2_pdc_003", "changes": { "val": -3 } }
+      ]
+    },
+    "ch2_pdc_003": {
+      "scene": "PDC主席办公室",
+      "progress": 65,
+      "segments": [
+        { "speaker": "你", "text": "我需要一个地方——在那里我能安静地思考。这是我的计划的一部分。" },
+        { "speaker": "伽尔宁", "text": "委员会审核后，我们就去办。" },
+        { "speaker": "伽尔宁", "text": "另外三位面壁者让我很失望——看他们运筹帷幄的样子，一眼就能看出他们在做什么。但你不同。你的行为让人迷惑——这才像面壁者。" }
+      ],
+      "choices": [
+        { "text": "「还有个细节——」", "next": "ch2_pdc_004" }
+      ]
+    },
+    "ch2_pdc_004": {
+      "scene": "PDC主席办公室",
+      "progress": 67,
+      "segments": [
+        { "speaker": "你", "text": "房子里——要有壁炉。" },
+        { "text": "伽尔宁愣了一下，然后点点头。他的表情在说：这就是面壁者该有的样子——没人知道他为什么需要壁炉。" }
+      ],
+      "next": "ch2_paradise_001"
+    },
+    "ch2_paradise_001": {
+      "chapterTitle": "伊甸园",
+      "scene": {
+        "id": "paradise",
+        "name": "雪山庄园",
+        "type": "major",
+        "description": "远方的雪山在蓝天的背景下银亮银亮的——像天神之剑，像地球的长牙。前方是一片湖泊，水是比天空更深的那种蓝。湖的周围是森林和草原——纯净的原生态，仿佛地球上从来没有出现过人类。湖边有一幢以别墅为中心的小庄园，十九世纪中叶的建筑，但与周围的环境已经融为一体。",
+        "arrival": "直升机降落在一片草地上。你走下舷梯——"
+      },
+      "progress": 70,
+      "theme": "paper",
+      "ambient": "wind",
+      "segments": [
+        { "text": "你站在那里，久久没有动。" },
+        { "text": "这不是像你梦想的地方——这就是你梦想的地方。每一个细节都在你画的那张纸上出现过。" },
+        { "text": "坎特站在你身后。" }
+      ],
+      "choices": [
+        { "text": "「这里叫什么？」", "next": "ch2_paradise_002" },
+        { "text": "径直走向湖边", "next": "ch2_paradise_002" }
+      ]
+    },
+    "ch2_paradise_002": {
+      "scene": "雪山庄园",
+      "progress": 72,
+      "segments": [
+        { "speaker": "坎特", "text": "这个地方原主人不愿透露身份。他已经把这块土地赠送给联合国——现在你拥有居住权。" },
+        { "speaker": "坎特", "text": "别墅里除了他自己的物品都留给你了。还有——里面有壁炉。" },
+        { "text": "你走进别墅。客厅里真的有一个壁炉——旁边整齐地码着果木。你蹲下来，摸了摸那些木柴。" }
+      ],
+      "choices": [
+        { "text": "点燃壁炉", "next": "ch2_paradise_003", "changes": { "val": 5 } },
+        { "text": "先去看看其他房间", "next": "ch2_paradise_003", "changes": { "val": -3 } }
+      ]
+    },
+    "ch2_paradise_003": {
+      "scene": {
+        "id": "paradise",
+        "name": "雪山庄园·客厅",
+        "arrival": "你最终回到了壁炉前。"
+      },
+      "progress": 73,
+      "segments": [
+        { "text": "你坐在壁炉前的摇椅上。火光在你面前跳动着。" },
+        { "text": "外面有雪山、湖、森林。房间里只有木头燃烧的噼啪声。" },
+        { "text": "你对自己说：与现在的生活相比，四个世纪后的世界算什么？" },
+        { "text": "去他妈的面壁计划。" }
+      ],
+      "changes": {
+        "unlockAchievement": "paradise_found"
+      },
+      "next": "ch2_batch3_end"
+    },
+    "ch2_batch3_end": {
+      "isEnding": true,
+      "title": "上部·面壁者（中）",
+      "type": "NORMAL ENDING",
+      "progress": 75,
+      "achievement": "wallfacer_chosen",
+      "description": "罗辑住进了雪山庄园。面壁者的身份像一副无形的镣铐——但他选择暂时忘记它。\n\n在亚洲的另一侧，章北海走进了父亲的病房。他要来了三个字——「要多想」。\n\n在世界的另一侧，泰勒在神风特攻队的纪念馆前站了很久。雷迪亚兹在核爆点看见了日出。希恩斯在解析摄像机的研发计划上签了字。\n\n四个面壁者都在走向各自的命运。而三体世界的探测器中，有一个正在穿越四光年的漫长距离。",
+      "closing": "面壁者全部就位。咒语——还在酝酿之中。"
+    }
+  }
+}

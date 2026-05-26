@@ -1,0 +1,514 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "version": "1.0.0",
+    "description": "宇宙就是一座黑暗森林，每个文明都是带枪的猎人。",
+    "theme": "noir",
+    "ambient": "static",
+    "cover": {
+      "label": "黑暗森林",
+      "tagline": "给岁月以文明，而不是给文明以岁月。"
+    },
+    "variableName": "明暗",
+    "initialVariable": 40
+  },
+  "startNodeId": "ch1_wu_001",
+  "variables": {
+    "trust_shi": 0,
+    "trust_zhuang": 0,
+    "route_zhang": "none",
+    "knows_dark_forest": "none"
+  },
+  "achievements": {
+    "space_force_born": {
+      "title": "太空军",
+      "description": "见证太空军的诞生。"
+    },
+    "father_words": {
+      "title": "要多想",
+      "description": "记住父亲的最后教诲。"
+    }
+  },
+  "nodes": {
+    "ch1_wu_001": {
+      "chapterTitle": "第一章：面壁者",
+      "scene": {
+        "id": "dry_dock",
+        "name": "北方造船厂·船坞",
+        "type": "major",
+        "description": "「唐」号航空母舰正在建造中。暮色中，巨大的舰体像一座被废弃的古代要塞。密密的脚手架上垂下缕缕焊花，照亮了斑驳的船壳——锰钢板上布满汽液保护焊接留下的污迹，在闪动的弧光中显得格外陈旧。空气中弥漫着金属灼烧的气味。",
+        "arrival": "军令来得突然。你和吴岳从编队训练中直接被调到了这里。"
+      },
+      "progress": 51,
+      "theme": "noir",
+      "ambient": "static",
+      "segments": [
+        { "text": "你叫章北海。海军上校，即将任「唐」号航母的政委。" },
+        { "text": "站在你旁边的吴岳是舰长。他盯着「唐」号的舰体，脸色不太好。" }
+      ],
+      "choices": [
+        { "text": "等吴岳先开口", "next": "ch1_ship_002" },
+        { "text": "找点话打破沉默", "next": "ch1_ship_002" }
+      ]
+    },
+    "ch1_ship_002": {
+      "scene": "北方造船厂·船坞",
+      "progress": 52,
+      "ambient": "static",
+      "segments": [
+        { "speaker": "吴岳", "text": "父亲的病怎么样了？" },
+        { "speaker": "你", "text": "不好，也就是维持吧。" },
+        { "speaker": "吴岳", "text": "你请个假吧。" },
+        { "speaker": "你", "text": "他刚住院时已经请过一次了。现在这形势，到时候再说吧。" }
+      ],
+      "choices": [
+        { "text": "沉默片刻", "next": "ch1_ship_003" }
+      ]
+    },
+    "ch1_ship_003": {
+      "scene": "北方造船厂·船坞",
+      "progress": 53,
+      "ambient": "static",
+      "segments": [
+        { "speaker": "吴岳", "text": "北海，以后的工作在分量上可不比以前。既然我们一起到了这个位置上，我想我们之间应该多沟通沟通。" },
+        { "text": "你没有立刻回答。你了解吴岳——他是那种需要把一切想明白才能安心的人。而你恰好相反。" }
+      ],
+      "choices": [
+        { "text": "「我们以前应该沟通得很好吧。」", "next": "ch1_ship_003_cb_guard", "changes": { "set": { "zhang_stealth": 48 } } },
+        { "text": "点点头，等他继续说", "next": "ch1_ship_003_cb_open", "changes": { "set": { "zhang_stealth": 52 } } }
+      ]
+    },
+    "ch1_ship_003_cb_guard": {
+      "scene": "北方造船厂·船坞",
+      "progress": 53,
+      "ambient": "static",
+      "segments": [
+        { "text": "你随口应了一句。吴岳听出了你不想深谈——他没再追问，只是点了点头。" }
+      ],
+      "next": "ch1_ship_004"
+    },
+    "ch1_ship_003_cb_open": {
+      "scene": "北方造船厂·船坞",
+      "progress": 53,
+      "ambient": "static",
+      "segments": [
+        { "text": "你点了点头。吴岳似乎觉得这是一个好的开始——他的表情松弛了一些。" }
+      ],
+      "next": "ch1_ship_004"
+    },
+    "ch1_ship_004": {
+      "scene": "北方造船厂·船坞",
+      "progress": 54,
+      "ambient": "static",
+      "segments": [
+        { "text": "吴岳看着你，笑了笑——他知道从你这里掏不出更多的话。" },
+        { "text": "你们又沉默地站了一会儿。手机同时响了。" }
+      ],
+      "choices": [
+        { "text": "接听", "next": "ch1_ship_005" }
+      ]
+    },
+    "ch1_ship_005": {
+      "scene": "北方造船厂·船坞",
+      "progress": 55,
+      "segments": [
+        { "text": "是舰队总部的紧急命令：你和吴岳立刻去总参报到。" },
+        { "text": "吴岳挂了电话，看了看你——你们难得地相互领会了对方的眼神：看来那一小片海面，要一直空下去了。" },
+        { "text": "还没下水的航母的舰长和政委，被调离了。" }
+      ],
+      "choices": [
+        { "text": "转身离开船坞", "next": "ch1_ship_006" }
+      ]
+    },
+    "ch1_ship_006": {
+      "scene": {
+        "id": "dry_dock",
+        "name": "北方造船厂·船坞",
+        "arrival": "走出船坞时，你回头看了一眼「唐」号。"
+      },
+      "progress": 56,
+      "ambient": "static",
+      "segments": [
+        { "text": "那些焊花还在闪。在正午的阳光下看，它确实很旧了——不是建造中的旧，是一种古老的沧桑。像一个还没出生就已经老去的东西。" }
+      ],
+      "choices": [
+        { "text": "离开", "next": "ch1_transition_001" }
+      ]
+    },
+    "ch1_transition_001": {
+      "scene": {
+        "id": "world_news",
+        "name": "——与此同时——",
+        "type": "transient"
+      },
+      "progress": 57,
+      "ambient": "static",
+      "segments": [
+        { "speaker": "系统", "text": "阿拉斯加·格里利堡。" },
+        { "text": "雪原上，几只扁角鹿突然警觉起来——雪下的地面传来震动。前方那枚银白色的半埋球体裂开了，喷出浓烟和烈火。" },
+        { "text": "一枚拦截导弹拖着烈焰升空。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch1_nmd_001" }
+      ]
+    },
+    "ch1_nmd_001": {
+      "scene": {
+        "id": "nmd_control",
+        "name": "夏延山·NMD控制中心",
+        "type": "transient",
+        "description": "地下三百米，显示屏的冷光映在每个人的脸上。"
+      },
+      "progress": 57,
+      "ambient": "static",
+      "segments": [
+        { "text": "北美防空司令部指挥中心里，一名目标甄别员把鼠标一摔。" },
+        { "speaker": "雷德尔", "text": "见鬼！就差几秒钟，我就能确定中止发射了！" },
+        { "speaker": "琼斯", "text": "系统检测的根本不是敌方目标——那是国际空间站去年丢弃的一块反射膜。" },
+        { "text": "这是人类建立的第一个地球防御系统——只是把已有的NMD拦截方向从各大洲转向了太空。首秀是一场乌龙。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch1_nmd_002" }
+      ]
+    },
+    "ch1_nmd_002": {
+      "scene": "夏延山·NMD控制中心",
+      "progress": 58,
+      "ambient": "static",
+      "segments": [
+        { "speaker": "琼斯", "text": "我觉得大家应该照张相纪念一下！人类对共同敌人的第一次攻击！" },
+        { "speaker": "雷德尔", "text": "上尉，你在胡说什么？系统检测的根本不是敌方目标。" },
+        { "speaker": "斐兹罗将军", "text": "（叹息）让NMD的眼睛朝上看……地球上真的没有需要防御的东西了？" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch1_zhangyc_001" }
+      ]
+    },
+    "ch1_zhangyc_001": {
+      "scene": {
+        "id": "beijing_apt",
+        "name": "北京·居民楼",
+        "type": "major",
+        "description": "八层楼的窗子外面是晴朗的天空下的城市——但这座城市里没有阳光。退休手续刚办完，化工厂的工牌已经交了。",
+        "arrival": "张援朝昨天刚退了休。"
+      },
+      "progress": 60,
+      "ambient": "static",
+      "segments": [
+        { "text": "六十岁，本该是第二童年。但此刻站在窗前的这个男人，心里没有一丝阳光。" },
+        { "text": "门铃响了。邻居杨晋文走了进来，退休中学教师，手里还拎着从早市买的一把芹菜。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch1_zhangyc_002" }
+      ]
+    },
+    "ch1_zhangyc_002": {
+      "scene": "北京·居民楼",
+      "progress": 61,
+      "segments": [
+        { "speaker": "张援朝", "text": "（拉住杨晋文）这楼上怎么空荡荡的，像个……陵园似的。" },
+        { "speaker": "杨晋文", "text": "今儿又不是休息日，可不就这样儿。你退休第一天，这感觉正常。走吧，去社区活动室看看能玩点什么。" },
+        { "speaker": "张援朝", "text": "不是因为退休。是因为……世界局势。" },
+        { "speaker": "杨晋文", "text": "(大笑)世界局势，哈哈，这话从你嘴里说出来——" },
+        { "speaker": "张援朝", "text": "是，我以前是不关心大事。可眼前这事，也太大了！四百年后人就没了！" },
+        { "speaker": "杨晋文", "text": "哼，四十多年后你我就没了。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch1_zhangyc_003" }
+      ]
+    },
+    "ch1_zhangyc_003": {
+      "scene": "北京·居民楼",
+      "progress": 62,
+      "segments": [
+        { "text": "电视正在播新闻。流言像野火一样蔓延——有人说是智子杀了人，有人说是政府的阴谋。但画面上的专家在辟谣，一切都是常规疾病和事故。" },
+        { "text": "另一个邻居推门进来——苗福全，山西煤老板，粗嗓门，走路像砸夯。" },
+        { "speaker": "苗福全", "text": "听说了吗？银行踩死人了！那柜台前的人摞了三层！" },
+        { "speaker": "张援朝", "text": "那你的钱呢？" },
+        { "speaker": "苗福全", "text": "取出来一部分，剩下的就冻着呗——政府说了，战争时期。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch1_breacher_001" }
+      ]
+    },
+    "ch1_breacher_001": {
+      "scene": {
+        "id": "underground_cell",
+        "name": "地下室",
+        "type": "transient",
+        "description": "狭小，潮湿。一束月光透过小窗射入。整个房间像个墓穴。",
+        "arrival": "在城市的另一处——"
+      },
+      "progress": 64,
+      "ambient": "static",
+      "segments": [
+        { "text": "破壁人二号躺在行军床上，手枪就压在枕头下面。他已经这样躺了几个小时。" },
+        { "text": "他闭上眼睛，把枪口抵上太阳穴。但就在他即将扣下扳机的那一刻——视网膜上出现了什么。" },
+        { "effect": "glitch" },
+        { "speaker": "字幕", "text": "不要这样做，我们需要你。" }
+      ],
+      "next": "ch1_breacher_002"
+    },
+    "ch1_breacher_002": {
+      "scene": "地下室",
+      "progress": 64,
+      "segments": [
+        { "text": "他放下枪，翻身坐起来。呼吸还没平复，但视网膜上的字正在一行一行地显现。" }
+      ],
+      "next": "ch1_breacher_003"
+    },
+    "ch1_breacher_003": {
+      "scene": "地下室",
+      "progress": 66,
+      "segments": [
+        { "speaker": "破壁人二号", "text": "是主吗？这一年来我每天晚上都梦到你的召唤。" },
+        { "speaker": "字幕", "text": "这不是梦。我在和你实时交谈。" },
+        { "speaker": "破壁人二号", "text": "需要证实吗？我的金鱼都死了。" },
+        { "speaker": "字幕", "text": "上午你吸了一半的烟掉进了鱼缸——半支烟的尼古丁对于金鱼是致命的。" },
+        { "text": "他猛地看向鱼缸。五条龙睛金鱼全部翻着白肚皮浮在水面，水中央浮着半支烟。他泪流满面。" }
+      ],
+      "next": "ch1_breacher_004"
+    },
+    "ch1_breacher_004": {
+      "scene": "地下室",
+      "progress": 69,
+      "segments": [
+        { "speaker": "破壁人二号", "text": "为什么抛弃我们？对统帅的袭击、巴拿马运河的埋伏——我们都没有得到通知。" },
+        { "speaker": "字幕", "text": "我们害怕你们。" },
+        { "speaker": "破壁人二号", "text": "怕我们？我们拥有的欺骗、诡计、伪装——都是用来为你们服务的。" },
+        { "speaker": "字幕", "text": "我们不知道这是不是真的。你们的《圣经》里提到过蛇——如果一条蛇爬到你面前说它是为你服务的——你能不害怕吗？" }
+      ],
+      "next": "ch1_breacher_005"
+    },
+    "ch1_breacher_005": {
+      "scene": "地下室",
+      "progress": 71,
+      "segments": [
+        { "speaker": "破壁人二号", "text": "你们看过《三国演义》？那本书展示了人类战略计谋的层次。" },
+        { "speaker": "字幕", "text": "我们看不懂。但有智子——人类世界的一切在我们眼中都是透明的。" },
+        { "speaker": "破壁人二号", "text": "除了人本身的思维。" },
+        { "speaker": "字幕", "text": "是的。智子看不到思维。你一定知道面壁计划吧。" }
+      ],
+      "next": "ch1_breacher_006"
+    },
+    "ch1_breacher_006": {
+      "scene": "地下室",
+      "progress": 73,
+      "segments": [
+        { "speaker": "字幕", "text": "比你知道的要多。它就要付诸实施了。这正是我找你的原因。" },
+        { "speaker": "破壁人二号", "text": "我们对主的忠诚——需要得到支持。" },
+        { "speaker": "字幕", "text": "带着你的使命活下去。" },
+        { "text": "他看到了那封加密信。密码是CAMEL——他毒死金鱼的香烟牌子。" },
+        { "speaker": "破壁人二号", "text": "很容易完成的使命。为什么现在变得万分重要？" },
+        { "speaker": "字幕", "text": "伊文斯知道为什么。——但他没有告诉任何人。" }
+      ],
+      "next": "ch1_breacher_007"
+    },
+    "ch1_breacher_007": {
+      "scene": "地下室",
+      "progress": 75,
+      "segments": [
+        { "speaker": "破壁人二号", "text": "好的。我去完成。" },
+        { "text": "他把手枪从枕头下面拿出来，放进了抽屉里。暂时不需要了。" },
+        { "text": "金鱼的尸体还浮在水面上。他没有把它们捞出来。" }
+      ],
+      "next": "ch1_spaceforce_001"
+    },
+
+    "ch1_spaceforce_001": {
+      "chapterTitle": "太空军",
+      "scene": {
+        "id": "meeting_room",
+        "name": "会议室",
+        "type": "major",
+        "description": "深红色的帷幔上悬挂着一个新的军徽——主体是一颗发出四道光芒的银星，那四道光芒又是四柄利剑的形状。星的两侧有「八一」二字。",
+        "arrival": "你和吴岳坐在一张长会议桌旁。"
+      },
+      "progress": 78,
+      "segments": [
+        { "text": "在场的三十名军官里，十五人穿着海军军装，九人空军，六人陆军。你是海军——身边是吴岳。你们是同一艘还没下水就被废弃的航母上的舰长和政委。" },
+        { "text": "常伟思将军示意大家坐下。他把军帽端正地放在面前的桌上，开口了。" }
+      ],
+      "choices": [
+        { "text": "听常伟思讲话", "next": "ch1_spaceforce_002" }
+      ]
+    },
+    "ch1_spaceforce_002": {
+      "scene": "会议室",
+      "progress": 80,
+      "segments": [
+        { "speaker": "常伟思", "text": "太空军的正式成立仪式将在明天上午举行。不过，同志们，我们现在已经同属一个军种了。" },
+        { "text": "大家互相看看——海军最多，空军其次，陆军最少。" },
+        { "speaker": "常伟思", "text": "这个比例很奇怪——但不要以现在的航天规模来理解未来的太空舰队。太空战争更像海战，而不是空战。战场由海战的二维变成了太空的三维。" },
+        { "speaker": "常伟思", "text": "所以，太空军种的组建将以海军为主要基础。" }
+      ],
+      "choices": [
+        { "text": "继续听", "next": "ch1_spaceforce_003" }
+      ]
+    },
+    "ch1_spaceforce_003": {
+      "scene": "会议室",
+      "progress": 83,
+      "segments": [
+        { "speaker": "常伟思", "text": "同志们，到目前为止，这个新军种还只有我们三十一名成员。我们的任务——是要创立一个太空战争的理论体系。" },
+        { "text": "常伟思站起来，走到军徽前。" },
+        { "speaker": "常伟思", "text": "太空军的历程是十分漫长的。各学科的基础研究至少需要五十年。大规模太空航行的关键技术，还需要一个世纪。太空舰队从初建到形成完整战斗力——需要三个世纪。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch1_spaceforce_004" }
+      ]
+    },
+    "ch1_spaceforce_004": {
+      "scene": "会议室",
+      "progress": 86,
+      "segments": [
+        { "speaker": "常伟思", "text": "我们在场的所有人——都没有机会进入太空。更不可能在有生之年见到我们的太空舰队。太空舰队的第一代指战员将在两个世纪后产生——而从那时再过两个半世纪，地球舰队将面对外星侵略者。" },
+        { "speaker": "常伟思", "text": "那时在战舰上的，是我们的第十几代子孙。" },
+        { "text": "没有人说话。铅色的时光之路在你们面前徐徐展开。你看到吴岳的眼中——有什么东西熄灭了。" }
+      ],
+      "choices": [
+        { "text": "保持沉默", "next": "ch1_spaceforce_004_cb_silent", "changes": { "set": { "zhang_stealth": 52 } } },
+        { "text": "看向军徽", "next": "ch1_spaceforce_004_cb_emblem", "changes": { "set": { "zhang_stealth": 48 } } }
+      ]
+    },
+    "ch1_spaceforce_004_cb_silent": {
+      "scene": "会议室",
+      "progress": 87,
+      "segments": [
+        { "text": "你没有说话。有些东西不需要用语言来确认——你想，他会懂的。" }
+      ],
+      "next": "ch1_spaceforce_005"
+    },
+    "ch1_spaceforce_004_cb_emblem": {
+      "scene": "会议室",
+      "progress": 87,
+      "segments": [
+        { "text": "你抬起头，看着那枚军徽。四道利剑形状的光芒从银星上射出——你忽然觉得，那光芒不像剑，更像一个还没写完的问号。" }
+      ],
+      "next": "ch1_spaceforce_005"
+    },
+    "ch1_spaceforce_005": {
+      "scene": "会议室",
+      "progress": 88,
+      "segments": [
+        { "speaker": "常伟思", "text": "散会。" },
+        { "text": "人们陆续起身。你坐着没动——吴岳也没动。他盯着桌上那个还没戴热的太空军军徽，像看一个不认识的东西。" }
+      ],
+      "choices": [
+        { "text": "「走吧。」", "next": "ch1_spaceforce_006" },
+        { "text": "再坐一会儿", "next": "ch1_spaceforce_006" }
+      ]
+    },
+    "ch1_spaceforce_006": {
+      "scene": "会议室",
+      "progress": 89,
+      "segments": [
+        { "text": "走出会议室时，你和吴岳并排走了一段路。谁都没说话。" },
+        { "text": "然后你去了医院。" }
+      ],
+      "next": "ch1_father_001"
+    },
+    "ch1_father_001": {
+      "scene": {
+        "id": "hospital_room",
+        "name": "病房",
+        "type": "major",
+        "description": "夕阳的金辉从窗外透入，给病床上的人脸上映上些许血色。他靠着枕头半躺半坐着——不像一个已经走到生命尽头的人。",
+        "arrival": "你推开门，把军帽挂在门边的衣帽架上。"
+      },
+      "progress": 91,
+      "segments": [
+        { "speaker": "你", "text": "爸，我加入太空军了。" },
+        { "text": "父亲点了点头。没有说话。" },
+        { "text": "你从小就知道——父亲用沉默教育你，而不是用语言。语言只是沉默的标点符号。在这个房间里，沉默比任何话语都沉重。" }
+      ],
+      "choices": [
+        { "text": "坐到床边", "next": "ch1_father_001_cb_bed", "changes": { "set": { "zhang_stealth": 53 } } },
+        { "text": "站在窗前", "next": "ch1_father_001_cb_window", "changes": { "set": { "zhang_stealth": 47 } } }
+      ]
+    },
+    "ch1_father_001_cb_bed": {
+      "scene": "病房",
+      "progress": 92,
+      "segments": [
+        { "text": "你走到病床边，在椅子上坐下来。床单上有消毒水和药的味道。" }
+      ],
+      "next": "ch1_father_002"
+    },
+    "ch1_father_001_cb_window": {
+      "scene": "病房",
+      "progress": 92,
+      "segments": [
+        { "text": "你走到窗前。夕阳正在往下落，你看到自己的影子被拉得很长。你没转身——你知道他就在你身后。" }
+      ],
+      "next": "ch1_father_002"
+    },
+    "ch1_father_002": {
+      "scene": "病房",
+      "progress": 93,
+      "segments": [
+        { "speaker": "你", "text": "就像您想的那样——他们要以海军为基础组建太空舰队。他们认为海军的作战模式和理论与太空战争最接近。" },
+        { "speaker": "父亲", "text": "这是对的。" },
+        { "text": "你等着他说更多。但他没有。他从来不说更多。" },
+        { "speaker": "你", "text": "那我该怎么办？" },
+        { "text": "这句话一出口你就后悔了。父亲看了你一眼——那一眼让你觉得自己还是三十年前那个站在码头边、不知道该往哪儿走的孩子。" }
+      ],
+      "choices": [
+        { "text": "等待父亲的回答", "next": "ch1_father_003" }
+      ]
+    },
+    "ch1_father_003": {
+      "scene": "病房",
+      "progress": 95,
+      "segments": [
+        { "speaker": "父亲", "text": "要多想。" },
+        { "text": "你握紧了床单。" },
+        { "speaker": "你", "text": "想了以后呢？" },
+        { "text": "父亲没有立刻回答。窗外的夕阳正在沉下去，屋子里的光线一点一点地变暗。你从没觉得一分钟有这么长。" },
+        { "speaker": "父亲", "text": "北海，我只能告诉你——那以前要多想。" }
+      ],
+      "changes": {
+        "unlockAchievement": "father_words"
+      },
+      "choices": [
+        { "text": "握住父亲的手", "next": "ch1_father_004", "changes": { "set": { "zhang_stealth": 55 } } },
+        { "text": "点点头——他明白了", "next": "ch1_father_004" }
+      ]
+    },
+    "ch1_father_004": {
+      "scene": "病房",
+      "progress": 97,
+      "segments": [
+        { "speaker": "你", "text": "爸，以后不出海了——我会常来看您。" },
+        { "speaker": "父亲", "text": "（微笑）我这儿没什么了。忙工作去吧。" },
+        { "text": "你们又坐了一会儿，说了些闲话——太空军的事、以后的工作、老家的事。但这些话已经没有太多意义了。真正有意义的，是那三句——" },
+        { "text": "「要多想。」" },
+        { "text": "「想了以后呢？」" },
+        { "text": "「北海，我只能告诉你——那以前要多想。」" }
+      ],
+      "choices": [
+        { "text": "起身离开", "next": "ch1_father_005" }
+      ]
+    },
+    "ch1_father_005": {
+      "scene": "病房",
+      "progress": 99,
+      "segments": [
+        { "text": "你戴上军帽。帽檐上是太空军的军徽。" },
+        { "text": "你没有再回头。门在你身后关上，发出一声金属的碰撞。" },
+        { "text": "走廊很长。你的脚步声在空旷的瓷砖地面上一下一下地响着——节奏稳定，不快不慢。" }
+      ],
+      "next": "ch1_batch2_end"
+    },
+    "ch1_batch2_end": {
+      "isEnding": true,
+      "title": "上部·面壁者（上）",
+      "type": "NORMAL ENDING",
+      "progress": 100,
+      "achievement": "space_force_born",
+      "description": "章北海从父亲的病房走出来的时候，天色已暗。他从此多了一个只有自己知道的使命——一个不能对任何人说的使命。\n\n在城市的另一侧，破壁人二号把抽屉里那把手枪又往里推了推。他也有了自己的使命。\n\n在四光年外，三体舰队以十分之一光速向太阳系航行。它们的探测器比舰队更快。",
+      "closing": "第一阶段：面壁者和破壁者——都已就位。"
+    }
+  }
+}
