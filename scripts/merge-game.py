@@ -20,6 +20,7 @@ VALIDATOR = os.path.join(REPO_ROOT, "skills", "scripts", "validate.py")
 BATCH_TRANSITIONS = {
     "batch1_end": "transition_001",     # 第1批结束 → 第2批开始
     "return_003": "chang_001",          # 第2批结束 → 第3批开始
+    "batch3_end": "guzheng_exec_001",   # 第3批结束 → 第4批开始
 }
 
 
