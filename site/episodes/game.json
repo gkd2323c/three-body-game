@@ -2,7 +2,7 @@
   "meta": {
     "title": "三体",
     "author": "刘慈欣",
-    "version": "1.0.0",
+    "version": "1.0.0-batch1",
     "description": "一切都会逝去，只有死神永生。",
     "theme": "night",
     "ambient": "static",
@@ -3536,20 +3536,49 @@
       "choices": [
         {
           "text": "准备出门去见常伟思",
-          "next": "return_002",
+          "next": "return_003",
           "changes": {
             "余烬": 3
           }
         },
         {
           "text": "你先坐下，整理一下思路——想清楚自己到底要说什么",
-          "next": "return_002",
+          "next": "return_003",
           "changes": {
             "余烬": 2
           }
         }
       ],
-      "next": "return_002"
+      "next": "return_003"
+    },
+    "return_003": {
+      "title": "第二批·完",
+      "scene": "黎明·北京",
+      "progress": 100,
+      "segments": [
+        {
+          "text": "你穿上外套，拿起装有V装具的包，走出了门。清晨的空气微凉，街上已经有了早班车和晨跑的人。"
+        },
+        {
+          "text": "世界照常运转。但你已经站在了知道真相的那一边。",
+          "effect": "breath"
+        },
+        {
+          "text": "—— 第2批结束 ——"
+        },
+        {
+          "text": "三体游戏探索进度：周文王/纣王（139号文明）→ 墨子（140号文明）→ 哥白尼（143号文明·三日归一）。"
+        },
+        {
+          "text": "game_depth = 4 | 已探索 3 个文明纪元。还剩：人列计算机→爱因斯坦/大撕裂。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "等待下一章",
+          "next": "return_003"
+        }
+      ]
     },
     "game_copernicus_transition": {
       "title": "新身份",
