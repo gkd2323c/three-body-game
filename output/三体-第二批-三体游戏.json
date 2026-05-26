@@ -90,7 +90,7 @@
           "text": "打开电脑，输入网址",
           "next": "transition_003",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
@@ -142,7 +142,7 @@
           "text": "你感到一阵兴奋",
           "next": "transition_005",
           "changes": {
-            "余烬": 3
+            "val": 3
           }
         }
       ],
@@ -245,14 +245,14 @@
           "text": "追随周文王",
           "next": "game_zhou_001",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
           "text": "独自探索",
           "next": "game_zhou_001",
           "changes": {
-            "余烬": -1
+            "val": -1
           }
         }
       ],
@@ -319,7 +319,7 @@
           "text": "跟他走",
           "next": "game_zhou_003",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
@@ -401,14 +401,14 @@
           "text": "保持冷静，观察他",
           "next": "game_zhou_006",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
           "text": "你被这个世界的真实感震撼了",
           "next": "game_zhou_006",
           "changes": {
-            "余烬": 1
+            "val": 1
           }
         }
       ],
@@ -495,21 +495,21 @@
           "text": "你感到胃在翻涌",
           "next": "game_zhou_009",
           "changes": {
-            "余烬": -3
+            "val": -3
           }
         },
         {
           "text": "你强迫自己冷静地观察",
           "next": "game_zhou_009",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
           "text": "你被深深震撼了，说不出话",
           "next": "game_zhou_009",
           "changes": {
-            "余烬": -2
+            "val": -2
           }
         }
       ],
@@ -534,14 +534,14 @@
           "text": "\"二百多次？\"",
           "next": "game_zhou_010",
           "changes": {
-            "余烬": -3
+            "val": -3
           }
         },
         {
           "text": "这不可能——但你知道这是真的",
           "next": "game_zhou_010",
           "changes": {
-            "余烬": -2
+            "val": -2
           }
         }
       ],
@@ -574,7 +574,7 @@
           "text": "你隐隐感到一个更大的答案正在浮现",
           "next": "game_zhou_011",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         }
       ],
@@ -610,14 +610,14 @@
           "text": "你感到一阵彻骨的寒意",
           "next": "game_zhou_012",
           "changes": {
-            "余烬": -3
+            "val": -3
           }
         },
         {
           "text": "你更加坚定了要弄清楚这一切的念头",
           "next": "game_zhou_012",
           "changes": {
-            "余烬": 3
+            "val": 3
           }
         }
       ],
@@ -668,14 +668,14 @@
           "text": "你希望他说的对",
           "next": "game_zhou_014",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
           "text": "你有一种不祥的预感",
           "next": "game_zhou_014",
           "changes": {
-            "余烬": -2
+            "val": -2
           }
         }
       ],
@@ -699,7 +699,7 @@
           "text": "你的心沉了下去",
           "next": "game_zhou_015",
           "changes": {
-            "余烬": -3
+            "val": -3
           }
         }
       ],
@@ -725,7 +725,7 @@
           "text": "你被震惊得动弹不得",
           "next": "game_zhou_016",
           "changes": {
-            "余烬": -3
+            "val": -3
           }
         }
       ],
@@ -780,7 +780,7 @@
           "text": "平复一下呼吸，准备再次登录",
           "next": "game_zhou_018",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         }
       ],
@@ -839,7 +839,7 @@
           "text": "走上前去看",
           "next": "game_mozi_002",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
@@ -876,7 +876,7 @@
           "text": "你仔细观察那架机器",
           "next": "game_mozi_003",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         }
       ],
@@ -898,7 +898,7 @@
           "text": "你感到一种悲壮——三千多次调整，仍然没有答案",
           "next": "game_mozi_004",
           "changes": {
-            "余烬": -3
+            "val": -3
           }
         }
       ],
@@ -930,7 +930,7 @@
           "text": "答应帮忙",
           "next": "game_mozi_005",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
@@ -941,7 +941,7 @@
           "text": "你开始信任他的方法",
           "next": "game_mozi_005",
           "changes": {
-            "余烬": 1
+            "val": 1
           }
         }
       ],
@@ -969,7 +969,7 @@
           "text": "你盯着那三颗星，移不开视线",
           "next": "game_mozi_006",
           "changes": {
-            "余烬": -2
+            "val": -2
           }
         }
       ],
@@ -1005,7 +1005,7 @@
           "text": "沉默。这个问题没有答案",
           "next": "game_mozi_007",
           "changes": {
-            "余烬": -2
+            "val": -2
           }
         }
       ],
@@ -1038,7 +1038,7 @@
           "text": "你开始理解——这不是一个游戏，这是一个文明的真实困境",
           "next": "game_mozi_008",
           "changes": {
-            "余烬": -3
+            "val": -3
           }
         }
       ],
@@ -1070,14 +1070,14 @@
           "text": "你感到一阵深入骨髓的寒意",
           "next": "game_mozi_009",
           "changes": {
-            "余烬": -5
+            "val": -5
           }
         },
         {
           "text": "你的科学家的本能被触动了——人列计算机？怎么实现的？",
           "next": "game_mozi_009",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         }
       ],
@@ -1106,14 +1106,14 @@
           "text": "\"你不能做点什么吗？\"",
           "next": "game_mozi_010",
           "changes": {
-            "余烬": -2
+            "val": -2
           }
         },
         {
           "text": "你和他一起，安静地看着太阳们升起",
           "next": "game_mozi_010",
           "changes": {
-            "余烬": -3
+            "val": -3
           }
         }
       ],
@@ -1170,7 +1170,7 @@
           "text": "发送",
           "next": "game_mozi_012",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
@@ -1228,7 +1228,7 @@
           "text": "迎着他们的目光",
           "next": "game_copernicus_002",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
@@ -1260,7 +1260,7 @@
           "text": "是的。我目睹过两次文明的毁灭。",
           "next": "game_copernicus_003",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
@@ -1296,7 +1296,7 @@
           "text": "我带了一个模型——一个关于太阳运行的理论。",
           "next": "game_copernicus_004",
           "changes": {
-            "余烬": 3
+            "val": 3
           }
         },
         {
@@ -1331,7 +1331,7 @@
           "text": "继续阐述三体理论",
           "next": "game_copernicus_005",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
@@ -1360,7 +1360,7 @@
           "text": "三颗太阳确实出现过——看到它们的人活不下来。",
           "next": "game_copernicus_006",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
@@ -1407,14 +1407,14 @@
           "text": "等待他们的裁决",
           "next": "game_copernicus_007",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         },
         {
           "text": "补充更多观测证据",
           "next": "game_copernicus_007",
           "changes": {
-            "余烬": 1
+            "val": 1
           }
         }
       ],
@@ -1449,7 +1449,7 @@
           "text": "我说的是真理！",
           "next": "game_copernicus_008",
           "changes": {
-            "余烬": 3
+            "val": 3
           }
         },
         {
@@ -1460,7 +1460,7 @@
           "text": "你奋力挣扎",
           "next": "game_copernicus_008",
           "changes": {
-            "余烬": 1
+            "val": 1
           }
         }
       ],
@@ -1535,7 +1535,7 @@
           "text": "仰望它们",
           "next": "game_copernicus_010",
           "changes": {
-            "余烬": -5
+            "val": -5
           }
         }
       ],
@@ -1621,7 +1621,7 @@
           "text": "你把手机握在手里，又看了一会儿窗外的日出",
           "next": "return_002",
           "changes": {
-            "余烬": 3
+            "val": 3
           }
         }
       ],
@@ -1644,14 +1644,14 @@
           "text": "准备出门去见常伟思",
           "next": "return_003",
           "changes": {
-            "余烬": 3
+            "val": 3
           }
         },
         {
           "text": "你先坐下，整理一下思路——想清楚自己到底要说什么",
           "next": "return_003",
           "changes": {
-            "余烬": 2
+            "val": 2
           }
         }
       ],
