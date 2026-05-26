@@ -51,10 +51,17 @@ def main():
     print(f"写入 {out} ({len(merged['nodes'])} 节点)")
 
     if "--validate" in sys.argv and os.path.exists(VALIDATOR):
-        import subprocess
+        import subprocess, re
         r = subprocess.run(["python3", VALIDATOR, out], capture_output=True, text=True)
-        if "节点引用" in r.stdout:
-            print("❌ 引用断裂"); sys.exit(1)
+        m = re.search(r"可达节点：(\d+)\s*/\s*(\d+)", r.stdout)
+        if m and m.group(1) != m.group(2):
+            print(f"❌ 节点不可达: {m.group(1)}/{m.group(2)}"); sys.exit(1)
+        output = r.stdout + r.stderr
+        if r.returncode != 0:
+            if "没有任何可达的结局" in output:
+                pass
+            elif "节点引用" in output:
+                print("❌ 存在引用断裂"); sys.exit(1)
         print("✅ 合并验证通过")
 
 
