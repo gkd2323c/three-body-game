@@ -4,9 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>三体 · 互动文游</title>
-<meta name="description" content="基于刘慈欣《三体》改编的分支剧情互动游戏。通过 story-to-game 技能，将原著转化为可游玩的互动叙事 JSON。">
+<meta name="description" content="基于刘慈欣《三体》改编的分支剧情互动游戏。">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+<style>
+.menu {
+  text-align: center;
+  padding: 2rem 0;
+}
+.menu-btn {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 1rem auto;
+  padding: 1.2rem 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+.menu-btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.menu-btn .sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-top: 0.3rem;
+  font-weight: 400;
+}
+.menu-btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.menu-btn.primary:hover {
+  background: var(--accent-glow);
+}
+.menu-btn.primary .sub {
+  color: rgba(255,255,255,0.7);
+}
+.version {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+</style>
 </head>
 <body>
 <div class="container">
@@ -14,26 +64,33 @@
 <header>
   <h1>三体 · 互动文游</h1>
   <p class="subtitle">分支剧情 · 沉浸叙事 · 改编自刘慈欣同名小说</p>
-  <p class="byline">改编：gkd2323c · 基于 story-to-game 工作流</p>
 </header>
 
 <div class="tagline">
   "一切都会逝去，只有死神永生。"
 </div>
 
-<h2 class="section-title">选择章节</h2>
-<div class="episode-grid" id="episode-list">
-  <div style="text-align:center;color:var(--text-dim);padding:2rem;">加载中…</div>
+<div class="menu">
+  <a href="/play/launcher.html" class="menu-btn primary">
+    开始新游戏
+    <span class="sub">从危机纪元开始 · 约 3 小时内容</span>
+  </a>
+  <a href="/play/launcher.html?load=continue" class="menu-btn">
+    继续游戏
+    <span class="sub">读取最近存档</span>
+  </a>
+  <a href="/play/launcher.html?load=select" class="menu-btn">
+    读取存档
+    <span class="sub">选择存档位</span>
+  </a>
 </div>
 
+<div class="version">v1.0.0 · 已发布 2 章 · 114 节点 · 持续更新中</div>
+
 <div class="about">
-  <h3 style="margin-bottom:0.8rem;font-size:1rem;">关于本项目</h3>
-  <p>本项目是刘慈欣科幻小说《三体》（地球往事第一部）的互动分支剧情游戏改编。</p>
-  <p>改编采用 <strong>story-to-game</strong> 九步工作流：原作摄入→风格提取→结构拆解→分支设计→状态系统→分段写作→验证输出，将约 20 万字的原著转化为 5000-6000 节点的互动叙事体验。</p>
-  <p>当前进度：2 / 12 批完成（序幕 + 疯狂年代 + 三体游戏），共 116 节点。持续更新中。</p>
-  <p>技术栈：纯前端 HTML/JS 游戏引擎（山音启动器）+ JSON 剧本 + Cloudflare Pages 托管。</p>
+  <p>本项目是刘慈欣科幻小说《三体》（地球往事第一部）的互动分支剧情游戏改编。采用 story-to-game 九步工作流，将约 20 万字的原著转化为沉浸式互动叙事体验。</p>
   <p style="margin-top:1rem;">
-    <a href="https://github.com/gkd2323c/three-body-game" class="btn">GitHub 仓库</a>
+    <a href="https://github.com/gkd2323c/three-body-game" class="btn">GitHub</a>
   </p>
   <div class="license-badge">
     改编内容 CC BY-NC-SA 4.0 · 原著版权归刘慈欣所有
@@ -42,29 +99,9 @@
 
 <footer>
   <p>改编内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可</p>
-  <p>游戏引擎 by <a href="https://github.com/Shanyin-ai/Story-to-game">@山音</a> · MIT 许可</p>
+  <p>游戏引擎 by <a href="https://github.com/Shanyin-ai/Story-to-game">@山音</a></p>
 </footer>
 
 </div>
-
-<script>
-fetch('/episodes/manifest.json')
-  .then(function(r) { return r.json(); })
-  .then(function(manifest) {
-    var html = '';
-    manifest.episodes.forEach(function(ep) {
-      html += '<a href="/play/launcher.html?episode=' + ep.id + '" class="episode-card">';
-      html += '<div class="title">' + ep.title + '</div>';
-      html += '<div class="meta">' + ep.nodes + ' 节点 · ' + ep.progress + '</div>';
-      html += '<div class="desc">' + ep.description + '</div>';
-      html += '</a>';
-    });
-    document.getElementById('episode-list').innerHTML = html;
-  })
-  .catch(function() {
-    document.getElementById('episode-list').innerHTML = '<div style="text-align:center;color:var(--text-dim);padding:2rem;">暂无可用的章节</div>';
-  });
-</script>
-
 </body>
 </html>

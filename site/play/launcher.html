@@ -7362,22 +7362,34 @@
   </script>
 
 <script>
-// Auto-load from URL parameter (added for site deployment)
+// Auto-load game (added for site deployment)
 (function() {
-  const params = new URLSearchParams(window.location.search);
-  const episode = params.get('episode');
-  if (episode) {
-    fetch('/episodes/' + episode + '.json')
-      .then(function(r) { return r.json(); })
-      .then(function(data) {
-        if (typeof loadStory === 'function') {
-          loadStory(data, { animate: true, cache: true });
+  var params = new URLSearchParams(window.location.search);
+  var loadAction = params.get('load');
+
+  // Default: load the merged game.json
+  fetch('/episodes/game.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (typeof loadStory === 'function') {
+        loadStory(data, { animate: true, cache: true });
+        // Handle continue/load actions
+        if (loadAction === 'continue') {
+          setTimeout(function() {
+            var continueBtn = document.querySelector('[data-action="continue"]');
+            if (continueBtn) continueBtn.click();
+          }, 500);
+        } else if (loadAction === 'select') {
+          setTimeout(function() {
+            var loadBtn = document.querySelector('[data-action="load"]');
+            if (loadBtn) loadBtn.click();
+          }, 500);
         }
-      })
-      .catch(function(err) {
-        console.error('Failed to load episode:', err);
-      });
-  }
+      }
+    })
+    .catch(function(err) {
+      console.error('Failed to load game:', err);
+    });
 })();
 </script>
 
