@@ -27,6 +27,14 @@ three-body-game/
 - 预估规模：5000-6000 节点，10-12 批
 - 当前进度：第 1 批完成（序幕 + 疯狂年代前段，64 节点）
 
+## 声明
+
+本项目是刘慈欣《三体》（地球往事第一部）的衍生互动改编作品。
+
+- 原著版权归 **刘慈欣** 所有。
+- `docs/`、`output/` 目录下的改编方案文档与 JSON 叙事内容采用 **CC BY-NC-SA 4.0** 许可——您可以自由共享和改编，但须署名、非商业使用、以相同方式共享。
+- `skills/` 目录下的 story-to-game 技能代码（来自 [Shanyin-ai/Story-to-game](https://github.com/Shanyin-ai/Story-to-game)）遵循其原有的 **MIT** 许可证。
+
 ## 使用方式
 
 1. 下载 `故事剧情游戏启动器.html`（见原项目 Shanyin-ai/Story-to-game）
