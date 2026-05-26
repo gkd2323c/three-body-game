@@ -449,7 +449,7 @@
       ],
       "choices": [
         { "text": "\"后来呢？\"", "next": "memory_007" },
-        { "text": "你感到胸口发闷，不想追问", "next": "memory_007", "changes": { "余烬": -2 } }
+        { "text": "你感到胸口发闷，不想追问", "next": "memory_007", "changes": { "余烬": -2, "despair_count": 1 } }
       ],
       "next": "memory_007"
     },
@@ -706,7 +706,7 @@
       ],
       "choices": [
         { "text": "\"请继续。\"", "next": "memory_025", "changes": { "余烬": 3 } },
-        { "text": "\"我需要缓一缓。\"", "next": "memory_025a", "changes": { "余烬": -2 } },
+        { "text": "\"我需要缓一缓。\"", "next": "memory_025a", "changes": { "余烬": -2, "avoid_count": 1 } },
         { "text": "\"我已经知道了最坏的部分。还有什么？\"", "next": "memory_025", "changes": { "余烬": 1 } }
       ],
       "next": "memory_025"
@@ -809,8 +809,8 @@
         { "speaker": "叶文洁", "text": "但最可怕的是——智子可以干扰高能加速器的实验结果。任何试图探索物质深层结构的实验，都会被智子随机干扰，产生无法解释的误差。" }
       ],
       "choices": [
-        { "text": "\"所以杨冬说的'物理学的尽头什么都没有'——\"", "next": "memory_032" },
-        { "text": "\"所以基础物理学被锁死了？\"", "next": "memory_032", "changes": { "余烬": -5 } }
+        { "text": "\"所以杨冬说的'物理学的尽头什么都没有'——\"", "next": "memory_032", "changes": { "余烬": -8, "despair_count": 1 } },
+        { "text": "\"所以基础物理学被锁死了？\"", "next": "memory_032", "changes": { "余烬": -10, "despair_count": 1 } }
       ],
       "next": "memory_032"
     },
