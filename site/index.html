@@ -1,107 +1,64 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>三体 · 互动文游</title>
-<meta name="description" content="基于刘慈欣《三体》改编的分支剧情互动游戏。">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
 <style>
-.menu {
-  text-align: center;
-  padding: 2rem 0;
+.game-grid { display:grid; gap:1.5rem; margin:2rem 0; }
+.game-card {
+  background:var(--bg-card); border:1px solid var(--border); border-radius:16px;
+  padding:2rem; transition:all .2s; cursor:pointer; text-decoration:none; color:inherit;
 }
-.menu-btn {
-  display: block;
-  width: 100%;
-  max-width: 360px;
-  margin: 1rem auto;
-  padding: 1.2rem 2rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  color: var(--text);
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: all 0.2s;
-  text-decoration: none;
+.game-card:hover { background:var(--bg-hover); border-color:var(--accent); transform:translateY(-3px); }
+.game-card .num { font-size:.8rem; color:var(--text-dim); font-family:var(--font-mono); }
+.game-card .title { font-size:1.4rem; font-weight:700; margin:.3rem 0; }
+.game-card .tagline { font-style:italic; color:var(--text-dim); font-size:.9rem; }
+.game-card .meta { font-size:.8rem; color:var(--text-dim); margin-top:.5rem; }
+.game-card .status-badge {
+  display:inline-block; padding:.15rem .6rem; border-radius:4px;
+  font-size:.75rem; font-weight:500; margin-top:.6rem;
 }
-.menu-btn:hover {
-  background: var(--bg-hover);
-  border-color: var(--accent);
-  transform: translateY(-2px);
-}
-.menu-btn .sub {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--text-dim);
-  margin-top: 0.3rem;
-  font-weight: 400;
-}
-.menu-btn.primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-.menu-btn.primary:hover {
-  background: var(--accent-glow);
-}
-.menu-btn.primary .sub {
-  color: rgba(255,255,255,0.7);
-}
-.version {
-  text-align: center;
-  color: var(--text-dim);
-  font-size: 0.8rem;
-  margin-top: 2rem;
-}
+.badge-done { background:#1a3a1a; color:#6f6; }
+.badge-wip { background:#3a351a; color:#ff6; }
+.badge-soon { background:#2a1a3a; color:#a6f; }
 </style>
 </head>
 <body>
 <div class="container">
-
 <header>
   <h1>三体 · 互动文游</h1>
-  <p class="subtitle">分支剧情 · 沉浸叙事 · 改编自刘慈欣同名小说</p>
+  <p class="subtitle">分支剧情 · 沉浸叙事 · 改编自刘慈欣三部曲</p>
 </header>
-
-<div class="tagline">
-  "一切都会逝去，只有死神永生。"
-</div>
-
-<div class="menu">
-  <a href="/play/launcher.html" class="menu-btn primary">
-    开始新游戏
-    <span class="sub">从危机纪元开始 · 约 3 小时内容</span>
+<div class="tagline">"给岁月以文明，而不是给文明以岁月"</div>
+<div class="game-grid">
+  <a href="/three-body-1/" class="game-card">
+    <div class="num">第一部</div>
+    <div class="title">三体</div>
+    <div class="tagline">一切都会逝去，只有死神永生。</div>
+    <div class="meta">198 节点 · 6 个结局 · 已发布</div>
+    <span class="status-badge badge-done">✅ 可游玩</span>
   </a>
-  <a href="/play/launcher.html?load=continue" class="menu-btn">
-    继续游戏
-    <span class="sub">读取最近存档</span>
+  <a href="/three-body-2/" class="game-card">
+    <div class="num">第二部</div>
+    <div class="title">黑暗森林</div>
+    <div class="tagline">宇宙就是一座黑暗森林，每个文明都是带枪的猎人。</div>
+    <div class="meta">改编规划中</div>
+    <span class="status-badge badge-wip">⏳ 即将开始</span>
   </a>
-  <a href="/play/launcher.html?load=select" class="menu-btn">
-    读取存档
-    <span class="sub">选择存档位</span>
+  <a href="/three-body-3/" class="game-card">
+    <div class="num">第三部</div>
+    <div class="title">死神永生</div>
+    <div class="tagline">给时光以生命，而不是给生命以时光。</div>
+    <div class="meta">改编规划中</div>
+    <span class="status-badge badge-soon">📅 待定</span>
   </a>
 </div>
-
-<div class="version">v1.0.0 · 已发布 2 章 · 114 节点 · 持续更新中</div>
-
-<div class="about">
-  <p>本项目是刘慈欣科幻小说《三体》（地球往事第一部）的互动分支剧情游戏改编。采用 story-to-game 九步工作流，将约 20 万字的原著转化为沉浸式互动叙事体验。</p>
-  <p style="margin-top:1rem;">
-    <a href="https://github.com/gkd2323c/three-body-game" class="btn">GitHub</a>
-  </p>
-  <div class="license-badge">
-    改编内容 CC BY-NC-SA 4.0 · 原著版权归刘慈欣所有
-  </div>
-</div>
-
 <footer>
-  <p>改编内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可</p>
-  <p>游戏引擎 by <a href="https://github.com/Shanyin-ai/Story-to-game">@山音</a></p>
+  <p>改编内容 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> · 原著版权归刘慈欣所有</p>
+  <p>游戏引擎 by <a href="https://github.com/Shanyin-ai/Story-to-game">@山音</a> · <a href="https://github.com/gkd2323c/three-body-game">GitHub</a></p>
 </footer>
-
 </div>
 </body>
 </html>

@@ -7366,23 +7366,22 @@
 (function() {
   var params = new URLSearchParams(window.location.search);
   var loadAction = params.get('load');
+  var gamePath = params.get('game') || 'episodes/game.json';
 
-  // Default: load the merged game.json
-  fetch('/episodes/game.json')
+  fetch('/' + gamePath)
     .then(function(r) { return r.json(); })
     .then(function(data) {
       if (typeof loadStory === 'function') {
         loadStory(data, { animate: true, cache: true });
-        // Handle continue/load actions
         if (loadAction === 'continue') {
           setTimeout(function() {
-            var continueBtn = document.querySelector('[data-action="continue"]');
-            if (continueBtn) continueBtn.click();
+            var btn = document.querySelector('[data-action="continue"]');
+            if (btn) btn.click();
           }, 500);
         } else if (loadAction === 'select') {
           setTimeout(function() {
-            var loadBtn = document.querySelector('[data-action="load"]');
-            if (loadBtn) loadBtn.click();
+            var btn = document.querySelector('[data-action="load"]');
+            if (btn) btn.click();
           }, 500);
         }
       }

@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "三体II·黑暗森林",
+    "author": "刘慈欣",
+    "description": "宇宙就是一座黑暗森林，每个文明都是带枪的猎人。",
+    "theme": "noir",
+    "ambient": "static",
+    "cover": { "label": "黑暗森林", "tagline": "给岁月以文明，而不是给文明以岁月" },
+    "variableName": "威慑",
+    "initialVariable": 50
+  },
+  "startNodeId": "prologue_001",
+  "variables": {},
+  "achievements": {},
+  "nodes": {
+    "prologue_001": {
+      "chapterTitle": "黑暗森林",
+      "title": "面壁者",
+      "scene": {
+        "id": "waking",
+        "name": "苏醒",
+        "description": "冬眠舱缓缓开启。光线涌进来。"
+      },
+      "progress": 0,
+      "segments": [
+        { "text": "——黑暗森林·即将到来——", "effect": "breath" },
+        { "text": "改编工程进行中。敬请期待。" }
+      ],
+      "choices": [
+        { "text": "等待更新", "next": "prologue_001" }
+      ]
+    }
+  }
+}
