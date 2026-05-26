@@ -1,0 +1,14 @@
+# 系统
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 输出缓存（如果有临时文件）
+temp/
+*.tmp
