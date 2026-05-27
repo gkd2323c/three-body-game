@@ -1,0 +1,433 @@
+{
+  "meta": {
+    "title": "三体1：地球往事",
+    "author": "刘慈欣",
+    "version": "1.0.0",
+    "description": "一切都会逝去，只有死神永生。",
+    "theme": "noir",
+    "ambient": "rain",
+    "cover": {
+      "label": "地球往事",
+      "tagline": "我们是虫子，但虫子从未被战胜。"
+    },
+    "variableName": "灼见",
+    "initialVariable": 35
+  },
+  "startNodeId": "ch1_wm_home_01",
+  "variables": {
+    "trust_shi": 0,
+    "trust_ye": 0,
+    "route_invest": "none",
+    "ye_psyche": "neutral",
+    "game_progress": 0,
+    "eto_exposure": 0
+  },
+  "achievements": {
+    "first_step": {
+      "title": "科学边界",
+      "description": "接受常伟思的邀请。"
+    },
+    "countdown_seen": {
+      "title": "幽灵倒计时",
+      "description": "看到倒计时——但选择了回避。"
+    },
+    "heard_billiard": {
+      "title": "台球",
+      "description": "物理规律在时间和空间上不均匀。"
+    }
+  },
+  "nodes": {
+    "ch1_wm_home_01": {
+      "chapterTitle": "第一章：科学边界",
+      "scene": {
+        "id": "wang_home",
+        "name": "汪淼家·客厅",
+        "type": "major",
+        "description": "客厅不大，收拾得干净整洁。书架上摆满了专业期刊和摄影画册——主人显然是一个有条理的人。窗外是春日午后的阳光，楼下有孩子在嬉闹。茶几上放着一杯刚泡好的茶，还在冒热气。",
+        "arrival": "门铃响了。"
+      },
+      "progress": 1,
+      "theme": "paper",
+      "ambient": "rain",
+      "segments": [
+        { "text": "你叫汪淼。你是一个纳米材料专家。今天是星期三，你在家等一个快递。" },
+        { "text": "门口站着四个人——两名警察和两名陆军军官。这个组合很不寻常。你的第一反应是：是不是超导中心的项目出了什么事。" }
+      ],
+      "choices": [
+        { "text": "开门请他们进来", "next": "ch1_wm_home_01_cb_open", "changes": { "val": 3 } },
+        { "text": "隔着门问他们有什么事", "next": "ch1_wm_home_01_cb_cautious", "changes": { "val": -3 } }
+      ]
+    },
+    "ch1_wm_home_01_cb_open": {
+      "scene": "汪淼家·客厅",
+      "progress": 2,
+      "segments": [
+        { "text": "你打开了门。来的四个人——两名警察，两名军官——站在门口。便衣警察带头往里走，你伸手拦住了他。" }
+      ],
+      "next": "ch1_wm_home_02"
+    },
+    "ch1_wm_home_01_cb_cautious": {
+      "scene": "汪淼家·客厅",
+      "progress": 2,
+      "segments": [
+        { "text": "你隔着门问他们有什么事。便衣警察不耐烦地亮了一下证件。「汪淼？开门。」你犹豫了一下，还是开了。" }
+      ],
+      "next": "ch1_wm_home_02"
+    },
+    "ch1_wm_home_02": {
+      "scene": "汪淼家·客厅",
+      "progress": 3,
+      "segments": [
+        { "text": "那个便衣警察带头往里闯——你拦住了他。" },
+        { "speaker": "你", "text": "请不要在我家里抽烟。" },
+        { "text": "便衣警察五大三粗，穿着一件脏兮兮的皮夹克，浑身烟味。他旁边穿制服的年轻警官微笑着介绍——这位是史强队长。" },
+        { "speaker": "史强", "text": "成，那就在楼道里说吧。" }
+      ],
+      "choices": [
+        { "text": "听他说下去", "next": "ch1_wm_home_03" }
+      ]
+    },
+    "ch1_wm_home_03": {
+      "scene": "汪淼家·楼道",
+      "progress": 5,
+      "segments": [
+        { "speaker": "年轻警官", "text": "汪教授，我们是想了解一下，最近你与「科学边界」学会的成员有过接触，是吧？" },
+        { "speaker": "你", "text": "「科学边界」是一个在国际学术界很有影响的学术组织，成员都是著名学者。这样一个合法的学术组织，我怎么就不能接触了呢？" },
+        { "text": "史强把吸进肚子里的烟全喷到你脸上。" },
+        { "speaker": "史强", "text": "你看看你这个人！我们说它不合法了吗？" }
+      ],
+      "choices": [
+        { "text": "「我有权不回答，你们请便吧。」", "next": "ch1_wm_home_04_deflect", "changes": { "set": { "trust_shi": -3 } } },
+        { "text": "沉默，等他们说明来意", "next": "ch1_wm_home_04_cooperate", "changes": { "set": { "trust_shi": 2 } } }
+      ]
+    },
+    "ch1_wm_home_04_deflect": {
+      "scene": "汪淼家·楼道",
+      "progress": 6,
+      "segments": [
+        { "text": "你转身要回屋。史强厉声喊了一句「等等！」" },
+        { "speaker": "史强", "text": "给他地址和电话，下午去走一趟。" },
+        { "speaker": "你", "text": "你要干什么！" }
+      ],
+      "next": "ch1_wm_home_05"
+    },
+    "ch1_wm_home_04_cooperate": {
+      "scene": "汪淼家·楼道",
+      "progress": 6,
+      "segments": [
+        { "text": "你没说话，等着他继续。一名少校军官上前解围。" },
+        { "speaker": "少校", "text": "汪教授，下午有一个重要会议，首长让我们来邀请您。" }
+      ],
+      "next": "ch1_wm_home_05"
+    },
+    "ch1_wm_home_05": {
+      "scene": "汪淼家·楼下",
+      "progress": 8,
+      "segments": [
+        { "text": "你坐上了来接你的车。车子驶进近郊一座大院——从门口没有单位名牌可以看出，这里是军方而不是警方的地方。" },
+        { "text": "你对即将看到的一切毫无准备。" }
+      ],
+      "choices": [
+        { "text": "走进大厅", "next": "ch1_wm_meeting_01" }
+      ]
+    },
+    "ch1_wm_meeting_01": {
+      "scene": {
+        "id": "war_room",
+        "name": "作战中心",
+        "type": "major",
+        "description": "大厅里一片纷乱——电脑设备胡乱堆放，电线和网线纠缠在地上；一大摞交换机随手堆在服务器上；几个投影仪大屏幕在角落呈不同角度立着；烟雾像晨雾般在半空浮了一层。人们神情疲惫，衣服皱巴巴的。",
+        "arrival": "你走进大厅，被眼前的景象定住了。"
+      },
+      "progress": 10,
+      "segments": [
+        { "text": "你看到了史强，他已经大大咧咧地坐下了。" },
+        { "speaker": "史强", "text": "汪教授！来，坐这儿。" },
+        { "text": "你不想挨着他坐，但那是唯一一个空位。" }
+      ],
+      "choices": [
+        { "text": "坐在史强旁边", "next": "ch1_wm_meeting_02" }
+      ]
+    },
+    "ch1_wm_meeting_02": {
+      "scene": "作战中心",
+      "progress": 12,
+      "segments": [
+        { "speaker": "常伟思", "text": "同志们，会议开始。在全球各战区，我们这里现在成为焦点。首先把当前情况向与会的同志们介绍一下。" },
+        { "text": "「战区」这个不寻常的术语让你迷惑。你注意到对面坐着四个外国人——两名北约军官和两名CIA官员。" }
+      ],
+      "choices": [
+        { "text": "听常伟思继续讲", "next": "ch1_wm_meeting_03" }
+      ]
+    },
+    "ch1_wm_meeting_03": {
+      "scene": "作战中心",
+      "progress": 14,
+      "segments": [
+        { "speaker": "常伟思", "text": "最近，敌人的攻击明显加强了，目标仍是科学界高层。请先看一下文件中的那份名单。" },
+        { "text": "你抽出文件最上面的那张纸——上面是一份名单，中文和英文姓名都有。你认识其中三人，都是物理学最前沿的著名学者。但你的目光锁定在最后一个名字上——" }
+      ],
+      "choices": [
+        { "text": "看清那个名字", "next": "ch1_wm_meeting_04" }
+      ]
+    },
+    "ch1_wm_meeting_04": {
+      "scene": "作战中心",
+      "progress": 16,
+      "segments": [
+        { "text": "杨冬。" },
+        { "text": "你知道这个名字。你在良湘的工地上见过她一次——那个站在巨大超导线圈前的年轻女性，夕阳的金色光束正好投在她身上。她有一双清澈的眼睛。" },
+        { "speaker": "常伟思", "text": "名单上的这些物理学家，在不到两个月的时间里，先后自杀。" }
+      ],
+      "choices": [
+        { "text": "追问详情", "next": "ch1_wm_meeting_04_cb_ask", "changes": { "val": 5 } },
+        { "text": "沉默——信息量太大了", "next": "ch1_wm_meeting_04_cb_silent", "changes": { "val": -3 } }
+      ]
+    },
+    "ch1_wm_meeting_04_cb_ask": {
+      "scene": "作战中心",
+      "progress": 17,
+      "segments": [
+        { "text": "「为什么？」你问。常伟思看着你，像是在评估你准备好没有。他慢慢翻开了文件夹。" }
+      ],
+      "next": "ch1_wm_meeting_05"
+    },
+    "ch1_wm_meeting_04_cb_silent": {
+      "scene": "作战中心",
+      "progress": 17,
+      "segments": [
+        { "text": "你沉默了。这个名字——杨冬——让你想起了那束夕阳中的光。你还不知道她是谁，但你知道她已经不在了。常伟思看了你一眼，继续说下去。" }
+      ],
+      "next": "ch1_wm_meeting_05"
+    },
+    "ch1_wm_meeting_05": {
+      "scene": "作战中心",
+      "progress": 18,
+      "segments": [
+        { "speaker": "你", "text": "为什么？" },
+        { "speaker": "常伟思", "text": "现在能肯定的只有一点：促使他们自杀的原因是相同的。" },
+        { "text": "一直低着头的一个人终于有了反应——他从口袋里掏出一个白色信封，隔着桌子递给你。" },
+        { "speaker": "（旁边的人低声说）", "text": "他是杨冬的男友，丁仪博士。" }
+      ],
+      "choices": [
+        { "text": "接过信封", "next": "ch1_wm_meeting_06" }
+      ]
+    },
+    "ch1_wm_meeting_06": {
+      "scene": "作战中心",
+      "progress": 20,
+      "segments": [
+        { "text": "信封里装着一片白桦树皮。上面有一行娟秀的字——" },
+        { "effect": "silence" },
+        { "speaker": "杨冬的遗书", "text": "一切的一切都导向这样一个结果：物理学从来就没有存在过，将来也不会存在。我知道自己这样做是不负责任的，但别无选择。" },
+        { "speaker": "你", "text": "物理学……不存在？" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch1_wm_meeting_07" }
+      ]
+    },
+    "ch1_wm_meeting_07": {
+      "scene": "作战中心",
+      "progress": 22,
+      "segments": [
+        { "speaker": "常伟思", "text": "丁博士，您是理论物理专业的，能介绍一下「科学边界」的情况吗？" },
+        { "speaker": "丁仪", "text": "「科学边界」试图用科学的方法找出科学的局限性。现代物理学的发展，似乎隐隐约约地触到了这条底线。" },
+        { "text": "你发现史强正在用一种奇怪的眼神看着你——像是打量一只即将跳进陷阱的猎物。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch1_wm_meeting_08" }
+      ]
+    },
+    "ch1_wm_meeting_08": {
+      "scene": "作战中心",
+      "progress": 24,
+      "segments": [
+        { "speaker": "常伟思", "text": "汪教授，我们希望您接受邀请，加入「科学边界」学会。这也是我们今天请您来的主要目的。" },
+        { "text": "你愣住了。" },
+        { "speaker": "史强", "text": "哇哈哈，卧底！" }
+      ],
+      "choices": [
+        { "text": "「对不起，首长，我不能干这事。」", "next": "ch1_wm_refuse", "changes": { "val": -10, "set": { "trust_shi": -5 } } },
+        { "text": "「我……需要时间考虑。」", "next": "ch1_wm_meeting_09", "changes": { "val": -3 } },
+        { "text": "「我改变主意了——我接受。」", "next": "ch1_wm_accept", "changes": { "val": 8, "set": { "trust_shi": 3 } } }
+      ]
+    },
+    "ch1_wm_refuse": {
+      "scene": "作战中心",
+      "progress": 25,
+      "segments": [
+        { "speaker": "常伟思", "text": "好的，汪教授，那我们就不再耽误您的时间了。" },
+        { "text": "你被礼貌地送出了会议室。史强在后面大声说：「这样挺好，我压根儿就不同意这个方案。」" },
+        { "text": "你回到了纳米中心。项目照常进行。但那张名单上的名字——杨冬——一直在你脑子里挥之不去。" },
+        { "text": "一个月后，你发现自己的眼皮开始跳。不是普通的跳——是有规律的。像一组数字。" }
+      ],
+      "next": "ch1_wm_rash_01"
+    },
+    "ch1_wm_rash_01": {
+      "progress": 27,
+      "segments": [
+        { "text": "你用相机拍了一张照片。底片上清晰地显示着一行数字：1198:53:09。" },
+        { "text": "倒计时。没有起点，没有终点——但它在那里。一秒一秒地走。" },
+        { "text": "你换了三台相机，换了五个胶卷，让别人替你拍——倒计时只出现在你的照片上。" },
+        { "text": "你没有再联系常伟思。你选择了独自面对。" },
+        { "text": "倒计时归零的那一天，你坐在暗室里，手里拿着最后一卷胶卷。你不敢冲洗。" }
+      ],
+      "choices": [
+        { "text": "冲出胶卷", "next": "ch1_wm_rash_02" }
+      ]
+    },
+    "ch1_wm_rash_02": {
+      "progress": 28,
+      "effect": "silence",
+      "segments": [
+        { "text": "底片上什么都没有。没有数字。没有倒计时。什么都没有。" },
+        { "text": "你愣了很久。然后你突然意识到——它不是消失了。它是归零了。" },
+        { "text": "你永远不知道自己错过了什么。" }
+      ],
+      "next": "ch1_rash_refuse"
+    },
+    "ch1_rash_refuse": {
+      "isEnding": true,
+      "title": "第零日",
+      "type": "RASH ENDING",
+      "progress": 30,
+      "description": "汪淼拒绝了常伟思的邀请，选择了独自面对倒计时。倒计时归零那天，什么都没有发生。\n\n但他不知道——在他看不见的地方，宇宙闪烁发生了。叶文洁向三体人发送了信息。潘寒杀死了申玉菲。古筝行动照常进行。伊文斯被纳米丝切成了三段。智子锁死了人类的物理学。\n\n四百五十年后，三体舰队到达的那天——汪淼的冬眠舱还在某个地下仓库里，指示灯早就灭了。",
+      "closing": "有些使命，拒绝了就再也不会轮到你了。"
+    },
+    "ch1_wm_meeting_09": {
+      "scene": "作战中心",
+      "progress": 25,
+      "segments": [
+        { "speaker": "常伟思", "text": "我们尊重您的意愿。" },
+        { "text": "史强把你送出大楼时，拍了拍你的肩膀。" },
+        { "speaker": "史强", "text": "汪教授——我知道你会答应的。你这种知识分子，好奇心比胆子大。" }
+      ],
+      "choices": [
+        { "text": "「我没有答应。」", "next": "ch1_wm_refuse" },
+        { "text": "「你说对了。」", "next": "ch1_wm_accept" }
+      ]
+    },
+    "ch1_wm_accept": {
+      "scene": "作战中心",
+      "progress": 26,
+      "segments": [
+        { "text": "你回到会议室。" },
+        { "speaker": "你", "text": "我决定加入。但我不是去卧底——我只是想证明你的无知和愚蠢。" },
+        { "text": "你盯着史强。他咧嘴笑了。那笑容里有一种你读不懂的东西——这个人看起来粗俗，但他的眼睛像刀子。" },
+        { "speaker": "史强", "text": "如果你过一阵儿还活着，那自然也就证明了。" }
+      ],
+      "changes": {
+        "importantFlag": { "flag": "accepted_mission", "label": "接受卧底任务" },
+        "unlockAchievement": "first_step"
+      },
+      "choices": [
+        { "text": "去找丁仪", "next": "ch1_ding_01" }
+      ]
+    },
+    "ch1_ding_01": {
+      "scene": {
+        "id": "ding_home",
+        "name": "丁仪家",
+        "type": "major",
+        "description": "门没锁。客厅很大，但几乎没什么家具——最显眼的是客厅中央摆放的一张台球桌。地上有几个空酒瓶，空气中有一股隐隐的酒味。窗帘半拉着，光线昏暗。",
+        "arrival": "你按照司机给的地址找到了丁仪家。"
+      },
+      "progress": 28,
+      "segments": [
+        { "text": "丁仪躺在沙发上，电视开着，但他的眼睛盯着天花板。他看到你来了，没有起身。" },
+        { "speaker": "丁仪", "text": "汪教授——你是对的，别跟军方和警方纠缠到一块儿。那些物理学家的自杀与「科学边界」没有关系。" }
+      ],
+      "choices": [
+        { "text": "「我想知道杨冬的事。」", "next": "ch1_ding_02" }
+      ]
+    },
+    "ch1_ding_02": {
+      "scene": "丁仪家",
+      "progress": 30,
+      "segments": [
+        { "speaker": "丁仪", "text": "如果知道了，你只会卷得更深。" },
+        { "speaker": "你", "text": "我是搞应用研究的，没有你们理论派那么敏感。" },
+        { "text": "丁仪从沙发上站起来，走到台球桌前，拿起了两个球——一黑一白。" },
+        { "speaker": "丁仪", "text": "打过台球吗？" }
+      ],
+      "choices": [
+        { "text": "「上学时随便玩过。」", "next": "ch1_ding_03" }
+      ]
+    },
+    "ch1_ding_03": {
+      "scene": "丁仪家",
+      "progress": 32,
+      "segments": [
+        { "text": "丁仪把黑球放到洞口旁边，白球放在距黑球十厘米处。" },
+        { "speaker": "丁仪", "text": "把黑球打进去。" },
+        { "text": "你照做了。白球轻轻撞上黑球，黑球落袋——简单。" },
+        { "speaker": "丁仪", "text": "来，我们把球桌换个位置。" },
+        { "text": "你们抬起沉重的台球桌，搬到客厅的另一个角落。他又摆好了球——同样的位置，同样的距离。" },
+        { "speaker": "丁仪", "text": "再打。" }
+      ],
+      "choices": [
+        { "text": "照做", "next": "ch1_ding_04" }
+      ]
+    },
+    "ch1_ding_04": {
+      "scene": "丁仪家",
+      "progress": 34,
+      "segments": [
+        { "text": "你又打进去了。他又让你搬桌子。你们搬了五次，换了五个不同的角落——每次都是一样的位置、一样的距离、一样的角度。每次黑球都落袋。" },
+        { "speaker": "丁仪", "text": "五次试验，结果居然都一样！你不震惊吗？" },
+        { "speaker": "你", "text": "这有什么好震惊的？物理规律在时间和空间上是均匀的——这是物理学的基础。" }
+      ],
+      "choices": [
+        { "text": "「你到底想表达什么？」", "next": "ch1_ding_05" }
+      ]
+    },
+    "ch1_ding_05": {
+      "scene": "丁仪家",
+      "progress": 36,
+      "segments": [
+        { "speaker": "丁仪", "text": "想象另一种结果——第一次黑球进洞。第二次黑球走偏了。第三次黑球飞上了天花板。第四次像一只受惊的麻雀在房间里乱飞。第五次以接近光速的速度飞出地球——" },
+        { "text": "丁仪盯着你。你也盯着他。你等了很久才开口。" },
+        { "speaker": "你", "text": "这事真的发生了？" },
+        { "speaker": "丁仪", "text": "（喝干了杯中的酒）是的。在北美、欧洲、良湘——三个高能加速器上。同样的粒子，同样的撞击能量，同样的实验条件——结果每次都不一样。物理规律，在时间和空间上不均匀。" }
+      ],
+      "changes": {
+        "addFlag": "heard_billiard",
+        "addFlag": "met_ding"
+      },
+      "choices": [
+        { "text": "「那物理学……？」", "next": "ch1_ding_06" }
+      ]
+    },
+    "ch1_ding_06": {
+      "scene": "丁仪家",
+      "progress": 38,
+      "effect": "silence",
+      "segments": [
+        { "speaker": "丁仪", "text": "「物理学从来就没有存在过。」——她遗书的后半句。你刚才说出了前半句。" },
+        { "text": "你拿起桌上的白球——那个被你打进洞五次的白球。在手里掂了掂。它看起来很正常。摸起来很正常。" },
+        { "text": "但也许下一秒，它就不再愿意保持球的形状了。" }
+      ],
+      "choices": [
+        { "text": "告辞", "next": "ch1_closure_01" }
+      ]
+    },
+    "ch1_closure_01": {
+      "progress": 39,
+      "segments": [
+        { "text": "你走出丁仪家，在门口站了一会儿。门在身后缓缓合上。" },
+        { "text": "你手里还攥着那个白球——出门时你顺手拿走了它。现在它在你的口袋里，凉凉的，像一个证据。一个你还没想好要不要提交的证据。" },
+        { "text": "你抬头看天。天空很正常。云的形状很正常。但你突然觉得——如果物理规律是不均匀的，那这片云在下一秒可能会变成任何形状。它只是还没有变而已。" }
+      ],
+      "next": "ch1_batch1_end"
+    },
+    "ch1_batch1_end": {
+      "isEnding": true,
+      "title": "科学边界",
+      "type": "NORMAL ENDING",
+      "progress": 40,
+      "achievement": "first_step",
+      "description": "汪淼走出丁仪家时，天色已晚。城市华灯初上，一切看起来都很正常。但有一件事已经不一样了——他知道了杨冬死亡的真实原因。不是学术造假，不是情感纠纷。\n\n是更可怕的。\n\n她发现物理学——她一生所追求的东西——可能根本不存在。\n\n而汪淼自己的倒计时，还不知道什么时候会归零。",
+      "closing": "第一块碎片，已经落在了棋盘上。"
+    }
+  }
+}
