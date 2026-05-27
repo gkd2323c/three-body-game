@@ -23,6 +23,7 @@ BATCH_TRANSITIONS = {
     "ch2_batch2_end": "ch3_ywj_001",       # 新第2批(倒计时)→ 第3批(宇宙闪烁)
     "ch3_batch3_end": "ch4_sg2_001",       # 新第3批(宇宙闪烁)→ 第4批(三体游戏)
     "ch4_batch4_end": "ch5_rc_001",        # 新第4批(三体游戏)→ 第5批(红岸)
+    "ch5_batch5_end": "ch6_eto_001",       # 新第5批(红岸)→ 第6批(ETO)
     "return_003": "chang_001",             # 旧第2批结束 → 旧第3批开始
     "batch3_end": "guzheng_exec_001",      # 旧第3批结束 → 旧第4批开始
     "game_einstein_return2": "return_001", # 旧第6批结束 → 返回现实
