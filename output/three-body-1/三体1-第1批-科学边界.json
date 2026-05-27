@@ -249,7 +249,7 @@
       "choices": [
         { "text": "「对不起，首长，我不能干这事。」", "next": "ch1_wm_refuse", "changes": { "val": -10, "set": { "trust_shi": -5 } } },
         { "text": "「我……需要时间考虑。」", "next": "ch1_wm_meeting_09", "changes": { "val": -3 } },
-        { "text": "「我改变主意了——我接受。」", "next": "ch1_wm_accept", "changes": { "val": 8, "set": { "trust_shi": 3 } } }
+        { "text": "「我接受。但我不是去当你们的卧底，我只是去证明你们的无知。」", "next": "ch1_wm_accept", "changes": { "val": 8, "set": { "trust_shi": 3 } } }
       ]
     },
     "ch1_wm_refuse": {
@@ -391,8 +391,7 @@
         { "speaker": "丁仪", "text": "（喝干了杯中的酒）是的。在北美、欧洲、良湘——三个高能加速器上。同样的粒子，同样的撞击能量，同样的实验条件——结果每次都不一样。物理规律，在时间和空间上不均匀。" }
       ],
       "changes": {
-        "addFlag": "heard_billiard",
-        "addFlag": "met_ding"
+        "addFlags": ["heard_billiard", "met_ding"]
       },
       "choices": [
         { "text": "「那物理学……？」", "next": "ch1_ding_06" }
