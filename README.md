@@ -8,23 +8,33 @@
 
 ## 当前状态
 
-| 部 | 节点 | 结局 | 状态 |
-|:--|:---:|:----:|:----|
-| 第一部 · 三体 | **215** | **7** | ✅ 已完结 |
-| 第二部 · 黑暗森林 | — | — | ⏳ 框架就绪 |
-| 第三部 · 死神永生 | — | — | 📅 待启动 |
+| 部 | 批次 | 节点 | 结局 | 成就 | 状态 |
+|:--|:---:|:----:|:----:|:----:|:----|
+| 第一部 · 地球往事 | **18** | **236** | **14** | **33** | ✅ 已完结 |
+| 第二部 · 黑暗森林 | **13** | **322** | **12** | **35** | ✅ 已完结 |
+| 第三部 · 死神永生 | — | — | — | — | 📅 待启动 |
 
-第一部已实现完整主线 + 7 个分支结局，可直接通关。
+### 第一部 · 14 结局
 
-### 7 个结局
+| 类型 | 结局 |
+|:----|:------|
+| 🎯 TRUE ENDING | 虫子（从未被战胜） |
+| 👁️ SPECIAL ENDING | 射手与农场主 |
+| 📥 NORMAL ENDING | 降临 / 冬眠 |
+| 🌑 BRANCH ENDING | 深渊（回响） |
+| 🧩 HIDDEN ENDING | 破壁人 |
+| 💀 RASH ENDING | 第零日 / 崩坏 / 归零 / 无尽的游戏 / 暴露 / 切割 |
 
-- 🌾 **虫子（从未被战胜）** — TRUE ENDING
-- 📥 **降临（一厢情愿的救世）** — NORMAL ENDING
-- ❄️ **冬眠（错过的时代）** — NORMAL ENDING
-- 🔪 **切割（一线之隔）** — RASH ENDING
-- 🎮 **无尽游戏（文明的抽屉）** — HIDDEN ENDING
-- 🧩 **破壁人** — HIDDEN ENDING
-- 🌑 **深渊（回响）** — BRANCH ENDING
+### 第二部 · 12 结局
+
+| 类型 | 结局 |
+|:----|:------|
+| 🎯 TRUE ENDING | 黑暗森林 |
+| 🐜 SPECIAL ENDING | 褐蚁 |
+| 📥 NORMAL ENDING | 在末日等你 / 沉默的见证者 |
+| 🌑 BRANCH ENDING | 星舰地球 / 阴影中的殉道者 / 钢印族 |
+| 🧩 HIDDEN ENDING | 另一个伊文斯 |
+| 💀 RASH ENDING | 第四位的陨落 / 过线 / 拒绝时间 / 太空遗骸 |
 
 ---
 
@@ -38,9 +48,10 @@ three-body-game/
 ├── scripts/
 │   ├── merge-game.py            # 第一部合并脚本（CI 自动运行）
 │   └── merge-game-2.py          # 第二部合并脚本
+├── archive/                     # 旧批次存档（6 批）
 ├── output/
-│   ├── three-body-1/            # 第一部批次 JSON（6 批）
-│   └── three-body-2/            # 第二部（待写）
+│   ├── three-body-1/            # 第一部批次 JSON（18 批纯新版）
+│   └── three-body-2/            # 第二部批次 JSON（13 批）
 ├── site/                        # 网站根目录（Cloudflare Pages）
 │   ├── index.html               # 三部曲入口
 │   ├── three-body-1/            # 第一部（game.json + 入口）
@@ -48,8 +59,8 @@ three-body-game/
 │   ├── three-body-3/            # 第三部
 │   └── play/launcher.html       # 共享游戏启动器
 ├── docs/
-│   ├── three-body-1/            # 第一部改编方案
-│   └── three-body-2/            # 第二部（待写）
+│   ├── three-body-1/            # 第一部规划文档（索引/风格/拓扑/状态）
+│   └── three-body-2/            # 第二部规划文档
 ├── skills/                      # story-to-game 工作流
 │   ├── SKILL.md                 # 九步写作规则
 │   ├── references/              # 细分规则文档（7 份）
@@ -64,10 +75,11 @@ three-body-game/
 ### 写新批次
 
 ```bash
-# 1. 在 output/three-body-1/ 创建批次 JSON
-# 2. 更新 scripts/merge-game.py 的 BATCH_TRANSITIONS
+# 1. 在 output/three-body-1/ 或 output/three-body-2/ 创建批次 JSON
+# 2. 更新对应合并脚本的 BATCH_TRANSITIONS
 # 3. 合并验证
-python scripts/merge-game.py --validate
+python scripts/merge-game.py --validate    # 第一部
+python scripts/merge-game-2.py --validate  # 第二部
 # 4. 提交（CI 自动部署）
 git add output/ scripts/ site/ && git commit && git push
 ```
@@ -75,10 +87,13 @@ git add output/ scripts/ site/ && git commit && git push
 ### 验证
 
 ```bash
-python scripts/merge-game.py --validate
+python scripts/merge-game.py --validate     # 第一部
+python scripts/merge-game-2.py --validate   # 第二部
 ```
 
-验证项：节点可达性、引用完整性、无死胡同、无元叙事词汇。
+Cloudflare Pages 构建命令已配置为自动运行 `python scripts/merge-game.py --validate && python scripts/merge-game-2.py --validate`。
+
+验证项：节点可达性、引用完整性、无死胡同、无元叙事词汇。正文字数 ≥ 2000（长篇）或 ≥ 800（短篇）。
 
 ---
 
