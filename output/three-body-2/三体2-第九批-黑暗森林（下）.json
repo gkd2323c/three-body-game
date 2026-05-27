@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "theme": "void",
+    "ambient": "static",
+    "cover": {
+      "label": "黑暗森林",
+      "tagline": "给岁月以文明，而不是给文明以岁月。"
+    },
+    "variableName": "明暗",
+    "initialVariable": 40
+  },
+  "startNodeId": "ch8_deter_001",
+  "variables": {
+    "trust_shi": 0,
+    "trust_zhuang": 0,
+    "route_zhang": "none",
+    "knows_dark_forest": "none",
+    "zhang_stealth": 50
+  },
+  "achievements": {
+    "dark_battle": {
+      "title": "没关系的，都一样",
+      "description": "见证黑暗战役。"
+    },
+    "dark_forest": {
+      "title": "黑暗森林",
+      "description": "悟出黑暗森林法则。"
+    },
+    "deterrence": {
+      "title": "执剑人",
+      "description": "建立黑暗森林威慑。"
+    }
+  },
+  "nodes": {
+    "ch8_deter_001": {
+      "chapterTitle": "黑暗森林",
+      "scene": {
+        "id": "deep_space_dark",
+        "name": "太阳系外围·黑暗太空",
+        "type": "major",
+        "description": "绝对的黑暗。没有上下左右，没有远近。群星像冰冷的尘埃悬浮在无限远处。四艘战舰——「自然选择」号、「蓝色空间」号、「企业」号、「深空」号——在沉默中漂流。",
+        "arrival": "追击已经持续了数日。"
+      },
+      "progress": 1,
+      "ambient": "static",
+      "segments": [
+        { "speaker": "系统", "text": "距水滴毁灭联合舰队，已过去一段时间。" },
+        { "text": "章北海仍在控制「自然选择」号。" },
+        { "text": "四艘追击战舰——加上「自然选择」号——形成了星舰地球。但燃料不够所有人回去。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch8_deter_002" }
+      ]
+    },
+    "ch8_deter_002": {
+      "scene": "太阳系外围·黑暗太空",
+      "progress": 3,
+      "segments": [
+        { "text": "你叫章北海。你站在舰长室的星图前。东方延绪和两名副舰长站在你身后，他们也在看同一张星图。" },
+        { "text": "沉默了很久。" },
+        { "speaker": "东方延绪", "text": "四艘战舰的燃料加起来只够一艘飞到最近的恒星系。章北海——你早就知道会这样，是不是？" }
+      ],
+      "choices": [
+        { "text": "「是。」", "next": "ch8_deter_003" }
+      ]
+    },
+    "ch8_deter_003": {
+      "scene": "太阳系外围·黑暗太空",
+      "progress": 5,
+      "segments": [
+        { "speaker": "章北海", "text": "猜疑链。只要有一方认为对方可能会先动手——那就一定会动手。" },
+        { "text": "没有人反驳。因为每个人心里都在想同一件事。" },
+        { "text": "你低头调出了武器系统。你锁定其他三艘战舰。手指停在发射键上方。" }
+      ],
+      "choices": [
+        { "text": "等一等", "next": "ch8_deter_003_wait" },
+        { "text": "发射", "next": "ch8_deter_003_launch" }
+      ]
+    },
+    "ch8_deter_003_wait": {
+      "scene": "太阳系外围·黑暗太空",
+      "progress": 6,
+      "segments": [
+        { "text": "你等了几秒钟。你想看看他们会不会先做——" }
+      ],
+      "next": "ch8_deter_005"
+    },
+    "ch8_deter_003_launch": {
+      "scene": "太阳系外围·黑暗太空",
+      "progress": 6,
+      "segments": [
+        { "text": "你按了下去。但信号还没离开飞船——" }
+      ],
+      "next": "ch8_deter_005"
+    },
+    
+    "ch8_deter_005": {
+      "scene": "太阳系外围·黑暗太空",
+      "progress": 9,
+      "effect": "breath",
+      "segments": [
+        { "text": "你的身体正在失去控制。血雾从你的耳朵和鼻子里渗出来。视野的边缘开始变黑。" },
+        { "text": "你转过头——看向舷窗外。木星的方向亮着一颗星。那是太阳。已经很小了。" },
+        { "text": "你努力说出那句话。声音很低，低到只有自己听得见。" },
+        { "speaker": "章北海", "text": "没关系的，都一样。" }
+      ],
+      "next": "ch8_deter_006"
+    },
+    "ch8_deter_006": {
+      "scene": "太阳系外围·黑暗太空",
+      "progress": 10,
+      "effect": "silence",
+      "segments": [
+        { "text": "「自然选择」号在次声波氢弹的攻击下全员牺牲。没有一个幸存者。" },
+        { "text": "「蓝色空间」号因为提前将舱内抽成真空而躲过了攻击。它反击了，摧毁了「终极规律」号。" },
+        { "text": "「蓝色空间」号收集了所有战舰的燃料和零件，飞向深空。" },
+        { "text": "在太阳系的另一侧，「青铜时代」号也做了同样的事。" }
+      ],
+      "next": "ch8_deter_007"
+    },
+    "ch8_deter_007": {
+      "scene": {
+        "id": "new_life_village",
+        "name": "新生活五村·沙地",
+        "type": "major",
+        "description": "黄沙覆盖着华北平原。远处的废弃城市在风沙中若隐若现。夜空中没有几颗星——只有木星方向还剩一片暗红色的余晖。",
+        "arrival": "地球。新闻正在播报黑暗战役的消息。"
+      },
+      "progress": 13,
+      "segments": [
+        { "text": "你叫罗辑。你坐在沙地上，听完了新闻。" },
+        { "text": "「自然选择」号没了。章北海死了。四艘战舰中的三艘被摧毁，一艘逃走了。" },
+        { "text": "你站起来。你对身边的史强说了一句话。" }
+      ],
+      "choices": [
+        { "text": "「我是对的。」", "next": "ch8_deter_008", "changes": { "val": 10 } }
+      ]
+    },
+    "ch8_deter_008": {
+      "scene": "新生活五村·沙地",
+      "progress": 15,
+      "segments": [
+        { "speaker": "史强", "text": "你早知道了？" },
+        { "speaker": "你", "text": "猜的。但现在我确认了。" },
+        { "speaker": "史强", "text": "确认什么？" },
+        { "speaker": "你", "text": "黑暗森林。宇宙就是一座黑暗森林——每个文明都是带枪的猎人。任何人暴露自己的位置，都会被消灭。" },
+        { "text": "你仰头看天。天是黑的。" }
+      ],
+      "choices": [
+        { "text": "解释给史强听", "next": "ch8_deter_009" }
+      ]
+    },
+    "ch8_deter_009": {
+      "scene": {
+        "id": "new_life_village",
+        "name": "公路旁·沙地",
+        "arrival": "你们走到公路的另一侧，路基挡住了居民区的灯光。四周漆黑。"
+      },
+      "progress": 17,
+      "segments": [
+        { "speaker": "你", "text": "你发现了我的存在。你不知道我是善意还是恶意。你不知道我怎么想你。我也不知道你怎么想我怎么想你——猜疑链可以无限延伸。" },
+        { "speaker": "你", "text": "即使你比我弱小——你随时可能发生技术爆炸。几百年——在宇宙尺度上只是一瞬间。你可能会变得比我强大。" },
+        { "speaker": "你", "text": "所以——只有一个选择。" }
+      ],
+      "choices": [
+        { "text": "「开枪。」", "next": "ch8_deter_010" }
+      ]
+    },
+    "ch8_deter_010": {
+      "scene": "公路旁·沙地",
+      "progress": 19,
+      "segments": [
+        { "text": "你点上一支烟。大史也点上一支。黑暗中，两个火星遥遥相对。" },
+        { "speaker": "你", "text": "宇宙就像一座黑暗森林。每个文明都是带枪的猎人，像幽灵一样潜行在树木之间。他必须小心——因为林中到处都有和他一样潜行的猎人。" },
+        { "speaker": "你", "text": "如果他发现了别的生命——不管是天使还是魔鬼，是婴儿还是老人——能做的只有一件事：开枪消灭之。" },
+        { "speaker": "你", "text": "在这片森林中，他人就是地狱。任何暴露自己存在的生命，都将很快被消灭。" }
+      ],
+      "changes": {
+        "addFlag": "dark_forest_explained",
+        "unlockAchievement": "dark_forest"
+      },
+      "next": "ch8_deter_011"
+    },
+    "ch8_deter_011": {
+      "scene": "公路旁·沙地",
+      "progress": 22,
+      "segments": [
+        { "speaker": "史强", "text": "那你的咒语——" },
+        { "speaker": "你", "text": "就是开枪。我向宇宙中发送了一颗恒星的位置。一个猎人看到了——他开枪了。那颗恒星被摧毁了。" },
+        { "speaker": "你", "text": "所以三体人才要杀我。因为我猜到了这个秘密。" }
+      ],
+      "choices": [
+        { "text": "「那现在怎么办？」", "next": "ch8_deter_012" }
+      ]
+    },
+    "ch8_deter_012": {
+      "scene": "公路旁·沙地",
+      "progress": 24,
+      "segments": [
+        { "speaker": "史强", "text": "那现在怎么办？太阳被封死了——你不能再发咒语了。" },
+        { "speaker": "你", "text": "只要这个宇宙中还有别人知道黑暗森林的秘密——三体人就会被威慑。" },
+        { "text": "史强沉默了很久。" },
+        { "speaker": "史强", "text": "谁呢？" },
+        { "speaker": "你", "text": "我。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch8_deter_013" }
+      ]
+    },
+    "ch8_deter_013": {
+      "scene": {
+        "id": "ye_tomb_return",
+        "name": "杨冬墓前",
+        "type": "major",
+        "description": "墓碑还在。黑色的孤峰形花岗岩，在暮色中沉默。褐蚁留下的爬痕早已消失。蜘蛛网又织起来了——在碑座和野草之间。远处的雪山轮廓在暮光中若隐若现。",
+        "arrival": "几年后。罗辑回到了这里。"
+      },
+      "progress": 27,
+      "segments": [
+        { "text": "你被逐出了新生活五村。没有人再相信你。你是一个过了气的骗子——他们这么叫你。" },
+        { "text": "你回到了这里。杨冬的墓前。一切开始的地方。" },
+        { "text": "你在墓碑前坐了下来。天快黑了。" }
+      ],
+      "choices": [
+        { "text": "等天黑", "next": "ch8_deter_014" }
+      ]
+    },
+    "ch8_deter_014": {
+      "scene": "杨冬墓前",
+      "progress": 29,
+      "segments": [
+        { "effect": "glitch" },
+        { "speaker": "（视网膜上出现字幕）", "text": "罗辑。我们一直在观察你。" },
+        { "text": "你抬起头。没有人在附近。是智子。" }
+      ],
+      "choices": [
+        { "text": "等它说下去", "next": "ch8_deter_015" }
+      ]
+    },
+    "ch8_deter_015": {
+      "scene": "杨冬墓前",
+      "progress": 31,
+      "segments": [
+        { "speaker": "字幕", "text": "我们知道你掌握了黑暗森林的秘密。我们也知道，你没有办法再向宇宙发送信息了。太阳已被我们封锁。" },
+        { "speaker": "你", "text": "但我可以把这个秘密告诉每一个人类。让全宇宙都知道。" },
+        { "speaker": "字幕", "text": "你不会的。那等于自杀。" },
+        { "speaker": "你", "text": "那同归于尽呢？" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch8_deter_016" }
+      ]
+    },
+    "ch8_deter_016": {
+      "scene": "杨冬墓前",
+      "progress": 33,
+      "segments": [
+        { "text": "沉默了很久。风吹过墓碑，发出低沉的呜咽声。" },
+        { "speaker": "字幕", "text": "你想怎么样？" },
+        { "speaker": "你", "text": "所有三体舰队——转向。水滴——停止攻击。人类和三体文明，在黑暗森林中共存。" },
+        { "speaker": "字幕", "text": "我们怎么知道你不会在以后突然向宇宙广播我们的位置？" },
+        { "speaker": "你", "text": "你们只能赌。就像我们一直做的那样。" }
+      ],
+      "choices": [
+        { "text": "等待它们的回答", "next": "ch8_deter_017" }
+      ]
+    },
+    "ch8_deter_017": {
+      "scene": "杨冬墓前",
+      "progress": 35,
+      "effect": "breath",
+      "segments": [
+        { "text": "时间一分一秒地过去。风停了。四野寂静。你听到自己的心跳声。" },
+        { "text": "然后——字幕重新亮起。" }
+      ],
+      "choices": [
+        { "text": "读它", "next": "ch8_deter_018" }
+      ]
+    },
+    "ch8_deter_018": {
+      "scene": "杨冬墓前",
+      "progress": 37,
+      "effect": "silence",
+      "segments": [
+        { "speaker": "字幕", "text": "成交。" },
+        { "text": "你闭上眼睛。" },
+        { "text": "然后你站起来，拍了拍裤子上的土。" }
+      ],
+      "changes": {
+        "addFlag": "deterrence_established",
+        "unlockAchievement": "deterrence"
+      },
+      "choices": [
+        { "text": "走下墓碑基座", "next": "ch8_deter_019" }
+      ]
+    },
+    "ch8_deter_019": {
+      "scene": {
+        "id": "ye_tomb_return",
+        "name": "杨冬墓前",
+        "arrival": "你走下石碑基座。"
+      },
+      "progress": 39,
+      "segments": [
+        { "text": "你走过那只正在织网的蜘蛛——它已经重建了被破坏的部分。网在暮光中闪着细丝的光。" },
+        { "text": "你顺着石阶往下走。夕阳正在沉入远山。" },
+        { "text": "在石阶的尽头，有两个人影。" }
+      ],
+      "choices": [
+        { "text": "走近", "next": "ch8_deter_020" }
+      ]
+    },
+    "ch8_deter_020": {
+      "scene": "杨冬墓前·石阶尽头",
+      "progress": 41,
+      "segments": [
+        { "text": "一个年轻女人站在那里。她穿着素雅的衣服，衣领在暮色中很白。她牵着一个孩子的手。" },
+        { "text": "她看到你，笑了。那笑容里有种让人心碎的东西，就像很多年前她第一次在壁炉的火光中看着你一样。" },
+        { "speaker": "庄颜", "text": "你在末日等我们。我们来了。" }
+      ],
+      "choices": [
+        { "text": "走上去", "next": "ch8_deter_021" }
+      ]
+    },
+    "ch8_deter_021": {
+      "scene": "杨冬墓前·石阶尽头",
+      "progress": 43,
+      "effect": "breath",
+      "segments": [
+        { "text": "你抱住了她。孩子抱住了你的腿。你没有哭——但眼眶是热的。" },
+        { "text": "远处，太阳正在落下。雪山的顶端还残留着一小片金色的光——像山顶上镶嵌的一颗宝石。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch8_deter_022" }
+      ]
+    },
+    "ch8_deter_022": {
+      "scene": "杨冬墓前·石阶尽头",
+      "progress": 45,
+      "effect": "breath",
+      "segments": [
+        { "effect": "glitch" },
+        { "speaker": "字幕（新的）", "text": "罗辑。我是二百五十年前向地球发出警告的监听员。" },
+        { "text": "智子还没有离开。" }
+      ],
+      "choices": [
+        { "text": "听他说完", "next": "ch8_deter_023" }
+      ]
+    },
+    "ch8_deter_023": {
+      "scene": "杨冬墓前·石阶尽头",
+      "progress": 47,
+      "segments": [
+        { "speaker": "字幕", "text": "我想和您讨论一种可能：也许爱的萌芽在宇宙的其他地方也存在。我们应该到处鼓励她的萌发和成长。" },
+        { "speaker": "你", "text": "为此我们可以冒险。" },
+        { "speaker": "字幕", "text": "对。可以冒险。" },
+        { "speaker": "你", "text": "我有一个梦。也许有一天，灿烂的阳光能照进黑暗森林。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch8_deter_closure" }
+      ]
+    },
+    "ch8_deter_closure": {
+      "progress": 49,
+      "segments": [
+        { "text": "智子消失了。暮色中只剩下你们三个人。" },
+        { "text": "庄颜握住了你的手。她的手是凉的，和很多年前你第一次握住她时一样。孩子已经趴在你肩上睡着了。" },
+        { "text": "你回头看了一眼墓碑。褐蚁还在爬。蜘蛛还在织网。星星开始出现了。" }
+      ],
+      "next": "ch8_batch9_end"
+    },
+    "ch8_batch9_end": {
+      "isEnding": true,
+      "title": "黑暗森林",
+      "type": "TRUE ENDING",
+      "progress": 50,
+      "achievement": "deterrence",
+      "description": "三体舰队转向了。水滴停止了攻击。人类和三体文明在黑暗森林的边缘达成了脆弱的平衡。\n\n罗辑带着庄颜和孩子走下了暮色中的石阶。他身后的墓碑上，一只褐蚁正在爬过那深深的刻痕——「墓」字的第一笔。它不知道这个字的意思。它不需要知道。\n\n太阳落下了。但明天还会升起来。",
+      "closing": "给岁月以文明，而不是给文明以岁月。"
+    }
+  }
+}
