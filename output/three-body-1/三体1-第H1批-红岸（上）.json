@@ -147,6 +147,9 @@
         "description": "建在山体内部的基地。走廊很长，天花板很低。头顶的日光灯发出惨白色的光，照在墙上的标语上——「深挖洞，广积粮，不称霸」。远处传来机器运转的嗡鸣。",
         "arrival": "你被带进了一座山。"
       },
+      "changes": {
+        "unlockAchievements": ["enter_redcoast"]
+      },
       "progress": 14,
       "segments": [
         { "text": "你通过了三道岗哨——每一道都要检查证件和通行令。这里的气氛和大兴安岭完全不同——没有雪，没有树，没有风。只有水泥和钢铁。" },
@@ -178,8 +181,7 @@
         { "text": "你面前的控制台上——有一个红色的按钮。旁边写着——「未获批准不得操作」." }
       ],
       "changes": {
-        "addFlags": ["discovered_transmit"],
-        "unlockAchievements": ["enter_redcoast"]
+        "addFlags": ["discovered_transmit"]
       },
       "choices": [
         { "text": "——", "next": "hy_ye_011" }
@@ -196,8 +198,16 @@
       ],
       "choices": [
         { "text": "发送信号", "next": "hy_ye_012", "changes": { "val": 10, "set": { "ye_psyche": "warm" } } },
-        { "text": "犹豫——再想想", "next": "hy_ye_012", "changes": { "val": -5, "set": { "ye_psyche": "cold" } } }
+        { "text": "犹豫——再想想", "next": "hy_ye_011_hesitate", "changes": { "val": -5, "set": { "ye_psyche": "cold" } } }
       ]
+    },
+    "hy_ye_011_hesitate": {
+      "progress": 21,
+      "segments": [
+        { "text": "你的手悬在那个红色按钮上方。冰冷的水泥墙面、父亲额头的伤痕、绍琳歇斯底里的口号声在你脑海中交织。" },
+        { "text": "理智告诉你这可能是一个无法挽回的错误。但内心的死寂和对这个世界的绝望——最终压倒了最后一丝犹豫。你的手指无声地沉了下去。" }
+      ],
+      "next": "hy_ye_012"
     },
     "hy_ye_012": {
       "scene": "红岸基地·接收室",
