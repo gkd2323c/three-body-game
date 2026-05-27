@@ -2,8 +2,6 @@
   "meta": {
     "title": "三体2：黑暗森林",
     "author": "刘慈欣",
-    "version": "1.0.0",
-    "description": "宇宙就是一座黑暗森林，每个文明都是带枪的猎人。",
     "theme": "night",
     "ambient": "wind",
     "cover": {
@@ -13,13 +11,8 @@
     "variableName": "明暗",
     "initialVariable": 40
   },
-  "startNodeId": "ch0_tomb_001",
-  "variables": {
-    "trust_shi": 0,
-    "trust_zhuang": 0,
-    "route_zhang": "none",
-    "knows_dark_forest": "none"
-  },
+  "startNodeId": "routes_placeholder",
+  "variables": {},
   "achievements": {
     "first_meeting": {
       "title": "宇宙社会学",
@@ -147,6 +140,151 @@
     }
   },
   "nodes": {
+    "routes_placeholder": {
+      "progress": 0,
+      "segments": [
+        {
+          "text": "路由桥接层——无独立内容"
+        }
+      ],
+      "next": "routes_placeholder"
+    },
+    "ch4_pdc_003": {
+      "scene": "联合国·行星防御理事会",
+      "progress": 31,
+      "segments": [
+        {
+          "speaker": "罗辑",
+          "text": "这是一次实验。用于证实我自己的战略设想。真正的实施要在末日之战到来时。"
+        },
+        {
+          "speaker": "PDC轮值主席",
+          "text": "那在这一百年或更长的时间里——你打算做什么？"
+        },
+        {
+          "speaker": "罗辑",
+          "text": "冬眠。当观测到咒语在187J3X1星系上发生作用时叫醒我。"
+        }
+      ],
+      "next": "ch4_pdc_004"
+    },
+    "ch4_pdc_003_refuse": {
+      "progress": 32,
+      "segments": [
+        {
+          "text": "会场沉默了几秒。然后是一阵骚动。"
+        },
+        {
+          "speaker": "PDC轮值主席",
+          "text": "面壁者罗辑——你确定？"
+        },
+        {
+          "speaker": "罗辑",
+          "text": "确定。"
+        },
+        {
+          "text": "你关掉了视频。"
+        },
+        {
+          "text": "窗外，雪山在暮色中沉默着。你知道这意味着什么——你放弃了一个文明的可能性。但你累了。"
+        }
+      ],
+      "next": "end_silence_closure_01"
+    },
+    "ch5_space_005": {
+      "scene": "同步轨道·黄河站外",
+      "progress": 23,
+      "segments": [
+        {
+          "text": "你透过瞄准镜观察。白色气体从航天服上喷出。面罩裂了——血飞溅在内壁上，遇到真空立刻冷凝成冰晶。"
+        },
+        {
+          "text": "有人在惊叫。从口型上看——"
+        },
+        {
+          "effect": "noise"
+        },
+        {
+          "speaker": "（无声的嘴型）",
+          "text": "陨石雨！"
+        }
+      ],
+      "changes": {
+        "addFlag": "zhang_killed_three",
+        "unlockAchievement": "three_shots"
+      },
+      "choices": [
+        {
+          "text": "返航",
+          "next": "ch5_aftermath_001"
+        }
+      ]
+    },
+    "ch5_space_exposed": {
+      "progress": 24,
+      "segments": [
+        {
+          "text": "你多留了三十秒。三十秒——足够让另一艘飞船的监视系统捕捉到你的航天服推进器的热信号。"
+        },
+        {
+          "text": "你回到一号基地时，气氛已经不对了。有人在等你。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "——",
+          "next": "end_dark_closure_01"
+        }
+      ]
+    },
+    "ch8_deter_003_launch": {
+      "scene": "太阳系外围·黑暗太空",
+      "progress": 6,
+      "segments": [
+        {
+          "text": "你按了下去。但信号还没离开飞船——"
+        }
+      ],
+      "next": "ch8_deter_005"
+    },
+    "ch6_pdc_006": {
+      "scene": "联合国·行星防御理事会",
+      "progress": 32,
+      "segments": [
+        {
+          "speaker": "欧洲舰队代表",
+          "text": "这只是一个猜测。已经过去快两个世纪了，如果钢印族真的存在，为什么没有任何迹象？"
+        },
+        {
+          "speaker": "亚洲舰队代表",
+          "text": "正因为没有迹象，这才可怕。"
+        },
+        {
+          "text": "会议在一片混乱中结束了。你关掉了视频。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "——",
+          "next": "ch6_shi_001"
+        }
+      ]
+    },
+    "ch6_give_up": {
+      "progress": 33,
+      "segments": [
+        {
+          "text": "你关掉了屏幕。面壁计划结束了。你自由了——但你不知道该拿这份自由怎么办。"
+        },
+        {
+          "text": "你走到窗前。地下城的天空是假的——蓝得不像真的。你突然很想念地面上的风沙。"
+        },
+        {
+          "text": "也许有些问题，不去寻找答案才是最好的选择。"
+        }
+      ],
+      "next": "end_wait_closure_01"
+    },
     "ch0_tomb_001": {
       "chapterTitle": "序章：宇宙社会学",
       "scene": {
@@ -1378,29 +1516,6 @@
         {
           "text": "——",
           "next": "ch6_pdc_006"
-        }
-      ]
-    },
-    "ch6_pdc_006": {
-      "scene": "联合国·行星防御理事会",
-      "progress": 32,
-      "segments": [
-        {
-          "speaker": "欧洲舰队代表",
-          "text": "这只是一个猜测。已经过去快两个世纪了，如果钢印族真的存在，为什么没有任何迹象？"
-        },
-        {
-          "speaker": "亚洲舰队代表",
-          "text": "正因为没有迹象，这才可怕。"
-        },
-        {
-          "text": "会议在一片混乱中结束了。你关掉了视频。"
-        }
-      ],
-      "choices": [
-        {
-          "text": "——",
-          "next": "ch6_shi_001"
         }
       ]
     },
@@ -2963,16 +3078,6 @@
       "segments": [
         {
           "text": "你等了几秒钟。你想看看他们会不会先做——"
-        }
-      ],
-      "next": "ch8_deter_005"
-    },
-    "ch8_deter_003_launch": {
-      "scene": "太阳系外围·黑暗太空",
-      "progress": 6,
-      "segments": [
-        {
-          "text": "你按了下去。但信号还没离开飞船——"
         }
       ],
       "next": "ch8_deter_005"
@@ -4725,25 +4830,6 @@
         }
       ]
     },
-    "ch4_pdc_003": {
-      "scene": "联合国·行星防御理事会",
-      "progress": 31,
-      "segments": [
-        {
-          "speaker": "罗辑",
-          "text": "这是一次实验。用于证实我自己的战略设想。真正的实施要在末日之战到来时。"
-        },
-        {
-          "speaker": "PDC轮值主席",
-          "text": "那在这一百年或更长的时间里——你打算做什么？"
-        },
-        {
-          "speaker": "罗辑",
-          "text": "冬眠。当观测到咒语在187J3X1星系上发生作用时叫醒我。"
-        }
-      ],
-      "next": "ch4_pdc_004"
-    },
     "ch4_pdc_004": {
       "scene": "联合国·行星防御理事会",
       "progress": 32,
@@ -5742,35 +5828,6 @@
       ],
       "next": "ch5_space_005"
     },
-    "ch5_space_005": {
-      "scene": "同步轨道·黄河站外",
-      "progress": 23,
-      "segments": [
-        {
-          "text": "你透过瞄准镜观察。白色气体从航天服上喷出。面罩裂了——血飞溅在内壁上，遇到真空立刻冷凝成冰晶。"
-        },
-        {
-          "text": "有人在惊叫。从口型上看——"
-        },
-        {
-          "effect": "noise"
-        },
-        {
-          "speaker": "（无声的嘴型）",
-          "text": "陨石雨！"
-        }
-      ],
-      "changes": {
-        "addFlag": "zhang_killed_three",
-        "unlockAchievement": "three_shots"
-      },
-      "choices": [
-        {
-          "text": "返航",
-          "next": "ch5_aftermath_001"
-        }
-      ]
-    },
     "ch5_aftermath_001": {
       "scene": {
         "id": "meeting_room",
@@ -6169,7 +6226,7 @@
       "progress": 3,
       "segments": [
         {
-          "text": "咒语已经发出去了。以光速飞向187J3X1。五十年的旅程——你等不到答案了。"
+          "text": "咒语已经发出去了。以光速飞向187J3X1。五十年的旅程，你等不到答案了。"
         },
         {
           "text": "你站在冬眠舱前。坎特站在你身后，手里拿着一个文件夹。"
@@ -6263,7 +6320,7 @@
           "text": "之后的几年很平静。你看着孩子在庄园里学会了走路、说话、奔跑。庄颜的画挂满了客厅的每一面墙。你胖了一些，白头发多了几根。"
         },
         {
-          "text": "你偶尔会打开电视。屏幕上的世界越来越糟——经济崩溃、社会动荡、战争。但你关了电视，壁炉的火还在烧。"
+          "text": "你偶尔会打开电视。屏幕上的世界越来越糟：经济崩溃，社会动荡，战火蔓延。但你关了电视，壁炉的火还在烧。"
         },
         {
           "text": "那一天来得很快。你听到天空中有巨响——是从轨道上传来的。"
@@ -6357,7 +6414,7 @@
       "type": "BRANCH ENDING",
       "progress": 10,
       "achievement": "ending_fleet",
-      "description": "「蓝色空间」号以光速的百分之一滑入深空。太阳在身后缩小成一个针尖大的光点，然后消失。\n\n你站在舷窗前。没有人说话。\n\n父亲说得对——「要多想」。你想了。你想了一整个人生那么久。现在你不用再想了。",
+      "description": "「蓝色空间」号以光速的百分之一滑入深空。太阳在身后缩小成一个针尖大的光点，然后消失。\n\n你站在舷窗前。没有人说话。\n\n父亲说得对。「要多想」。你想了。你想了一整个人生那么久。现在你不用再想了。",
       "closing": "新的文明，刚刚睁开眼睛。"
     },
     "end_dark_closure_01": {
@@ -6366,7 +6423,7 @@
         "name": "军事法庭",
         "type": "major",
         "description": "审判厅不大。旁听席上坐着几名穿军装的人——都是高级军官。被告席的灯光是惨白的。",
-        "arrival": "章北海站在被告席上。"
+        "arrival": "你站在被告席上。审判厅不大，被告席的灯光惨白得刺眼。"
       },
       "progress": 6,
       "segments": [
@@ -6427,7 +6484,7 @@
       "progress": 7,
       "segments": [
         {
-          "text": "思想钢印被禁止了。但设备没有被销毁——没人知道它们在哪。"
+          "text": "思想钢印被禁止了。但设备没有被销毁，没人知道它们在哪。"
         },
         {
           "text": "你坐在实验室的角落里。山杉惠子站在你对面。"
