@@ -35,7 +35,7 @@ def main():
         with open(f, "r", encoding="utf-8") as fh:
             batch = json.load(fh)
         if merged is None:
-            merged = {"meta": batch["meta"], "startNodeId": batch["startNodeId"],
+            merged = {"meta": batch["meta"], "startNodeId": "ch0_tomb_001",
                        "variables": batch.get("variables", {}),
                        "achievements": {}, "nodes": {}}
         merged["achievements"].update(batch.get("achievements", {}))
