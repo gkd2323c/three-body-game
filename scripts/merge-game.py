@@ -18,7 +18,6 @@ VALIDATOR = os.path.join(REPO_ROOT, "skills", "scripts", "validate.py")
 # === 批次衔接配置 ===
 # 每个批次的结束占位节点 → 下一批次的起始节点
 BATCH_TRANSITIONS = {
-    "batch1_end": "transition_001",        # 旧第1批结束 → 旧第2批开始
     "ch1_batch1_end": "ch2_cd_001",        # 新第1批(科学边界)→ 第2批(倒计时)
     "ch2_batch2_end": "ch3_ywj_001",       # 新第2批(倒计时)→ 第3批(宇宙闪烁)
     "ch3_batch3_end": "ch4_sg2_001",       # 新第3批(宇宙闪烁)→ 第4批(三体游戏)
@@ -26,15 +25,11 @@ BATCH_TRANSITIONS = {
     "ch5_batch5_end": "ch6_eto_001",       # 新第5批(红岸)→ 第6批(ETO)
     "ch6_batch6_end": "ch7_gz_001",        # 新第6批(ETO)→ 第7批(古筝)
     "ch7_batch7_end": "ch8_truth_001",     # 新第7批(古筝)→ 第8批(真相)
-    # 新第8批(真相)为TRUE ENDING，保留
-    "return_003": "chang_001",             # 旧第2批结束 → 旧第3批开始
-    "batch3_end": "guzheng_exec_001",      # 旧第3批结束 → 旧第4批开始
-    "game_einstein_return2": "return_001", # 旧第6批结束 → 返回现实
 }
 
 
 def main():
-    files = sorted(glob.glob(os.path.join(OUTPUT_DIR, "三体-第*批-*.json")) +
+    files = sorted(
                 glob.glob(os.path.join(OUTPUT_DIR, "三体1-第*批-*.json")))
     if not files:
         print("❌ 未找到批次文件"); sys.exit(1)
