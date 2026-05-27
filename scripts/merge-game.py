@@ -26,6 +26,7 @@ BATCH_TRANSITIONS = {
     "ch5_batch5_end": "ch6_eto_001",       # 新第5批(红岸)→ 第6批(ETO)
     "ch6_batch6_end": "ch7_gz_001",        # 新第6批(ETO)→ 第7批(古筝)
     "ch7_batch7_end": "ch8_truth_001",     # 新第7批(古筝)→ 第8批(真相)
+    # 新第8批(真相)为TRUE ENDING，保留
     "return_003": "chang_001",             # 旧第2批结束 → 旧第3批开始
     "batch3_end": "guzheng_exec_001",      # 旧第3批结束 → 旧第4批开始
     "game_einstein_return2": "return_001", # 旧第6批结束 → 返回现实
