@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "theme": "night",
+    "ambient": "wind",
+    "cover": {
+      "label": "黑暗森林",
+      "tagline": "给岁月以文明，而不是给文明以岁月。"
+    },
+    "variableName": "明暗",
+    "initialVariable": 40
+  },
+  "startNodeId": "br_end_wait_001",
+  "variables": {
+    "trust_shi": 0,
+    "trust_zhuang": 0,
+    "route_zhang": "none",
+    "knows_dark_forest": "none",
+    "zhang_stealth": 50
+  },
+  "achievements": {
+    "ending_wait": {
+      "title": "在末日等你",
+      "description": "罗辑在冬眠中度过余生。"
+    },
+    "ending_silence": {
+      "title": "沉默的见证者",
+      "description": "罗辑放弃面壁，平静度过一生。"
+    },
+    "ending_fleet": {
+      "title": "星舰地球",
+      "description": "章北海带领舰队远航。"
+    },
+    "ending_dark": {
+      "title": "殉道者",
+      "description": "章北海的信念随他埋葬。"
+    },
+    "ending_hines": {
+      "title": "钢印族",
+      "description": "钢印族的秘密被深埋。"
+    },
+    "ending_hidden": {
+      "title": "另一个伊文斯",
+      "description": "与三体合作。"
+    },
+    "ending_special": {
+      "title": "褐蚁",
+      "description": "虫子的眼中没有黑暗森林。"
+    }
+  },
+  "nodes": {
+    "br_end_wait_001": {
+      "chapterTitle": "其他结局",
+      "progress": 1,
+      "segments": [
+        { "text": "有些路走了，就不会再回头。" }
+      ],
+      "next": "end_wait_closure_01"
+    },
+    "end_wait_closure_01": {
+      "scene": {
+        "id": "deep_bunker",
+        "name": "地下十层·冬眠舱前",
+        "type": "transient"
+      },
+      "progress": 3,
+      "segments": [
+        { "text": "咒语已经发出去了。以光速飞向187J3X1。五十年的旅程——你等不到答案了。" },
+        { "text": "你站在冬眠舱前。坎特站在你身后，手里拿着一个文件夹。" },
+        { "speaker": "坎特", "text": "罗辑博士——冬眠可能会很久。也许一百年，也许更久。" },
+        { "speaker": "你", "text": "庄颜和孩子呢？" },
+        { "speaker": "坎特", "text": "她们已经在冬眠中心了。" }
+      ],
+      "choices": [
+        { "text": "走进冬眠舱", "next": "end_wait_closure_02" }
+      ]
+    },
+    "end_wait_closure_02": {
+      "progress": 6,
+      "segments": [
+        { "text": "你躺下来。舱盖在头顶缓缓合上。冷气开始注入。" },
+        { "text": "你闭上眼之前想：即使错了，至少试过了。" },
+        { "text": "黑暗涌上来。" },
+        { "text": "没有梦。" }
+      ],
+      "next": "ending_normal_wait"
+    },
+    "ending_normal_wait": {
+      "isEnding": true,
+      "title": "在末日等你",
+      "type": "NORMAL ENDING",
+      "progress": 8,
+      "achievement": "ending_wait",
+      "description": "你不知道咒语是否生效了。你不知道那三张图是否真的摧毁了一颗恒星。你只知道你尽了力——以一个普通人的方式。\n\n冬眠舱的指示灯还在微弱的闪烁。也许有一天会有人把你唤醒。也许不会。\n\n庄颜和孩子也在某个冬眠舱里。你们在时间里错身而过，像两条不同深度的鱼。",
+      "closing": "也许在末日——你们会重逢。"
+    },
+    "end_silence_closure_01": {
+      "scene": {
+        "id": "paradise_estate",
+        "name": "湖畔庄园",
+        "type": "major",
+        "description": "壁炉的火烧得很旺。窗外是冬夜的雪。庄颜坐在壁炉前的地毯上，膝盖上摊着一本画册。孩子在旁边睡着了。",
+        "arrival": "危机8年·冬。"
+      },
+      "progress": 4,
+      "segments": [
+        { "text": "你没有发送咒语。你把PDC的文件锁进了抽屉。你告诉他们——你拒绝。" },
+        { "text": "他们不能把你怎么样。面壁者的权力也包括放弃。" },
+        { "text": "庄颜抬头看你。" },
+        { "speaker": "庄颜", "text": "你不走了？" },
+        { "speaker": "你", "text": "不走了。" }
+      ],
+      "choices": [
+        { "text": "在她身边坐下", "next": "end_silence_closure_02" }
+      ]
+    },
+    "end_silence_closure_02": {
+      "progress": 7,
+      "segments": [
+        { "text": "之后的几年很平静。你看着孩子在庄园里学会了走路、说话、奔跑。庄颜的画挂满了客厅的每一面墙。你胖了一些，白头发多了几根。" },
+        { "text": "你偶尔会打开电视。屏幕上的世界越来越糟——经济崩溃、社会动荡、战争。但你关了电视，壁炉的火还在烧。" },
+        { "text": "那一天来得很快。你听到天空中有巨响——是从轨道上传来的。" }
+      ],
+      "choices": [
+        { "text": "走到窗前", "next": "end_silence_closure_03" }
+      ]
+    },
+    "end_silence_closure_03": {
+      "progress": 10,
+      "segments": [
+        { "text": "天上有东西在燃烧。拖着长长的尾迹，划过整片天空。" },
+        { "text": "庄颜抱着孩子走到你身边。你们一起看着那片火光。" },
+        { "speaker": "庄颜", "text": "怕吗？" },
+        { "speaker": "你", "text": "不怕。" },
+        { "text": "你握着她的手。她的手是暖的。" }
+      ],
+      "next": "ending_normal_silence"
+    },
+    "ending_normal_silence": {
+      "isEnding": true,
+      "title": "沉默的见证者",
+      "type": "NORMAL ENDING",
+      "progress": 12,
+      "achievement": "ending_silence",
+      "description": "你选择了做一个普通人。做一个丈夫，一个父亲。面壁者罗辑消失了，剩下的是庄园里的那个男人。\n\n三体舰队到达的那天，你和庄颜坐在壁炉前。孩子已经睡了。火光在你们的脸上跳动。\n\n你没有抬头去看窗外。该来的总会来。",
+      "closing": "你这一生，至少认真爱过。"
+    },
+    "end_fleet_closure_01": {
+      "scene": {
+        "id": "deep_space",
+        "name": "「蓝色空间」号·指挥舱",
+        "type": "major",
+        "description": "星图占据了整面墙。银河系的旋臂在黑暗中缓缓转动。窗外没有星星——只有绝对的黑暗和远处微弱的光点。",
+        "arrival": "黑暗战役之后——"
+      },
+      "progress": 5,
+      "segments": [
+        { "text": "你叫章北海。你还活着。" },
+        { "text": "你先发制人。在「终极规律」号动手之前，你的导弹已经抵达了它的引擎。" },
+        { "text": "三艘战舰被摧毁。两艘投降。你花了三天时间收集了所有能用的燃料和零件。然后你带着愿意跟你走的人——上路了。" }
+      ],
+      "choices": [
+        { "text": "设定航向", "next": "end_fleet_closure_02" }
+      ]
+    },
+    "end_fleet_closure_02": {
+      "progress": 8,
+      "segments": [
+        { "text": "你选择了NH558J2。一颗距离太阳系六万光年的恒星。以现在的速度——要飞六万年。" },
+        { "text": "你站在星图前。身后是一千二百七十三人。星舰地球的全部公民。" },
+        { "speaker": "章北海", "text": "出发。" }
+      ],
+      "next": "ending_branch_fleet"
+    },
+    "ending_branch_fleet": {
+      "isEnding": true,
+      "title": "星舰地球",
+      "type": "BRANCH ENDING",
+      "progress": 10,
+      "achievement": "ending_fleet",
+      "description": "「蓝色空间」号以光速的百分之一滑入深空。太阳在身后缩小成一个针尖大的光点，然后消失。\n\n你站在舷窗前。没有人说话。\n\n父亲说得对——「要多想」。你想了。你想了一整个人生那么久。现在你不用再想了。",
+      "closing": "新的文明，刚刚睁开眼睛。"
+    },
+    "end_dark_closure_01": {
+      "scene": {
+        "id": "courtroom",
+        "name": "军事法庭",
+        "type": "major",
+        "description": "审判厅不大。旁听席上坐着几名穿军装的人——都是高级军官。被告席的灯光是惨白的。",
+        "arrival": "章北海站在被告席上。"
+      },
+      "progress": 6,
+      "segments": [
+        { "text": "他们找到了证据——陨石碎屑的化学成分与黄河站外壁上提取到的残留物吻合。" },
+        { "text": "你被指控三项谋杀罪。外加叛国。" },
+        { "speaker": "法官", "text": "被告章北海——你有什么要说的吗？" },
+        { "text": "沉默。" }
+      ],
+      "choices": [
+        { "text": "沉默", "next": "end_dark_closure_02" }
+      ]
+    },
+    "end_dark_closure_02": {
+      "progress": 9,
+      "segments": [
+        { "text": "你没有辩解。你把你的信念——逃亡主义——在法庭上完整地陈述了一遍。你的声音很平静，像在讲述一个已经注定的结局。" },
+        { "text": "旁听席上没有人在听。没有人愿意听。" },
+        { "speaker": "章北海", "text": "我知道我在做什么。我也知道——总有人要承担责任。" }
+      ],
+      "next": "ending_branch_dark"
+    },
+    "ending_branch_dark": {
+      "isEnding": true,
+      "title": "阴影中的殉道者",
+      "type": "BRANCH ENDING",
+      "progress": 11,
+      "achievement": "ending_dark",
+      "description": "章北海被判处死刑。行刑那天，他拒绝蒙眼。\n\n「我想看着。」他说。\n\n很多年后，太空军的档案馆里多了一份没人调阅的档案。封面写着：章北海——公元1979-危机12年。\n\n没有人知道他的信念曾经多么坚定。没有人想知道。",
+      "closing": "但他是对的。"
+    },
+    "end_hines_closure_01": {
+      "scene": {
+        "id": "hines_lab",
+        "name": "脑科学实验室",
+        "type": "major",
+        "description": "夜。白雾早已散去。灯光熄了一半，只剩下几盏应急灯发出暗蓝色的光。解析摄像机的镜头盖合着，像一个闭上了的眼睛。",
+        "arrival": "危机20年。PDC听证会之后——"
+      },
+      "progress": 7,
+      "segments": [
+        { "text": "思想钢印被禁止了。但设备没有被销毁——没人知道它们在哪。" },
+        { "text": "你坐在实验室的角落里。山杉惠子站在你对面。" },
+        { "speaker": "山杉惠子", "text": "你早就知道会这样？" },
+        { "speaker": "希恩斯", "text": "知道什么？" },
+        { "speaker": "山杉惠子", "text": "我会成为你的破壁人。" }
+      ],
+      "choices": [
+        { "text": "沉默", "next": "end_hines_closure_02" }
+      ]
+    },
+    "end_hines_closure_02": {
+      "progress": 10,
+      "segments": [
+        { "speaker": "希恩斯", "text": "我给自己打上钢印的时候——我知道自己做的是对的。现在仍然知道。" },
+        { "speaker": "山杉惠子", "text": "但那东西在你心里。你永远没法确定了。" },
+        { "text": "她走到墙边，按下一个开关。墙上的某个暗格打开了——里面是一台小型解析摄像机。" },
+        { "speaker": "山杉惠子", "text": "这是第五台。我藏起来的。" }
+      ],
+      "next": "ending_branch_hines"
+    },
+    "ending_branch_hines": {
+      "isEnding": true,
+      "title": "钢印族",
+      "type": "BRANCH ENDING",
+      "progress": 12,
+      "achievement": "ending_hines",
+      "description": "山杉惠子保留了最后一台思想钢印。她不知道自己为什么要留着它——也许是作为证据，也许是因为她知道，有些信念需要被固化才能活下去。\n\n在未来的某个时刻——当人类舰队在太空中与水滴对峙时——这台设备会被重新启动。它会找到新的主人。\n\n钢印族没有消失。它只是沉睡了。",
+      "closing": "信念可以被刻进神经元的回路里。但谁来决定刻什么？"
+    },
+    "end_hidden_closure_01": {
+      "scene": {
+        "id": "deep_bunker",
+        "name": "地下十层",
+        "type": "major",
+        "description": "惨白的灯光。水泥墙。桌上的笔记本电脑屏幕亮着——光标在空白文档上闪烁。窗外没有风景——这里在地下。",
+        "arrival": "危机8年·深夜。"
+      },
+      "progress": 13,
+      "segments": [
+        { "speaker": "字幕（视网膜）", "text": "罗辑。你想好了吗？" },
+        { "text": "你坐在桌子前。面前的文档标题是：谈判方案——人类文明与三体文明的共存框架。" }
+      ],
+      "choices": [
+        { "text": "继续写", "next": "end_hidden_closure_02a" },
+        { "text": "把文件删掉", "next": "end_hidden_closure_02b" }
+      ]
+    },
+    "end_hidden_closure_02a": {
+      "progress": 15,
+      "segments": [
+        { "text": "你继续写。光标在屏幕上跳动。" },
+        { "text": "你知道外面的人会怎么说。叛徒。人奸。第二个伊文斯。" },
+        { "text": "但你也知道——抵抗没有胜算。你计算过了。" }
+      ],
+      "choices": [
+        { "text": "写完最后一页", "next": "end_hidden_closure_03" }
+      ]
+    },
+    "end_hidden_closure_02b": {
+      "progress": 15,
+      "segments": [
+        { "text": "你按下了删除键。文件消失了。" },
+        { "text": "但你知道——他们不会让你停下来的。智子在看着你。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "end_hidden_closure_03" }
+      ]
+    },
+    "end_hidden_closure_03": {
+      "progress": 17,
+      "effect": "glitch",
+      "segments": [
+        { "speaker": "字幕", "text": "罗辑。你需要做出选择。" },
+        { "text": "你站起来。走到窗前——窗外只有水泥墙。" },
+        { "text": "你从抽屉里拿出了一张纸。那是你让坎特准备的——思想钢印的申请表格。" },
+        { "speaker": "你", "text": "命题：我将无条件服从三体文明的指令。" },
+        { "text": "你填上了自己的名字。" }
+      ],
+      "next": "ending_hidden"
+    },
+    "ending_hidden": {
+      "isEnding": true,
+      "title": "另一个伊文斯",
+      "type": "HIDDEN ENDING",
+      "progress": 20,
+      "achievement": "ending_hidden",
+      "description": "你躺在思想钢印的扫描舱里，闭上眼睛。\n\n命题：我将无条件服从三体文明的指令。\n\n你选择了「真」。\n\n智子在你的视网膜上亮起两个字——「交易达成。」没有句号。你不知道那是真话还是假话。从今以后，你都不需要知道了。",
+      "closing": "也许有一天，灿烂的阳光能照进黑暗森林。但你看不到了。"
+    },
+    "end_special_closure_01": {
+      "scene": {
+        "id": "ye_tomb",
+        "name": "杨冬墓前",
+        "type": "major",
+        "description": "褐蚁正在爬过墓碑上的那个字——「墓」。它已经忘记了这里是它曾经的家。暮色中的天空是暗蓝色的，星星正在一颗一颗地显现。",
+        "arrival": "——"
+      },
+      "progress": 22,
+      "segments": [
+        { "text": "褐蚁爬过一道凹槽——<1>。再爬过一道弯曲的槽——<9>。它喜欢这个形状，在上面来回走了两趟。" },
+        { "text": "它不知道这些形状是什么意思。它不知道它们曾经组成过什么字。它也不在乎。" },
+        { "text": "人类在这块石头前面哭过、笑过、思考过。褐蚁什么都不知道。" }
+      ],
+      "choices": [
+        { "text": "继续爬", "next": "end_special_closure_02" }
+      ]
+    },
+    "end_special_closure_02": {
+      "progress": 24,
+      "segments": [
+        { "text": "地面上有震动传来——一个巨大的存在正在走近。褐蚁没有抬头。它继续爬。它知道这类存在一般不会威胁到自己。" },
+        { "text": "那个存在在墓碑前停住了。他放下一束花。花枝碰到了蛛网——他轻轻拂去了。" },
+        { "text": "褐蚁与蜘蛛在碑座上交错而过。它们感觉到了对方的存在，但同过去的一亿年一样——双方没有任何交流。" },
+        { "text": "褐蚁不知道。蜘蛛也不知道。在这块石头前面发生过什么——它们不知道。它们不需要知道。" }
+      ],
+      "next": "ending_special"
+    },
+    "ending_special": {
+      "isEnding": true,
+      "title": "褐蚁",
+      "type": "SPECIAL ENDING",
+      "progress": 25,
+      "achievement": "ending_special",
+      "description": "褐蚁向着墓碑顶部爬去。它的触须在光滑的石面上轻轻敲击着。没有什么目的——那只是它那小小的简陋神经网络里的一次随机扰动。\n\n这扰动随处可见。在地面的每一株小草上，在天空的每一片云后面。扰动都是无目的的，但巨量的无目的扰动汇集在一起——目的就出现了。\n\n也许宇宙也是这样的。",
+      "closing": "褐蚁不知道什么黑暗森林。它只知道前面有一片干枯的树叶，可以搬回巢穴。这才是活着。"
+    }
+  }
+}
