@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "theme": "night",
+    "ambient": "wind"
+  },
+  "startNodeId": "r2_placeholder",
+  "variables": {},
+  "achievements": {},
+  "nodes": {
+    "r2_placeholder": {
+      "progress": 0,
+      "segments": [{ "text": "" }],
+      "next": "r2_placeholder"
+    },
+    "ch5_hines_010": {
+      "progress": 52,
+      "segments": [
+        { "speaker": "山杉惠子", "text": "你给自己打上钢印了，是不是？" },
+        { "speaker": "你", "text": "命题是：我在面壁计划中所做的一切都是正确的。只有这样，我才有把计划执行下去的精神力量。" },
+        { "text": "她沉默了很长时间。" },
+        { "speaker": "山杉惠子", "text": "那我们去未来吧。不管发生什么，一起面对。" },
+        { "speaker": "你", "text": "好。" }
+      ],
+      "changes": {
+        "addFlag": "thought_seal_created",
+        "unlockAchievements": ["thought_seal"]
+      },
+      "choices": [
+        { "text": "销毁所有钢印设备", "next": "ch5_hines_010_destroy", "changes": { "set": { "route_hines": "destroyed" } } },
+        { "text": "把最后一台钢印藏起来——不能让任何人找到它", "next": "ch5_hines_010_hide", "changes": { "set": { "route_hines": "hidden" } } }
+      ]
+    },
+    "ch5_hines_010_destroy": {
+      "progress": 53,
+      "segments": [
+        { "text": "你在山杉惠子的注视下，拆毁了最后一台解析摄像机的主芯片。钢印的秘密——到此为止。" },
+        { "text": "她轻轻叹了口气——不知道是如释重负，还是遗憾。" }
+      ],
+      "next": "ch5_closure_006"
+    },
+    "ch5_hines_010_hide": {
+      "progress": 53,
+      "segments": [
+        { "text": "你保留了最后一台设备。你把它藏在了实验室的暗格里——没有人知道它的存在。" },
+        { "text": "山杉惠子沉默地看着你做这一切。她什么都没说。" }
+      ],
+      "next": "end_hines_closure_01"
+    },
+    "ch8_deter_008": {
+      "progress": 15,
+      "segments": [
+        { "speaker": "史强", "text": "你早知道了？" },
+        { "speaker": "你", "text": "猜的。但现在我确认了。" },
+        { "speaker": "史强", "text": "确认什么？" }
+      ],
+      "choices": [
+        { "text": "宇宙就是一座黑暗森林。每个文明都是带枪的猎人。", "next": "ch8_deter_009" },
+        { "text": "「也许可以和三体文明谈判——共存在太阳系。」", "next": "ch8_deter_008_cooperate" }
+      ]
+    },
+    "ch8_deter_008_cooperate": {
+      "progress": 16,
+      "segments": [
+        { "speaker": "史强", "text": "你脑子进水了？他们刚毁了整个舰队。" },
+        { "speaker": "你", "text": "但也许——那是他们唯一会的方式。如果我们能学会用他们的方式交流——" },
+        { "speaker": "史强", "text": "（盯着你看了很久）你是认真的？" },
+        { "text": "你没有回答。但你确实在认真考虑这个可能性。" }
+      ],
+      "routes": [
+        { "condition": { "all": [ { "var": "val", "op": ">=", "value": 60 }, { "flag": "zhuangyan_truth" } ] }, "next": "end_hidden_closure_01" },
+        { "condition": "default", "next": "ch8_deter_009" }
+      ]
+    },
+    "ch8_deter_023": {
+      "progress": 47,
+      "segments": [
+        { "speaker": "字幕", "text": "我想和您讨论一种可能：也许爱的萌芽在宇宙的其他地方也存在。我们应该到处鼓励她的萌发和成长。" },
+        { "speaker": "你", "text": "为此我们可以冒险。" },
+        { "speaker": "字幕", "text": "对。可以冒险。" },
+        { "speaker": "你", "text": "我有一个梦。也许有一天，灿烂的阳光能照进黑暗森林。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch8_deter_closure" },
+        { "text": "（沉默——转身离开）", "next": "ch8_deter_023_silence" }
+      ]
+    },
+    "ch8_deter_023_silence": {
+      "progress": 48,
+      "segments": [
+        { "text": "你没有回答。你转身走下墓碑基座。褐蚁正在碑座上爬行，在你的视觉边缘——一个小小的黑点。" },
+        { "text": "你停下来看着它。它不知道你做了什么。不知道你在五秒钟前刚刚改变了两个文明的命运。" },
+        { "text": "你突然想——如果人类也只是一只褐蚁呢？在一个更大的尺度上——谁在看我们？" }
+      ],
+      "routes": [
+        { "condition": { "all": [ { "flag": "fell_into_ice" }, { "var": "val", "op": ">", "value": 80 } ] }, "next": "end_special_closure_01" },
+        { "condition": "default", "next": "ch8_deter_019" }
+      ]
+    }
+  }
+}
