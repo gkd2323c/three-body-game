@@ -86,6 +86,9 @@
       "next": "ch6_raid_002"
     },
     "ch6_raid_002": {
+      "changes": {
+        "unlockAchievements": ["eto_infiltrator"]
+      },
       "scene": "城西·废弃仓库",
       "progress": 5,
       "segments": [
@@ -134,7 +137,7 @@
       "segments": [
         { "speaker": "常伟思", "text": "叶文洁已经全部承认了。她是ETO的精神领袖——「统帅」。她承认了自己在红岸基地期间向太阳发射了信号——暴露了地球的位置。" },
         { "text": "你坐在椅子上，久久说不出话。你想起那个在厨房里为孩子做饭的老人——她给你人参，让你保重身体。" },
-        { "speaker": "常伟思", "text": "她还说——她收到了回复。来自三体世界的回复。只有三个字。" }
+        { "speaker": "常伟思", "text": "她还说——她收到了回复。来自三体世界的回复。只有四个字。" }
       ],
       "choices": [
         { "text": "「不要回答。」", "next": "ch6_confess_001" }
@@ -194,10 +197,11 @@
         { "speaker": "叶文洁", "text": "我以为失败了。或者是没有文明收到那个信号。或者——收到了，但选择了沉默。" },
         { "speaker": "叶文洁", "text": "但在第八年的一个深夜——我收到了回复。" },
         { "text": "她的声音变得非常轻。" },
-        { "speaker": "叶文洁", "text": "回复只有三个字——不要回答。" }
+        { "speaker": "叶文洁", "text": "回复只有四个字——不要回答。" }
       ],
       "changes": {
         "addFlags": ["ye_confessed_basics"],
+        "unlockAchievements": ["ye_confession"],
         "set": { "trust_ye": 5 }
       },
       "choices": [
