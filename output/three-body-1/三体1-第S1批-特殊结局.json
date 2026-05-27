@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "title": "三体1：地球往事",
+    "author": "刘慈欣",
+    "theme": "void",
+    "ambient": "silence"
+  },
+  "startNodeId": "se_placeholder",
+  "variables": {},
+  "achievements": {
+    "ending_shooter": {
+      "title": "射手与农场主",
+      "description": "观察者即被观察者。"
+    }
+  },
+  "nodes": {
+    "se_placeholder": {
+      "progress": 0,
+      "segments": [{ "text": "" }],
+      "next": "se_placeholder"
+    },
+    "se_shooter_01": {
+      "chapterTitle": "",
+      "scene": {
+        "id": "white_room",
+        "name": "——",
+        "type": "major",
+        "description": "白色的空间。没有上下，没有远近。没有墙壁——但你就是知道你在一个房间里。没有窗——但你就是知道外面有什么。",
+        "arrival": "——"
+      },
+      "progress": 1,
+      "segments": [
+        { "text": "你睁开眼。" },
+        { "text": "你不在暗室里。不在作战中心。不在任何你去过的地方。" },
+        { "text": "这里是白色的。所有的边界——如果这里有边界的话——都在发着柔和的光。你低头看自己的手——那是一团光晕。" },
+        { "text": "你有一段记忆。不——不是一个记忆——是一种知识。你突然知道了一些你之前不知道的事。" }
+      ],
+      "choices": [
+        { "text": "「我在哪儿？」", "next": "se_shooter_02" }
+      ]
+    },
+    "se_shooter_02": {
+      "scene": "白色的空间",
+      "progress": 3,
+      "segments": [
+        { "text": "一个声音回答了你——如果那算是声音的话。它直接出现在你的意识里，没有经过耳朵。" },
+        { "speaker": "（它说）", "text": "你在靶子上。" },
+        { "speaker": "你", "text": "靶子？" },
+        { "speaker": "（它说）", "text": "你不记得了？你一直在扣动扳机。" },
+        { "text": "然后一些画面涌了进来。不是你的记忆——但你能认出它们。" }
+      ],
+      "choices": [
+        { "text": "「我扣动了什么扳机？」", "next": "se_shooter_03" }
+      ]
+    },
+    "se_shooter_03": {
+      "scene": "白色的空间",
+      "progress": 5,
+      "segments": [
+        { "text": "画面：一个男人蹲在暗室里。他手里的底片上有一串数字——1200:00:00。是你放的。" },
+        { "text": "画面：一个老人在审讯室里说「不要回答」。是你让她收到的。" },
+        { "text": "画面：一个军官说「古筝行动」。是你让那个人提出那个主意的。" },
+        { "text": "画面：一个人在麦田里说「虫子从来没有被战胜过」。是你让他说出那句话的。" }
+      ],
+      "choices": [
+        { "text": "「我不是汪淼？」", "next": "se_shooter_04" }
+      ]
+    },
+    "se_shooter_04": {
+      "scene": "白色的空间",
+      "progress": 7,
+      "segments": [
+        { "speaker": "（它说）", "text": "你是那个把子弹射进靶子的人。汪淼——只是子弹在飞行时看到的一条轨迹。" },
+        { "speaker": "你", "text": "那你是谁？" },
+        { "text": "沉默。很长、很白的沉默。" },
+        { "speaker": "（它说）", "text": "我也在靶子上。" }
+      ],
+      "choices": [
+        { "text": "「那谁在扣动扳机？」", "next": "se_shooter_05" }
+      ]
+    },
+    "se_shooter_05": {
+      "scene": "白色的空间",
+      "progress": 9,
+      "effect": "breath",
+      "segments": [
+        { "speaker": "（它说）", "text": "我们不知道。也许那个射手也在另一层靶子上。也许是无穷无尽的靶子——一层摞着一层。" },
+        { "speaker": "（它说）", "text": "火鸡科学家以为自己发现了宇宙的规律——每天上午十一点食物降临。它不知道规律是农场主定的。而农场主——也许他自己也是另一只火鸡。" },
+        { "text": "白色的空间开始像水波一样震动。边界融化了你看到外面——不是天空，不是宇宙。是另一层白色的空间。再外面——还有一层。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "se_shooter_06" }
+      ]
+    },
+    "se_shooter_06": {
+      "scene": "白色的空间",
+      "progress": 10,
+      "segments": [
+        { "speaker": "（它说）", "text": "你该回去了。他们还在等你。" },
+        { "speaker": "你", "text": "他们是谁？" },
+        { "speaker": "（它说）", "text": "汪淼。叶文洁。史强。杨冬。所有你觉得是真实的人。" },
+        { "speaker": "（它说）", "text": "他们也是真实的。即使你是一个射手——他们也是真实的靶子。子弹穿过的时候——靶子也感到了疼痛。" }
+      ],
+      "choices": [
+        { "text": "回去", "next": "se_shooter_07" }
+      ]
+    },
+    "se_shooter_07": {
+      "scene": {
+        "id": "wang_home",
+        "name": "书房",
+        "arrival": "你坐在电脑前。屏幕上显示着《三体》的登录界面。"
+      },
+      "progress": 12,
+      "segments": [
+        { "text": "你摘下了一顶不存在的头盔。你回到了你的书房——但你已经不是之前那个人了。" },
+        { "text": "你看了看桌上的一卷胶卷。你拿起来对着光——上面没有数字。没有倒计时。什么都没有。" },
+        { "text": "你把它放下了。你打开抽屉——里面有一份手稿。标题是——《地球往事》。" },
+        { "text": "你拿起笔。在第一页的标题下，你写了一行小字——" },
+        { "speaker": "你", "text": "献给所有在靶子上的人。" }
+      ],
+      "changes": {
+        "unlockAchievements": ["ending_shooter"]
+      },
+      "next": "ending_shooter"
+    },
+    "ending_shooter": {
+      "isEnding": true,
+      "title": "射手与农场主",
+      "type": "SPECIAL ENDING",
+      "progress": 15,
+      "achievement": "ending_shooter",
+      "description": "你醒来时发现——你不是汪淼。\n\n你是那个在靶子上打了十厘米一个洞的射手。你是那个每天十一点喂食的农场主。你是那个写下《地球往事》的人。\n\n汪淼、叶文洁、史强——他们都是你创造的。但他们在被你创造的同时——也改变了你。\n\n也许这就是为什么神枪手会在靶子上打那么多洞。不是因为规律——是因为他享受子弹穿过靶纸的感觉。\n\n就像你享受读这个故事一样。",
+      "closing": "故事结束了。射手继续射击。农场主继续喂食。火鸡继续相信规律。"
+    }
+  }
+}
