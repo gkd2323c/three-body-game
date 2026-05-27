@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "三体1：地球往事",
+    "author": "刘慈欣",
+    "theme": "blood",
+    "ambient": "static"
+  },
+  "startNodeId": "br2_placeholder",
+  "variables": {},
+  "achievements": {
+    "rash_endless": {
+      "title": "无尽的游戏",
+      "description": "永远困在三体世界中。"
+    },
+    "rash_exposed": {
+      "title": "暴露",
+      "description": "在ETO聚会中被认出。"
+    }
+  },
+  "nodes": {
+    "br2_placeholder": {
+      "progress": 0,
+      "segments": [{ "text": "" }],
+      "next": "br2_placeholder"
+    },
+    "ch4_sg2_014": {
+      "progress": 27,
+      "segments": [
+        { "text": "你在黑暗的房间里坐了很久。三颗飞星的影像还在你眼前晃动。" },
+        { "text": "这不是游戏。这是一个真实的文明——那些脱水的人皮、那些倒塌的建筑、那些被冻成粉末的城市——" },
+        { "text": "而那个世界正在向地球驶来。" }
+      ],
+      "choices": [
+        { "text": "退出游戏", "next": "ch4_batch4_end" },
+        { "text": "重新登录——我想再看一眼那个世界", "next": "rash_endless_01" }
+      ]
+    },
+    "rash_endless_01": {
+      "progress": 28,
+      "segments": [
+        { "text": "你重新戴上了头盔。" },
+        { "text": "这一次——三体世界没有显示登录界面。你直接出现在了一片荒漠中。天上有两颗太阳。远处——墨子的青铜宇宙模型还矗立在那里，但已经被风沙侵蚀了一半。" },
+        { "text": "没有人来迎接你。这里是一座空城。" },
+        { "text": "但你还是走了进去。" }
+      ],
+      "choices": [
+        { "text": "探索这座空城", "next": "rash_endless_02" }
+      ]
+    },
+    "rash_endless_02": {
+      "progress": 30,
+      "segments": [
+        { "text": "你在空城中走了很久。街道上是凝固的沙雕——看轮廓，曾经是人。" },
+        { "text": "你推开一扇门。里面是一间干仓——堆满了脱水的人皮。但那些皮已经风化成了碎片——轻轻一碰就化成粉末。" },
+        { "text": "你突然意识到一个问题——这个游戏里没有其他人了。没有墨子，没有周文王，没有纣王。所有NPC都消失了你独自一人在一个死去的世界中。" }
+      ],
+      "choices": [
+        { "text": "尝试退出游戏", "next": "rash_endless_03" }
+      ]
+    },
+    "rash_endless_03": {
+      "progress": 31,
+      "segments": [
+        { "text": "你调出系统菜单。但菜单是灰色的——退出选项不见了。" },
+        { "text": "你再打开头盔的开关——没有反应。你试图脱下感应服——拉链卡住了。" },
+        { "text": "你站在那座空城中。天上有两颗太阳。远处有一阵风沙正在逼近。" },
+        { "text": "这个世界——已经不再是一个游戏了。而你——你说不好自己还算不算是一个玩家。" }
+      ],
+      "next": "rash_ending_endless"
+    },
+    "rash_ending_endless": {
+      "isEnding": true,
+      "title": "无尽的游戏",
+      "type": "RASH ENDING",
+      "progress": 32,
+      "achievement": "rash_endless",
+      "description": "汪淼再也没有从三体世界中退出来。\n\n一周后，他的妻子报了警。警察破门而入时——发现他坐在电脑前，戴着显示头盔。头盔的指示灯还亮着。但电脑屏幕是黑的。\n\n他们拔掉了电源。但汪淼还是没有醒来。\n\n医院的检查结果是——大脑功能正常，但对外界刺激没有任何反应。他醒着——但他的意识不在这里。\n\n在某一个地方——一个有着两颗太阳和三颗飞星的地方——他还在走着。",
+      "closing": "他已经不记得自己是从哪里来的了。"
+    },
+    "ch6_eto_003": {
+      "progress": 27,
+      "segments": [
+        { "speaker": "潘寒", "text": "你——和你的拯救派——总是心太软。三体文明不需要被拯救。它们需要的是——" },
+        { "text": "你的手机突然震动了。潘寒停了下来——" },
+        { "speaker": "潘寒", "text": "谁在上面？" }
+      ],
+      "choices": [
+        { "text": "从后窗离开", "next": "ch6_eto_004" },
+        { "text": "迎下去——正面应对", "next": "ch6_eto_003_face" },
+        { "text": "站出来——「我在这里。」", "next": "rash_exposed_01" }
+      ]
+    },
+    "rash_exposed_01": {
+      "progress": 28,
+      "segments": [
+        { "text": "你从楼梯上走了下来。所有人的目光都集中在你身上。" },
+        { "speaker": "潘寒", "text": "汪教授——你跟踪我们。" },
+        { "speaker": "你", "text": "我没有跟踪你们——是你们自己邀请我来的。「科学边界」的研讨会。" },
+        { "text": "潘寒笑了——那种笑让你后背发凉。" },
+        { "speaker": "潘寒", "text": "你说得对。是我们请你来的。那就请你坐下——一起听听我们的计划。" },
+        { "text": "两个人走到你身后。你没有选择。" }
+      ],
+      "next": "rash_exposed_02"
+    },
+    "rash_exposed_02": {
+      "progress": 29,
+      "segments": [
+        { "text": "你被按在了一把椅子上。潘寒站在你面前。" },
+        { "speaker": "潘寒", "text": "你有一个选择——加入我们，或者——" },
+        { "text": "他没有说完。但你明白他的意思。" },
+        { "text": "十五分钟后——仓库外传来了警笛声。是史强。但潘寒比你更早听到了。他低声说了一句话。" },
+        { "speaker": "潘寒", "text": "带走他。" }
+      ],
+      "next": "rash_ending_exposed"
+    },
+    "rash_ending_exposed": {
+      "isEnding": true,
+      "title": "暴露",
+      "type": "RASH ENDING",
+      "progress": 30,
+      "achievement": "rash_exposed",
+      "description": "汪淼被ETO带走了。当史强带人冲进仓库时——叶文洁还在，潘寒还在，大多数人都在。但汪淼不在。\n\n他在一辆开往郊区的车上。蒙着眼。\n\n后来——没有人再见过他。\n\n作战中心的档案里，汪淼被标记为「失踪」。纳米项目换了新的负责人。杨冬的桦皮画本被叶文洁的女儿——不，被叶文洁自己——带进了拘留所。\n\n那卷没有冲洗完的胶卷，再也没有人打开过。",
+      "closing": "他不是第一个被自己卷进去的人。也不是最后一个。"
+    }
+  }
+}
