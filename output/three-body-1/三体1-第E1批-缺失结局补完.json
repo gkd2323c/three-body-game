@@ -1,0 +1,190 @@
+{
+  "meta": {
+    "title": "三体1：地球往事",
+    "author": "刘慈欣",
+    "theme": "night",
+    "ambient": "wind"
+  },
+  "startNodeId": "b1e_placeholder",
+  "variables": {},
+  "achievements": {
+    "ending_arrival": {
+      "title": "降临",
+      "description": "相信三体文明的善意。"
+    },
+    "ending_hibernate": {
+      "title": "冬眠",
+      "description": "选择逃避。"
+    },
+    "ending_abyss": {
+      "title": "深渊",
+      "description": "走向黑暗。"
+    },
+    "ending_wallbreaker": {
+      "title": "破壁人",
+      "description": "发现更深层的真相。"
+    },
+    "ending_cut": {
+      "title": "一线之隔",
+      "description": "古筝行动中的失误。"
+    }
+  },
+  "nodes": {
+    "b1e_placeholder": {
+      "progress": 0,
+      "segments": [{ "text": "" }],
+      "next": "b1e_placeholder"
+    },
+    "end_arrival_closure_01": {
+      "scene": "作战中心",
+      "progress": 14,
+      "segments": [
+        { "speaker": "叶文洁", "text": "如果他们能够跨越星际来到我们的世界——说明他们的科学已经发展到相当的高度。一个科学如此昌明的社会，必然拥有更高的文明和道德水准。" }
+      ],
+      "choices": [
+        { "text": "「您相信他们——我也相信。」", "next": "end_arrival_closure_02" }
+      ]
+    },
+    "end_arrival_closure_02": {
+      "progress": 16,
+      "segments": [
+        { "text": "你选择了相信。不是因为你天真——是因为你和她一样绝望。" },
+        { "text": "你在等待中度过了一生。你养成了每晚仰望星空的习惯——你觉得那些星星中间，有一颗正在向你靠近。" },
+        { "text": "你没有等到。但你的女儿——也许杨冬的妹妹——会等到。" },
+        { "text": "你一直这样相信着。" }
+      ],
+      "next": "ending_arrival"
+    },
+    "ending_arrival": {
+      "isEnding": true,
+      "title": "降临",
+      "type": "NORMAL ENDING",
+      "progress": 18,
+      "achievement": "ending_arrival",
+      "description": "汪淼选择了相信。\n\n他相信叶文洁的话——一个能跨越星海的文明，必然拥有更高的道德水准。他等着他们来拯救人类。\n\n他等了很久。久到他从一个中年学者变成了一个白发老人。久到纳米技术已经改变了人类航天的面貌。久到「审判日」号的故事已经变成了档案馆里的一行小字。\n\n三体舰队还在路上。也许四百五十年的航程对它们来说太长了。也许它们改变了主意。也许它们从一开始就没打算来。\n\n他不知道。他只知道——他选择了相信。",
+      "closing": "等待本身就是一种信仰。"
+    },
+    "end_hibernate_closure_01": {
+      "scene": {
+        "id": "hibernation_room",
+        "name": "冬眠中心",
+        "type": "major",
+        "arrival": "你递交了冬眠申请。"
+      },
+      "progress": 15,
+      "segments": [
+        { "text": "你决定离开这个时代。不是逃亡——只是不想面对。" },
+        { "speaker": "工作人员", "text": "汪教授——您确定吗？冬眠后，您的身份和财产将由政府托管。" },
+        { "speaker": "你", "text": "确定。" },
+        { "text": "你躺进了冬眠舱。冷冻液注入的时候——你想起了一个画面：杨冬站在超导线圈前，夕阳的金色光束打在她身上。那是你见过的最美的东西。" },
+        { "text": "你不会再看到了。" }
+      ],
+      "next": "ending_hibernate"
+    },
+    "ending_hibernate": {
+      "isEnding": true,
+      "title": "冬眠",
+      "type": "NORMAL ENDING",
+      "progress": 17,
+      "achievement": "ending_hibernate",
+      "description": "汪淼选择了冬眠。\n\n他不知道自己在期待什么——也许是一个问题已经被解决了的未来，也许是一个不需要他再操心的世界。\n\n冬眠舱的指示灯在黑暗中亮着——像一颗孤独的星星。\n\n他在冷冻中梦见了杨冬。她站在一片白色的空白中，看着他，什么也没说。",
+      "closing": "有些问题，睡过去了就不用回答了。"
+    },
+    "end_abyss_closure_01": {
+      "progress": 20,
+      "segments": [
+        { "text": "你在潘寒被带走前的最后一刻——做了一个决定。你走到他面前，低声说了一句话。" },
+        { "speaker": "你", "text": "如果三体文明真的比我们先进——那就让它们来。人类已经证明了自己无法管理好自己。" },
+        { "speaker": "潘寒", "text": "（看了你很久）你比她清醒。" }
+      ],
+      "choices": [
+        { "text": "「帮我进入降临派的核心。」", "next": "end_abyss_closure_02" }
+      ]
+    },
+    "end_abyss_closure_02": {
+      "progress": 22,
+      "segments": [
+        { "text": "你成了潘寒的双面间谍——不对，是三面。常伟思以为你在作战中心，作战中心以为你在科学边界，科学边界以为你在ETO。而你自己——已经不知道自己在哪里了。" },
+        { "text": "有一天夜里你醒来，盯着天花板。你突然发现自己不再害怕了。不是因为勇敢——而是因为已经没有什么值得害怕的了。" },
+        { "text": "当一个人同时背叛了所有人——他就自由了。" }
+      ],
+      "next": "ending_abyss"
+    },
+    "ending_abyss": {
+      "isEnding": true,
+      "title": "深渊（回响）",
+      "type": "BRANCH ENDING",
+      "progress": 24,
+      "achievement": "ending_abyss",
+      "description": "汪淼走上了一条没有回头的路。\n\n他在降临派和作战中心之间传递着信息——有时是真话，有时是假话。他学会了一个人在两面之间生存。\n\n很多年后，他偶然翻到了那卷一直没有冲洗的胶卷。他把底片对着光看了看——那些数字已经消失了。\n\n倒计时早就结束了。但新的计时已经开始。",
+      "closing": "深渊之中，还有更深的深渊。"
+    },
+    "end_wallbreaker_closure_01": {
+      "progress": 25,
+      "segments": [
+        { "text": "你在三体游戏的底层代码中发现了一个隐藏的入口——一个不属于任何已知文明场景的文件夹。" },
+        { "text": "你花了三个月破解了加密。里面的内容让你手心出汗——那不是三体文明的信息。那是来自另一个方向的信息。" },
+        { "text": "在人类和三体之间——还有第三方。" }
+      ],
+      "choices": [
+        { "text": "继续深挖", "next": "end_wallbreaker_closure_02" }
+      ]
+    },
+    "end_wallbreaker_closure_02": {
+      "progress": 27,
+      "segments": [
+        { "text": "你发现的信息片段拼出了一个可怕的图景：三体文明并不是第一个收到人类信号的文明。在它们之前——另一个更古老的文明——已经沉默了。" },
+        { "text": "它们沉默的原因——不是因为它们不存在。而是因为它们选择了不被发现。" },
+        { "text": "你面对着屏幕。光标闪烁着。你知道——你刚刚打开了一扇不应该被打开的门。" }
+      ],
+      "next": "ending_wallbreaker"
+    },
+    "ending_wallbreaker": {
+      "isEnding": true,
+      "title": "破壁人",
+      "type": "HIDDEN ENDING",
+      "progress": 29,
+      "achievement": "ending_wallbreaker",
+      "description": "汪淼发现了黑暗森林状态的真相：人类并不是在打一场一对一的战争。\n\n在这场战争中——已经有无数文明沉默地消失了。\n\n他删除了那个文件夹。不是因为他害怕——是因为他觉得人类还没准备好知道这些。\n\n但他在删除前做了一件事——他把文件备份到了一个只有他知道的地方。\n\n「有一天，」他想，「有人会需要这个。」",
+      "closing": "有些墙壁，不是为了挡住外面的人——而是为了挡住里面的人。"
+    },
+    "end_cut_closure_01": {
+      "scene": {
+        "id": "panama",
+        "name": "巴拿马·盖拉德水道",
+        "type": "major",
+        "arrival": "你站在观察点上。"
+      },
+      "progress": 22,
+      "segments": [
+        { "text": "「审判日」号的船首已经出现在河道拐弯处。你举起了望远镜——你想看得更清楚一些。" },
+        { "speaker": "斯坦顿", "text": "教授——往后退一点。那东西很危险。" },
+        { "speaker": "你", "text": "我知道。" },
+        { "text": "但你还是在往前看。你需要一个更好的角度——来确认纳米丝的位置是否正确。" }
+      ],
+      "choices": [
+        { "text": "再往前挪一步", "next": "end_cut_closure_02" }
+      ]
+    },
+    "end_cut_closure_02": {
+      "progress": 24,
+      "effect": "flash",
+      "segments": [
+        { "text": "你往前挪了一步。你的视线刚调整好——突然一阵横风吹过，你的帽子飞了出去。你本能地伸手去抓——一步——两步——" },
+        { "text": "你撞到了观察点边缘的栏杆。但那栏杆年久失修——它向外倒了下去。你也跟着倒了下去。" },
+        { "text": "你在下落的过程中看到了一根绷紧的纳米丝——正在你面前——不到二十厘米。" },
+        { "text": "然后你什么都没有看到了。" }
+      ],
+      "next": "ending_cut"
+    },
+    "ending_cut": {
+      "isEnding": true,
+      "title": "切割（一线之隔）",
+      "type": "RASH ENDING",
+      "progress": 25,
+      "achievement": "ending_cut",
+      "description": "汪淼在那次意外中身亡了。\n\n救援人员在下游找到了他的遗体——被纳米丝平整地分成了两半。切割面像镜面一样光滑，反射着天空火红的朝霞。\n\n斯坦顿上校后来在一份报告中写道：「汪淼教授是一位勇敢的科学家。他死于自己最杰出的发明——就像许多科学家一样。」\n\n那卷没有冲洗完的胶卷被随行李一起送回了国。他的妻子把它锁进了抽屉——再也没有打开过。\n\n也许这样更好。",
+      "closing": "他的切割面上映着朝霞。很美。"
+    }
+  }
+}
