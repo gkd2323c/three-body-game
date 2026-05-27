@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "theme": "blood",
+    "ambient": "static",
+    "cover": {
+      "label": "黑暗森林",
+      "tagline": "给岁月以文明，而不是给文明以岁月。"
+    },
+    "variableName": "明暗",
+    "initialVariable": 40
+  },
+  "startNodeId": "rash_placeholder",
+  "variables": {},
+  "achievements": {
+    "rash_wallfacer": {
+      "title": "第四位的陨落",
+      "description": "罗辑在联合国当场毙命。"
+    },
+    "rash_attack": {
+      "title": "过线",
+      "description": "攻击史强——非常不明智。"
+    },
+    "rash_no_hibernate": {
+      "title": "拒绝时间",
+      "description": "拒绝冬眠，死于基因武器。"
+    },
+    "rash_zhang_caught": {
+      "title": "太空遗骸",
+      "description": "章北海在暗杀中被当场捕获。"
+    }
+  },
+  "nodes": {
+    "rash_placeholder": {
+      "progress": 0,
+      "segments": [{ "text": "" }],
+      "next": "rash_placeholder"
+    },
+    "ch2_un_006": {
+      "progress": 24,
+      "segments": [
+        { "speaker": "PDC轮值主席", "text": "第四位面壁者——罗辑。" },
+        { "text": "全场的目光落在你身上。没有掌声。只有寂静——和一种你从未感受过的重量。" }
+      ],
+      "choices": [
+        { "text": "走上台", "next": "ch2_un_007", "changes": { "val": 5 } },
+        { "text": "「我拒绝，并且我退出这个大厅。」", "next": "rash_un_refuse", "changes": { "val": -15 } }
+      ]
+    },
+    "rash_un_refuse": {
+      "progress": 24,
+      "segments": [
+        { "text": "你推开椅子，站起来，在全世界的注视下转身向大门走去。" },
+        { "text": "身后传来骚动声——有人喊你的名字，有人拍桌子。你没有回头。" },
+        { "text": "你推开了联合国大会堂的大门。外面的广场上空无一人。阳光很刺眼。" }
+      ],
+      "next": "rash_un_refuse_02"
+    },
+    "rash_un_refuse_02": {
+      "progress": 25,
+      "segments": [
+        { "text": "你走下了台阶。没有人跟出来。你觉得自己自由了。" },
+        { "text": "然后你听到了那个声音——不是枪声，更轻。像是什么东西高速撕裂空气。" },
+        { "effect": "silence" },
+        { "text": "你的胸口突然一热。你低头——白色衬衫上正在渗出红色。你跪了下来。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "rash_un_refuse_03" }
+      ]
+    },
+    "rash_un_refuse_03": {
+      "progress": 26,
+      "effect": "blackout",
+      "segments": [
+        { "text": "你仰面倒在广场上。天空很蓝——比你记忆中任何一个北京的天空都要蓝。" },
+        { "text": "你听到远处有人在奔跑。喊声。然后一切都安静了。" }
+      ],
+      "next": "rash_ending_wallfacer"
+    },
+    "rash_ending_wallfacer": {
+      "isEnding": true,
+      "title": "第四位的陨落",
+      "type": "RASH ENDING",
+      "progress": 27,
+      "achievement": "rash_wallfacer",
+      "description": "罗辑在联合国大会堂外被ETO的狙击手击毙。他成为面壁者不到十分钟——史上任期最短的面壁者。\n\nPDC宣布他的死是「计划的一部分」。没有葬礼。没有新闻。",
+      "closing": "有些人注定活不到自己的使命开始的时候。"
+    },
+    "ch2_bunker_003": {
+      "progress": 17,
+      "segments": [
+        { "speaker": "史强", "text": "你骗人在行吗？" },
+        { "speaker": "罗辑", "text": "我需要骗谁？" },
+        { "speaker": "史强", "text": "当然需要。既然你很快就会用上，那我就教教你怎么骗人。" }
+      ],
+      "choices": [
+        { "text": "听他说下去", "next": "ch2_bunker_004" },
+        { "text": "「放我走。现在。」", "next": "rash_attack_guard" }
+      ]
+    },
+    "rash_attack_guard": {
+      "progress": 17,
+      "segments": [
+        { "text": "你站起来朝门口走去。史强没有拦你——他只是叹了一口气。" },
+        { "speaker": "史强", "text": "我知道你会这样。每个第一次被关进来的人都这样。" },
+        { "text": "你拉开门。走廊里的两个警卫同时转身。" }
+      ],
+      "choices": [
+        { "text": "推开他们冲出去", "next": "rash_attack_02" },
+        { "text": "退回来", "next": "ch2_bunker_003" }
+      ]
+    },
+    "rash_attack_02": {
+      "progress": 18,
+      "effect": "flash",
+      "segments": [
+        { "text": "你没有犹豫——一把推向其中一个警卫。你没想到他的反应那么快。他侧身闪过你的手，反手扣住你的胳膊，把你的脸按在了墙上。" },
+        { "text": "金属碰撞声。手铐。" },
+        { "speaker": "史强（从屋里走出来）", "text": "啊——这就没法了。" }
+      ],
+      "next": "rash_attack_03"
+    },
+    "rash_attack_03": {
+      "progress": 19,
+      "segments": [
+        { "speaker": "史强", "text": "我本来想好好跟你聊的。但你选了最难走的路。" },
+        { "text": "你没有再被带到那间有沙发和桌子的房间。你被关进了一个没有窗的铁皮箱里。灯一直亮着。没有人来看你。" },
+        { "text": "一天。两天。你不知道过了多久。" }
+      ],
+      "next": "rash_ending_attack"
+    },
+    "rash_ending_attack": {
+      "isEnding": true,
+      "title": "过线",
+      "type": "RASH ENDING",
+      "progress": 20,
+      "achievement": "rash_attack",
+      "description": "罗辑在地下工事中袭击警卫，被制服后关禁闭。他的面壁者身份没有被剥夺——在理论上，他仍然可以思考。但在这间铁箱子里，他什么都想不了。\n\n一天又一天过去。没有人来。\n\n后来警卫打开门的时候，发现他缩在角落里，眼睛适应不了光线。",
+      "closing": "他不是第一个被自己毁掉的面壁者。"
+    },
+    "ch4_sick_003": {
+      "progress": 37,
+      "segments": [
+        { "speaker": "一个声音", "text": "基因导弹——专门针对他的基因特征设计的病毒。对别人只是轻流感，对他——致命。" },
+        { "speaker": "另一个声音", "text": "肝脏和心肺功能已经衰竭。现代医疗无能为力。" },
+        { "speaker": "第一个声音", "text": "尽快冬眠吧。" }
+      ],
+      "changes": {
+        "unlockAchievement": "first_blood"
+      },
+      "choices": [
+        { "text": "同意冬眠", "next": "ch4_sick_004" },
+        { "text": "「不冬眠。我死也要死在这里。」", "next": "rash_nohibernate_02" }
+      ]
+    },
+    "rash_nohibernate_02": {
+      "progress": 38,
+      "segments": [
+        { "text": "你拒绝了冬眠。医生们面面相觑——但面壁者的权力包括拒绝医疗。" },
+        { "text": "他们在你床边站了一会儿，然后一个接一个地离开了。只剩你一个人。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "rash_nohibernate_03" }
+      ]
+    },
+    "rash_nohibernate_03": {
+      "progress": 39,
+      "segments": [
+        { "text": "发烧越来越严重。你开始看不清东西——视野的边缘一片模糊。" },
+        { "text": "你的手从床边滑落。你感觉不到自己的手指了。天花板上的灯晃了一下——也许没晃，是你的眼睛在晃。" },
+        { "effect": "silence" },
+        { "text": "你不再呼吸了。" }
+      ],
+      "next": "rash_ending_nohibernate"
+    },
+    "rash_ending_nohibernate": {
+      "isEnding": true,
+      "title": "拒绝时间",
+      "type": "RASH ENDING",
+      "progress": 40,
+      "achievement": "rash_no_hibernate",
+      "description": "罗辑拒绝冬眠。他死的消息被封锁了——面壁计划不能承认一个面壁者的死亡是因为拒绝医疗。\n\n咒语最终还是被发出去了，由PDC代为执行。但那三张图被发送的时候，罗辑已经感觉不到了。\n\n他最后的意识停留在天花板上的那盏灯上。灯一直亮着。即使没有人再看它。",
+      "closing": "光还在。看光的人不在了。"
+    },
+    "ch5_space_004": {
+      "progress": 21,
+      "segments": [
+        { "text": "枪口闪光在太空中像一只萤火虫。没有声音。" },
+        { "text": "你扣动扳机——换弹夹——再扣——再换——再扣。" }
+      ],
+      "choices": [
+        { "text": "三十发全部射出", "next": "ch5_space_005" },
+        { "text": "靠得太近——再靠近一些瞄准", "next": "rash_zhang_caught_02" }
+      ]
+    },
+    "rash_zhang_caught_02": {
+      "progress": 22,
+      "segments": [
+        { "text": "你靠得太近了。推进器的一次短促喷射让你偏离了原来的位置——你从掩体后面暴露了出来。" },
+        { "effect": "flash" },
+        { "text": "一束探照灯锁定了你。不是来自黄河站——来自一艘在附近巡航的军用飞船。" },
+        { "text": "通讯频道里传来声音：「发现武装人员。位置锁定。请求指示。」" }
+      ],
+      "choices": [
+        { "text": "——", "next": "rash_zhang_caught_03" }
+      ]
+    },
+    "rash_zhang_caught_03": {
+      "progress": 23,
+      "segments": [
+        { "text": "你来不及收回手枪。来不及销毁证据。来不及——" },
+        { "text": "一道激光瞄准线落在了你的胸口上。" },
+        { "speaker": "通讯频道", "text": "放下武器。把手放在头上。" },
+        { "text": "你悬浮在太空中。没有地方可以逃。没有大气可以呼吸。没有重力可以借助。" }
+      ],
+      "next": "rash_ending_zhang"
+    },
+    "rash_ending_zhang": {
+      "isEnding": true,
+      "title": "太空遗骸",
+      "type": "RASH ENDING",
+      "progress": 24,
+      "achievement": "rash_zhang_caught",
+      "description": "章北海被当场捕获。他手上的陨石子弹和那把改装过的手枪成了铁证。\n\n太空军军事法庭以叛国罪和谋杀罪判处他终身监禁。他被关押在一个专门建造的太空监狱中——一个漂浮在小行星带里的钢铁容器。\n\n没有人来探望他。没有人写信。他漂浮在零重力中，听到的只有循环风扇的声音。",
+      "closing": "他想了太多。"
+    }
+  }
+}
