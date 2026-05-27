@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "theme": "void",
+    "ambient": "static",
+    "cover": {
+      "label": "黑暗森林",
+      "tagline": "给岁月以文明，而不是给文明以岁月。"
+    },
+    "variableName": "明暗",
+    "initialVariable": 40
+  },
+  "startNodeId": "ch7_fleet_001",
+  "variables": {
+    "trust_shi": 0,
+    "trust_zhuang": 0,
+    "route_zhang": "none",
+    "knows_dark_forest": "none",
+    "zhang_stealth": 50
+  },
+  "achievements": {
+    "fleet_sail": {
+      "title": "两千个太阳",
+      "description": "见证联合舰队出征。"
+    },
+    "droplet_true": {
+      "title": "傻孩子们，快跑啊",
+      "description": "见证水滴的真面目。"
+    },
+    "fleet_destroyed": {
+      "title": "毁灭",
+      "description": "目睹联合舰队全军覆没。"
+    }
+  },
+  "nodes": {
+    "ch7_fleet_001": {
+      "chapterTitle": "联合舰队",
+      "scene": {
+        "id": "new_life_village",
+        "name": "新生活五村·史强家",
+        "type": "major",
+        "description": "窗外是漫天黄沙。电视屏幕亮着，新闻频道正在循环播放舰队出征的预告。",
+        "arrival": "罗辑在地面上住了几天。"
+      },
+      "progress": 1,
+      "segments": [
+        { "text": "你叫罗辑。你住在地面的旧城里。" },
+        { "text": "大史去市政府上任了，留下你一个人面对电视。屏幕上，木星基地的画面正在反复播放——两千艘恒星级战舰集结完毕，准备拦截即将到达的三体探测器。" }
+      ],
+      "choices": [
+        { "text": "看新闻", "next": "ch7_fleet_002" }
+      ]
+    },
+    "ch7_fleet_002": {
+      "scene": "新生活五村·史强家",
+      "progress": 3,
+      "segments": [
+        { "speaker": "新闻主播", "text": "舰队国际已做出决议：亚洲舰队、欧洲舰队和北美舰队的所有恒星级战舰——共两千零一十五艘——将组成联合舰队统一出击，拦截已越过海王星轨道的三体探测器。" },
+        { "text": "窗外的沙漠上有人在放烟花，可能是冬眠者，可能是本地人。都一样——他们都在庆祝。" }
+      ],
+      "choices": [
+        { "text": "走出门去看看", "next": "ch7_fleet_003" }
+      ]
+    },
+    "ch7_fleet_003": {
+      "scene": {
+        "id": "new_life_village",
+        "name": "新生活五村·沙地",
+        "arrival": "你推开门，沙子打在脸上。"
+      },
+      "progress": 5,
+      "segments": [
+        { "text": "整个小区的人在往天上看。电视里说今晚肉眼就能看到舰队起航。" },
+        { "text": "你抬头。西南方向——木星——那里有一颗星正变得越来越亮。" }
+      ],
+      "choices": [
+        { "text": "盯着那颗星看", "next": "ch7_fleet_004" }
+      ]
+    },
+    "ch7_fleet_004": {
+      "scene": "新生活五村·沙地",
+      "progress": 7,
+      "effect": "flash",
+      "segments": [
+        { "text": "木星的亮度骤然增加，超过天狼星，成为夜空中最亮的星体。然后——一颗更亮的星从木星上分离出来。" },
+        { "text": "联合舰队起航了。" }
+      ],
+      "changes": {
+        "unlockAchievement": "fleet_sail"
+      },
+      "choices": [
+        { "text": "继续看", "next": "ch7_fleet_005" }
+      ]
+    },
+    "ch7_fleet_005": {
+      "scene": "新生活五村·沙地",
+      "progress": 9,
+      "effect": "flash",
+      "segments": [
+        { "text": "两千个太阳在太空中同时亮起。排成一个长方形的严整阵列，以雷霆万钧之势向太空深处推进。" },
+        { "text": "有人在哭，有人在笑，有人跪在沙地上。所有人都觉得——人类赢了。" }
+      ],
+      "choices": [
+        { "text": "回到屋里看电视", "next": "ch7_droplet_001" }
+      ]
+    },
+    "ch7_droplet_001": {
+      "scene": {
+        "id": "quantum_ship",
+        "name": "「量子」号·舰内",
+        "type": "major",
+        "description": "舰队阵型已定。矩形阵列的长边和短边分别由一百艘和二十艘战舰排成。监视屏上，一个米粒大小的亮点正在缓慢接近。",
+        "arrival": "「量子」号上——"
+      },
+      "progress": 12,
+      "segments": [
+        { "text": "丁仪站在那里，盯着屏幕。他的目光让周围的军官们感到不安。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch7_droplet_002" }
+      ]
+    },
+    "ch7_droplet_002": {
+      "scene": "「量子」号·舰内",
+      "progress": 14,
+      "segments": [
+        { "speaker": "军官", "text": "丁博士——您好像有什么想说的。" },
+        { "speaker": "丁仪", "text": "孩子们，你们知道我这些年都在干什么吗？在大学里教物理，还带博士生。" },
+        { "text": "他遥望着舷窗外的星河，露出一个莫测的笑容。那笑容有些凄惨。" },
+        { "speaker": "丁仪", "text": "我这两个世纪前的人，现在居然还能在大学里教物理。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch7_droplet_003" }
+      ]
+    },
+    "ch7_droplet_003": {
+      "scene": {
+        "id": "quantum_ship",
+        "name": "「螳螂」号·捕获舱",
+        "arrival": "考察队出发了。"
+      },
+      "progress": 16,
+      "segments": [
+        { "text": "丁仪和三名军官乘坐穿梭艇抵达「螳螂」号。水滴就悬浮在舱的正中。" },
+        { "text": "它像一滴圣母的眼泪。完美的流线型，表面如水银般光洁。它比周围的一切都精致——精致到不像这个世界的造物。" },
+        { "speaker": "丁仪", "text": "像一滴圣母的眼泪。" },
+        { "text": "他的话以光速传回舰队，三小时后传遍地球。" }
+      ],
+      "choices": [
+        { "text": "看丁仪检验它", "next": "ch7_droplet_004" }
+      ]
+    },
+    "ch7_droplet_004": {
+      "scene": "「螳螂」号·捕获舱",
+      "progress": 18,
+      "segments": [
+        { "text": "丁仪把地质锤砸到水滴表面。叮的一声——清脆而悠扬，像砸在玉石构成的大地上。在真空中，声音是通过他自己的身体传来的。没有留下任何痕迹。" },
+        { "text": "他用显微镜看。一百倍——光滑。一千倍——光滑。一万倍——光滑。一千万倍——仍然是光滑的镜面。" },
+        { "text": "绝对光滑。只有强互作用力才能做到这一点。" },
+        { "speaker": "丁仪", "text": "他们确实把弓箭射上月球了。圣母的眼泪？嘿嘿——" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch7_droplet_005" }
+      ]
+    },
+    "ch7_droplet_005": {
+      "scene": "「螳螂」号·捕获舱",
+      "progress": 20,
+      "segments": [
+        { "speaker": "军官", "text": "那它来干什么？" },
+        { "speaker": "丁仪", "text": "毁灭你，与你有何相干？" }
+      ],
+      "changes": {
+        "unlockAchievement": "droplet_true"
+      },
+      "choices": [
+        { "text": "——", "next": "ch7_droplet_006" }
+      ]
+    },
+    "ch7_droplet_006": {
+      "scene": "「螳螂」号·捕获舱",
+      "progress": 22,
+      "segments": [
+        { "effect": "flash" },
+        { "speaker": "丁仪", "text": "快跑。" },
+        { "text": "他扬起双手。" },
+        { "speaker": "丁仪", "text": "傻孩子们——快——跑——啊！" }
+      ],
+      "next": "ch7_droplet_007"
+    },
+    "ch7_droplet_007": {
+      "scene": {
+        "id": "deep_space",
+        "name": "太空·舰队阵列",
+        "type": "major",
+        "description": "距「螳螂」号一千公里。联合舰队呈矩形阵列——一百列乘二十行，两千零一十五艘恒星级战舰，如一座沉默的太空巨石阵。",
+        "arrival": "但一切都晚了。"
+      },
+      "progress": 24,
+      "effect": "flash",
+      "segments": [
+        { "text": "在水滴的尾部尖端，出现了一个蓝色光环。很小，但很亮——然后急剧扩大，颜色由蓝变黄变成红色。当它扩张到大约水滴最大直径的一倍时消失了。第二个光环紧接着出现。" },
+        { "text": "频率——每秒钟两三次。在光环的推进下，水滴开始移动并急剧加速。" },
+        { "text": "「螳螂」号在超高温中瞬间汽化。金属像蜡一样熔化——然后爆炸。没有留下固体残片。" }
+      ],
+      "next": "ch7_droplet_008"
+    },
+    "ch7_droplet_008": {
+      "scene": "太空·舰队阵列",
+      "progress": 26,
+      "effect": "flash",
+      "segments": [
+        { "text": "碎片？不——不是碎片。是一块在加速的碎片。它在飞出三百公里时已经超过了第三宇宙速度。" },
+        { "text": "它没有从阵列旁边掠过。它拐了一个三十度的锐角——速度丝毫未减——直冲「无限边疆」号而去。" },
+        { "effect": "shake" },
+        { "text": "水滴以每秒三十公里的速度撞穿了「无限边疆」号。穿过去——像一个幽灵穿过一堵墙。舰体上留下两个规则的圆洞，周围的金属瞬间熔化。" }
+      ],
+      "next": "ch7_droplet_009"
+    },
+    "ch7_droplet_009": {
+      "scene": "太空·舰队阵列",
+      "progress": 28,
+      "effect": "shake",
+      "segments": [
+        { "text": "接下来不到一分钟的时间里，水滴沿着矩形阵列的长边飞行，贯穿了第一队列的一百艘战舰。" },
+        { "text": "每一艘被击穿的战舰都像蜡烛一样被点燃。核聚变反应堆被触发——火球一个接一个地亮起——在太空中形成一条燃烧的河流。" },
+        { "text": "熔化的金属液在太空中如暴雨般飞散——炽热的金属岩浆在太空中汹涌扩散。两千公里的血河。" },
+        { "text": "在不到两分钟的时间里——联合舰队——全军覆没。" }
+      ],
+      "changes": {
+        "unlockAchievement": "fleet_destroyed"
+      },
+      "next": "ch7_zhang_001"
+    },
+    "ch7_zhang_001": {
+      "chapterTitle": "",
+      "scene": {
+        "id": "natural_selection",
+        "name": "「自然选择」号·舰长室",
+        "type": "major",
+        "description": "太空。窗外是缓缓旋转的星空——木星的大红斑在远处隐约可见。舰长室不大，一张固定桌、一把椅子、几个悬浮的操作界面。人工重力系统发出低沉的嗡鸣。",
+        "arrival": "几乎在同一时间——"
+      },
+      "progress": 31,
+      "segments": [
+        { "text": "你叫章北海。你刚刚在两个世纪后被唤醒。木星就在窗外旋转着，橘红色的大气中有一片正在生成的闪电。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch7_zhang_002" }
+      ]
+    },
+    "ch7_zhang_002": {
+      "scene": "「自然选择」号·舰长室",
+      "progress": 33,
+      "segments": [
+        { "text": "你被任命为「自然选择」号的执行舰长。名义上的——舰长是东方延绪大校。你的权限只有一个：确保舰长不会做出格的事。" },
+        { "text": "但你知道钢印族的秘密——那些被打上负号钢印的人可能还潜伏在舰队中。他们比你更早苏醒，更早掌控了权力。" },
+        { "text": "东方延绪站在你面前，把一个小东西递到你手里。" }
+      ],
+      "choices": [
+        { "text": "看那是什么", "next": "ch7_zhang_003" }
+      ]
+    },
+    "ch7_zhang_003": {
+      "scene": "「自然选择」号·舰长室",
+      "progress": 35,
+      "segments": [
+        { "speaker": "东方延绪", "text": "如果真发现我有失败主义思想和逃亡企图——前辈可以用它杀了我。" },
+        { "text": "那是一把手枪。" }
+      ],
+      "choices": [
+        { "text": "接过手枪", "next": "ch7_zhang_cb_take", "changes": { "set": { "zhang_stealth": 40 } } },
+        { "text": "让她收回去", "next": "ch7_zhang_cb_refuse", "changes": { "set": { "zhang_stealth": 55 } } }
+      ]
+    },
+    "ch7_zhang_cb_take": {
+      "scene": "「自然选择」号·舰长室",
+      "progress": 36,
+      "segments": [
+        { "text": "你接过那把手枪。金属的触感冰冷。你把它放进了口袋。" }
+      ],
+      "next": "ch7_zhang_004"
+    },
+    "ch7_zhang_cb_refuse": {
+      "scene": "「自然选择」号·舰长室",
+      "progress": 36,
+      "segments": [
+        { "text": "「不需要。」你说。她看了你一眼，把手枪收了回去。她的目光里有种说不清的东西，也许是失望，也许是放心。" }
+      ],
+      "next": "ch7_zhang_004"
+    },
+    "ch7_zhang_004": {
+      "scene": "「自然选择」号·舰长室",
+      "progress": 37,
+      "segments": [
+        { "text": "夜深了。舰员都进入了休息状态。你独自坐在操作台前。面前的界面显示着「自然选择」号的全系统状态。你的手指悬在一个按钮上方。" },
+        { "text": "外界通讯已被你切断。深海加速液正在充注。飞船被设定为无人遥控状态。" },
+        { "text": "你只需要按下去。" }
+      ],
+      "choices": [
+        { "text": "按下去", "next": "ch7_zhang_005" }
+      ]
+    },
+    "ch7_zhang_005": {
+      "scene": {
+        "id": "natural_selection",
+        "name": "「自然选择」号·舰长室",
+        "arrival": "你按了下去。"
+      },
+      "progress": 39,
+      "effect": "flash",
+      "segments": [
+        { "speaker": "系统广播", "text": "「自然选择」号将进入前进四。全舰人员立刻进入深海状态。" },
+        { "text": "警报声响彻全舰。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch7_zhang_006" }
+      ]
+    },
+    "ch7_zhang_006": {
+      "scene": "「自然选择」号·舰长室",
+      "progress": 41,
+      "segments": [
+        { "text": "东方延绪和两名副舰长出现在门外——但门已经被你锁死了。他们拍打着透明的舱壁。" },
+        { "speaker": "东方延绪", "text": "你是钢印族吗？" },
+        { "speaker": "你", "text": "你知道我不可能是。" },
+        { "speaker": "东方延绪", "text": "ETO？" },
+        { "speaker": "你", "text": "也不是。" },
+        { "speaker": "东方延绪", "text": "那你是谁？" },
+        { "speaker": "你", "text": "一个尽责任的军人。为人类的生存而战。" }
+      ],
+      "choices": [
+        { "text": "按动最后的按钮", "next": "ch7_zhang_007" }
+      ]
+    },
+    "ch7_zhang_007": {
+      "scene": "「自然选择」号·舰长室",
+      "progress": 43,
+      "effect": "flash",
+      "segments": [
+        { "text": "深海加速液充满整个球形舱。清凉的液体涌入你的肺部——富含氧，你像鱼一样能呼吸了。意识开始模糊——催眠成分正在生效。" },
+        { "text": "你按下了那个按钮。" },
+        { "speaker": "你", "text": "「自然选择」，前进四。" },
+        { "effect": "shake" },
+        { "text": "木星轨道上出现了一颗小太阳。那是「自然选择」号的聚变发动机——全功率推进。" }
+      ],
+      "next": "ch7_zhang_008"
+    },
+    "ch7_zhang_008": {
+      "scene": {
+        "id": "deep_space",
+        "name": "木星轨道",
+        "arrival": "——"
+      },
+      "progress": 45,
+      "effect": "breath",
+      "segments": [
+        { "text": "「自然选择」号以最大加速度脱离舰队基地。" },
+        { "text": "追击舰队在四十五分钟后才起航——因为他们需要进入深海状态。" },
+        { "text": "六艘战舰追向那颗正在变小的星星。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "ch7_closure_008" }
+      ]
+    },
+    "ch7_closure_008": {
+      "progress": 46,
+      "segments": [
+        { "text": "在无尽的太空中，两颗孤独的星星正在远去。一颗是「自然选择」号。六颗是追击舰队。" },
+        { "text": "在地球上，狂欢已经变成了骚乱。人们开始冲进地下城，冲上街头。有人哭，有人笑，有人在毁掉一切能毁掉的东西。" },
+        { "text": "面壁者罗辑站在沙地上，看着那颗还在燃烧的舰队残骸的方向。那里现在只剩下一片暗红色的余烬。他觉得自己好像早就知道会这样。" }
+      ],
+      "next": "ch7_batch8_end"
+    },
+    "ch7_batch8_end": {
+      "isEnding": true,
+      "title": "下部·黑暗森林（中）",
+      "type": "NORMAL ENDING",
+      "progress": 48,
+      "description": "水滴用不到两分钟的时间摧毁了人类耗费两个世纪建造的联合舰队。两千艘恒星级战舰——全部化为太空中的金属岩浆。\n\n章北海劫持了「自然选择」号，以最大加速度逃向外太空。六艘战舰正在追击。\n\n在地球上，狂欢突然停止了。人们开始意识到：那不是和平的礼物。那是死神的使者。",
+      "closing": "毁灭与逃亡，同时发生。"
+    }
+  }
+}

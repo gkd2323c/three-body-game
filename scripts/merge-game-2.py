@@ -14,7 +14,8 @@ BATCH_TRANSITIONS = {
     "ch3_batch4_end": "ch4_bunker_001",    # 第四批→第五批(咒语·上)
     "ch4_batch5_end": "ch5_zhang_001",
     "ch5_batch6_end": "ch6_awake_001",
-    "ch6_batch7_end": "ch7_fleet_001",     # 第五批(咒语·上)→第六批
+    "ch6_batch7_end": "ch7_fleet_001",
+    "ch7_batch8_end": "ch8_deter_001",     # 第五批(咒语·上)→第六批
 }
 
 
