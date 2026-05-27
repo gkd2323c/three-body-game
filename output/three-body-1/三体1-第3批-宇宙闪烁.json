@@ -102,7 +102,7 @@
         { "speaker": "沙瑞山", "text": "三颗卫星的数据都在显示……整个宇宙的微波背景辐射——正在以百分之一以上的振幅闪烁。" }
       ],
       "changes": {
-        "unlockAchievement": "cosmic_scint"
+        "unlockAchievements": ["cosmic_scint"]
       },
       "choices": [
         { "text": "「频率是多少？」", "next": "ch3_miyun_cb_ask", "changes": { "val": 5 } },

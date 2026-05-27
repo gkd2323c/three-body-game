@@ -318,7 +318,7 @@
       ],
       "changes": {
         "importantFlag": { "flag": "accepted_mission", "label": "接受卧底任务" },
-        "unlockAchievement": "first_step"
+        "unlockAchievements": ["first_step"]
       },
       "choices": [
         { "text": "去找丁仪", "next": "ch1_ding_01" }

@@ -101,7 +101,7 @@
       ],
       "changes": {
         "addFlag": "heard_countdown",
-        "unlockAchievement": "countdown_seen"
+        "unlockAchievements": ["countdown_seen"]
       },
       "choices": [
         { "text": "打电话给申玉菲", "next": "ch2_shen_001" },
@@ -406,7 +406,7 @@
       ],
       "changes": {
         "addFlag": "met_ye",
-        "unlockAchievement": "ye_visited"
+        "unlockAchievements": ["ye_visited"]
       },
       "next": "ch2_batch2_end"
     },
