@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "三体1：地球往事",
+    "author": "刘慈欣",
+    "theme": "blood",
+    "ambient": "static"
+  },
+  "startNodeId": "br1_placeholder",
+  "variables": {},
+  "achievements": {
+    "rash_breakdown": {
+      "title": "崩坏",
+      "description": "在真相面前彻底崩溃。"
+    },
+    "rash_countdown": {
+      "title": "归零",
+      "description": "倒计时归零的那一刻。"
+    },
+    "rash_deep_dive": {
+      "title": "无尽的游戏",
+      "description": "永远留在了三体世界中。"
+    },
+    "rash_exposed": {
+      "title": "暴露",
+      "description": "在ETO聚会中被认出。"
+    }
+  },
+  "nodes": {
+    "br1_placeholder": {
+      "progress": 0,
+      "segments": [{ "text": "" }],
+      "next": "br1_placeholder"
+    },
+    "ch1_wm_meeting_08": {
+      "progress": 24,
+      "segments": [
+        { "speaker": "常伟思", "text": "汪教授，我们希望您接受邀请，加入「科学边界」学会。这也是我们今天请您来的主要目的。" },
+        { "speaker": "史强", "text": "哇哈哈，卧底！" }
+      ],
+      "choices": [
+        { "text": "「对不起，首长，我不能干这事。」", "next": "ch1_wm_refuse", "changes": { "val": -10, "set": { "trust_shi": -5 } } },
+        { "text": "「我接受。」", "next": "ch1_wm_accept", "changes": { "val": 8, "set": { "trust_shi": 3 } } },
+        { "text": "「你们找错人了——我什么都不知道，什么都做不了。」", "next": "rash_breakdown_01" }
+      ]
+    },
+    "rash_breakdown_01": {
+      "progress": 25,
+      "segments": [
+        { "text": "你站起来，推开椅子——椅子倒在地上发出一声巨响。所有人都看着你。" },
+        { "speaker": "你", "text": "你们——你们都在说什么？战争？敌人？物理学不存在？" },
+        { "text": "你的声音在发抖。你看到了杨冬的名字、丁仪的台球桌、那些遗书的复印件——它们在你眼前旋转。" },
+        { "speaker": "史强", "text": "汪教授——坐下。" }
+      ],
+      "choices": [
+        { "text": "「我不该来这里的。」", "next": "rash_breakdown_02" }
+      ]
+    },
+    "rash_breakdown_02": {
+      "progress": 26,
+      "segments": [
+        { "text": "你冲出了作战中心。史强追了出来——但你已经拦下了一辆出租车。" },
+        { "text": "你回到家。把自己锁在暗室里。你的妻子在门外敲门——你没有开。" },
+        { "text": "你在暗室里坐了一整天。没有开灯。没有冲洗胶卷。什么都没有。" },
+        { "text": "第二天早上你出来的时候——你的妻子说有人打电话来找你。你没有回。" },
+        { "text": "你再也没有接过任何人的电话。倒计时的胶卷——你把它锁进了抽屉的最深处。" }
+      ],
+      "next": "rash_ending_breakdown"
+    },
+    "rash_ending_breakdown": {
+      "isEnding": true,
+      "title": "崩坏",
+      "type": "RASH ENDING",
+      "progress": 28,
+      "achievement": "rash_breakdown",
+      "description": "汪淼在作战中心崩溃了。他拒绝了一切——任务、真相、责任。他回到纳米实验室，把自己埋在数据里。\n\n很多年后他听说了一件事——「审判日」号在巴拿马运河被截获了。他不知道自己参与制造的纳米材料在那次行动中起到了什么作用。他也不想知道了。\n\n某个夜晚他梦见了杨冬。她站在一台巨大的加速器前，夕阳的金色光束打在她身上。她想开口说什么——但她的声音被什么东西吞没了。",
+      "closing": "那卷胶卷再也没有被冲洗过。"
+    },
+    "ch2_nano_stop": {
+      "progress": 26,
+      "segments": [
+        { "text": "你拿起电话，打给了项目主管。" },
+        { "text": "「飞刃项目——暂停。原因……你别说原因。就说是我的决定。」" },
+        { "text": "挂断电话后，你坐在桌前，等着倒计时继续走。" },
+        { "text": "一秒。两秒。三秒。" }
+      ],
+      "choices": [
+        { "text": "闭上眼等它消失", "next": "ch2_nano_003" },
+        { "text": "盯着倒计时——看到它归零", "next": "rash_countdown_01" }
+      ]
+    },
+    "rash_countdown_01": {
+      "progress": 27,
+      "effect": "flash",
+      "segments": [
+        { "text": "你盯着那串数字。1187:11:14。然后是1187:11:13。" },
+        { "text": "你没有闭眼。你看着它一秒一秒地走——直到它归零。" },
+        { "effect": "silence" },
+        { "text": "归零的那一刻——数字没有消失。它变成了一个点——然后那个点开始扩大。" },
+        { "speaker": "（你听到自己的声音）", "text": "原来……是这样。" }
+      ],
+      "next": "rash_countdown_02"
+    },
+    "rash_countdown_02": {
+      "progress": 28,
+      "segments": [
+        { "text": "你不记得后来发生了什么。只知道你醒来时躺在医院里——妻子在床边哭。医生说你有一次短暂的「缺血性脑卒中」。" },
+        { "text": "纳米项目停了。你的视力受了影响——视野中有一块永久的盲区，正好在正中央。不疼，但它一直在那里——像一块永远擦不掉的污渍。" },
+        { "text": "你不知道那是倒计时的残余，还是你脑子里真的出了什么问题。" }
+      ],
+      "choices": [
+        { "text": "——", "next": "rash_ending_countdown" }
+      ]
+    },
+    "rash_ending_countdown": {
+      "isEnding": true,
+      "title": "归零",
+      "type": "RASH ENDING",
+      "progress": 30,
+      "achievement": "rash_countdown",
+      "description": "汪淼盯着倒计时直到它归零。归零那一刻发生了什么——他记不清了。医生说是中风。他自己知道不只是那样。\n\n他再也不拍照了。",
+      "closing": "有些东西，看到了就再也擦不掉了。"
+    }
+  }
+}
