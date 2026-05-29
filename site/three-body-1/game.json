@@ -545,7 +545,10 @@
             "val": -10,
             "set": {
               "trust_shi": -5
-            }
+            },
+            "unlockAchievements": [
+              "first_step"
+            ]
           }
         },
         {
@@ -869,7 +872,12 @@
       "choices": [
         {
           "text": "冲洗胶片",
-          "next": "ch2_cd_002"
+          "next": "ch2_cd_002",
+          "changes": {
+            "unlockAchievements": [
+              "heard_billiard"
+            ]
+          }
         }
       ]
     },
@@ -921,7 +929,12 @@
       "choices": [
         {
           "text": "再拍一卷验证",
-          "next": "ch2_cd_004"
+          "next": "ch2_cd_004",
+          "changes": {
+            "unlockAchievements": [
+              "countdown_seen"
+            ]
+          }
         }
       ]
     },
@@ -1434,7 +1447,10 @@
           "text": "走进杨冬的房间",
           "next": "ch2_ye_003",
           "changes": {
-            "val": 3
+            "val": 3,
+            "unlockAchievements": [
+              "ye_visited"
+            ]
           }
         },
         {
@@ -1913,7 +1929,12 @@
       "choices": [
         {
           "text": "「全完了。」",
-          "next": "ch3_shi_002"
+          "next": "ch3_shi_002",
+          "changes": {
+            "unlockAchievements": [
+              "cosmic_scint"
+            ]
+          }
         },
         {
           "text": "沉默",
@@ -2258,7 +2279,12 @@
       "choices": [
         {
           "text": "前往朝歌",
-          "next": "ch4_sg2_007"
+          "next": "ch4_sg2_007",
+          "changes": {
+            "unlockAchievements": [
+              "three_body_solved"
+            ]
+          }
         }
       ]
     },
@@ -2318,7 +2344,12 @@
       "choices": [
         {
           "text": "「一颗飞星意味着什么？」",
-          "next": "ch4_sg2_009"
+          "next": "ch4_sg2_009",
+          "changes": {
+            "unlockAchievements": [
+              "human_computer"
+            ]
+          }
         }
       ]
     },
@@ -2369,7 +2400,12 @@
       "choices": [
         {
           "text": "「为什么？」",
-          "next": "ch4_sg2_011"
+          "next": "ch4_sg2_011",
+          "changes": {
+            "unlockAchievements": [
+              "game_mozi"
+            ]
+          }
         }
       ]
     },
@@ -2422,7 +2458,12 @@
       "choices": [
         {
           "text": "——",
-          "next": "ch4_sg2_013"
+          "next": "ch4_sg2_013",
+          "changes": {
+            "unlockAchievements": [
+              "three_suns"
+            ]
+          }
         }
       ]
     },
@@ -3043,7 +3084,10 @@
           "text": "混入人群中",
           "next": "ch6_raid_cb_mix",
           "changes": {
-            "val": 5
+            "val": 5,
+            "unlockAchievements": [
+              "eto_infiltrator"
+            ]
           }
         },
         {
@@ -3393,7 +3437,12 @@
       "choices": [
         {
           "text": "——",
-          "next": "ch6_closure_06"
+          "next": "ch6_closure_06",
+          "changes": {
+            "unlockAchievements": [
+              "ye_confession"
+            ]
+          }
         },
         {
           "text": "「你说得对。人类确实无法自救。」",
@@ -3527,7 +3576,12 @@
       "choices": [
         {
           "text": "——",
-          "next": "ch7_gz_004"
+          "next": "ch7_gz_004",
+          "changes": {
+            "unlockAchievements": [
+              "guzheng_builder"
+            ]
+          }
         }
       ]
     },
@@ -3715,7 +3769,12 @@
       "choices": [
         {
           "text": "——",
-          "next": "ch7_gz_011"
+          "next": "ch7_gz_011",
+          "changes": {
+            "unlockAchievements": [
+              "guzheng"
+            ]
+          }
         }
       ]
     },
@@ -3762,7 +3821,12 @@
       "choices": [
         {
           "text": "——",
-          "next": "ch7_gz_013"
+          "next": "ch7_gz_013",
+          "changes": {
+            "unlockAchievements": [
+              "guzheng_witness"
+            ]
+          }
         }
       ]
     },
@@ -3891,7 +3955,10 @@
           "text": "「监视——那我们说的每一句话？」",
           "next": "ch8_truth_003",
           "changes": {
-            "val": 5
+            "val": 5,
+            "unlockAchievements": [
+              "sophon"
+            ]
           }
         },
         {
@@ -4177,7 +4244,8 @@
       ],
       "changes": {
         "unlockAchievements": [
-          "sunset"
+          "sunset",
+          "bugs"
         ]
       },
       "routes": [
@@ -4548,7 +4616,10 @@
           "changes": {
             "set": {
               "ye_psyche": "warm"
-            }
+            },
+            "unlockAchievements": [
+              "witness_struggle"
+            ]
           }
         },
         {
@@ -4663,7 +4734,12 @@
       "choices": [
         {
           "text": "接受任命",
-          "next": "hy_ye_009"
+          "next": "hy_ye_009",
+          "changes": {
+            "unlockAchievements": [
+              "enter_redcoast"
+            ]
+          }
         }
       ]
     },
@@ -4872,7 +4948,13 @@
       "choices": [
         {
           "text": "——",
-          "next": "hy_ye_015"
+          "next": "hy_ye_015",
+          "changes": {
+            "unlockAchievements": [
+              "no_answer",
+              "received_reply"
+            ]
+          }
         }
       ]
     },
@@ -5074,7 +5156,12 @@
       "choices": [
         {
           "text": "——",
-          "next": "hy_ye_022"
+          "next": "hy_ye_022",
+          "changes": {
+            "unlockAchievements": [
+              "red_coast_fall"
+            ]
+          }
         }
       ]
     },
@@ -5394,7 +5481,12 @@
       "progress": 100,
       "achievement": "rash_endless",
       "description": "汪淼再也没有从三体世界中退出来。\n\n一周后，他的妻子报了警。警察破门而入时——发现他坐在电脑前，戴着显示头盔。头盔的指示灯还亮着。但电脑屏幕是黑的。\n\n他们拔掉了电源。但汪淼还是没有醒来。\n\n医院的检查结果是——大脑功能正常，但对外界刺激没有任何反应。他醒着——但他的意识不在这里。\n\n在某一个地方——一个有着两颗太阳和三颗飞星的地方——他还在走着。",
-      "closing": "他已经不记得自己是从哪里来的了。"
+      "closing": "他已经不记得自己是从哪里来的了。",
+      "changes": {
+        "unlockAchievements": [
+          "rash_deep_dive"
+        ]
+      }
     },
     "ch6_eto_003": {
       "progress": 97,

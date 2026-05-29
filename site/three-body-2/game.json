@@ -187,7 +187,10 @@
             "importantFlag": {
               "flag": "chose_hibernate_wait",
               "label": "选择冬眠等待"
-            }
+            },
+            "unlockAchievements": [
+              "curse_caster"
+            ]
           }
         },
         {
@@ -822,7 +825,12 @@
       "choices": [
         {
           "text": "——",
-          "next": "ch8_deter_closure"
+          "next": "ch8_deter_closure",
+          "changes": {
+            "unlockAchievements": [
+              "dark_forest"
+            ]
+          }
         },
         {
           "text": "低头看墓碑上的褐蚁",
@@ -1229,7 +1237,12 @@
       "choices": [
         {
           "text": "「叶老师，您保重。」",
-          "next": "ch0_tomb_011"
+          "next": "ch0_tomb_011",
+          "changes": {
+            "unlockAchievements": [
+              "think_and_say"
+            ]
+          }
         }
       ]
     },
@@ -1302,7 +1315,12 @@
       "choices": [
         {
           "text": "抬头看天",
-          "next": "ch0_tomb_013"
+          "next": "ch0_tomb_013",
+          "changes": {
+            "unlockAchievements": [
+              "first_meeting"
+            ]
+          }
         }
       ]
     },
@@ -1340,7 +1358,10 @@
         }
       ],
       "changes": {
-        "unlockAchievement": "ant_witness"
+        "unlockAchievement": "ant_witness",
+        "unlockAchievements": [
+          "ant_witness"
+        ]
       },
       "next": "ch0_jd_001"
     },
@@ -1778,7 +1799,12 @@
       "choices": [
         {
           "text": "消化这个信息",
-          "next": "ch6_awake_003"
+          "next": "ch6_awake_003",
+          "changes": {
+            "unlockAchievements": [
+              "new_world"
+            ]
+          }
         }
       ]
     },
@@ -1842,7 +1868,12 @@
       "choices": [
         {
           "text": "和他聊聊",
-          "next": "ch6_awake_006"
+          "next": "ch6_awake_006",
+          "changes": {
+            "unlockAchievements": [
+              "ice_awakening"
+            ]
+          }
         }
       ]
     },
@@ -3052,7 +3083,12 @@
       "choices": [
         {
           "text": "——",
-          "next": "ch2_un_006"
+          "next": "ch2_un_006",
+          "changes": {
+            "unlockAchievements": [
+              "wallfacer_chosen"
+            ]
+          }
         }
       ]
     },
@@ -3420,7 +3456,12 @@
           "text": "伽尔宁愣了一下，然后点点头。他的表情在说：这就是面壁者该有的样子——没人知道他为什么需要壁炉。"
         }
       ],
-      "next": "ch2_paradise_001"
+      "next": "ch2_paradise_001",
+      "changes": {
+        "unlockAchievements": [
+          "space_force_born"
+        ]
+      }
     },
     "ch2_paradise_001": {
       "chapterTitle": "伊甸园",
@@ -3448,7 +3489,12 @@
       "choices": [
         {
           "text": "「这里叫什么？」",
-          "next": "ch2_paradise_002"
+          "next": "ch2_paradise_002",
+          "changes": {
+            "unlockAchievements": [
+              "paradise_found"
+            ]
+          }
         },
         {
           "text": "径直走向湖边",
@@ -4047,7 +4093,12 @@
           "text": "你回头看了一眼墓碑。褐蚁还在爬。蜘蛛还在织网。星星开始出现了。"
         }
       ],
-      "next": "ch8_batch9_end"
+      "next": "ch8_batch9_end",
+      "changes": {
+        "unlockAchievements": [
+          "wallfacer_ended"
+        ]
+      }
     },
     "ch8_batch9_end": {
       "isEnding": true,
@@ -4081,7 +4132,12 @@
       "choices": [
         {
           "text": "等吴岳先开口",
-          "next": "ch1_ship_002"
+          "next": "ch1_ship_002",
+          "changes": {
+            "unlockAchievements": [
+              "father_words"
+            ]
+          }
         },
         {
           "text": "找点话打破沉默",
@@ -5332,7 +5388,12 @@
       "choices": [
         {
           "text": "叫医生",
-          "next": "ch4_sick_002"
+          "next": "ch4_sick_002",
+          "changes": {
+            "unlockAchievements": [
+              "first_blood"
+            ]
+          }
         }
       ]
     },
@@ -5444,7 +5505,12 @@
       "choices": [
         {
           "text": "看新闻",
-          "next": "ch7_fleet_002"
+          "next": "ch7_fleet_002",
+          "changes": {
+            "unlockAchievements": [
+              "fleet_sail"
+            ]
+          }
         }
       ]
     },
@@ -5485,7 +5551,12 @@
       "choices": [
         {
           "text": "盯着那颗星看",
-          "next": "ch7_fleet_004"
+          "next": "ch7_fleet_004",
+          "changes": {
+            "unlockAchievements": [
+              "droplet_true"
+            ]
+          }
         }
       ]
     },
@@ -6001,7 +6072,13 @@
           "text": "面壁者罗辑站在沙地上，看着那颗还在燃烧的舰队残骸的方向。那里现在只剩下一片暗红色的余烬。他觉得自己好像早就知道会这样。"
         }
       ],
-      "next": "ch8_deter_001"
+      "next": "ch8_deter_001",
+      "changes": {
+        "unlockAchievements": [
+          "dark_battle",
+          "fleet_destroyed"
+        ]
+      }
     },
     "ch5_zhang_001": {
       "chapterTitle": "陨石与钢印",
@@ -6022,7 +6099,12 @@
       "choices": [
         {
           "text": "敲门",
-          "next": "ch5_meteor_002"
+          "next": "ch5_meteor_002",
+          "changes": {
+            "unlockAchievements": [
+              "three_shots"
+            ]
+          }
         }
       ]
     },
@@ -6343,7 +6425,12 @@
       "choices": [
         {
           "text": "敬礼——转身登机",
-          "next": "ch5_aftermath_004"
+          "next": "ch5_aftermath_004",
+          "changes": {
+            "unlockAchievements": [
+              "augment_future"
+            ]
+          }
         }
       ]
     },
@@ -6447,7 +6534,12 @@
       "choices": [
         {
           "text": "观看测试",
-          "next": "ch5_hines_004"
+          "next": "ch5_hines_004",
+          "changes": {
+            "unlockAchievements": [
+              "thought_seal"
+            ]
+          }
         }
       ]
     },
@@ -7704,7 +7796,10 @@
           "text": "追上去",
           "next": "ch3_taylor_005",
           "changes": {
-            "val": 5
+            "val": 5,
+            "unlockAchievements": [
+              "taylor_end"
+            ]
           }
         },
         {
@@ -7792,7 +7887,12 @@
       "choices": [
         {
           "text": "去育儿室",
-          "next": "ch3_aftermath_002"
+          "next": "ch3_aftermath_002",
+          "changes": {
+            "unlockAchievements": [
+              "dream_girl"
+            ]
+          }
         }
       ]
     },
