@@ -162,7 +162,7 @@
         "name": "PDC会议",
         "type": "major"
       },
-      "progress": 30,
+      "progress": 98,
       "segments": [
         {
           "speaker": "罗辑",
@@ -209,7 +209,7 @@
       ]
     },
     "ch4_pdc_003_refuse": {
-      "progress": 32,
+      "progress": 98,
       "segments": [
         {
           "text": "会场沉默了几秒。然后是一阵骚动。"
@@ -233,7 +233,7 @@
     },
     "ch5_space_005": {
       "scene": "同步轨道·黄河站外",
-      "progress": 23,
+      "progress": 91,
       "segments": [
         {
           "text": "你透过瞄准镜观察。白色气体从航天服上喷出。面罩裂了——血飞溅在内壁上，遇到真空立刻冷凝成冰晶。"
@@ -261,7 +261,7 @@
       ]
     },
     "ch5_space_exposed": {
-      "progress": 24,
+      "progress": 99,
       "segments": [
         {
           "text": "你多留了三十秒。三十秒，足够让另一艘飞船的监视系统捕捉到你的航天服推进器的热信号。"
@@ -279,7 +279,7 @@
     },
     "ch8_deter_003_launch": {
       "scene": "太阳系外围·黑暗太空",
-      "progress": 6,
+      "progress": 97,
       "segments": [
         {
           "text": "你按了下去。但信号还没离开飞船——"
@@ -289,7 +289,7 @@
     },
     "ch6_pdc_006": {
       "scene": "联合国·行星防御理事会",
-      "progress": 32,
+      "progress": 95,
       "segments": [
         {
           "speaker": "欧洲舰队代表",
@@ -311,7 +311,7 @@
       ]
     },
     "ch6_give_up": {
-      "progress": 33,
+      "progress": 99,
       "segments": [
         {
           "text": "你关掉了屏幕。面壁计划结束了。你自由了——但你不知道该拿这份自由怎么办。"
@@ -331,7 +331,7 @@
         "name": "联合国大会堂",
         "arrival": "会议结束了。但你不知道是怎么结束的。"
       },
-      "progress": 42,
+      "progress": 95,
       "segments": [
         {
           "text": "人们开始散去。三位面壁者从你身边走过。你身边空无一人。"
@@ -368,7 +368,7 @@
       ]
     },
     "rash_un_refuse": {
-      "progress": 24,
+      "progress": 97,
       "segments": [
         {
           "text": "你推开椅子，站起来，在全世界的注视下转身向大门走去。"
@@ -383,7 +383,7 @@
       "next": "rash_un_refuse_02"
     },
     "rash_un_refuse_02": {
-      "progress": 25,
+      "progress": 98,
       "segments": [
         {
           "text": "你走下了台阶。没有人跟出来。你觉得自己自由了。"
@@ -406,7 +406,7 @@
       ]
     },
     "rash_un_refuse_03": {
-      "progress": 26,
+      "progress": 99,
       "effect": "blackout",
       "segments": [
         {
@@ -422,7 +422,7 @@
       "isEnding": true,
       "title": "第四位的陨落",
       "type": "RASH ENDING",
-      "progress": 27,
+      "progress": 100,
       "achievement": "rash_wallfacer",
       "description": "罗辑在联合国大会堂外被ETO的狙击手击毙。他成为面壁者不到十分钟，是史上任期最短的面壁者。\n\nPDC宣布他的死是「计划的一部分」。没有葬礼。没有新闻。",
       "closing": "有些人注定活不到自己的使命开始的时候。"
@@ -433,7 +433,7 @@
         "name": "地下人防工事",
         "type": "major"
       },
-      "progress": 15,
+      "progress": 95,
       "segments": [
         {
           "text": "他明显在装傻。但你不确定他为什么装傻。"
@@ -459,7 +459,7 @@
       ]
     },
     "rash_attack_guard": {
-      "progress": 17,
+      "progress": 96,
       "segments": [
         {
           "text": "你站起来朝门口走去。史强没有拦你，他只是叹了一口气。"
@@ -484,7 +484,7 @@
       ]
     },
     "rash_attack_02": {
-      "progress": 18,
+      "progress": 97,
       "effect": "flash",
       "segments": [
         {
@@ -501,7 +501,7 @@
       "next": "rash_attack_03"
     },
     "rash_attack_03": {
-      "progress": 19,
+      "progress": 99,
       "segments": [
         {
           "speaker": "史强",
@@ -520,7 +520,7 @@
       "isEnding": true,
       "title": "过线",
       "type": "RASH ENDING",
-      "progress": 20,
+      "progress": 100,
       "achievement": "rash_attack",
       "description": "罗辑在地下工事中袭击警卫，被制服后关禁闭。他的面壁者身份没有被剥夺——在理论上，他仍然可以思考。但在这间铁箱子里，他什么都想不了。\n\n一天又一天过去。没有人来。\n\n后来警卫打开门的时候，发现他缩在角落里，眼睛适应不了光线。",
       "closing": "他不是第一个被自己毁掉的面壁者。"
@@ -533,7 +533,7 @@
         "description": "惨白的灯光照着整齐排列的冬眠舱。空气中有一股消毒水和冷凝剂混合的气味。几名穿白大褂的人在你身边忙碌着。",
         "arrival": "你恢复了微弱的意识。"
       },
-      "progress": 37,
+      "progress": 98,
       "effect": "cold",
       "segments": [
         {
@@ -563,7 +563,7 @@
       ]
     },
     "rash_nohibernate_02": {
-      "progress": 38,
+      "progress": 99,
       "segments": [
         {
           "text": "你拒绝了冬眠。医生们面面相觑。面壁者拥有拒绝医疗的特权。"
@@ -580,7 +580,7 @@
       ]
     },
     "rash_nohibernate_03": {
-      "progress": 39,
+      "progress": 99,
       "segments": [
         {
           "text": "发烧越来越严重。你开始看不清东西，视野的边缘一片模糊。"
@@ -601,14 +601,14 @@
       "isEnding": true,
       "title": "拒绝时间",
       "type": "RASH ENDING",
-      "progress": 40,
+      "progress": 100,
       "achievement": "rash_no_hibernate",
       "description": "罗辑拒绝冬眠。他死的消息被封锁了——面壁计划不能承认一个面壁者的死亡是因为拒绝医疗。\n\n咒语最终还是被发出去了，由PDC代为执行。但那三张图被发送的时候，罗辑已经感觉不到了。\n\n他最后的意识停留在天花板上的那盏灯上。灯一直亮着。即使没有人再看它。",
       "closing": "光还在。看光的人不在了。"
     },
     "ch5_space_004": {
       "scene": "同步轨道·黄河站外",
-      "progress": 21,
+      "progress": 91,
       "effect": "flash",
       "segments": [
         {
@@ -624,7 +624,7 @@
       "next": "ch5_space_005"
     },
     "rash_zhang_caught_02": {
-      "progress": 22,
+      "progress": 99,
       "segments": [
         {
           "text": "你靠得太近了。推进器的一次短促喷射让你偏离了原来的位置。你从掩体后面暴露了出来。"
@@ -647,7 +647,7 @@
       ]
     },
     "rash_zhang_caught_03": {
-      "progress": 23,
+      "progress": 100,
       "segments": [
         {
           "text": "你来不及收回手枪。来不及销毁证据。来不及——"
@@ -669,7 +669,7 @@
       "isEnding": true,
       "title": "太空遗骸",
       "type": "RASH ENDING",
-      "progress": 24,
+      "progress": 100,
       "achievement": "rash_zhang_caught",
       "description": "章北海被当场捕获。他手上的陨石子弹和那把改装过的手枪成了铁证。\n\n太空军军事法庭以叛国罪和谋杀罪判处他终身监禁。他被关押在一个专门建造的太空监狱中——一个漂浮在小行星带里的钢铁容器。\n\n没有人来探望他。没有人写信。他漂浮在零重力中，听到的只有循环风扇的声音。",
       "closing": "他想了太多。"
@@ -680,7 +680,7 @@
         "name": "脑科学实验室",
         "type": "major"
       },
-      "progress": 42,
+      "progress": 98,
       "segments": [
         {
           "speaker": "希恩斯",
@@ -711,7 +711,7 @@
       ]
     },
     "ch5_hines_010_destroy": {
-      "progress": 53,
+      "progress": 88,
       "segments": [
         {
           "text": "你在山杉惠子的注视下，拆毁了最后一台解析摄像机的主芯片。钢印的秘密——到此为止。"
@@ -723,7 +723,7 @@
       "next": "ch5_closure_006"
     },
     "ch5_hines_010_hide": {
-      "progress": 53,
+      "progress": 99,
       "segments": [
         {
           "text": "你保留了最后一台设备。你把它藏在了实验室的暗格里——没有人知道它的存在。"
@@ -740,7 +740,7 @@
         "name": "公路旁·沙地",
         "type": "major"
       },
-      "progress": 80,
+      "progress": 98,
       "segments": [
         {
           "speaker": "罗辑",
@@ -766,7 +766,7 @@
       ]
     },
     "ch8_deter_008_cooperate": {
-      "progress": 16,
+      "progress": 98,
       "segments": [
         {
           "speaker": "史强",
@@ -812,7 +812,7 @@
         "name": "杨冬墓前",
         "type": "major"
       },
-      "progress": 95,
+      "progress": 99,
       "segments": [
         {
           "speaker": "罗辑",
@@ -843,7 +843,7 @@
       ]
     },
     "ch8_deter_023_silence": {
-      "progress": 48,
+      "progress": 99,
       "segments": [
         {
           "text": "你没有回答。你转身走下墓碑基座。褐蚁正在碑座上爬行，在你的视觉边缘——一个小小的黑点。"
@@ -886,7 +886,7 @@
         "description": "暮色笼罩着这片远离人烟的陵园。远山只剩剪影，天空是介于蓝灰和暗蓝之间的颜色，几颗星星刚刚开始显现。墓碑是一块黑色的孤峰形花岗岩，上面刻着一个复杂的符号。",
         "arrival": "你沿着石阶走上来，脚步停在最后一级。"
       },
-      "progress": 1,
+      "progress": 5,
       "theme": "night",
       "ambient": "wind",
       "segments": [
@@ -913,7 +913,7 @@
     },
     "ch0_tomb_002": {
       "scene": "杨冬墓前",
-      "progress": 2,
+      "progress": 6,
       "ambient": "wind",
       "segments": [
         {
@@ -935,7 +935,7 @@
     },
     "ch0_tomb_003": {
       "scene": "杨冬墓前",
-      "progress": 3,
+      "progress": 6,
       "ambient": "wind",
       "segments": [
         {
@@ -961,7 +961,7 @@
     },
     "ch0_tomb_004": {
       "scene": "杨冬墓前",
-      "progress": 4,
+      "progress": 8,
       "ambient": "wind",
       "segments": [
         {
@@ -981,7 +981,7 @@
     },
     "ch0_tomb_005": {
       "scene": "杨冬墓前",
-      "progress": 5,
+      "progress": 9,
       "segments": [
         {
           "speaker": "你",
@@ -1017,7 +1017,7 @@
     },
     "ch0_tomb_006": {
       "scene": "杨冬墓前",
-      "progress": 6,
+      "progress": 10,
       "segments": [
         {
           "speaker": "叶文洁",
@@ -1057,7 +1057,7 @@
     },
     "ch0_tomb_007": {
       "scene": "杨冬墓前",
-      "progress": 8,
+      "progress": 12,
       "segments": [
         {
           "speaker": "叶文洁",
@@ -1081,7 +1081,7 @@
     },
     "ch0_tomb_008": {
       "scene": "杨冬墓前",
-      "progress": 10,
+      "progress": 13,
       "segments": [
         {
           "speaker": "叶文洁",
@@ -1115,7 +1115,7 @@
     },
     "ch0_tomb_008_cb_ask": {
       "scene": "杨冬墓前",
-      "progress": 11,
+      "progress": 14,
       "segments": [
         {
           "text": "你身体微微前倾——你确实想知道。叶文洁看了你一眼，不是看你这个人，是看你眼底的反应。"
@@ -1125,7 +1125,7 @@
     },
     "ch0_tomb_008_cb_silent": {
       "scene": "杨冬墓前",
-      "progress": 11,
+      "progress": 14,
       "segments": [
         {
           "text": "你没有接话。你发现自己真的不知道该怎么接——这个话题太重了，重到一句玩笑都说不出口。叶文洁看了看你，像是在确认你在听，然后继续说下去。"
@@ -1135,7 +1135,7 @@
     },
     "ch0_tomb_009": {
       "scene": "杨冬墓前",
-      "progress": 13,
+      "progress": 15,
       "segments": [
         {
           "speaker": "你",
@@ -1176,7 +1176,7 @@
     },
     "ch0_tomb_009_cb_think": {
       "scene": "杨冬墓前",
-      "progress": 14,
+      "progress": 17,
       "segments": [
         {
           "text": "你在心里默念了一遍这两句话。简单。太简单了。但简单的东西往往最坚固——整个数学大厦都建立在几条这么简单的公理之上。"
@@ -1186,7 +1186,7 @@
     },
     "ch0_tomb_009_cb_ask": {
       "scene": "杨冬墓前",
-      "progress": 14,
+      "progress": 17,
       "segments": [
         {
           "speaker": "你",
@@ -1200,7 +1200,7 @@
     },
     "ch0_tomb_010": {
       "scene": "杨冬墓前",
-      "progress": 15,
+      "progress": 18,
       "segments": [
         {
           "speaker": "叶文洁",
@@ -1239,7 +1239,7 @@
         "name": "杨冬墓前",
         "arrival": "叶文洁在暮色中离去，走向她那最后的聚会。"
       },
-      "progress": 17,
+      "progress": 19,
       "segments": [
         {
           "text": "你站在墓碑前，没有动。"
@@ -1270,7 +1270,7 @@
     },
     "ch0_tomb_011_cb_look": {
       "scene": "杨冬墓前",
-      "progress": 18,
+      "progress": 21,
       "segments": [
         {
           "text": "你往前走了两步，凑近墓碑。石面很凉——不是天气的凉，是石头本身的温度。"
@@ -1280,7 +1280,7 @@
     },
     "ch0_tomb_011_cb_watch": {
       "scene": "杨冬墓前",
-      "progress": 18,
+      "progress": 21,
       "segments": [
         {
           "text": "你没有动。你看着那个白色的背影慢慢变小，直到暮色吞没了她。"
@@ -1290,7 +1290,7 @@
     },
     "ch0_tomb_012": {
       "scene": "杨冬墓前",
-      "progress": 19,
+      "progress": 22,
       "segments": [
         {
           "text": "线条刻得很深。褐蚁的爬痕与石刻的凹槽混在一起——它刚才爬过的那些沟槽，原来都是这个字的一部分。褐蚁不知道自己在拼一个什么字。它不在意。它早已忘了自己爬过的形状。"
@@ -1308,7 +1308,7 @@
     },
     "ch0_tomb_013": {
       "scene": "杨冬墓前",
-      "progress": 22,
+      "progress": 23,
       "segments": [
         {
           "text": "星星密了起来。你看到那只蜘蛛不知什么时候已经爬回了墓碑根部，开始重新织网。它从峭壁上拉出一根晶莹的丝，把自己像钟摆似的甩到地面上——这样做了三次，网的骨架就完成了。网被破坏一万次它就重建一万次。一亿年来一直如此。"
@@ -1330,7 +1330,7 @@
         "name": "杨冬墓前",
         "arrival": "脚步声渐渐远了。"
       },
-      "progress": 23,
+      "progress": 25,
       "segments": [
         {
           "text": "褐蚁从墓碑顶部向下爬，与蜘蛛交错而过。它们感觉到了对方的存在，但同过去的一亿年一样，双方没有任何交流。"
@@ -1353,7 +1353,7 @@
         "description": "深夜。太平洋像一块黑色的巨缎在下方滑过。船首切开海面的声音持续而低沉。风很大，但不冷——带着海水蒸发后的咸味。星空覆盖着整个海面。",
         "arrival": "更早一些的时候——"
       },
-      "progress": 25,
+      "progress": 26,
       "ambient": "sea",
       "segments": [
         {
@@ -1407,7 +1407,7 @@
     },
     "ch0_jd_003": {
       "scene": "「审判日」号·船首",
-      "progress": 30,
+      "progress": 28,
       "ambient": "sea",
       "segments": [
         {
@@ -1444,7 +1444,7 @@
     },
     "ch0_jd_004": {
       "scene": "「审判日」号·船首",
-      "progress": 32,
+      "progress": 30,
       "ambient": "sea",
       "segments": [
         {
@@ -1485,7 +1485,7 @@
     },
     "ch0_jd_005": {
       "scene": "「审判日」号·船首",
-      "progress": 35,
+      "progress": 31,
       "ambient": "sea",
       "segments": [
         {
@@ -1521,7 +1521,7 @@
     },
     "ch0_jd_006": {
       "scene": "「审判日」号·船首",
-      "progress": 38,
+      "progress": 32,
       "ambient": "sea",
       "segments": [
         {
@@ -1562,7 +1562,7 @@
     },
     "ch0_jd_006b": {
       "scene": "「审判日」号·船首",
-      "progress": 40,
+      "progress": 34,
       "ambient": "sea",
       "segments": [
         {
@@ -1595,7 +1595,7 @@
     },
     "ch0_jd_007": {
       "scene": "「审判日」号·船首",
-      "progress": 42,
+      "progress": 35,
       "ambient": "sea",
       "segments": [
         {
@@ -1615,7 +1615,7 @@
         "name": "「审判日」号·船首",
         "arrival": "字幕重新亮起。"
       },
-      "progress": 45,
+      "progress": 36,
       "ambient": "sea",
       "effect": "breath",
       "segments": [
@@ -1655,7 +1655,7 @@
         "name": "「审判日」号·船尾",
         "arrival": "你走到船尾。"
       },
-      "progress": 47,
+      "progress": 38,
       "ambient": "sea",
       "effect": "breath",
       "segments": [
@@ -1685,7 +1685,7 @@
         "name": "「审判日」号·船尾",
         "arrival": "夜色如海，海如夜色。"
       },
-      "progress": 48,
+      "progress": 39,
       "segments": [
         {
           "effect": "breath"
@@ -1704,7 +1704,7 @@
     },
     "ch0_prologue_end": {
       "chapterTitle": "序章完",
-      "progress": 50,
+      "progress": 40,
       "effect": "silence",
       "segments": [
         {
@@ -1738,7 +1738,7 @@
         "description": "天花板发出乳白色的柔光。几根透明的细管横过视野，管中的液体在缓缓流动。空气里有消毒剂和某种温和的电气味道。",
         "arrival": "黑暗。然后有了光。"
       },
-      "progress": 1,
+      "progress": 89,
       "effect": "breath",
       "segments": [
         {
@@ -1757,7 +1757,7 @@
     },
     "ch6_awake_002": {
       "scene": "冬眠苏醒中心",
-      "progress": 3,
+      "progress": 89,
       "segments": [
         {
           "speaker": "医生",
@@ -1784,7 +1784,7 @@
     },
     "ch6_awake_003": {
       "scene": "冬眠苏醒中心",
-      "progress": 5,
+      "progress": 89,
       "segments": [
         {
           "text": "一百八十五年。你闭上眼睛，然后睁开。世界没有变回原来的样子。"
@@ -1806,7 +1806,7 @@
         "name": "苏醒中心·走廊",
         "arrival": "你的床自动移动，把你带出苏醒室。"
       },
-      "progress": 7,
+      "progress": 90,
       "segments": [
         {
           "text": "走廊上没有灯。墙壁本身就在发光。当你眯起眼时，你身边的墙壁暗了下来；当你睁大眼，它又重新变亮。光量调节系统在监测你的瞳孔。"
@@ -1827,7 +1827,7 @@
     },
     "ch6_awake_005": {
       "scene": "苏醒中心·走廊",
-      "progress": 9,
+      "progress": 90,
       "segments": [
         {
           "text": "走廊上的人们衣着整洁高雅，衣服上闪烁着各种图案，有的写实有的抽象。他们看到你，都亲切地微笑致意。"
@@ -1848,7 +1848,7 @@
     },
     "ch6_awake_006": {
       "scene": "监护室",
-      "progress": 11,
+      "progress": 91,
       "segments": [
         {
           "speaker": "熊文",
@@ -1875,7 +1875,7 @@
     },
     "ch6_awake_007": {
       "scene": "监护室",
-      "progress": 13,
+      "progress": 91,
       "segments": [
         {
           "speaker": "熊文",
@@ -1898,7 +1898,7 @@
         "name": "苏醒中心·观景平台",
         "arrival": "护士带你来到外面的平台。"
       },
-      "progress": 15,
+      "progress": 92,
       "segments": [
         {
           "text": "你被眼前的景象定住了。"
@@ -1924,7 +1924,7 @@
     },
     "ch6_awake_009": {
       "scene": "苏醒中心·观景平台",
-      "progress": 17,
+      "progress": 92,
       "segments": [
         {
           "text": "护士大笑起来。"
@@ -1953,7 +1953,7 @@
     },
     "ch6_awake_010": {
       "scene": "苏醒中心·观景平台",
-      "progress": 19,
+      "progress": 92,
       "segments": [
         {
           "text": "女孩儿把背上的伞状物展开，露出两个同轴螺旋桨。她跃出栏杆，悬浮在空中对你笑了笑。"
@@ -1985,7 +1985,7 @@
         "description": "大圆桌。一切都没有变。两百年前你曾坐在这里。如今你以视频方式参会，你的脸出现在屏幕上。",
         "arrival": "你收到了舰队联席会议的通知。"
       },
-      "progress": 22,
+      "progress": 93,
       "segments": [
         {
           "speaker": "PDC轮值主席",
@@ -2008,7 +2008,7 @@
     },
     "ch6_pdc_002": {
       "scene": "联合国·行星防御理事会",
-      "progress": 24,
+      "progress": 93,
       "segments": [
         {
           "speaker": "主席",
@@ -2033,7 +2033,7 @@
     },
     "ch6_pdc_003": {
       "scene": "联合国·行星防御理事会",
-      "progress": 26,
+      "progress": 94,
       "segments": [
         {
           "speaker": "山杉惠子",
@@ -2059,7 +2059,7 @@
     },
     "ch6_pdc_004": {
       "scene": "联合国·行星防御理事会",
-      "progress": 28,
+      "progress": 94,
       "segments": [
         {
           "speaker": "山杉惠子",
@@ -2082,7 +2082,7 @@
     },
     "ch6_pdc_005": {
       "scene": "联合国·行星防御理事会",
-      "progress": 30,
+      "progress": 95,
       "segments": [
         {
           "speaker": "北美舰队代表",
@@ -2119,7 +2119,7 @@
         "description": "地面是宽阔的草地广场，巨树的树干间距很远。树冠遮蔽了天空，不，是穹顶。行人的衣服闪着光，像发光的蚂蚁在巨大的空间里穿行。空气中有一股植物和循环风的干净味道。",
         "arrival": "你走在这座地下城市中。"
       },
-      "progress": 34,
+      "progress": 96,
       "segments": [
         {
           "text": "你走着走着，路边的一个广告牌叫住了你。"
@@ -2138,7 +2138,7 @@
     },
     "ch6_shi_002": {
       "scene": "地下北京·巨树之间",
-      "progress": 36,
+      "progress": 96,
       "segments": [
         {
           "text": "你的左臂植入了身份芯片——广告牌能认出你。你的存款已经在一百八十多年的复利下变成了一笔不小的财富。"
@@ -2160,7 +2160,7 @@
     },
     "ch6_shi_003": {
       "scene": "地下北京·巨树之间",
-      "progress": 38,
+      "progress": 96,
       "segments": [
         {
           "text": "史强站在那里，叼着一根烟，不用点火的那种。他穿着这个时代的衣服，但站姿、表情、那眼神里的油滑，一点都没变。"
@@ -2179,7 +2179,7 @@
     },
     "ch6_shi_004": {
       "scene": "地下北京·巨树之间",
-      "progress": 40,
+      "progress": 97,
       "segments": [
         {
           "speaker": "史强",
@@ -2212,7 +2212,7 @@
     },
     "ch6_shi_cb_agree": {
       "scene": "地下北京·巨树之间",
-      "progress": 41,
+      "progress": 97,
       "segments": [
         {
           "text": "你点了点头。是啊，好时候。两百年的债还清了。面壁者的噩梦结束了。你终于可以做一个普通人了。"
@@ -2222,7 +2222,7 @@
     },
     "ch6_shi_cb_doubt": {
       "scene": "地下北京·巨树之间",
-      "progress": 41,
+      "progress": 97,
       "segments": [
         {
           "text": "你说不出来哪里不对。但总觉得这世界太亮了。亮得不像是真的。"
@@ -2232,7 +2232,7 @@
     },
     "ch6_shi_005": {
       "scene": "地下北京·巨树之间",
-      "progress": 42,
+      "progress": 98,
       "segments": [
         {
           "text": "话音刚落，一辆飞车直直地向你们刚才站的位置砸下来。大史一把将你扑倒在草坪上，车体在你们身后摔成一团扭曲的金属。"
@@ -2259,7 +2259,7 @@
         "name": "地面城市",
         "type": "major"
       },
-      "progress": 50,
+      "progress": 98,
       "segments": [
         {
           "speaker": "史强",
@@ -2282,7 +2282,7 @@
       ]
     },
     "ch6_closure_007": {
-      "progress": 45,
+      "progress": 92,
       "segments": [
         {
           "text": "你跟着大史穿过巨树的树根。他走路的样子还是跟两百年前一样，不紧不慢，脚跟先着地，像什么都不会发生一样。"
@@ -2305,7 +2305,7 @@
         "description": "窗帘拉着，透进来的光把整个房间染成暖黄色。被单是白色的，空调嗡嗡响着。床头柜上放着一杯没喝完的红酒。",
         "arrival": "你醒来的时候，阳光正从窗帘缝隙里漏进来——一道金色的线，恰好落在你的眼皮上。"
       },
-      "progress": 1,
+      "progress": 84,
       "ambient": "none",
       "segments": [
         {
@@ -2334,7 +2334,7 @@
     },
     "ch2_luoj_002": {
       "scene": "酒店房间",
-      "progress": 2,
+      "progress": 86,
       "segments": [
         {
           "text": "电视开着，没有声音。画面是联合国会场的圆桌——一大堆人在讨论什么。你看了几秒，不感兴趣。"
@@ -2363,7 +2363,7 @@
     },
     "ch2_luoj_003": {
       "scene": "酒店房间",
-      "progress": 3,
+      "progress": 87,
       "segments": [
         {
           "text": "她从镜子里看着你——那种看透了你但又懒得说透的眼神。"
@@ -2404,7 +2404,7 @@
     },
     "ch2_luoj_004": {
       "scene": "酒店房间",
-      "progress": 5,
+      "progress": 88,
       "segments": [
         {
           "text": "她没接你的话。收拾好了，背着那个小包转过身来。"
@@ -2440,7 +2440,7 @@
         "name": "酒店门口",
         "arrival": "——"
       },
-      "progress": 6,
+      "progress": 90,
       "segments": [
         {
           "effect": "flash"
@@ -2467,7 +2467,7 @@
     },
     "ch2_luoj_006": {
       "scene": "酒店门口",
-      "progress": 7,
+      "progress": 91,
       "ambient": "static",
       "segments": [
         {
@@ -2494,7 +2494,7 @@
         "description": "很深的地下。电梯是那种老式的、由人扳动一个手柄操作的货梯，楼层数字显示你降到了地下十层。房间不大，有一张单人床和一些简单的生活用品，角落里扔着一架落满灰的红色转盘电话机。空气里有股潮湿的霉味。",
         "arrival": "你再次睁开眼睛的时候，天花板是灰色的。"
       },
-      "progress": 10,
+      "progress": 92,
       "ambient": "static",
       "segments": [
         {
@@ -2514,7 +2514,7 @@
     },
     "ch2_bunker_002": {
       "scene": "地下人防工事",
-      "progress": 11,
+      "progress": 93,
       "segments": [
         {
           "speaker": "中年人",
@@ -2555,7 +2555,7 @@
     },
     "ch2_bunker_004": {
       "scene": "地下人防工事",
-      "progress": 13,
+      "progress": 77,
       "segments": [
         {
           "speaker": "你",
@@ -2588,7 +2588,7 @@
     },
     "ch2_bunker_005": {
       "scene": "地下人防工事",
-      "progress": 15,
+      "progress": 78,
       "segments": [
         {
           "speaker": "史强",
@@ -2619,7 +2619,7 @@
         "name": "地下人防工事",
         "arrival": "你被带到另一个出口。"
       },
-      "progress": 16,
+      "progress": 79,
       "segments": [
         {
           "text": "你换上了一件厚重的夹克——防弹衣。史强迫不及待地把它套在你身上，拍了拍你的肩。"
@@ -2650,7 +2650,7 @@
         "name": "地下人防工事·出口大厅",
         "arrival": "地下停车场改装的临时指挥部。"
       },
-      "progress": 17,
+      "progress": 80,
       "ambient": "static",
       "segments": [
         {
@@ -2675,7 +2675,7 @@
         "type": "transient",
         "description": "车窗小得不像话，厚厚的车壳几乎隔绝了所有外部声音。引擎的低频嗡鸣是唯一的背景音。"
       },
-      "progress": 18,
+      "progress": 81,
       "segments": [
         {
           "text": "你坐在后排。史强在你旁边，步话机里断断续续传来各种汇报。"
@@ -2715,7 +2715,7 @@
         "name": "防弹轿车内",
         "arrival": "车停了。"
       },
-      "progress": 19,
+      "progress": 82,
       "segments": [
         {
           "text": "史强下车，示意你待在车内。几分钟后他拉开车门，"
@@ -2740,7 +2740,7 @@
         "description": "夜。停机坪被探照灯照得通明——远处一排战斗机在月光下静默。一架大型客机停在跑道上，没有航空公司的标志。周围是十几辆车和几十名士兵构成的警戒圈。",
         "arrival": "你下了车，冷风扑面而来。"
       },
-      "progress": 20,
+      "progress": 83,
       "ambient": "wind",
       "segments": [
         {
@@ -2763,7 +2763,7 @@
         "description": "前舱有四排空空的座椅，看上去和普通客机一样。但中舱是一间相当宽敞的办公室——沙发、办公桌、一个套间卧室。所有的椅子都有安全带。",
         "arrival": "你被带进机舱。"
       },
-      "progress": 22,
+      "progress": 84,
       "segments": [
         {
           "speaker": "工作人员",
@@ -2787,7 +2787,7 @@
     },
     "ch2_plane_002": {
       "scene": "专机内",
-      "progress": 23,
+      "progress": 85,
       "segments": [
         {
           "text": "引擎轰鸣起来。飞机滑向跑道。"
@@ -2813,7 +2813,7 @@
     },
     "ch2_plane_003": {
       "scene": "专机内",
-      "progress": 24,
+      "progress": 86,
       "segments": [
         {
           "speaker": "史强",
@@ -2842,7 +2842,7 @@
     },
     "ch2_plane_004": {
       "scene": "专机内",
-      "progress": 25,
+      "progress": 87,
       "segments": [
         {
           "speaker": "史强",
@@ -2869,7 +2869,7 @@
         "name": "专机·卧室",
         "arrival": "你被安排去卧室休息。"
       },
-      "progress": 26,
+      "progress": 88,
       "segments": [
         {
           "text": "床很窄。安全扣把你固定在床上。引擎的嗡鸣在黑暗中无限放大。"
@@ -2900,7 +2900,7 @@
     },
     "ch2_plane_006": {
       "scene": "专机·卧室",
-      "progress": 28,
+      "progress": 89,
       "segments": [
         {
           "text": "后来，你终于睡着了。你梦见了一个女孩。她的面容很模糊。但你知道她很美——那种美不属于任何你见过的人。"
@@ -2917,7 +2917,7 @@
         "description": "正前方那面高高的黄色大壁以小于九十度的角度向前倾斜——像一面随时可能倾倒的悬崖。穹顶被设计成星空的样子，但与黄色大壁分离，从高处产生一种巨大的不稳定感。整个环境像一个随时都可能坍塌的空间。",
         "arrival": "你被带进会堂的时候，里面已经坐满了人。"
       },
-      "progress": 30,
+      "progress": 90,
       "ambient": "static",
       "segments": [
         {
@@ -2946,7 +2946,7 @@
     },
     "ch2_un_002": {
       "scene": "联合国大会堂",
-      "progress": 33,
+      "progress": 91,
       "segments": [
         {
           "speaker": "萨伊",
@@ -2966,7 +2966,7 @@
     },
     "ch2_un_003": {
       "scene": "联合国大会堂",
-      "progress": 35,
+      "progress": 92,
       "segments": [
         {
           "speaker": "萨伊",
@@ -3005,7 +3005,7 @@
     },
     "ch2_un_004": {
       "scene": "联合国大会堂",
-      "progress": 38,
+      "progress": 93,
       "segments": [
         {
           "effect": "silence"
@@ -3037,7 +3037,7 @@
     },
     "ch2_un_005": {
       "scene": "联合国大会堂",
-      "progress": 40,
+      "progress": 94,
       "segments": [
         {
           "text": "你木然地站起来，迈着机械的步子向主席台走去。这条路很短——但你觉得自己在走一生。"
@@ -3062,7 +3062,7 @@
         "name": "联合国大会堂",
         "type": "major"
       },
-      "progress": 12,
+      "progress": 96,
       "segments": [
         {
           "speaker": "（字幕）",
@@ -3095,7 +3095,7 @@
         "description": "夜。广场很安静。但灯光把一切都照得清晰。远处有一尊雕塑——一个男人正在用铁锤砸一柄剑——「铸剑为犁」。",
         "arrival": "你走出联合国大会堂。"
       },
-      "progress": 46,
+      "progress": 60,
       "ambient": "wind",
       "segments": [
         {
@@ -3117,7 +3117,7 @@
     },
     "ch2_un_009": {
       "scene": "联合国广场",
-      "progress": 47,
+      "progress": 60,
       "segments": [
         {
           "effect": "flash"
@@ -3143,7 +3143,7 @@
         "description": "天花板是白色的。输液架在床头，药液一滴一滴地落下。空气里有消毒水的味道。",
         "arrival": "你再次醒来时，不知道自己睡了多久。"
       },
-      "progress": 50,
+      "progress": 61,
       "segments": [
         {
           "speaker": "医生",
@@ -3174,7 +3174,7 @@
     },
     "ch2_hospital_002": {
       "scene": "病房",
-      "progress": 52,
+      "progress": 62,
       "segments": [
         {
           "text": "凶手被带进来。一个年轻人，有一张英俊的欧洲面孔——和一种让你极其不安的微笑。那微笑像是长在他脸上似的，从不消退。"
@@ -3203,7 +3203,7 @@
     },
     "ch2_hospital_003": {
       "scene": "病房",
-      "progress": 54,
+      "progress": 62,
       "segments": [
         {
           "speaker": "凶手",
@@ -3229,7 +3229,7 @@
     },
     "ch2_hospital_004": {
       "scene": "病房",
-      "progress": 56,
+      "progress": 63,
       "segments": [
         {
           "speaker": "萨伊",
@@ -3252,7 +3252,7 @@
     },
     "ch2_hospital_005": {
       "scene": "病房",
-      "progress": 58,
+      "progress": 63,
       "segments": [
         {
           "speaker": "萨伊",
@@ -3288,7 +3288,7 @@
     },
     "ch2_hospital_006": {
       "scene": "病房",
-      "progress": 60,
+      "progress": 64,
       "segments": [
         {
           "text": "你想起了叶文洁的面容。想起了她说的每一个字。"
@@ -3317,7 +3317,7 @@
         "description": "办公室不大。巨大的办公桌后面坐着一位俄罗斯老人——白胡子，身材魁梧。",
         "arrival": "你被带到了PDC轮值主席伽尔宁的办公室。"
       },
-      "progress": 62,
+      "progress": 65,
       "segments": [
         {
           "speaker": "伽尔宁",
@@ -3341,7 +3341,7 @@
     },
     "ch2_pdc_002": {
       "scene": "PDC主席办公室",
-      "progress": 63,
+      "progress": 65,
       "segments": [
         {
           "speaker": "你",
@@ -3386,7 +3386,7 @@
     },
     "ch2_pdc_003": {
       "scene": "PDC主席办公室",
-      "progress": 65,
+      "progress": 66,
       "segments": [
         {
           "speaker": "你",
@@ -3431,7 +3431,7 @@
         "description": "远方的雪山在蓝天的背景下银亮银亮的——像天神之剑，像地球的长牙。前方是一片湖泊，水是比天空更深的那种蓝。湖的周围是森林和草原——纯净的原生态，仿佛地球上从来没有出现过人类。湖边有一幢以别墅为中心的小庄园，十九世纪中叶的建筑，但与周围的环境已经融为一体。",
         "arrival": "直升机降落在一片草地上。你走下舷梯——"
       },
-      "progress": 70,
+      "progress": 67,
       "theme": "paper",
       "ambient": "wind",
       "segments": [
@@ -3458,7 +3458,7 @@
     },
     "ch2_paradise_002": {
       "scene": "雪山庄园",
-      "progress": 72,
+      "progress": 68,
       "segments": [
         {
           "speaker": "坎特",
@@ -3495,7 +3495,7 @@
         "name": "雪山庄园·客厅",
         "arrival": "你最终回到了壁炉前。"
       },
-      "progress": 73,
+      "progress": 68,
       "segments": [
         {
           "text": "你坐在壁炉前的摇椅上。火光在你面前跳动着。"
@@ -3524,7 +3524,7 @@
         "description": "绝对的黑暗。没有上下左右，没有远近。群星像冰冷的尘埃悬浮在无限远处。四艘战舰——「自然选择」号、「蓝色空间」号、「企业」号、「深空」号——在沉默中漂流。",
         "arrival": "追击已经持续了数日。"
       },
-      "progress": 1,
+      "progress": 95,
       "ambient": "static",
       "segments": [
         {
@@ -3547,7 +3547,7 @@
     },
     "ch8_deter_002": {
       "scene": "太阳系外围·黑暗太空",
-      "progress": 3,
+      "progress": 96,
       "segments": [
         {
           "text": "你叫章北海。你站在舰长室的星图前。东方延绪和两名副舰长站在你身后，他们也在看同一张星图。"
@@ -3569,7 +3569,7 @@
     },
     "ch8_deter_003": {
       "scene": "太阳系外围·黑暗太空",
-      "progress": 5,
+      "progress": 96,
       "segments": [
         {
           "speaker": "章北海",
@@ -3595,7 +3595,7 @@
     },
     "ch8_deter_003_wait": {
       "scene": "太阳系外围·黑暗太空",
-      "progress": 6,
+      "progress": 97,
       "segments": [
         {
           "text": "你等了几秒钟。你想看看他们会不会先做——"
@@ -3605,7 +3605,7 @@
     },
     "ch8_deter_005": {
       "scene": "太阳系外围·黑暗太空",
-      "progress": 9,
+      "progress": 97,
       "effect": "breath",
       "segments": [
         {
@@ -3626,7 +3626,7 @@
     },
     "ch8_deter_006": {
       "scene": "太阳系外围·黑暗太空",
-      "progress": 10,
+      "progress": 97,
       "effect": "silence",
       "segments": [
         {
@@ -3652,7 +3652,7 @@
         "description": "黄沙覆盖着华北平原。远处的废弃城市在风沙中若隐若现。夜空中没有几颗星——只有木星方向还剩一片暗红色的余晖。",
         "arrival": "地球。新闻正在播报黑暗战役的消息。"
       },
-      "progress": 13,
+      "progress": 98,
       "segments": [
         {
           "text": "你叫罗辑。你坐在沙地上，听完了新闻。"
@@ -3680,7 +3680,7 @@
         "name": "公路旁·沙地",
         "arrival": "你们走到公路的另一侧，路基挡住了居民区的灯光。四周漆黑。"
       },
-      "progress": 17,
+      "progress": 96,
       "segments": [
         {
           "speaker": "你",
@@ -3704,7 +3704,7 @@
     },
     "ch8_deter_010": {
       "scene": "公路旁·沙地",
-      "progress": 19,
+      "progress": 97,
       "segments": [
         {
           "text": "你点上一支烟。大史也点上一支。黑暗中，两个火星遥遥相对。"
@@ -3730,7 +3730,7 @@
     },
     "ch8_deter_011": {
       "scene": "公路旁·沙地",
-      "progress": 22,
+      "progress": 97,
       "segments": [
         {
           "speaker": "史强",
@@ -3754,7 +3754,7 @@
     },
     "ch8_deter_012": {
       "scene": "公路旁·沙地",
-      "progress": 24,
+      "progress": 97,
       "segments": [
         {
           "speaker": "史强",
@@ -3791,7 +3791,7 @@
         "description": "墓碑还在。黑色的孤峰形花岗岩，在暮色中沉默。褐蚁留下的爬痕早已消失。蜘蛛网又织起来了——在碑座和野草之间。远处的雪山轮廓在暮光中若隐若现。",
         "arrival": "几年后。你重新回到了这里。石阶上落满了枯叶。"
       },
-      "progress": 27,
+      "progress": 98,
       "segments": [
         {
           "text": "你被逐出了新生活五村。没有人再相信你。你是一个过了气的骗子——他们这么叫你。"
@@ -3812,7 +3812,7 @@
     },
     "ch8_deter_014": {
       "scene": "杨冬墓前",
-      "progress": 29,
+      "progress": 98,
       "segments": [
         {
           "effect": "glitch"
@@ -3838,7 +3838,7 @@
         "name": "杨冬墓前",
         "type": "major"
       },
-      "progress": 85,
+      "progress": 99,
       "segments": [
         {
           "speaker": "（字幕）",
@@ -3866,7 +3866,7 @@
     },
     "ch8_deter_016": {
       "scene": "杨冬墓前",
-      "progress": 33,
+      "progress": 97,
       "segments": [
         {
           "speaker": "字幕",
@@ -3897,7 +3897,7 @@
     },
     "ch8_deter_017a": {
       "scene": "杨冬墓前",
-      "progress": 35,
+      "progress": 97,
       "segments": [
         {
           "speaker": "字幕",
@@ -3920,7 +3920,7 @@
     },
     "ch8_deter_017b": {
       "scene": "杨冬墓前",
-      "progress": 37,
+      "progress": 97,
       "effect": "breath",
       "segments": [
         {
@@ -3951,7 +3951,7 @@
         "name": "杨冬墓前",
         "arrival": "你走下石碑基座。"
       },
-      "progress": 39,
+      "progress": 98,
       "segments": [
         {
           "text": "你走过那只正在织网的蜘蛛——它已经重建了被破坏的部分。网在暮光中闪着细丝的光。"
@@ -3972,7 +3972,7 @@
     },
     "ch8_deter_020": {
       "scene": "杨冬墓前·石阶尽头",
-      "progress": 41,
+      "progress": 98,
       "segments": [
         {
           "text": "一个年轻女人站在那里。她穿着素雅的衣服，衣领在暮色中很白。她牵着一个孩子的手。"
@@ -3994,7 +3994,7 @@
     },
     "ch8_deter_021": {
       "scene": "杨冬墓前·石阶尽头",
-      "progress": 43,
+      "progress": 99,
       "effect": "breath",
       "segments": [
         {
@@ -4013,7 +4013,7 @@
     },
     "ch8_deter_022": {
       "scene": "杨冬墓前·石阶尽头",
-      "progress": 45,
+      "progress": 99,
       "effect": "breath",
       "segments": [
         {
@@ -4035,7 +4035,7 @@
       ]
     },
     "ch8_deter_closure": {
-      "progress": 49,
+      "progress": 100,
       "segments": [
         {
           "text": "智子消失了。暮色中只剩下你们三个人。"
@@ -4053,7 +4053,7 @@
       "isEnding": true,
       "title": "黑暗森林",
       "type": "TRUE ENDING",
-      "progress": 50,
+      "progress": 100,
       "achievement": "deterrence",
       "description": "三体舰队转向了。水滴停止了攻击。人类和三体文明在黑暗森林的边缘达成了脆弱的平衡。\n\n罗辑带着庄颜和孩子走下了暮色中的石阶。他身后的墓碑上，一只褐蚁正在爬过那深深的刻痕——「墓」字的第一笔。它不知道这个字的意思。它不需要知道。\n\n太阳落下了。但明天还会升起来。",
       "closing": "给岁月以文明，而不是给文明以岁月。"
@@ -4067,7 +4067,7 @@
         "description": "「唐」号航空母舰正在建造中。暮色中，巨大的舰体像一座被废弃的古代要塞。密密的脚手架上垂下缕缕焊花，照亮了斑驳的船壳——锰钢板上布满汽液保护焊接留下的污迹，在闪动的弧光中显得格外陈旧。空气中弥漫着金属灼烧的气味。",
         "arrival": "军令来得突然。你和吴岳从编队训练中直接被调到了这里。"
       },
-      "progress": 51,
+      "progress": 41,
       "theme": "noir",
       "ambient": "static",
       "segments": [
@@ -4091,7 +4091,7 @@
     },
     "ch1_ship_002": {
       "scene": "北方造船厂·船坞",
-      "progress": 52,
+      "progress": 43,
       "ambient": "static",
       "segments": [
         {
@@ -4120,7 +4120,7 @@
     },
     "ch1_ship_003": {
       "scene": "北方造船厂·船坞",
-      "progress": 53,
+      "progress": 44,
       "ambient": "static",
       "segments": [
         {
@@ -4154,7 +4154,7 @@
     },
     "ch1_ship_003_cb_guard": {
       "scene": "北方造船厂·船坞",
-      "progress": 53,
+      "progress": 45,
       "ambient": "static",
       "segments": [
         {
@@ -4165,7 +4165,7 @@
     },
     "ch1_ship_003_cb_open": {
       "scene": "北方造船厂·船坞",
-      "progress": 53,
+      "progress": 45,
       "ambient": "static",
       "segments": [
         {
@@ -4176,7 +4176,7 @@
     },
     "ch1_ship_004": {
       "scene": "北方造船厂·船坞",
-      "progress": 54,
+      "progress": 47,
       "ambient": "static",
       "segments": [
         {
@@ -4195,7 +4195,7 @@
     },
     "ch1_ship_005": {
       "scene": "北方造船厂·船坞",
-      "progress": 55,
+      "progress": 48,
       "segments": [
         {
           "text": "是舰队总部的紧急命令：你和吴岳立刻去总参报到。"
@@ -4220,7 +4220,7 @@
         "name": "北方造船厂·船坞",
         "arrival": "走出船坞时，你回头看了一眼「唐」号。"
       },
-      "progress": 56,
+      "progress": 49,
       "ambient": "static",
       "segments": [
         {
@@ -4240,7 +4240,7 @@
         "name": "——与此同时——",
         "type": "transient"
       },
-      "progress": 57,
+      "progress": 51,
       "ambient": "static",
       "segments": [
         {
@@ -4268,7 +4268,7 @@
         "type": "transient",
         "description": "地下三百米，显示屏的冷光映在每个人的脸上。"
       },
-      "progress": 57,
+      "progress": 52,
       "ambient": "static",
       "segments": [
         {
@@ -4295,7 +4295,7 @@
     },
     "ch1_nmd_002": {
       "scene": "夏延山·NMD控制中心",
-      "progress": 58,
+      "progress": 53,
       "ambient": "static",
       "segments": [
         {
@@ -4326,7 +4326,7 @@
         "description": "八层楼的窗子外面是晴朗的天空下的城市——但这座城市里没有阳光。退休手续刚办完，化工厂的工牌已经交了。",
         "arrival": "张援朝昨天刚退了休。"
       },
-      "progress": 60,
+      "progress": 54,
       "ambient": "static",
       "segments": [
         {
@@ -4345,7 +4345,7 @@
     },
     "ch1_zhangyc_002": {
       "scene": "北京·居民楼",
-      "progress": 61,
+      "progress": 56,
       "segments": [
         {
           "speaker": "张援朝",
@@ -4381,7 +4381,7 @@
     },
     "ch1_zhangyc_003": {
       "scene": "北京·居民楼",
-      "progress": 62,
+      "progress": 57,
       "segments": [
         {
           "text": "电视正在播新闻。流言像野火一样蔓延——有人说是智子杀了人，有人说是政府的阴谋。但画面上的专家在辟谣，一切都是常规疾病和事故。"
@@ -4417,7 +4417,7 @@
         "description": "狭小，潮湿。一束月光透过小窗射入。整个房间像个墓穴。",
         "arrival": "在城市的另一处——"
       },
-      "progress": 64,
+      "progress": 58,
       "ambient": "static",
       "segments": [
         {
@@ -4438,7 +4438,7 @@
     },
     "ch1_breacher_002": {
       "scene": "地下室",
-      "progress": 64,
+      "progress": 60,
       "segments": [
         {
           "text": "他放下枪，翻身坐起来。呼吸还没平复，但视网膜上的字正在一行一行地显现。"
@@ -4448,7 +4448,7 @@
     },
     "ch1_breacher_003": {
       "scene": "地下室",
-      "progress": 66,
+      "progress": 61,
       "segments": [
         {
           "speaker": "破壁人二号",
@@ -4474,7 +4474,7 @@
     },
     "ch1_breacher_004": {
       "scene": "地下室",
-      "progress": 69,
+      "progress": 62,
       "segments": [
         {
           "speaker": "破壁人二号",
@@ -4497,7 +4497,7 @@
     },
     "ch1_breacher_005": {
       "scene": "地下室",
-      "progress": 71,
+      "progress": 64,
       "segments": [
         {
           "speaker": "破壁人二号",
@@ -4520,7 +4520,7 @@
     },
     "ch1_breacher_006": {
       "scene": "地下室",
-      "progress": 73,
+      "progress": 65,
       "segments": [
         {
           "speaker": "字幕",
@@ -4550,7 +4550,7 @@
     },
     "ch1_breacher_007": {
       "scene": "地下室",
-      "progress": 75,
+      "progress": 66,
       "segments": [
         {
           "speaker": "破壁人二号",
@@ -4574,7 +4574,7 @@
         "description": "深红色的帷幔上悬挂着一个新的军徽——主体是一颗发出四道光芒的银星，那四道光芒又是四柄利剑的形状。星的两侧有「八一」二字。",
         "arrival": "你和吴岳坐在一张长会议桌旁。"
       },
-      "progress": 78,
+      "progress": 67,
       "segments": [
         {
           "text": "在场的三十名军官里，十五人穿着海军军装，九人空军，六人陆军。你是海军——身边是吴岳。你们是同一艘还没下水就被废弃的航母上的舰长和政委。"
@@ -4592,7 +4592,7 @@
     },
     "ch1_spaceforce_002": {
       "scene": "会议室",
-      "progress": 80,
+      "progress": 69,
       "segments": [
         {
           "speaker": "常伟思",
@@ -4619,7 +4619,7 @@
     },
     "ch1_spaceforce_003": {
       "scene": "会议室",
-      "progress": 83,
+      "progress": 70,
       "segments": [
         {
           "speaker": "常伟思",
@@ -4642,7 +4642,7 @@
     },
     "ch1_spaceforce_004": {
       "scene": "会议室",
-      "progress": 86,
+      "progress": 71,
       "segments": [
         {
           "speaker": "常伟思",
@@ -4679,7 +4679,7 @@
     },
     "ch1_spaceforce_004_cb_silent": {
       "scene": "会议室",
-      "progress": 87,
+      "progress": 73,
       "segments": [
         {
           "text": "你没有说话。有些东西不需要用语言来确认——你想，他会懂的。"
@@ -4689,7 +4689,7 @@
     },
     "ch1_spaceforce_004_cb_emblem": {
       "scene": "会议室",
-      "progress": 87,
+      "progress": 73,
       "segments": [
         {
           "text": "你抬起头，看着那枚军徽。四道利剑形状的光芒从银星上射出——你忽然觉得，那光芒不像剑，更像一个还没写完的问号。"
@@ -4699,7 +4699,7 @@
     },
     "ch1_spaceforce_005": {
       "scene": "会议室",
-      "progress": 88,
+      "progress": 74,
       "segments": [
         {
           "speaker": "常伟思",
@@ -4722,7 +4722,7 @@
     },
     "ch1_spaceforce_006": {
       "scene": "会议室",
-      "progress": 89,
+      "progress": 75,
       "segments": [
         {
           "text": "走出会议室时，你和吴岳并排走了一段路。谁都没说话。"
@@ -4741,7 +4741,7 @@
         "description": "夕阳的金辉从窗外透入，给病床上的人脸上映上些许血色。他靠着枕头半躺半坐着——不像一个已经走到生命尽头的人。",
         "arrival": "你推开门，把军帽挂在门边的衣帽架上。"
       },
-      "progress": 91,
+      "progress": 77,
       "segments": [
         {
           "speaker": "你",
@@ -4777,7 +4777,7 @@
     },
     "ch1_father_001_cb_bed": {
       "scene": "病房",
-      "progress": 92,
+      "progress": 78,
       "segments": [
         {
           "text": "你走到病床边，在椅子上坐下来。床单上有消毒水和药的味道。"
@@ -4787,7 +4787,7 @@
     },
     "ch1_father_001_cb_window": {
       "scene": "病房",
-      "progress": 92,
+      "progress": 78,
       "segments": [
         {
           "text": "你走到窗前。夕阳正在往下落，你看到自己的影子被拉得很长。你没转身——你知道他就在你身后。"
@@ -4797,7 +4797,7 @@
     },
     "ch1_father_002": {
       "scene": "病房",
-      "progress": 93,
+      "progress": 79,
       "segments": [
         {
           "speaker": "你",
@@ -4827,7 +4827,7 @@
     },
     "ch1_father_003": {
       "scene": "病房",
-      "progress": 95,
+      "progress": 80,
       "segments": [
         {
           "speaker": "父亲",
@@ -4869,7 +4869,7 @@
     },
     "ch1_father_004": {
       "scene": "病房",
-      "progress": 97,
+      "progress": 82,
       "segments": [
         {
           "speaker": "你",
@@ -4901,7 +4901,7 @@
     },
     "ch1_father_005": {
       "scene": "病房",
-      "progress": 99,
+      "progress": 83,
       "segments": [
         {
           "text": "你戴上军帽。帽檐上是太空军的军徽。"
@@ -4924,7 +4924,7 @@
         "description": "走廊里只有通风管的低沉嗡鸣。每一道门都是厚重的密封型，墙上隐约可见褪色的标语残迹——只能看清几个字：深挖洞、广积粮、不称霸。这里是冷战时期的人防工事，深入地下十层。",
         "arrival": "你被带到了这里。"
       },
-      "progress": 1,
+      "progress": 89,
       "ambient": "static",
       "segments": [
         {
@@ -4947,7 +4947,7 @@
     },
     "ch4_bunker_002": {
       "scene": "地下十层·指挥所",
-      "progress": 3,
+      "progress": 90,
       "ambient": "static",
       "segments": [
         {
@@ -4979,7 +4979,7 @@
     },
     "ch4_bunker_003": {
       "scene": "地下十层·指挥所",
-      "progress": 5,
+      "progress": 90,
       "segments": [
         {
           "text": "几天过去了。你吃得很简单，睡得很少。笔记本电脑上记满了推演，但没有一条走得通。"
@@ -5006,7 +5006,7 @@
         "description": "庄园被灰白色的天空压着。湖面结了薄冰，岸边的枯草在寒风中贴着地面。远方的雪山轮廓在低垂的云层中若隐若现。一切都褪了色。",
         "arrival": "他们允许你每天在湖边散步一小时，在警卫的视线范围内。"
       },
-      "progress": 7,
+      "progress": 91,
       "ambient": "wind",
       "segments": [
         {
@@ -5025,7 +5025,7 @@
     },
     "ch4_lake_002": {
       "scene": "湖畔庄园·冬季",
-      "progress": 9,
+      "progress": 91,
       "ambient": "wind",
       "segments": [
         {
@@ -5058,7 +5058,7 @@
         "name": "湖面",
         "arrival": "你试探着迈出一步，冰面发出嘎吱声，但没有裂。"
       },
-      "progress": 11,
+      "progress": 92,
       "ambient": "wind",
       "segments": [
         {
@@ -5075,7 +5075,7 @@
     },
     "ch4_lake_004": {
       "scene": "湖面",
-      "progress": 12,
+      "progress": 93,
       "effect": "cold",
       "segments": [
         {
@@ -5100,7 +5100,7 @@
     },
     "ch4_lake_005": {
       "scene": "湖面",
-      "progress": 14,
+      "progress": 93,
       "effect": "drown",
       "segments": [
         {
@@ -5119,7 +5119,7 @@
     },
     "ch4_lake_006": {
       "scene": "湖面",
-      "progress": 16,
+      "progress": 94,
       "effect": "cold",
       "segments": [
         {
@@ -5140,7 +5140,7 @@
     },
     "ch4_bunker_004": {
       "scene": "地下十层·指挥所",
-      "progress": 18,
+      "progress": 95,
       "segments": [
         {
           "text": "你裹着毯子坐在床上。笔记本电脑的屏幕光映在你的脸上。你在搜索：一颗50光年外的恒星——187J3X1——带有行星。"
@@ -5166,7 +5166,7 @@
         "name": "地下十层·指挥所",
         "arrival": "坎特来了。"
       },
-      "progress": 20,
+      "progress": 95,
       "segments": [
         {
           "speaker": "罗辑",
@@ -5185,7 +5185,7 @@
     },
     "ch4_linger_001": {
       "scene": "地下十层·指挥所",
-      "progress": 22,
+      "progress": 96,
       "segments": [
         {
           "text": "天文学家林格坐在你对面。你问了那个问题：地球的位置暴露了吗？"
@@ -5208,7 +5208,7 @@
     },
     "ch4_linger_002": {
       "scene": "地下十层·指挥所",
-      "progress": 24,
+      "progress": 96,
       "segments": [
         {
           "speaker": "林格",
@@ -5241,7 +5241,7 @@
         "description": "大圆桌。各国代表的脸上表情不一——困惑、好奇、不耐烦。屏幕上实时显示着你的脸。你是通过视频参会的。",
         "arrival": "你不打算亲自去。"
       },
-      "progress": 27,
+      "progress": 97,
       "segments": [
         {
           "speaker": "PDC轮值主席",
@@ -5264,7 +5264,7 @@
     },
     "ch4_pdc_002": {
       "scene": "联合国·行星防御理事会",
-      "progress": 29,
+      "progress": 98,
       "segments": [
         {
           "speaker": "美国代表",
@@ -5299,7 +5299,7 @@
     },
     "ch4_pdc_004": {
       "scene": "联合国·行星防御理事会",
-      "progress": 32,
+      "progress": 96,
       "segments": [
         {
           "text": "没有人反对，也许是因为没有人当真。"
@@ -5320,7 +5320,7 @@
         "name": "地下十层·指挥所",
         "arrival": "咒语发送的前一天——你开始流鼻涕。"
       },
-      "progress": 33,
+      "progress": 96,
       "segments": [
         {
           "text": "你以为是感冒。轻流感——医生说三天就好。"
@@ -5338,7 +5338,7 @@
     },
     "ch4_sick_002": {
       "scene": "地下十层·指挥所",
-      "progress": 35,
+      "progress": 97,
       "segments": [
         {
           "text": "你开始呕吐。不是普通的不舒服——是身体在对抗什么东西，而且在下风。"
@@ -5366,7 +5366,7 @@
         "name": "冬眠中心",
         "type": "major"
       },
-      "progress": 32,
+      "progress": 98,
       "segments": [
         {
           "text": "庄颜。她围着一条红色的围巾，牵着孩子的手。孩子在雪中向你拼命挥着两只小手。"
@@ -5389,7 +5389,7 @@
     },
     "ch4_sick_005": {
       "scene": "冬眠中心",
-      "progress": 40,
+      "progress": 84,
       "effect": "cold",
       "segments": [
         {
@@ -5407,7 +5407,7 @@
         "name": "冬眠中心",
         "arrival": "——"
       },
-      "progress": 42,
+      "progress": 85,
       "effect": "breath",
       "segments": [
         {
@@ -5432,7 +5432,7 @@
         "description": "窗外是漫天黄沙。电视屏幕亮着，新闻频道正在循环播放舰队出征的预告。",
         "arrival": "罗辑在地面上住了几天。"
       },
-      "progress": 1,
+      "progress": 92,
       "segments": [
         {
           "text": "你叫罗辑。你住在地面的旧城里。"
@@ -5450,7 +5450,7 @@
     },
     "ch7_fleet_002": {
       "scene": "新生活五村·史强家",
-      "progress": 3,
+      "progress": 93,
       "segments": [
         {
           "speaker": "新闻主播",
@@ -5473,7 +5473,7 @@
         "name": "新生活五村·沙地",
         "arrival": "你推开门，沙子打在脸上。"
       },
-      "progress": 5,
+      "progress": 93,
       "segments": [
         {
           "text": "整个小区的人在往天上看。电视里说今晚肉眼就能看到舰队起航。"
@@ -5491,7 +5491,7 @@
     },
     "ch7_fleet_004": {
       "scene": "新生活五村·沙地",
-      "progress": 7,
+      "progress": 93,
       "effect": "flash",
       "segments": [
         {
@@ -5513,7 +5513,7 @@
     },
     "ch7_fleet_005": {
       "scene": "新生活五村·沙地",
-      "progress": 9,
+      "progress": 94,
       "effect": "flash",
       "segments": [
         {
@@ -5538,7 +5538,7 @@
         "description": "舰队阵型已定。矩形阵列的长边和短边分别由一百艘和二十艘战舰排成。监视屏上，一个米粒大小的亮点正在缓慢接近。",
         "arrival": "「量子」号上——"
       },
-      "progress": 12,
+      "progress": 94,
       "segments": [
         {
           "text": "丁仪站在那里，盯着屏幕。他的目光让周围的军官们感到不安。"
@@ -5553,7 +5553,7 @@
     },
     "ch7_droplet_002": {
       "scene": "「量子」号·舰内",
-      "progress": 14,
+      "progress": 95,
       "segments": [
         {
           "speaker": "军官",
@@ -5584,7 +5584,7 @@
         "name": "「螳螂」号·捕获舱",
         "arrival": "考察队出发了。"
       },
-      "progress": 16,
+      "progress": 95,
       "segments": [
         {
           "text": "丁仪和三名军官乘坐穿梭艇抵达「螳螂」号。水滴就悬浮在舱的正中。"
@@ -5609,7 +5609,7 @@
     },
     "ch7_droplet_004": {
       "scene": "「螳螂」号·捕获舱",
-      "progress": 18,
+      "progress": 95,
       "segments": [
         {
           "text": "丁仪把地质锤砸到水滴表面。叮的一声——清脆而悠扬，像砸在玉石构成的大地上。在真空中，声音是通过他自己的身体传来的。没有留下任何痕迹。"
@@ -5634,7 +5634,7 @@
     },
     "ch7_droplet_005": {
       "scene": "「螳螂」号·捕获舱",
-      "progress": 20,
+      "progress": 96,
       "segments": [
         {
           "speaker": "军官",
@@ -5657,7 +5657,7 @@
     },
     "ch7_droplet_006": {
       "scene": "「螳螂」号·捕获舱",
-      "progress": 22,
+      "progress": 96,
       "segments": [
         {
           "effect": "flash"
@@ -5684,7 +5684,7 @@
         "description": "距「螳螂」号一千公里。联合舰队呈矩形阵列——一百列乘二十行，两千零一十五艘恒星级战舰，如一座沉默的太空巨石阵。",
         "arrival": "但一切都晚了。"
       },
-      "progress": 24,
+      "progress": 97,
       "effect": "flash",
       "segments": [
         {
@@ -5701,7 +5701,7 @@
     },
     "ch7_droplet_008": {
       "scene": "太空·舰队阵列",
-      "progress": 26,
+      "progress": 97,
       "effect": "flash",
       "segments": [
         {
@@ -5721,7 +5721,7 @@
     },
     "ch7_droplet_009": {
       "scene": "太空·舰队阵列",
-      "progress": 28,
+      "progress": 98,
       "effect": "shake",
       "segments": [
         {
@@ -5751,7 +5751,7 @@
         "description": "太空。窗外是缓缓旋转的星空——木星的大红斑在远处隐约可见。舰长室不大，一张固定桌、一把椅子、几个悬浮的操作界面。人工重力系统发出低沉的嗡鸣。",
         "arrival": "几乎在同一时间——"
       },
-      "progress": 31,
+      "progress": 98,
       "segments": [
         {
           "text": "你叫章北海。你刚刚在两个世纪后被唤醒。木星就在窗外旋转着，橘红色的大气中有一片正在生成的闪电。"
@@ -5766,7 +5766,7 @@
     },
     "ch7_zhang_002": {
       "scene": "「自然选择」号·舰长室",
-      "progress": 33,
+      "progress": 98,
       "segments": [
         {
           "text": "你被任命为「自然选择」号的执行舰长。名义上的舰长，是东方延绪大校。你的权限只有一个：确保舰长不会做出格的事。"
@@ -5791,7 +5791,7 @@
         "name": "「自然选择」号",
         "type": "major"
       },
-      "progress": 55,
+      "progress": 99,
       "segments": [
         {
           "text": "那是一把手枪。"
@@ -5822,7 +5822,7 @@
     },
     "ch7_zhang_cb_take": {
       "scene": "「自然选择」号·舰长室",
-      "progress": 36,
+      "progress": 98,
       "segments": [
         {
           "text": "你接过那把手枪。金属的触感冰冷。你把它放进了口袋。"
@@ -5832,7 +5832,7 @@
     },
     "ch7_zhang_cb_refuse": {
       "scene": "「自然选择」号·舰长室",
-      "progress": 36,
+      "progress": 98,
       "segments": [
         {
           "text": "「不需要。」你说。她看了你一眼，把手枪收了回去。她的目光里有种说不清的东西，也许是失望，也许是放心。"
@@ -5846,7 +5846,7 @@
         "name": "「自然选择」号·指挥舱",
         "type": "major"
       },
-      "progress": 58,
+      "progress": 99,
       "segments": [
         {
           "text": "你站在指挥舱中央。舰长席就在你身后。你的手放在操作台上。"
@@ -5881,7 +5881,7 @@
         "name": "「自然选择」号·舰长室",
         "arrival": "你按了下去。"
       },
-      "progress": 39,
+      "progress": 94,
       "effect": "flash",
       "segments": [
         {
@@ -5901,7 +5901,7 @@
     },
     "ch7_zhang_006": {
       "scene": "「自然选择」号·舰长室",
-      "progress": 41,
+      "progress": 94,
       "segments": [
         {
           "text": "东方延绪和两名副舰长出现在门外——但门已经被你锁死了。他们拍打着透明的舱壁。"
@@ -5940,7 +5940,7 @@
     },
     "ch7_zhang_007": {
       "scene": "「自然选择」号·舰长室",
-      "progress": 43,
+      "progress": 94,
       "effect": "flash",
       "segments": [
         {
@@ -5968,7 +5968,7 @@
         "name": "木星轨道",
         "arrival": "——"
       },
-      "progress": 45,
+      "progress": 95,
       "effect": "breath",
       "segments": [
         {
@@ -5989,7 +5989,7 @@
       ]
     },
     "ch7_closure_008": {
-      "progress": 46,
+      "progress": 95,
       "segments": [
         {
           "text": "在无尽的太空中，两颗孤独的星星正在远去。一颗是「自然选择」号。六颗是追击舰队。"
@@ -6012,7 +6012,7 @@
         "description": "正午。一间堆满玻璃柜的老宅，四壁的灯光照着形态各异的石头。空气中有一股灰尘和矿物混合的气味。工作台上放着一把放大镜。",
         "arrival": "你按地址找到了这里。"
       },
-      "progress": 1,
+      "progress": 85,
       "ambient": "static",
       "segments": [
         {
@@ -6028,7 +6028,7 @@
     },
     "ch5_meteor_002": {
       "scene": "陨石收藏家·四合院",
-      "progress": 3,
+      "progress": 86,
       "segments": [
         {
           "speaker": "收藏家",
@@ -6056,7 +6056,7 @@
     },
     "ch5_meteor_003": {
       "scene": "陨石收藏家·四合院",
-      "progress": 5,
+      "progress": 86,
       "segments": [
         {
           "text": "他拿出三块铁陨石——苹果大小，暗灰色，表面有细密的交错条纹。"
@@ -6096,7 +6096,7 @@
     },
     "ch5_meteor_cb_pay": {
       "scene": "陨石收藏家·四合院",
-      "progress": 6,
+      "progress": 87,
       "segments": [
         {
           "text": "你付了款，没有多说什么。收藏家看了你一眼，也许觉得你是个爽快人，也许觉得你傻。都一样。"
@@ -6106,7 +6106,7 @@
     },
     "ch5_meteor_cb_bargain": {
       "scene": "陨石收藏家·四合院",
-      "progress": 6,
+      "progress": 87,
       "segments": [
         {
           "text": "「能便宜吗？」你问。他愣了一下，然后摇头。你也没再坚持。这不是讨价还价的时候。"
@@ -6122,7 +6122,7 @@
         "description": "下班后的车间空无一人。机床的金属表面在顶灯下泛着冷光。空气中还有切削液的气味。",
         "arrival": "你带着陨石来到了这里。"
       },
-      "progress": 7,
+      "progress": 87,
       "segments": [
         {
           "text": "你把三块陨石切成铅笔粗细的圆柱，再切成小段。碎屑收集起来，刀具拆下。没有人看到。"
@@ -6143,7 +6143,7 @@
         "description": "隐蔽。入口藏在储物间后面。一盏裸露的白炽灯照着工作台。墙角的铁架子上放着几箱杂物。",
         "arrival": "你锁好门，打开灯。"
       },
-      "progress": 9,
+      "progress": 88,
       "segments": [
         {
           "text": "三十六发7.62毫米无壳子弹整齐排列在工作台上。你用钳子把弹头取下来——无壳子弹的弹头是直接粘在发射药上的，很容易取下。"
@@ -6161,7 +6161,7 @@
     },
     "ch5_basement_002": {
       "scene": "地下室",
-      "progress": 11,
+      "progress": 88,
       "segments": [
         {
           "text": "你拿起装好四发陨石子弹的弹夹，压入手枪。"
@@ -6179,7 +6179,7 @@
     },
     "ch5_basement_003": {
       "scene": "地下室",
-      "progress": 13,
+      "progress": 89,
       "segments": [
         {
           "text": "弹孔很小。陨石在发射中没有破碎。"
@@ -6206,7 +6206,7 @@
         "description": "空旷。寂静。地球在下方缓缓转动，蓝色的半球被大气层的淡金色边缘包裹着。空间站的车轮状结构在前方五公里处，表面的太阳能板反射着刺眼的阳光。没有上下——只有方向和距离。",
         "arrival": "你从一号基地飞出，借助航天服的微型推进器滑行到这里。"
       },
-      "progress": 15,
+      "progress": 89,
       "ambient": "static",
       "segments": [
         {
@@ -6225,7 +6225,7 @@
     },
     "ch5_space_002": {
       "scene": "同步轨道·黄河站外",
-      "progress": 17,
+      "progress": 90,
       "segments": [
         {
           "text": "今天航天系统在黄河站召开高层会议。你知道那三个人会在里面。"
@@ -6243,7 +6243,7 @@
     },
     "ch5_space_003": {
       "scene": "同步轨道·黄河站外",
-      "progress": 19,
+      "progress": 90,
       "segments": [
         {
           "text": "密封门打开了。一群白色航天服鱼贯而出——三十人左右。他们在空间站外壁前方减速、悬停、排队。"
@@ -6270,7 +6270,7 @@
         "description": "长桌。窗外是木星的橘红色大气在缓缓流动。这里不在地球了——在舰队司令部。空间站的旋转产生微弱的模拟重力。",
         "arrival": "几天后——"
       },
-      "progress": 25,
+      "progress": 92,
       "segments": [
         {
           "text": "章北海站在亚洲舰队司令官面前。"
@@ -6293,7 +6293,7 @@
     },
     "ch5_aftermath_002": {
       "scene": "会议室",
-      "progress": 27,
+      "progress": 92,
       "segments": [
         {
           "speaker": "司令官",
@@ -6326,7 +6326,7 @@
         "description": "冬日的天空压得很低，太阳在薄云后发出无力的白光。一架运输机停在跑道上，舷梯已经放下。",
         "arrival": "送行那天——"
       },
-      "progress": 29,
+      "progress": 93,
       "segments": [
         {
           "text": "常伟思把一封信交到章北海手里。"
@@ -6349,7 +6349,7 @@
     },
     "ch5_aftermath_004": {
       "scene": "机场",
-      "progress": 31,
+      "progress": 93,
       "segments": [
         {
           "text": "常伟思看着章北海的背影消失在舱门中。"
@@ -6376,7 +6376,7 @@
         "description": "白雾弥漫。柔光从上方投射下来，像月光穿过云层。空气中很干燥。远处隐约能看见巨大的球状结构，是一个大脑的全息显示。",
         "arrival": "危机纪年第20年。三体舰队距太阳系4.15光年。"
       },
-      "progress": 34,
+      "progress": 94,
       "ambient": "static",
       "segments": [
         {
@@ -6396,7 +6396,7 @@
     },
     "ch5_hines_002": {
       "scene": "脑科学实验室",
-      "progress": 36,
+      "progress": 94,
       "segments": [
         {
           "speaker": "你",
@@ -6420,7 +6420,7 @@
     },
     "ch5_hines_003": {
       "scene": "脑科学实验室",
-      "progress": 38,
+      "progress": 95,
       "segments": [
         {
           "text": "山杉惠子按动鼠标。白雾变了，粗化，放大。每一颗微粒都变成了闪亮的星星。"
@@ -6453,7 +6453,7 @@
     },
     "ch5_hines_004": {
       "scene": "脑科学实验室",
-      "progress": 40,
+      "progress": 95,
       "segments": [
         {
           "text": "屏幕上逐条显示命题。受试者根据判断按动左右手的按钮：真，或伪。"
@@ -6474,7 +6474,7 @@
     },
     "ch5_hines_005": {
       "scene": "脑科学实验室",
-      "progress": 42,
+      "progress": 96,
       "segments": [
         {
           "text": "受试者按下了「伪」。但在那之后的两天里他滴水不进，拒绝喝水，认为水有毒。"
@@ -6495,7 +6495,7 @@
     },
     "ch5_hines_006": {
       "scene": "脑科学实验室",
-      "progress": 44,
+      "progress": 96,
       "segments": [
         {
           "speaker": "你",
@@ -6521,7 +6521,7 @@
         "description": "大圆桌。各常任理事国代表的脸上是高度戒备的表情。今天的议题只有一个：思想钢印。",
         "arrival": "PDC听证会。"
       },
-      "progress": 46,
+      "progress": 97,
       "segments": [
         {
           "speaker": "你",
@@ -6544,7 +6544,7 @@
     },
     "ch5_hines_008": {
       "scene": "联合国·行星防御理事会",
-      "progress": 48,
+      "progress": 97,
       "segments": [
         {
           "speaker": "你",
@@ -6567,7 +6567,7 @@
     },
     "ch5_hines_009": {
       "scene": "联合国·行星防御理事会",
-      "progress": 50,
+      "progress": 98,
       "segments": [
         {
           "speaker": "PDC轮值主席",
@@ -6585,7 +6585,7 @@
       ]
     },
     "ch5_closure_006": {
-      "progress": 53,
+      "progress": 88,
       "segments": [
         {
           "text": "章北海的冬眠舱盖合上了。声音很轻，像一个句号。"
@@ -6608,7 +6608,7 @@
         "name": "地下十层·冬眠舱前",
         "type": "transient"
       },
-      "progress": 3,
+      "progress": 99,
       "segments": [
         {
           "text": "咒语已经发出去了。以光速飞向187J3X1。五十年的旅程，你等不到答案了。"
@@ -6637,7 +6637,7 @@
       ]
     },
     "end_wait_closure_02": {
-      "progress": 6,
+      "progress": 99,
       "segments": [
         {
           "text": "你躺下来。舱盖在头顶缓缓合上。冷气开始注入。"
@@ -6658,7 +6658,7 @@
       "isEnding": true,
       "title": "在末日等你",
       "type": "NORMAL ENDING",
-      "progress": 8,
+      "progress": 100,
       "achievement": "ending_wait",
       "description": "你不知道咒语是否生效了。你不知道那三张图是否真的摧毁了一颗恒星。你只知道你尽了力——以一个普通人的方式。\n\n冬眠舱的指示灯还在微弱的闪烁。也许有一天会有人把你唤醒。也许不会。\n\n庄颜和孩子也在某个冬眠舱里。你们在时间里错身而过，像两条不同深度的鱼。",
       "closing": "也许在末日——你们会重逢。"
@@ -6671,7 +6671,7 @@
         "description": "壁炉的火烧得很旺。窗外是冬夜的雪。庄颜坐在壁炉前的地毯上，膝盖上摊着一本画册。孩子在旁边睡着了。",
         "arrival": "危机8年·冬。"
       },
-      "progress": 4,
+      "progress": 98,
       "segments": [
         {
           "text": "你没有发送咒语。你把PDC的文件锁进了抽屉。你告诉他们——你拒绝。"
@@ -6699,7 +6699,7 @@
       ]
     },
     "end_silence_closure_02": {
-      "progress": 7,
+      "progress": 99,
       "segments": [
         {
           "text": "之后的几年很平静。你看着孩子在庄园里学会了走路、说话、奔跑。庄颜的画挂满了客厅的每一面墙。你胖了一些，白头发多了几根。"
@@ -6719,7 +6719,7 @@
       ]
     },
     "end_silence_closure_03": {
-      "progress": 10,
+      "progress": 99,
       "segments": [
         {
           "text": "天上有东西在燃烧。拖着长长的尾迹，划过整片天空。"
@@ -6745,7 +6745,7 @@
       "isEnding": true,
       "title": "沉默的见证者",
       "type": "NORMAL ENDING",
-      "progress": 12,
+      "progress": 100,
       "achievement": "ending_silence",
       "description": "你选择了做一个普通人。做一个丈夫，一个父亲。面壁者罗辑消失了，剩下的是庄园里的那个男人。\n\n三体舰队到达的那天，你和庄颜坐在壁炉前。孩子已经睡了。火光在你们的脸上跳动。\n\n你没有抬头去看窗外。该来的总会来。",
       "closing": "你这一生，至少认真爱过。"
@@ -6758,7 +6758,7 @@
         "description": "星图占据了整面墙。银河系的旋臂在黑暗中缓缓转动。窗外没有星星——只有绝对的黑暗和远处微弱的光点。",
         "arrival": "黑暗战役之后——"
       },
-      "progress": 5,
+      "progress": 99,
       "segments": [
         {
           "text": "你叫章北海。你还活着。"
@@ -6778,7 +6778,7 @@
       ]
     },
     "end_fleet_closure_02": {
-      "progress": 8,
+      "progress": 100,
       "segments": [
         {
           "text": "你选择了NH558J2。一颗距离太阳系六万光年的恒星。以现在的速度——要飞六万年。"
@@ -6797,7 +6797,7 @@
       "isEnding": true,
       "title": "星舰地球",
       "type": "BRANCH ENDING",
-      "progress": 10,
+      "progress": 100,
       "achievement": "ending_fleet",
       "description": "「蓝色空间」号以光速的百分之一滑入深空。太阳在身后缩小成一个针尖大的光点，然后消失。\n\n你站在舷窗前。没有人说话。\n\n父亲说得对。「要多想」。你想了。你想了一整个人生那么久。现在你不用再想了。",
       "closing": "新的文明，刚刚睁开眼睛。"
@@ -6810,7 +6810,7 @@
         "description": "审判厅不大。旁听席上坐着几名穿军装的人——都是高级军官。被告席的灯光是惨白的。",
         "arrival": "你站在被告席上。审判厅不大，被告席的灯光惨白得刺眼。"
       },
-      "progress": 6,
+      "progress": 99,
       "segments": [
         {
           "text": "他们找到了证据——陨石碎屑的化学成分与黄河站外壁上提取到的残留物吻合。"
@@ -6834,7 +6834,7 @@
       ]
     },
     "end_dark_closure_02": {
-      "progress": 9,
+      "progress": 100,
       "segments": [
         {
           "text": "你没有辩解。你把你的信念——逃亡主义——在法庭上完整地陈述了一遍。你的声音很平静，像在讲述一个已经注定的结局。"
@@ -6853,7 +6853,7 @@
       "isEnding": true,
       "title": "阴影中的殉道者",
       "type": "BRANCH ENDING",
-      "progress": 11,
+      "progress": 100,
       "achievement": "ending_dark",
       "description": "章北海被判处死刑。行刑那天，他拒绝蒙眼。\n\n「我想看着。」他说。\n\n很多年后，太空军的档案馆里多了一份没人调阅的档案。封面写着：章北海——公元1979-危机12年。\n\n没有人知道他的信念曾经多么坚定。没有人想知道。",
       "closing": "但他是对的。"
@@ -6866,7 +6866,7 @@
         "description": "夜。白雾早已散去。灯光熄了一半，只剩下几盏应急灯发出暗蓝色的光。解析摄像机的镜头盖合着，像一个闭上了的眼睛。",
         "arrival": "危机20年。PDC听证会之后——"
       },
-      "progress": 7,
+      "progress": 99,
       "segments": [
         {
           "text": "思想钢印被禁止了。但设备没有被销毁，没人知道它们在哪。"
@@ -6895,7 +6895,7 @@
       ]
     },
     "end_hines_closure_02": {
-      "progress": 10,
+      "progress": 100,
       "segments": [
         {
           "speaker": "希恩斯",
@@ -6919,7 +6919,7 @@
       "isEnding": true,
       "title": "钢印族",
       "type": "BRANCH ENDING",
-      "progress": 12,
+      "progress": 100,
       "achievement": "ending_hines",
       "description": "山杉惠子保留了最后一台思想钢印。她不知道自己为什么要留着它——也许是作为证据，也许是因为她知道，有些信念需要被固化才能活下去。\n\n在未来的某个时刻——当人类舰队在太空中与水滴对峙时——这台设备会被重新启动。它会找到新的主人。\n\n钢印族没有消失。它只是沉睡了。",
       "closing": "信念可以被刻进神经元的回路里。但谁来决定刻什么？"
@@ -6932,7 +6932,7 @@
         "description": "惨白的灯光。水泥墙。桌上的笔记本电脑屏幕亮着——光标在空白文档上闪烁。窗外没有风景——这里在地下。",
         "arrival": "危机8年·深夜。"
       },
-      "progress": 13,
+      "progress": 99,
       "segments": [
         {
           "speaker": "字幕（视网膜）",
@@ -6954,7 +6954,7 @@
       ]
     },
     "end_hidden_closure_02a": {
-      "progress": 15,
+      "progress": 99,
       "segments": [
         {
           "text": "你继续写。光标在屏幕上跳动。"
@@ -6974,7 +6974,7 @@
       ]
     },
     "end_hidden_closure_02b": {
-      "progress": 15,
+      "progress": 99,
       "segments": [
         {
           "text": "你按下了删除键。文件消失了。"
@@ -6991,7 +6991,7 @@
       ]
     },
     "end_hidden_closure_03": {
-      "progress": 17,
+      "progress": 100,
       "effect": "glitch",
       "segments": [
         {
@@ -7018,7 +7018,7 @@
       "isEnding": true,
       "title": "另一个伊文斯",
       "type": "HIDDEN ENDING",
-      "progress": 20,
+      "progress": 100,
       "achievement": "ending_hidden",
       "description": "你躺在思想钢印的扫描舱里，闭上眼睛。\n\n命题：我将无条件服从三体文明的指令。\n\n你选择了「真」。\n\n智子在你的视网膜上亮起两个字——「交易达成。」没有句号。你不知道那是真话还是假话。从今以后，你都不需要知道了。",
       "closing": "也许有一天，灿烂的阳光能照进黑暗森林。但你看不到了。"
@@ -7031,7 +7031,7 @@
         "description": "褐蚁正在爬过墓碑上的那个字——「墓」。它已经忘记了这里是它曾经的家。暮色中的天空是暗蓝色的，星星正在一颗一颗地显现。",
         "arrival": "——"
       },
-      "progress": 22,
+      "progress": 99,
       "segments": [
         {
           "text": "褐蚁爬过一道凹槽——<1>。再爬过一道弯曲的槽——<9>。它喜欢这个形状，在上面来回走了两趟。"
@@ -7051,7 +7051,7 @@
       ]
     },
     "end_special_closure_02": {
-      "progress": 24,
+      "progress": 100,
       "segments": [
         {
           "text": "地面上有震动传来——一个巨大的存在正在走近。褐蚁没有抬头。它继续爬。它知道这类存在一般不会威胁到自己。"
@@ -7072,7 +7072,7 @@
       "isEnding": true,
       "title": "褐蚁",
       "type": "SPECIAL ENDING",
-      "progress": 25,
+      "progress": 100,
       "achievement": "ending_special",
       "description": "褐蚁向着墓碑顶部爬去。它的触须在光滑的石面上轻轻敲击着。没有什么目的——那只是它那小小的简陋神经网络里的一次随机扰动。\n\n这扰动随处可见。在地面的每一株小草上，在天空的每一片云后面。扰动都是无目的的，但巨量的无目的扰动汇集在一起——目的就出现了。\n\n也许宇宙也是这样的。",
       "closing": "褐蚁不知道什么黑暗森林。它只知道前面有一片干枯的树叶，可以搬回巢穴。这才是活着。"
@@ -7086,7 +7086,7 @@
         "description": "壁炉里的火刚刚点上。窗外是阴雨初停的黄昏，湖面泛着铅灰色的光。远处雪山的轮廓在云层中若隐若现。",
         "arrival": "罗辑已经在庄园里住了几个月。"
       },
-      "progress": 1,
+      "progress": 69,
       "segments": [
         {
           "text": "你叫罗辑。你在等人。"
@@ -7109,7 +7109,7 @@
         "name": "湖畔庄园·客厅",
         "arrival": "大史站在客厅门口，打量着这间屋子。"
       },
-      "progress": 2,
+      "progress": 70,
       "segments": [
         {
           "text": "史强从遥远的那边赶来了，风尘仆仆，脸上的疲惫藏不住。"
@@ -7145,7 +7145,7 @@
     },
     "ch3_dashi_002": {
       "scene": "湖畔庄园·客厅",
-      "progress": 4,
+      "progress": 70,
       "segments": [
         {
           "speaker": "罗辑",
@@ -7177,7 +7177,7 @@
     },
     "ch3_dashi_003": {
       "scene": "湖畔庄园·客厅",
-      "progress": 6,
+      "progress": 71,
       "segments": [
         {
           "speaker": "史强",
@@ -7206,7 +7206,7 @@
     },
     "ch3_dashi_004": {
       "scene": "湖畔庄园·客厅",
-      "progress": 8,
+      "progress": 71,
       "segments": [
         {
           "speaker": "史强",
@@ -7240,7 +7240,7 @@
         "name": "湖畔庄园·客厅",
         "arrival": "下雨的傍晚。你坐在没有生火的壁炉前，听着外面的雨声。"
       },
-      "progress": 10,
+      "progress": 72,
       "segments": [
         {
           "speaker": "系统",
@@ -7266,7 +7266,7 @@
         "name": "湖畔庄园·客厅",
         "arrival": "门开了。一个纤细的身影随着雨的气息飘了进来。"
       },
-      "progress": 11,
+      "progress": 73,
       "segments": [
         {
           "text": "她站在门口，白色的衣领在昏暗中很醒目。你蹲下生火，划火柴的时候手指几乎捏不住那根火柴。火焰升起来时，她在金色的光中显影了。"
@@ -7284,7 +7284,7 @@
     },
     "ch3_zhuyan_003": {
       "scene": "湖畔庄园·客厅",
-      "progress": 13,
+      "progress": 73,
       "segments": [
         {
           "speaker": "庄颜",
@@ -7322,7 +7322,7 @@
     },
     "ch3_zhuyan_004": {
       "scene": "湖畔庄园·客厅",
-      "progress": 15,
+      "progress": 74,
       "segments": [
         {
           "speaker": "庄颜",
@@ -7356,7 +7356,7 @@
         "description": "雪线以上的世界一片洁白。纯净的雪在阴影中呈现淡蓝色，仿佛在发着微弱的荧光。远方的雪峰在阳光中把银光撒向四方。公路到这里断了，前方的路牌写着：雪崩危险。",
         "arrival": "你们穿过森林，经过草原，把车停在雪线前。"
       },
-      "progress": 17,
+      "progress": 74,
       "segments": [
         {
           "speaker": "庄颜",
@@ -7386,7 +7386,7 @@
     },
     "ch3_snow_002": {
       "scene": "雪山脚下",
-      "progress": 19,
+      "progress": 75,
       "segments": [
         {
           "text": "庄颜没有回答。她看着前方那片纯白——眼睛里映着雪峰的光芒。雪很静，静得能听见彼此呼吸的声音。"
@@ -7413,7 +7413,7 @@
     },
     "ch3_snow_003": {
       "scene": "雪山脚下",
-      "progress": 21,
+      "progress": 76,
       "segments": [
         {
           "speaker": "庄颜",
@@ -7447,7 +7447,7 @@
     },
     "ch3_snow_004": {
       "scene": "雪山脚下",
-      "progress": 23,
+      "progress": 76,
       "segments": [
         {
           "text": "她认真地想了很长时间。"
@@ -7472,7 +7472,7 @@
         "description": "夜。玻璃金字塔在月光下像银子做的。水池里的喷泉启动时，水声在空旷的庭院中回荡。展厅里柔和的灯光照着长长的走廊——两百米长的展厅里，脚步声轻轻回荡。实际上只有你的脚步声——她走路像猫一样无声。",
         "arrival": "坎特安排你们晚上来。"
       },
-      "progress": 25,
+      "progress": 77,
       "segments": [
         {
           "text": "她在油画前停住了——那些文艺复兴时期的圣母和天使。她看了很久。"
@@ -7498,7 +7498,7 @@
     },
     "ch3_louvre_002": {
       "scene": "卢浮宫",
-      "progress": 28,
+      "progress": 77,
       "segments": [
         {
           "text": "在敦煌壁画的展柜前，你说起了王道士。她听着，目光落在那些残缺的佛像上。"
@@ -7521,7 +7521,7 @@
     },
     "ch3_louvre_003": {
       "scene": "卢浮宫",
-      "progress": 30,
+      "progress": 78,
       "segments": [
         {
           "speaker": "庄颜",
@@ -7555,7 +7555,7 @@
     },
     "ch3_louvre_004": {
       "scene": "卢浮宫",
-      "progress": 32,
+      "progress": 79,
       "segments": [
         {
           "text": "你们试了。互相凝视，不到半分钟就都笑出来。"
@@ -7577,7 +7577,7 @@
         "name": "卢浮宫",
         "arrival": "第二次尝试。不笑了。"
       },
-      "progress": 33,
+      "progress": 79,
       "segments": [
         {
           "text": "你们再次相互凝视。这一次你没有想笑。她的目光太清澈了——清澈到你的心跳开始加速，加速到你能听见血液冲过耳膜的声音。卢浮宫在崩塌，砖石变成红亮的岩浆穿过你们的身体——"
@@ -7600,7 +7600,7 @@
         "description": "黄昏。夕阳正在雪山的边缘沉下去，湖面被染成一片金灰色。庄颜带着孩子在不远处画画。孩子的笑声断断续续地传过来。",
         "arrival": "又过了些日子。一天傍晚。"
       },
-      "progress": 36,
+      "progress": 80,
       "segments": [
         {
           "text": "一辆车停在了庄园门口。你看到来人的时候，就知道有什么事情结束了。"
@@ -7618,7 +7618,7 @@
     },
     "ch3_taylor_002": {
       "scene": "湖畔庄园·草坪",
-      "progress": 38,
+      "progress": 81,
       "segments": [
         {
           "speaker": "泰勒",
@@ -7663,7 +7663,7 @@
     },
     "ch3_taylor_003": {
       "scene": "湖畔庄园·草坪",
-      "progress": 40,
+      "progress": 81,
       "segments": [
         {
           "speaker": "泰勒",
@@ -7690,7 +7690,7 @@
         "name": "湖畔庄园·湖边",
         "arrival": "他说想去湖边走走。"
       },
-      "progress": 42,
+      "progress": 82,
       "segments": [
         {
           "text": "你看着他走向湖边。暮色苍茫。他的背影越来越小。"
@@ -7718,7 +7718,7 @@
     },
     "ch3_taylor_005": {
       "scene": "湖畔庄园·湖边",
-      "progress": 43,
+      "progress": 82,
       "segments": [
         {
           "text": "你追了几步。然后你听到了一声沉闷的响动——不很大，但在黄昏的寂静中格外清晰。"
@@ -7739,7 +7739,7 @@
         "name": "湖畔庄园·客厅",
         "arrival": "深夜。壁炉里的火快熄了。"
       },
-      "progress": 45,
+      "progress": 83,
       "segments": [
         {
           "text": "庄颜没有睡。她坐在壁炉前等你回来。你进门的时候，她没有问泰勒去了哪里。"
@@ -7780,7 +7780,7 @@
         "name": "湖畔庄园·客厅",
         "arrival": "之后的几天。"
       },
-      "progress": 47,
+      "progress": 84,
       "segments": [
         {
           "text": "泰勒的死没有上新闻。PDC把它定性为「面壁计划的一部分」。人类的第一个面壁者就这样消失了——像一颗投入深水的石子，波纹还没散开就被更大的浪吞没了。"
@@ -7798,7 +7798,7 @@
     },
     "ch3_aftermath_002": {
       "scene": "湖畔庄园·育儿室",
-      "progress": 49,
+      "progress": 84,
       "segments": [
         {
           "text": "灯亮着。床已经收拾整齐。小床上放着一张画——那是庄颜画的两幅你最爱的画之一：几乎全白的画面上，左下角有几枝芦苇，右上角有一只飞鸟，中央有两个小得不能再小的人儿。"
@@ -7816,7 +7816,7 @@
     },
     "ch3_aftermath_003": {
       "scene": "湖畔庄园·育儿室",
-      "progress": 50,
+      "progress": 85,
       "segments": [
         {
           "text": "亲爱的，我们在末日等你。"
@@ -7841,7 +7841,7 @@
         "name": "湖畔庄园·门廊",
         "arrival": "雨还没有停。"
       },
-      "progress": 52,
+      "progress": 85,
       "segments": [
         {
           "text": "门廊上站着一个人。纤细的身影，不是庄颜。"
@@ -7864,7 +7864,7 @@
     },
     "ch3_saji_002": {
       "scene": "湖畔庄园·门廊",
-      "progress": 54,
+      "progress": 86,
       "segments": [
         {
           "speaker": "萨伊",
@@ -7888,7 +7888,7 @@
     },
     "ch3_saji_003": {
       "scene": "湖畔庄园·门廊",
-      "progress": 56,
+      "progress": 87,
       "segments": [
         {
           "speaker": "萨伊",
@@ -7907,7 +7907,7 @@
     },
     "ch3_saji_004": {
       "scene": "湖畔庄园·门廊",
-      "progress": 58,
+      "progress": 87,
       "segments": [
         {
           "speaker": "萨伊",
@@ -7930,7 +7930,7 @@
     },
     "ch3_saji_005": {
       "scene": "湖畔庄园·门廊",
-      "progress": 60,
+      "progress": 88,
       "segments": [
         {
           "speaker": "萨伊",
@@ -7957,7 +7957,7 @@
         "name": "湖畔庄园·门廊",
         "arrival": "车灯消失在雨雾中。"
       },
-      "progress": 62,
+      "progress": 88,
       "segments": [
         {
           "text": "你站在门廊下。雨渐渐停了。"
