@@ -223,11 +223,11 @@
       "choices": [
         {
           "text": "混入人群中",
-          "next": "ch6_raid_002"
+          "next": "ch6_raid_cb_hide_cb_a"
         },
         {
           "text": "迎上去——正面应对",
-          "next": "ch6_raid_002"
+          "next": "ch6_raid_cb_hide_cb_b"
         },
         {
           "text": "站出来——「我在这里。」",
@@ -238,6 +238,24 @@
           }
         }
       ]
+    },
+    "ch6_raid_cb_hide_cb_a": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "你低下头，混进了人群。没有人注意到你。"
+        }
+      ],
+      "next": "ch6_raid_002"
+    },
+    "ch6_raid_cb_hide_cb_b": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "你深吸一口气，朝他走去。他看了你一眼——没有认出来。"
+        }
+      ],
+      "next": "ch6_raid_002"
     }
   }
 }

@@ -890,14 +890,14 @@
       "choices": [
         {
           "text": "继续冲洗下一张",
-          "next": "ch2_cd_003",
+          "next": "ch2_cd_002_cb_a",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "停下来检查这卷胶片",
-          "next": "ch2_cd_003",
+          "next": "ch2_cd_002_cb_b",
           "changes": {
             "val": -2
           }
@@ -1153,11 +1153,11 @@
       "choices": [
         {
           "text": "「项目运行正常。」",
-          "next": "ch2_shen_003"
+          "next": "ch2_shen_002_cb_a"
         },
         {
           "text": "「你什么意思？」",
-          "next": "ch2_shen_003"
+          "next": "ch2_shen_002_cb_b"
         }
       ]
     },
@@ -1207,14 +1207,14 @@
       "choices": [
         {
           "text": "「如果我停下来——倒计时会消失吗？」",
-          "next": "ch2_shen_005",
+          "next": "ch2_shen_004_cb_a",
           "changes": {
             "val": 8
           }
         },
         {
           "text": "「这不可能。」",
-          "next": "ch2_shen_005",
+          "next": "ch2_shen_004_cb_b",
           "changes": {
             "val": -5
           }
@@ -1432,14 +1432,14 @@
       "choices": [
         {
           "text": "走进杨冬的房间",
-          "next": "ch2_ye_003",
+          "next": "ch2_ye_002_cb_a",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "先和叶文洁聊聊",
-          "next": "ch2_ye_003",
+          "next": "ch2_ye_002_cb_b",
           "changes": {
             "val": -3
           }
@@ -1509,11 +1509,11 @@
       "choices": [
         {
           "text": "「您对女儿的教育是成功的。」",
-          "next": "ch2_ye_006"
+          "next": "ch2_ye_005_cb_a"
         },
         {
           "text": "沉默",
-          "next": "ch2_ye_006"
+          "next": "ch2_ye_005_cb_b"
         }
       ]
     },
@@ -1558,6 +1558,96 @@
         ]
       },
       "next": "ch3_ywj_001"
+    },
+    "ch2_cd_002_cb_a": {
+      "progress": 3,
+      "segments": [
+        {
+          "text": "你继续冲洗。又一张胶片出来了——上面的图像很模糊。"
+        }
+      ],
+      "next": "ch2_cd_003"
+    },
+    "ch2_cd_002_cb_b": {
+      "progress": 3,
+      "segments": [
+        {
+          "text": "你停下来，拿起那张胶片对着灯光看。上面有一串数字。"
+        }
+      ],
+      "next": "ch2_cd_003"
+    },
+    "ch2_shen_002_cb_a": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "她看了你一眼。目光里有什么东西——不是满意，是确认。"
+        }
+      ],
+      "next": "ch2_shen_003"
+    },
+    "ch2_shen_002_cb_b": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "她没有立刻回答。沉默了几秒钟。"
+        }
+      ],
+      "next": "ch2_shen_003"
+    },
+    "ch2_shen_004_cb_a": {
+      "progress": 20,
+      "segments": [
+        {
+          "text": "她的嘴角动了一下——不是笑，更像是某种验证。"
+        }
+      ],
+      "next": "ch2_shen_005"
+    },
+    "ch2_shen_004_cb_b": {
+      "progress": 20,
+      "segments": [
+        {
+          "text": "她点了点头，像是早就预料到你会这么说。"
+        }
+      ],
+      "next": "ch2_shen_005"
+    },
+    "ch2_ye_002_cb_a": {
+      "progress": 33,
+      "segments": [
+        {
+          "text": "你推开那扇门。房间里很整洁——像是主人昨天才离开。"
+        }
+      ],
+      "next": "ch2_ye_003"
+    },
+    "ch2_ye_002_cb_b": {
+      "progress": 33,
+      "segments": [
+        {
+          "text": "你转向叶文洁。她正看着你——眼神很平静。"
+        }
+      ],
+      "next": "ch2_ye_003"
+    },
+    "ch2_ye_005_cb_a": {
+      "progress": 39,
+      "segments": [
+        {
+          "text": "她没有接话。过了一会儿才说——她从来不跟我说心里话。"
+        }
+      ],
+      "next": "ch2_ye_006"
+    },
+    "ch2_ye_005_cb_b": {
+      "progress": 39,
+      "segments": [
+        {
+          "text": "沉默持续了很久。窗外有鸟叫。"
+        }
+      ],
+      "next": "ch2_ye_006"
     },
     "ch3_ywj_001": {
       "chapterTitle": "第三章：宇宙闪烁",
@@ -1913,11 +2003,11 @@
       "choices": [
         {
           "text": "「全完了。」",
-          "next": "ch3_shi_002"
+          "next": "ch3_shi_001_cb_a"
         },
         {
           "text": "沉默",
-          "next": "ch3_shi_002"
+          "next": "ch3_shi_001_cb_b"
         }
       ]
     },
@@ -2078,6 +2168,24 @@
         }
       ],
       "next": "ch4_sg2_001"
+    },
+    "ch3_shi_001_cb_a": {
+      "progress": 24,
+      "segments": [
+        {
+          "text": "他看了你一眼。没有反驳——因为你说的是事实。"
+        }
+      ],
+      "next": "ch3_shi_002"
+    },
+    "ch3_shi_001_cb_b": {
+      "progress": 24,
+      "segments": [
+        {
+          "text": "史强等了一会儿，然后自己开口了。"
+        }
+      ],
+      "next": "ch3_shi_002"
     },
     "ch4_sg2_001": {
       "chapterTitle": "第四章：三体游戏",
@@ -2533,11 +2641,11 @@
       "choices": [
         {
           "text": "上楼看看魏成在做什么",
-          "next": "ch5_wei_001"
+          "next": "ch5_rc_001_cb_a"
         },
         {
           "text": "在客厅等申玉菲回来",
-          "next": "ch5_wei_001"
+          "next": "ch5_rc_001_cb_b"
         }
       ]
     },
@@ -2988,6 +3096,24 @@
       ],
       "next": "ch6_eto_001"
     },
+    "ch5_rc_001_cb_a": {
+      "progress": 1,
+      "segments": [
+        {
+          "text": "你走上楼梯。二楼走廊很长，灯光昏暗。"
+        }
+      ],
+      "next": "ch5_wei_001"
+    },
+    "ch5_rc_001_cb_b": {
+      "progress": 1,
+      "segments": [
+        {
+          "text": "你坐在沙发上。客厅很安静——只有钟摆的声音。"
+        }
+      ],
+      "next": "ch5_wei_001"
+    },
     "ch6_eto_001": {
       "chapterTitle": "第六章：ETO",
       "scene": {
@@ -3083,11 +3209,11 @@
       "choices": [
         {
           "text": "混入人群中",
-          "next": "ch6_raid_002"
+          "next": "ch6_raid_cb_hide_cb_a"
         },
         {
           "text": "迎上去——正面应对",
-          "next": "ch6_raid_002"
+          "next": "ch6_raid_cb_hide_cb_b"
         },
         {
           "text": "站出来——「我在这里。」",
@@ -3889,14 +4015,14 @@
       "choices": [
         {
           "text": "「监视——那我们说的每一句话？」",
-          "next": "ch8_truth_003",
+          "next": "ch8_truth_002_cb_a",
           "changes": {
             "val": 5
           }
         },
         {
           "text": "沉默",
-          "next": "ch8_truth_003",
+          "next": "ch8_truth_002_cb_b",
           "changes": {
             "val": -3
           }
@@ -4211,6 +4337,24 @@
       "description": "叶文洁在雷达峰顶看完了她生命中的最后一次日落。她伸出手——仿佛要触碰那片血色中的太阳——然后她的手臂垂了下来。\n\n她给人类带来了三体文明。给三体文明带去了地球的位置。她认为自己尽了责任。\n\n汪淼站在她身后不远处。他看着她倒下去，像一棵被时间锯断的老树。远处——云海之上的夕阳还没有完全沉没。\n\n他想起史强说的那句话：虫子从来就没有被真正战胜过。\n\n四百五十年很长。但也可能——足够人类想出一个办法。",
       "closing": "把人类看作虫子的三体人似乎忘记了一个事实——虫子从来就没有被真正战胜过。"
     },
+    "ch8_truth_002_cb_a": {
+      "progress": 3,
+      "segments": [
+        {
+          "text": "常伟思点了点头。他的表情很凝重。"
+        }
+      ],
+      "next": "ch8_truth_003"
+    },
+    "ch8_truth_002_cb_b": {
+      "progress": 3,
+      "segments": [
+        {
+          "text": "常伟思等了几秒钟，然后继续说下去。"
+        }
+      ],
+      "next": "ch8_truth_003"
+    },
     "end_arrival_closure_01": {
       "scene": "作战中心",
       "progress": 14,
@@ -4511,11 +4655,11 @@
       "choices": [
         {
           "text": "闭上眼",
-          "next": "hy_ye_004"
+          "next": "hy_ye_003_cb_a"
         },
         {
           "text": "强迫自己看下去",
-          "next": "hy_ye_004"
+          "next": "hy_ye_003_cb_b"
         }
       ]
     },
@@ -4632,7 +4776,7 @@
           "next": "hy_ye_008"
         },
         {
-          "text": "问清楚再去",
+          "text": "站在原地不动",
           "next": "hy_ye_008"
         }
       ]
@@ -4685,14 +4829,14 @@
       "choices": [
         {
           "text": "「什么样的异常？」",
-          "next": "hy_ye_010",
+          "next": "hy_ye_009_cb_a",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "沉默地点头",
-          "next": "hy_ye_010",
+          "next": "hy_ye_009_cb_b",
           "changes": {
             "val": -2
           }
@@ -4815,6 +4959,42 @@
       ],
       "next": "hy_ye_013"
     },
+    "hy_ye_003_cb_a": {
+      "progress": 5,
+      "segments": [
+        {
+          "text": "你闭上了眼睛。但声音还在——口号声、闷响、然后是寂静。"
+        }
+      ],
+      "next": "hy_ye_004"
+    },
+    "hy_ye_003_cb_b": {
+      "progress": 5,
+      "segments": [
+        {
+          "text": "你睁着眼看完了全过程。阳光很刺眼。"
+        }
+      ],
+      "next": "hy_ye_004"
+    },
+    "hy_ye_009_cb_a": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "雷志成看了你一眼。他似乎在判断——你是真的好奇，还是在试探。"
+        }
+      ],
+      "next": "hy_ye_010"
+    },
+    "hy_ye_009_cb_b": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "你点了点头。雷志成转身离开了。门关上后，房间里只剩下仪器的嗡鸣。"
+        }
+      ],
+      "next": "hy_ye_010"
+    },
     "hy_ye_013": {
       "chapterTitle": "红岸（下）",
       "scene": {
@@ -4916,7 +5096,7 @@
       "choices": [
         {
           "text": "「我必须回答。」",
-          "next": "hy_ye_017",
+          "next": "hy_ye_016_cb_a",
           "changes": {
             "val": 10,
             "set": {
@@ -4926,7 +5106,7 @@
         },
         {
           "text": "「我……需要时间想想。」",
-          "next": "hy_ye_017",
+          "next": "hy_ye_016_cb_b",
           "changes": {
             "val": -5,
             "set": {
@@ -4977,11 +5157,11 @@
       "choices": [
         {
           "text": "否认一切",
-          "next": "hy_ye_019"
+          "next": "hy_ye_018_cb_a"
         },
         {
           "text": "沉默",
-          "next": "hy_ye_019"
+          "next": "hy_ye_018_cb_b"
         }
       ]
     },
@@ -5002,7 +5182,7 @@
       ],
       "choices": [
         {
-          "text": "告诉他真相",
+          "text": "好。我告诉你。",
           "next": "hy_ye_020"
         }
       ]
@@ -5123,7 +5303,7 @@
       "choices": [
         {
           "text": "听他说完",
-          "next": "hy_ye_024",
+          "next": "hy_ye_023_cb_a",
           "changes": {
             "set": {
               "ye_psyche": "warm"
@@ -5132,7 +5312,7 @@
         },
         {
           "text": "拒绝交谈",
-          "next": "hy_ye_024",
+          "next": "hy_ye_023_cb_b",
           "changes": {
             "set": {
               "ye_psyche": "cold"
@@ -5159,7 +5339,7 @@
       "choices": [
         {
           "text": "「我不会再见你了。」",
-          "next": "hy_ye_025",
+          "next": "hy_ye_024_cb_a",
           "changes": {
             "set": {
               "ye_psyche": "cold"
@@ -5168,7 +5348,7 @@
         },
         {
           "text": "「需要做什么？」",
-          "next": "hy_ye_025",
+          "next": "hy_ye_024_cb_b",
           "changes": {
             "set": {
               "ye_psyche": "warm"
@@ -5218,6 +5398,78 @@
         }
       },
       "next": "ch6_confess_001"
+    },
+    "hy_ye_016_cb_a": {
+      "progress": 7,
+      "segments": [
+        {
+          "text": "你说了这句话之后——自己都感到意外。但你知道，这是真心话。"
+        }
+      ],
+      "next": "hy_ye_017"
+    },
+    "hy_ye_016_cb_b": {
+      "progress": 7,
+      "segments": [
+        {
+          "text": "你回到宿舍，坐在床边。窗外是大兴安岭的夜空——很黑，很安静。"
+        }
+      ],
+      "next": "hy_ye_017"
+    },
+    "hy_ye_018_cb_a": {
+      "progress": 11,
+      "segments": [
+        {
+          "text": "你的否认很坚决。但雷志成的表情告诉你——他不信。"
+        }
+      ],
+      "next": "hy_ye_019"
+    },
+    "hy_ye_018_cb_b": {
+      "progress": 11,
+      "segments": [
+        {
+          "text": "你的沉默比任何否认都更有说服力。雷志成叹了口气。"
+        }
+      ],
+      "next": "hy_ye_019"
+    },
+    "hy_ye_023_cb_a": {
+      "progress": 21,
+      "segments": [
+        {
+          "text": "伊文斯坐了下来。他说话的方式很平静——像是在叙述一件已经发生的事。"
+        }
+      ],
+      "next": "hy_ye_024"
+    },
+    "hy_ye_023_cb_b": {
+      "progress": 21,
+      "segments": [
+        {
+          "text": "你转身走了。伊文斯没有追上来。但你知道——他还会再来。"
+        }
+      ],
+      "next": "hy_ye_024"
+    },
+    "hy_ye_024_cb_a": {
+      "progress": 23,
+      "segments": [
+        {
+          "text": "伊文斯站起来，看了你很久。然后他走了。"
+        }
+      ],
+      "next": "hy_ye_025"
+    },
+    "hy_ye_024_cb_b": {
+      "progress": 23,
+      "segments": [
+        {
+          "text": "伊文斯递给你一张纸条。上面只有一个地址。"
+        }
+      ],
+      "next": "hy_ye_025"
     },
     "rash_breakdown_01": {
       "progress": 25,
@@ -5933,6 +6185,24 @@
           "next": "ch6_confess_002"
         }
       ]
+    },
+    "ch6_raid_cb_hide_cb_a": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "你低下头，混进了人群。没有人注意到你。"
+        }
+      ],
+      "next": "ch6_raid_002"
+    },
+    "ch6_raid_cb_hide_cb_b": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "你深吸一口气，朝他走去。他看了你一眼——没有认出来。"
+        }
+      ],
+      "next": "ch6_raid_002"
     }
   }
 }

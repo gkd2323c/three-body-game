@@ -101,11 +101,11 @@
       "choices": [
         {
           "text": "闭上眼",
-          "next": "hy_ye_004"
+          "next": "hy_ye_003_cb_a"
         },
         {
           "text": "强迫自己看下去",
-          "next": "hy_ye_004"
+          "next": "hy_ye_003_cb_b"
         }
       ]
     },
@@ -222,7 +222,7 @@
           "next": "hy_ye_008"
         },
         {
-          "text": "问清楚再去",
+          "text": "站在原地不动",
           "next": "hy_ye_008"
         }
       ]
@@ -275,14 +275,14 @@
       "choices": [
         {
           "text": "「什么样的异常？」",
-          "next": "hy_ye_010",
+          "next": "hy_ye_009_cb_a",
           "changes": {
             "val": 3
           }
         },
         {
           "text": "沉默地点头",
-          "next": "hy_ye_010",
+          "next": "hy_ye_009_cb_b",
           "changes": {
             "val": -2
           }
@@ -404,6 +404,42 @@
         }
       ],
       "next": "hy_ye_013"
+    },
+    "hy_ye_003_cb_a": {
+      "progress": 5,
+      "segments": [
+        {
+          "text": "你闭上了眼睛。但声音还在——口号声、闷响、然后是寂静。"
+        }
+      ],
+      "next": "hy_ye_004"
+    },
+    "hy_ye_003_cb_b": {
+      "progress": 5,
+      "segments": [
+        {
+          "text": "你睁着眼看完了全过程。阳光很刺眼。"
+        }
+      ],
+      "next": "hy_ye_004"
+    },
+    "hy_ye_009_cb_a": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "雷志成看了你一眼。他似乎在判断——你是真的好奇，还是在试探。"
+        }
+      ],
+      "next": "hy_ye_010"
+    },
+    "hy_ye_009_cb_b": {
+      "progress": 16,
+      "segments": [
+        {
+          "text": "你点了点头。雷志成转身离开了。门关上后，房间里只剩下仪器的嗡鸣。"
+        }
+      ],
+      "next": "hy_ye_010"
     }
   }
 }
