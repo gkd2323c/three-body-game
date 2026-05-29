@@ -11,7 +11,7 @@
     "variableName": "明暗",
     "initialVariable": 40
   },
-  "startNodeId": "routes_placeholder",
+  "startNodeId": "ch0_tomb_001",
   "variables": {},
   "achievements": {
     "rash_wallfacer": {
@@ -359,7 +359,7 @@
           "text": "你推开椅子，站起来，在全世界的注视下转身向大门走去。"
         },
         {
-          "text": "身后传来骚动声——有人喊你的名字，有人拍桌子。你没有回头。"
+          "text": "身后传来骚动声。有人喊你的名字，有人拍桌子。你没有回头。"
         },
         {
           "text": "你推开了联合国大会堂的大门。外面的广场上空无一人。阳光很刺眼。"
@@ -409,7 +409,7 @@
       "type": "RASH ENDING",
       "progress": 27,
       "achievement": "rash_wallfacer",
-      "description": "罗辑在联合国大会堂外被ETO的狙击手击毙。他成为面壁者不到十分钟——史上任期最短的面壁者。\n\nPDC宣布他的死是「计划的一部分」。没有葬礼。没有新闻。",
+      "description": "罗辑在联合国大会堂外被ETO的狙击手击毙。他成为面壁者不到十分钟，是史上任期最短的面壁者。\n\nPDC宣布他的死是「计划的一部分」。没有葬礼。没有新闻。",
       "closing": "有些人注定活不到自己的使命开始的时候。"
     },
     "ch2_bunker_003": {
@@ -450,7 +450,7 @@
       "progress": 17,
       "segments": [
         {
-          "text": "你站起来朝门口走去。史强没有拦你——他只是叹了一口气。"
+          "text": "你站起来朝门口走去。史强没有拦你，他只是叹了一口气。"
         },
         {
           "speaker": "史强",
@@ -554,7 +554,7 @@
       "progress": 38,
       "segments": [
         {
-          "text": "你拒绝了冬眠。医生们面面相觑——但面壁者的权力包括拒绝医疗。"
+          "text": "你拒绝了冬眠。医生们面面相觑。面壁者拥有拒绝医疗的特权。"
         },
         {
           "text": "他们在你床边站了一会儿，然后一个接一个地离开了。只剩你一个人。"
@@ -571,7 +571,7 @@
       "progress": 39,
       "segments": [
         {
-          "text": "发烧越来越严重。你开始看不清东西——视野的边缘一片模糊。"
+          "text": "发烧越来越严重。你开始看不清东西，视野的边缘一片模糊。"
         },
         {
           "text": "你的手从床边滑落。你感觉不到自己的手指了。天花板上的灯晃了一下——也许没晃，是你的眼睛在晃。"
@@ -615,13 +615,13 @@
       "progress": 22,
       "segments": [
         {
-          "text": "你靠得太近了。推进器的一次短促喷射让你偏离了原来的位置——你从掩体后面暴露了出来。"
+          "text": "你靠得太近了。推进器的一次短促喷射让你偏离了原来的位置。你从掩体后面暴露了出来。"
         },
         {
           "effect": "flash"
         },
         {
-          "text": "一束探照灯锁定了你。不是来自黄河站——来自一艘在附近巡航的军用飞船。"
+          "text": "一束探照灯锁定了你。那光线不是来自黄河站，而是来自一艘在附近巡航的军用飞船。"
         },
         {
           "text": "通讯频道里传来声音：「发现武装人员。位置锁定。请求指示。」"
@@ -661,6 +661,213 @@
       "achievement": "rash_zhang_caught",
       "description": "章北海被当场捕获。他手上的陨石子弹和那把改装过的手枪成了铁证。\n\n太空军军事法庭以叛国罪和谋杀罪判处他终身监禁。他被关押在一个专门建造的太空监狱中——一个漂浮在小行星带里的钢铁容器。\n\n没有人来探望他。没有人写信。他漂浮在零重力中，听到的只有循环风扇的声音。",
       "closing": "他想了太多。"
+    },
+    "r2_placeholder": {
+      "progress": 0,
+      "segments": [
+        {
+          "text": ""
+        }
+      ],
+      "next": "r2_placeholder"
+    },
+    "ch5_hines_010": {
+      "scene": {
+        "id": "hines_lab",
+        "name": "脑科学实验室",
+        "arrival": "回到实验室。夜深了。"
+      },
+      "progress": 52,
+      "segments": [
+        {
+          "speaker": "山杉惠子",
+          "text": "你给自己打上钢印了，是不是？"
+        },
+        {
+          "speaker": "你",
+          "text": "命题是：我在面壁计划中所做的一切都是正确的。只有这样，我才有把计划执行下去的精神力量。"
+        },
+        {
+          "text": "她沉默了很长时间。"
+        },
+        {
+          "speaker": "山杉惠子",
+          "text": "那我们去未来吧。不管发生什么，一起面对。"
+        },
+        {
+          "speaker": "你",
+          "text": "好。"
+        }
+      ],
+      "changes": {
+        "addFlag": "thought_seal_created",
+        "unlockAchievement": "thought_seal"
+      },
+      "choices": [
+        {
+          "text": "——",
+          "next": "ch5_closure_006"
+        }
+      ]
+    },
+    "ch5_hines_010_destroy": {
+      "progress": 53,
+      "segments": [
+        {
+          "text": "你在山杉惠子的注视下，拆毁了最后一台解析摄像机的主芯片。钢印的秘密——到此为止。"
+        },
+        {
+          "text": "她轻轻叹了口气——不知道是如释重负，还是遗憾。"
+        }
+      ],
+      "next": "ch5_closure_006"
+    },
+    "ch5_hines_010_hide": {
+      "progress": 53,
+      "segments": [
+        {
+          "text": "你保留了最后一台设备。你把它藏在了实验室的暗格里——没有人知道它的存在。"
+        },
+        {
+          "text": "山杉惠子沉默地看着你做这一切。她什么都没说。"
+        }
+      ],
+      "next": "end_hines_closure_01"
+    },
+    "ch8_deter_008": {
+      "scene": "新生活五村·沙地",
+      "progress": 15,
+      "segments": [
+        {
+          "speaker": "史强",
+          "text": "你早知道了？"
+        },
+        {
+          "speaker": "你",
+          "text": "猜的。但现在我确认了。"
+        },
+        {
+          "speaker": "史强",
+          "text": "确认什么？"
+        },
+        {
+          "speaker": "你",
+          "text": "黑暗森林。宇宙就是一座黑暗森林。每个文明都是带枪的猎人。任何人暴露自己的位置，都会被消灭。"
+        },
+        {
+          "text": "你仰头看天。天是黑的。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "解释给史强听",
+          "next": "ch8_deter_009"
+        }
+      ]
+    },
+    "ch8_deter_008_cooperate": {
+      "progress": 16,
+      "segments": [
+        {
+          "speaker": "史强",
+          "text": "你脑子进水了？他们刚毁了整个舰队。"
+        },
+        {
+          "speaker": "你",
+          "text": "但也许——那是他们唯一会的方式。如果我们能学会用他们的方式交流——"
+        },
+        {
+          "speaker": "史强",
+          "text": "（盯着你看了很久）你是认真的？"
+        },
+        {
+          "text": "你没有回答。但你确实在认真考虑这个可能性。"
+        }
+      ],
+      "routes": [
+        {
+          "condition": {
+            "all": [
+              {
+                "var": "val",
+                "op": ">=",
+                "value": 60
+              },
+              {
+                "flag": "zhuangyan_truth"
+              }
+            ]
+          },
+          "next": "end_hidden_closure_01"
+        },
+        {
+          "condition": "default",
+          "next": "ch8_deter_009"
+        }
+      ]
+    },
+    "ch8_deter_023": {
+      "scene": "杨冬墓前·石阶尽头",
+      "progress": 47,
+      "segments": [
+        {
+          "speaker": "字幕",
+          "text": "我想和您讨论一种可能：也许爱的萌芽在宇宙的其他地方也存在。我们应该到处鼓励她的萌发和成长。"
+        },
+        {
+          "speaker": "你",
+          "text": "为此我们可以冒险。"
+        },
+        {
+          "speaker": "字幕",
+          "text": "对。可以冒险。"
+        },
+        {
+          "speaker": "你",
+          "text": "我有一个梦。也许有一天，灿烂的阳光能照进黑暗森林。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "——",
+          "next": "ch8_deter_closure"
+        }
+      ]
+    },
+    "ch8_deter_023_silence": {
+      "progress": 48,
+      "segments": [
+        {
+          "text": "你没有回答。你转身走下墓碑基座。褐蚁正在碑座上爬行，在你的视觉边缘——一个小小的黑点。"
+        },
+        {
+          "text": "你停下来看着它。它不知道你做了什么。不知道你在五秒钟前刚刚改变了两个文明的命运。"
+        },
+        {
+          "text": "你突然想——如果人类也只是一只褐蚁呢？在一个更大的尺度上——谁在看我们？"
+        }
+      ],
+      "routes": [
+        {
+          "condition": {
+            "all": [
+              {
+                "flag": "fell_into_ice"
+              },
+              {
+                "var": "val",
+                "op": ">",
+                "value": 80
+              }
+            ]
+          },
+          "next": "end_special_closure_01"
+        },
+        {
+          "condition": "default",
+          "next": "ch8_deter_019"
+        }
+      ]
     },
     "ch0_tomb_001": {
       "chapterTitle": "序章：宇宙社会学",
@@ -3454,37 +3661,6 @@
         }
       ]
     },
-    "ch8_deter_008": {
-      "scene": "新生活五村·沙地",
-      "progress": 15,
-      "segments": [
-        {
-          "speaker": "史强",
-          "text": "你早知道了？"
-        },
-        {
-          "speaker": "你",
-          "text": "猜的。但现在我确认了。"
-        },
-        {
-          "speaker": "史强",
-          "text": "确认什么？"
-        },
-        {
-          "speaker": "你",
-          "text": "黑暗森林。宇宙就是一座黑暗森林。每个文明都是带枪的猎人。任何人暴露自己的位置，都会被消灭。"
-        },
-        {
-          "text": "你仰头看天。天是黑的。"
-        }
-      ],
-      "choices": [
-        {
-          "text": "解释给史强听",
-          "next": "ch8_deter_009"
-        }
-      ]
-    },
     "ch8_deter_009": {
       "scene": {
         "id": "new_life_village",
@@ -3837,34 +4013,6 @@
         {
           "text": "听他说完",
           "next": "ch8_deter_023"
-        }
-      ]
-    },
-    "ch8_deter_023": {
-      "scene": "杨冬墓前·石阶尽头",
-      "progress": 47,
-      "segments": [
-        {
-          "speaker": "字幕",
-          "text": "我想和您讨论一种可能：也许爱的萌芽在宇宙的其他地方也存在。我们应该到处鼓励她的萌发和成长。"
-        },
-        {
-          "speaker": "你",
-          "text": "为此我们可以冒险。"
-        },
-        {
-          "speaker": "字幕",
-          "text": "对。可以冒险。"
-        },
-        {
-          "speaker": "你",
-          "text": "我有一个梦。也许有一天，灿烂的阳光能照进黑暗森林。"
-        }
-      ],
-      "choices": [
-        {
-          "text": "——",
-          "next": "ch8_deter_closure"
         }
       ]
     },
@@ -6394,45 +6542,6 @@
         {
           "text": "——",
           "next": "ch5_hines_010"
-        }
-      ]
-    },
-    "ch5_hines_010": {
-      "scene": {
-        "id": "hines_lab",
-        "name": "脑科学实验室",
-        "arrival": "回到实验室。夜深了。"
-      },
-      "progress": 52,
-      "segments": [
-        {
-          "speaker": "山杉惠子",
-          "text": "你给自己打上钢印了，是不是？"
-        },
-        {
-          "speaker": "你",
-          "text": "命题是：我在面壁计划中所做的一切都是正确的。只有这样，我才有把计划执行下去的精神力量。"
-        },
-        {
-          "text": "她沉默了很长时间。"
-        },
-        {
-          "speaker": "山杉惠子",
-          "text": "那我们去未来吧。不管发生什么，一起面对。"
-        },
-        {
-          "speaker": "你",
-          "text": "好。"
-        }
-      ],
-      "changes": {
-        "addFlag": "thought_seal_created",
-        "unlockAchievement": "thought_seal"
-      },
-      "choices": [
-        {
-          "text": "——",
-          "next": "ch5_closure_006"
         }
       ]
     },

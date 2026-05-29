@@ -5,41 +5,77 @@
     "theme": "void",
     "ambient": "silence"
   },
-  "startNodeId": "s1_bridge_placeholder",
+  "startNodeId": "ch8_epilogue_002",
   "variables": {},
   "achievements": {},
   "nodes": {
-    "s1_bridge_placeholder": {
-      "progress": 0,
-      "segments": [{ "text": "" }],
-      "next": "s1_bridge_placeholder"
-    },
     "ch8_epilogue_002": {
       "progress": 27,
       "segments": [
-        { "text": "叶文洁的心脏艰难地跳动着。她用尽最后的力气抬头看着西方的天际。" },
-        { "text": "夕阳正在云海中下沉——被融化了一样。太阳的血在云层和天空中弥散开来——一片壮丽的血红。" },
-        { "speaker": "叶文洁", "text": "这是人类的落日……" }
+        {
+          "text": "叶文洁的心脏艰难地跳动着。她用尽最后的力气抬头看着西方的天际。"
+        },
+        {
+          "text": "夕阳正在云海中下沉——被融化了一样。太阳的血在云层和天空中弥散开来——一片壮丽的血红。"
+        },
+        {
+          "speaker": "叶文洁",
+          "text": "这是人类的落日……"
+        }
       ],
       "changes": {
-        "unlockAchievements": ["sunset"]
+        "unlockAchievements": [
+          "sunset"
+        ]
       },
       "routes": [
-        { "condition": { "all": [ { "flag": "witnessed_father_death" }, { "flag": "sophon_revealed" }, { "flag": "ye_confessed_basics" } ] }, "next": "se_trigger_check" },
-        { "condition": "default", "next": "ch8_true_ending" }
+        {
+          "condition": {
+            "all": [
+              {
+                "flag": "witnessed_father_death"
+              },
+              {
+                "flag": "sophon_revealed"
+              },
+              {
+                "flag": "ye_confessed_basics"
+              }
+            ]
+          },
+          "next": "se_trigger_check"
+        },
+        {
+          "condition": "default",
+          "next": "ch8_true_ending"
+        }
       ]
     },
     "se_trigger_check": {
       "progress": 28,
       "segments": [
-        { "effect": "breath" },
-        { "text": "你看完了整个故事。叶文洁的死在你的记忆中定格——但有一件事让你无法释怀。" },
-        { "text": "你第一次意识到——你一直在透过她的眼睛看世界。但她的世界——是谁在看的？" },
-        { "text": "有一个声音在你的意识深处——不是你自己的声音。" }
+        {
+          "effect": "breath"
+        },
+        {
+          "text": "你看完了整个故事。叶文洁的死在你的记忆中定格——但有一件事让你无法释怀。"
+        },
+        {
+          "text": "你第一次意识到——你一直在透过她的眼睛看世界。但她的世界——是谁在看的？"
+        },
+        {
+          "text": "有一个声音在你的意识深处——不是你自己的声音。"
+        }
       ],
       "choices": [
-        { "text": "倾听那个声音", "next": "se_shooter_01" },
-        { "text": "忽略它——故事已经结束了", "next": "ch8_true_ending" }
+        {
+          "text": "倾听那个声音",
+          "next": "se_shooter_01"
+        },
+        {
+          "text": "忽略它——故事已经结束了",
+          "next": "ch8_true_ending"
+        }
       ]
     }
   }

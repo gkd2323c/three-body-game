@@ -1,0 +1,369 @@
+$ python3 skills/scripts/validate.py site/three-body-2/game.json 2>&1
+[exit 1]
+
+==================================================
+验证结果：site/three-body-2/game.json
+==================================================
+节点总数：317
+  - 剧情节点：305
+  - 结局节点：12
+成就数量：35
+可达节点：1 / 317
+自定义变量：0
+
+❌ 错误（1）：
+  ✗ 没有任何可达的结局
+
+⚠️  警告（350）：
+  △ 节点 "br_end_wait_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_closure" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_006b" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_jd_009" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_prologue_end" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_008_cb_ask" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_008_cb_silent" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_009" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_009_cb_ask" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_009_cb_think" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_010" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_011" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_011_cb_look" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_011_cb_watch" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_012" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_013" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch0_tomb_014" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_breacher_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_breacher_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_breacher_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_breacher_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_breacher_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_breacher_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_breacher_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_father_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_father_001_cb_bed" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_father_001_cb_window" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_father_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_father_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_father_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_father_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_nmd_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_nmd_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_ship_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_ship_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_ship_003_cb_guard" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_ship_003_cb_open" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_ship_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_ship_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_ship_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_spaceforce_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_spaceforce_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_spaceforce_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_spaceforce_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_spaceforce_004_cb_emblem" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_spaceforce_004_cb_silent" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_spaceforce_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_spaceforce_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_transition_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_wu_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_zhangyc_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_zhangyc_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch1_zhangyc_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_airport_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_bunker_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_bunker_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_bunker_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_bunker_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_bunker_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_bunker_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_bunker_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_bunker_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_bunker_009" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_hospital_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_hospital_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_hospital_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_hospital_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_hospital_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_hospital_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_luoj_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_luoj_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_luoj_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_luoj_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_luoj_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_luoj_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_paradise_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_paradise_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_paradise_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_pdc_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_pdc_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_pdc_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_pdc_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_plane_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_plane_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_plane_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_plane_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_plane_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_plane_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_un_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_un_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_un_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_un_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_un_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_un_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_un_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_un_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch2_un_009" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_aftermath_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_aftermath_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_aftermath_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_dashi_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_dashi_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_dashi_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_dashi_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_louvre_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_louvre_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_louvre_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_louvre_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_louvre_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_saji_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_saji_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_saji_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_saji_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_saji_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_saji_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_snow_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_snow_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_snow_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_snow_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_taylor_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_taylor_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_taylor_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_taylor_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_taylor_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_taylor_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_zhang_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_zhuyan_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_zhuyan_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_zhuyan_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch3_zhuyan_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_bunker_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_bunker_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_bunker_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_bunker_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_bunker_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_lake_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_lake_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_lake_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_lake_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_lake_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_lake_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_linger_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_linger_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_pdc_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_pdc_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_pdc_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_pdc_003_refuse" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_pdc_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_sick_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_sick_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_sick_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_sick_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_sick_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch4_sick_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_aftermath_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_aftermath_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_aftermath_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_aftermath_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_basement_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_basement_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_basement_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_closure_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_009" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_hines_010" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_meteor_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_meteor_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_meteor_cb_bargain" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_meteor_cb_pay" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_space_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_space_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_space_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_space_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_space_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_space_exposed" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_workshop_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch5_zhang_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_009" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_awake_010" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_closure_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_give_up" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_pdc_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_pdc_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_pdc_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_pdc_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_pdc_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_pdc_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_shi_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_shi_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_shi_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_shi_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_shi_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_shi_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_shi_cb_agree" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch6_shi_cb_doubt" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_closure_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_droplet_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_droplet_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_droplet_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_droplet_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_droplet_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_droplet_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_droplet_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_droplet_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_droplet_009" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_fleet_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_fleet_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_fleet_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_fleet_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_fleet_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_004" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_cb_refuse" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch7_zhang_cb_take" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_batch9_end" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_001" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_002" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_003" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_003_launch" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_003_wait" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_005" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_006" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_007" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_008" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_009" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_010" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_011" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_012" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_013" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_014" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_015" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_016" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_017a" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_017b" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_019" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_020" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_021" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_022" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_023" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ch8_deter_closure" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_dark_closure_01" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_dark_closure_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_fleet_closure_01" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_fleet_closure_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_hidden_closure_01" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_hidden_closure_02a" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_hidden_closure_02b" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_hidden_closure_03" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_hines_closure_01" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_hines_closure_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_silence_closure_01" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_silence_closure_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_silence_closure_03" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_special_closure_01" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_special_closure_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_wait_closure_01" 不可达（从 startNodeId 无法到达）
+  △ 节点 "end_wait_closure_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ending_branch_dark" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ending_branch_fleet" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ending_branch_hines" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ending_hidden" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ending_normal_silence" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ending_normal_wait" 不可达（从 startNodeId 无法到达）
+  △ 节点 "ending_special" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_attack_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_attack_03" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_attack_guard" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_ending_attack" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_ending_nohibernate" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_ending_wallfacer" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_ending_zhang" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_nohibernate_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_nohibernate_03" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_placeholder" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_un_refuse" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_un_refuse_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_un_refuse_03" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_zhang_caught_02" 不可达（从 startNodeId 无法到达）
+  △ 节点 "rash_zhang_caught_03" 不可达（从 startNodeId 无法到达）
+  △ 结局 "rash_ending_wallfacer" 不可达
+  △ 结局 "rash_ending_attack" 不可达
+  △ 结局 "rash_ending_nohibernate" 不可达
+  △ 结局 "rash_ending_zhang" 不可达
+  △ 结局 "ch8_batch9_end" 不可达
+  △ 结局 "ending_normal_wait" 不可达
+  △ 结局 "ending_normal_silence" 不可达
+  △ 结局 "ending_branch_fleet" 不可达
+  △ 结局 "ending_branch_dark" 不可达
+  △ 结局 "ending_branch_hines" 不可达
+  △ 结局 "ending_hidden" 不可达
+  △ 结局 "ending_special" 不可达
+  △ 节点 "ch2_luoj_001" 有 2 个选项指向同一节点 "ch2_luoj_002" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_luoj_002" 有 2 个选项指向同一节点 "ch2_luoj_003" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_luoj_003" 有 2 个选项指向同一节点 "ch2_luoj_004" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_bunker_002" 有 3 个选项指向同一节点 "ch2_bunker_003" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_bunker_004" 有 2 个选项指向同一节点 "ch2_bunker_005" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_bunker_008" 有 2 个选项指向同一节点 "ch2_bunker_009" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_plane_003" 有 2 个选项指向同一节点 "ch2_plane_004" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_plane_005" 有 2 个选项指向同一节点 "ch2_plane_006" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_un_001" 有 2 个选项指向同一节点 "ch2_un_002" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_un_004" 有 2 个选项指向同一节点 "ch2_un_005" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_hospital_002" 有 2 个选项指向同一节点 "ch2_hospital_003" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_hospital_005" 有 2 个选项指向同一节点 "ch2_hospital_006" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_pdc_002" 有 2 个选项指向同一节点 "ch2_pdc_003" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch2_paradise_002" 有 2 个选项指向同一节点 "ch2_paradise_003" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch4_bunker_002" 有 2 个选项指向同一节点 "ch4_bunker_003" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch4_lake_002" 有 2 个选项指向同一节点 "ch4_lake_003" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch3_dashi_001" 有 2 个选项指向同一节点 "ch3_dashi_002" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch3_snow_001" 有 2 个选项指向同一节点 "ch3_snow_002" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch3_louvre_003" 有 2 个选项指向同一节点 "ch3_louvre_004" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch3_taylor_002" 有 2 个选项指向同一节点 "ch3_taylor_003" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch3_taylor_004" 有 2 个选项指向同一节点 "ch3_taylor_005" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+  △ 节点 "ch3_taylor_006" 有 2 个选项指向同一节点 "ch3_aftermath_001" 且仅靠 changes 区分——建议为每个选项添加独立 callback 节点
+
+❌ 存在 1 个致命错误，需要修复。
