@@ -634,33 +634,6 @@
       "description": "汪淼拒绝了常伟思的邀请，选择了独自面对倒计时。倒计时归零那天，什么都没有发生。\n\n但他不知道——在他看不见的地方，宇宙闪烁发生了。叶文洁向三体人发送了信息。潘寒杀死了申玉菲。古筝行动照常进行。伊文斯被纳米丝切成了三段。智子锁死了人类的物理学。\n\n四百五十年后，三体舰队到达的那天——汪淼的冬眠舱还在某个地下仓库里，指示灯早就灭了。",
       "closing": "有些使命，拒绝了就再也不会轮到你了。"
     },
-    "ch1_wm_meeting_09": {
-      "scene": "作战中心",
-      "progress": 25,
-      "segments": [
-        {
-          "speaker": "常伟思",
-          "text": "我们尊重您的意愿。"
-        },
-        {
-          "text": "史强把你送出大楼时，拍了拍你的肩膀。"
-        },
-        {
-          "speaker": "史强",
-          "text": "汪教授——我知道你会答应的。你这种知识分子，好奇心比胆子大。"
-        }
-      ],
-      "choices": [
-        {
-          "text": "「我没有答应。」",
-          "next": "ch1_wm_refuse"
-        },
-        {
-          "text": "「你说对了。」",
-          "next": "ch1_wm_accept"
-        }
-      ]
-    },
     "ch1_wm_accept": {
       "scene": "作战中心",
       "progress": 26,
@@ -2494,7 +2467,12 @@
       ]
     },
     "ch4_sg2_014": {
-      "progress": 27,
+      "scene": {
+        "id": "three_body_virtual",
+        "name": "三体世界",
+        "type": "major"
+      },
+      "progress": 12,
       "segments": [
         {
           "text": "你在黑暗的房间里坐了很久。三颗飞星的影像还在你眼前晃动。"
@@ -2506,31 +2484,33 @@
           "text": "而那个世界正在向地球驶来。"
         }
       ],
+      "changes": {
+        "addFlags": [
+          "played_3body_game"
+        ]
+      },
       "choices": [
         {
-          "text": "退出游戏",
+          "text": "「退出游戏」",
           "next": "ch5_rc_001"
         },
         {
-          "text": "重新登录——我想再看一眼那个世界",
+          "text": "「重新登录——我想再看一眼那个世界」",
           "next": "rash_endless_01"
+        },
+        {
+          "text": "深入游戏底层——看看有没有被隐藏的东西",
+          "next": "end_wallbreaker_closure_01",
+          "changes": {
+            "val": 15,
+            "addFlag": "found_hidden_code",
+            "importantFlag": {
+              "flag": "found_hidden_code",
+              "label": "发现游戏底层真相"
+            }
+          }
         }
       ]
-    },
-    "ch4_closure_04": {
-      "progress": 28,
-      "segments": [
-        {
-          "text": "你站起来，走到窗前。城市的灯火还在——每一点光都代表一个人类文明。"
-        },
-        {
-          "text": "你之前觉得这些光很安全。现在你觉得它们很脆弱，像三体世界荒漠上的干仓，随时可能被严寒吞没。"
-        },
-        {
-          "text": "你从口袋里摸出史强留下的半包烟。你不抽烟——但你把它放在桌上。提醒自己有人在外面。"
-        }
-      ],
-      "next": "ch5_rc_001"
     },
     "ch5_rc_001": {
       "chapterTitle": "第五章：人列计算机",
@@ -3086,14 +3066,38 @@
       "next": "ch6_raid_002"
     },
     "ch6_raid_cb_hide": {
-      "scene": "城西·废弃仓库",
-      "progress": 4,
+      "scene": {
+        "id": "warehouse_ext",
+        "name": "废弃仓库门口",
+        "type": "transient"
+      },
+      "progress": 16,
       "segments": [
         {
-          "text": "你退到一根柱子的阴影中。从这里你可以看到所有人——包括讲台上的叶文洁。你希望她不要认出你。"
+          "text": "你躲在仓库对面的小巷里。透过窗户你看到里面有十几个人在开会。潜寒在门口注意到了你。"
+        },
+        {
+          "text": "他向你走来。你的心跳加快了。"
         }
       ],
-      "next": "ch6_raid_002"
+      "choices": [
+        {
+          "text": "混入人群中",
+          "next": "ch6_raid_002"
+        },
+        {
+          "text": "迎上去——正面应对",
+          "next": "ch6_raid_002"
+        },
+        {
+          "text": "站出来——「我在这里。」",
+          "next": "rash_exposed_01",
+          "changes": {
+            "val": -10,
+            "addFlag": "exposed_to_eto"
+          }
+        }
+      ]
     },
     "ch6_raid_002": {
       "changes": {
@@ -3146,6 +3150,10 @@
         {
           "text": "——",
           "next": "ch6_raid_004"
+        },
+        {
+          "text": "口袋里的手机突然震动了",
+          "next": "ch6_eto_003"
         }
       ]
     },
@@ -3172,6 +3180,18 @@
         {
           "text": "——",
           "next": "ch6_raid_005"
+        },
+        {
+          "text": "在混乱中走向潘寒——在他被带走前说句话",
+          "next": "end_abyss_closure_01",
+          "changes": {
+            "val": -15,
+            "addFlag": "chose_abyss",
+            "importantFlag": {
+              "flag": "chose_abyss",
+              "label": "选择与潘寒合作"
+            }
+          }
         }
       ]
     },
@@ -3337,8 +3357,13 @@
       ]
     },
     "ch6_confess_005": {
-      "scene": "审讯室",
-      "progress": 21,
+      "chapterTitle": "",
+      "scene": {
+        "id": "interrogation",
+        "name": "审讯室",
+        "type": "major"
+      },
+      "progress": 22,
       "segments": [
         {
           "speaker": "叶文洁",
@@ -3360,21 +3385,43 @@
           "text": "我邀请他们来地球。来改造人类文明——因为人类已经无法自救。"
         }
       ],
+      "changes": {
+        "addFlags": [
+          "ye_confessed_basics"
+        ]
+      },
       "choices": [
         {
           "text": "——",
           "next": "ch6_closure_06"
+        },
+        {
+          "text": "「你说得对。人类确实无法自救。」",
+          "next": "end_arrival_closure_01",
+          "changes": {
+            "val": -20,
+            "addFlag": "chose_arrival",
+            "importantFlag": {
+              "flag": "chose_arrival",
+              "label": "选择相信三体文明"
+            }
+          }
         }
       ]
     },
     "ch6_closure_06": {
-      "progress": 22,
+      "scene": {
+        "id": "interrogation",
+        "name": "审讯室",
+        "type": "major"
+      },
+      "progress": 24,
       "segments": [
         {
           "text": "审讯结束了。叶文洁被带走的时候，经过你身边。她看了你一眼——那目光里没有歉意，也没有悔恨。"
         },
         {
-          "text": "你坐在审讯室里，久久没有动。桌上放着她的供词——密密麻麻的手写字。你注意到那张纸的边缘被揉过——像是被她捏在手里犹豫了很久才交出来的。"
+          "text": "你坐在审讯室里，久久没有动。桌上放着她的供词——密密麻麻的手写字。你注意到那张纸的边缘被揉过——像是被她捏在手里犹豫了很久。"
         },
         {
           "text": "你拿起那张纸。开头第一句是——「我要求对以下内容保密。但如果公开——请不要让我的女儿知道。」"
@@ -3383,7 +3430,24 @@
           "text": "你突然想起——杨冬已经死了。她写这句话的时候，已经知道了。"
         }
       ],
-      "next": "ch7_gz_001"
+      "choices": [
+        {
+          "text": "古筍行动——继续前进",
+          "next": "ch7_gz_001"
+        },
+        {
+          "text": "“我不想再参与了。”——选择冬眠",
+          "next": "end_hibernate_closure_01",
+          "changes": {
+            "val": -15,
+            "addFlag": "chose_hibernate",
+            "importantFlag": {
+              "flag": "chose_hibernate",
+              "label": "选择冬眠逃避"
+            }
+          }
+        }
+      ]
     },
     "ch7_gz_001": {
       "chapterTitle": "第七章：古筝",
@@ -3490,29 +3554,43 @@
       ]
     },
     "ch7_gz_005": {
-      "scene": "作战中心",
-      "progress": 9,
+      "scene": {
+        "id": "panama_canal",
+        "name": "巴拿马运河观察点",
+        "type": "major",
+        "description": "运河两岸是密集的热带植被。水面很窄——纳米丝就挂在两岸之间，肉眼几乎看不见。空气很热，蝌蚪在水边跳动。",
+        "arrival": "你站在观察点上。望远镜里——「审判日」号的船首已经出现在河道拐弯处。"
+      },
+      "progress": 30,
       "segments": [
         {
-          "speaker": "汪淼",
-          "text": "运河最窄处一百五十米。「审判日」号高三十一米，吃水约八米。飞刃材料——够用。"
+          "speaker": "斯坦顿",
+          "text": "教授——往后退一点。那东西很危险。"
         },
         {
-          "speaker": "斯坦顿上校",
-          "text": "你说的那种纳米丝——能切割钢铁？"
+          "speaker": "你",
+          "text": "我知道。"
         },
         {
-          "speaker": "汪淼",
-          "text": "能切断任何东西。"
-        },
-        {
-          "text": "斯坦顿看着桌上那根被史强扯断的雪茄。很久没说话。"
+          "text": "但你还是在往前看。你需要一个更好的角度——来确认纳米丝的位置是否正确。"
         }
       ],
       "choices": [
         {
-          "text": "——",
+          "text": "站在原地不动",
           "next": "ch7_gz_006"
+        },
+        {
+          "text": "再往前挬一步",
+          "next": "end_cut_closure_01",
+          "changes": {
+            "val": 5,
+            "addFlag": "chose_reckless",
+            "importantFlag": {
+              "flag": "chose_reckless",
+              "label": "古筍行动中前进"
+            }
+          }
         }
       ]
     },
@@ -5334,14 +5412,6 @@
         }
       ],
       "choices": [
-        {
-          "text": "从后窗离开",
-          "next": "ch6_eto_004"
-        },
-        {
-          "text": "迎下去——正面应对",
-          "next": "ch6_eto_003_face"
-        },
         {
           "text": "站出来——「我在这里。」",
           "next": "rash_exposed_01"

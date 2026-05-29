@@ -49,17 +49,19 @@ def check_batch_interfaces(merged, batch_metas):
                 errors.append(f"[{bname}] 入口节点 {entry_id} 不存在于合并结果中")
                 continue
             batch_nodes = iface["_node_ids"]
+            exit_nodes = set(iface.get("exitTo", []))
+            all_valid = batch_nodes | exit_nodes
             has_conn = False
-            if entry_node.get("next") in batch_nodes:
+            if entry_node.get("next") in all_valid:
                 has_conn = True
             for c in entry_node.get("choices", []):
-                if c.get("next") in batch_nodes:
+                if c.get("next") in all_valid:
                     has_conn = True
             for r in entry_node.get("routes", []):
-                if r.get("next") in batch_nodes:
+                if r.get("next") in all_valid:
                     has_conn = True
             if not has_conn:
-                errors.append(f"[{bname}] 入口断裂：{entry_id} 未指向本批次任何节点")
+                errors.append(f"[{bname}] 入口断裂：{entry_id} 未指向本批次或出口节点")
         for exit_id in iface.get("exitTo", []):
             if exit_id not in merged["nodes"]:
                 errors.append(f"[{bname}] 出口节点 {exit_id} 不存在")

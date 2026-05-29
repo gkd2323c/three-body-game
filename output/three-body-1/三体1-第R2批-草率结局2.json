@@ -129,14 +129,6 @@
       ],
       "choices": [
         {
-          "text": "从后窗离开",
-          "next": "ch6_eto_004"
-        },
-        {
-          "text": "迎下去——正面应对",
-          "next": "ch6_eto_003_face"
-        },
-        {
           "text": "站出来——「我在这里。」",
           "next": "rash_exposed_01"
         }

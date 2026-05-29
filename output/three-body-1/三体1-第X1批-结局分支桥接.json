@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "title": "三体1：地球往事",
+    "author": "刘慈欣",
+    "batchInterface": {
+      "entryFrom": [
+        "ch6_confess_005",
+        "ch6_closure_06",
+        "ch4_sg2_014",
+        "ch7_gz_005",
+        "ch6_raid_cb_hide"
+      ],
+      "exitTo": [
+        "end_arrival_closure_01",
+        "end_hibernate_closure_01",
+        "end_abyss_closure_01",
+        "end_wallbreaker_closure_01",
+        "end_cut_closure_01",
+        "rash_exposed_01"
+      ],
+      "type": "ending_pack"
+    }
+  },
+  "startNodeId": "ch6_confess_005",
+  "variables": {},
+  "achievements": {},
+  "nodes": {
+    "ch6_confess_005": {
+      "chapterTitle": "",
+      "scene": {
+        "id": "interrogation",
+        "name": "审讯室",
+        "type": "major"
+      },
+      "progress": 22,
+      "segments": [
+        {
+          "speaker": "叶文洁",
+          "text": "我回答了。"
+        },
+        {
+          "text": "她停了一下。你看到她的嘴角微微动了一下——但不是笑。"
+        },
+        {
+          "speaker": "叶文洁",
+          "text": "我向三体世界发送了人类文明的完整信息。位置、人口、科技水平——以及一个邀请。"
+        },
+        {
+          "speaker": "你",
+          "text": "邀请？"
+        },
+        {
+          "speaker": "叶文洁",
+          "text": "我邀请他们来地球。来改造人类文明——因为人类已经无法自救。"
+        }
+      ],
+      "changes": {
+        "addFlags": [
+          "ye_confessed_basics"
+        ]
+      },
+      "choices": [
+        {
+          "text": "——",
+          "next": "ch6_closure_06"
+        },
+        {
+          "text": "「你说得对。人类确实无法自救。」",
+          "next": "end_arrival_closure_01",
+          "changes": {
+            "val": -20,
+            "addFlag": "chose_arrival",
+            "importantFlag": {
+              "flag": "chose_arrival",
+              "label": "选择相信三体文明"
+            }
+          }
+        }
+      ]
+    },
+    "ch6_closure_06": {
+      "scene": {
+        "id": "interrogation",
+        "name": "审讯室",
+        "type": "major"
+      },
+      "progress": 24,
+      "segments": [
+        {
+          "text": "审讯结束了。叶文洁被带走的时候，经过你身边。她看了你一眼——那目光里没有歉意，也没有悔恨。"
+        },
+        {
+          "text": "你坐在审讯室里，久久没有动。桌上放着她的供词——密密麻麻的手写字。你注意到那张纸的边缘被揉过——像是被她捏在手里犹豫了很久。"
+        },
+        {
+          "text": "你拿起那张纸。开头第一句是——「我要求对以下内容保密。但如果公开——请不要让我的女儿知道。」"
+        },
+        {
+          "text": "你突然想起——杨冬已经死了。她写这句话的时候，已经知道了。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "古筍行动——继续前进",
+          "next": "ch7_gz_001"
+        },
+        {
+          "text": "“我不想再参与了。”——选择冬眠",
+          "next": "end_hibernate_closure_01",
+          "changes": {
+            "val": -15,
+            "addFlag": "chose_hibernate",
+            "importantFlag": {
+              "flag": "chose_hibernate",
+              "label": "选择冬眠逃避"
+            }
+          }
+        }
+      ]
+    },
+    "ch4_sg2_014": {
+      "scene": {
+        "id": "three_body_virtual",
+        "name": "三体世界",
+        "type": "major"
+      },
+      "progress": 12,
+      "segments": [
+        {
+          "text": "你在黑暗的房间里坐了很久。三颗飞星的影像还在你眼前晃动。"
+        },
+        {
+          "text": "这不是游戏。这是一个真实的文明——那些脱水的人皮、那些倒塌的建筑、那些被冻成粉末的城市——"
+        },
+        {
+          "text": "而那个世界正在向地球驶来。"
+        }
+      ],
+      "changes": {
+        "addFlags": [
+          "played_3body_game"
+        ]
+      },
+      "choices": [
+        {
+          "text": "「退出游戏」",
+          "next": "ch5_rc_001"
+        },
+        {
+          "text": "「重新登录——我想再看一眼那个世界」",
+          "next": "rash_endless_01"
+        },
+        {
+          "text": "深入游戏底层——看看有没有被隐藏的东西",
+          "next": "end_wallbreaker_closure_01",
+          "changes": {
+            "val": 15,
+            "addFlag": "found_hidden_code",
+            "importantFlag": {
+              "flag": "found_hidden_code",
+              "label": "发现游戏底层真相"
+            }
+          }
+        }
+      ]
+    },
+    "ch7_gz_005": {
+      "scene": {
+        "id": "panama_canal",
+        "name": "巴拿马运河观察点",
+        "type": "major",
+        "description": "运河两岸是密集的热带植被。水面很窄——纳米丝就挂在两岸之间，肉眼几乎看不见。空气很热，蝌蚪在水边跳动。",
+        "arrival": "你站在观察点上。望远镜里——「审判日」号的船首已经出现在河道拐弯处。"
+      },
+      "progress": 30,
+      "segments": [
+        {
+          "speaker": "斯坦顿",
+          "text": "教授——往后退一点。那东西很危险。"
+        },
+        {
+          "speaker": "你",
+          "text": "我知道。"
+        },
+        {
+          "text": "但你还是在往前看。你需要一个更好的角度——来确认纳米丝的位置是否正确。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "站在原地不动",
+          "next": "ch7_gz_006"
+        },
+        {
+          "text": "再往前挬一步",
+          "next": "end_cut_closure_01",
+          "changes": {
+            "val": 5,
+            "addFlag": "chose_reckless",
+            "importantFlag": {
+              "flag": "chose_reckless",
+              "label": "古筍行动中前进"
+            }
+          }
+        }
+      ]
+    },
+    "ch6_raid_cb_hide": {
+      "scene": {
+        "id": "warehouse_ext",
+        "name": "废弃仓库门口",
+        "type": "transient"
+      },
+      "progress": 16,
+      "segments": [
+        {
+          "text": "你躲在仓库对面的小巷里。透过窗户你看到里面有十几个人在开会。潜寒在门口注意到了你。"
+        },
+        {
+          "text": "他向你走来。你的心跳加快了。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "混入人群中",
+          "next": "ch6_raid_002"
+        },
+        {
+          "text": "迎上去——正面应对",
+          "next": "ch6_raid_002"
+        },
+        {
+          "text": "站出来——「我在这里。」",
+          "next": "rash_exposed_01",
+          "changes": {
+            "val": -10,
+            "addFlag": "exposed_to_eto"
+          }
+        }
+      ]
+    }
+  }
+}
