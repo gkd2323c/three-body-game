@@ -78,8 +78,23 @@ BATCH_TRANSITIONS = {
 }
 
 
+def _sort_key(filepath):
+    """排序：主线批次在前，桥接批次（batchInterface）在后"""
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            meta = json.load(f).get("meta", {})
+        iface = meta.get("batchInterface", {})
+        if iface.get("type") and iface["type"] != "main":
+            return (1, os.path.basename(filepath))  # 桥接批次排后
+    except Exception:
+        pass
+    return (0, os.path.basename(filepath))  # 主线批次排前
+
+
 def main():
-    files = sorted(glob.glob(os.path.join(OUTPUT, "三体2-第*批-*.json")))
+    files = sorted(
+        glob.glob(os.path.join(OUTPUT, "三体2-第*批-*.json")),
+        key=_sort_key)
     if not files:
         print("未找到批次文件")
         os.makedirs(SITE, exist_ok=True)

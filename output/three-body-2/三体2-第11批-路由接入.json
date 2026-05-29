@@ -11,96 +11,183 @@
     "variableName": "明暗",
     "initialVariable": 40
   },
-  "startNodeId": "routes_placeholder",
+  "startNodeId": "ch4_pdc_003",
   "variables": {},
   "achievements": {},
   "nodes": {
-    "routes_placeholder": {
-      "progress": 0,
-      "segments": [
-        { "text": "路由桥接层——无独立内容" }
-      ],
-      "next": "routes_placeholder"
-    },
     "ch4_pdc_003": {
       "progress": 31,
       "segments": [
-        { "speaker": "罗辑", "text": "这是一次实验。用于证实我自己的战略设想。真正的实施要在末日之战到来时。" },
-        { "speaker": "PDC轮值主席", "text": "那在这一百年或更长的时间里，你打算做什么？" },
-        { "speaker": "罗辑", "text": "冬眠。当观测到咒语在187J3X1星系上发生作用时叫醒我。" }
+        {
+          "speaker": "罗辑",
+          "text": "这是一次实验。用于证实我自己的战略设想。真正的实施要在末日之战到来时。"
+        },
+        {
+          "speaker": "PDC轮值主席",
+          "text": "那在这一百年或更长的时间里，你打算做什么？"
+        },
+        {
+          "speaker": "罗辑",
+          "text": "冬眠。当观测到咒语在187J3X1星系上发生作用时叫醒我。"
+        }
       ],
       "choices": [
-        { "text": "按计划冬眠", "next": "ch4_pdc_004" },
-        { "text": "「我不发送咒语。」", "next": "ch4_pdc_003_refuse", "changes": { "importantFlag": { "flag": "chose_silence", "label": "选择放弃发送咒语" } } }
+        {
+          "text": "按计划冬眠",
+          "next": "ch4_pdc_004"
+        },
+        {
+          "text": "「我不发送咒语。」",
+          "next": "ch4_pdc_003_refuse",
+          "changes": {
+            "importantFlag": {
+              "flag": "chose_silence",
+              "label": "选择放弃发送咒语"
+            }
+          }
+        }
       ]
     },
     "ch4_pdc_003_refuse": {
       "progress": 32,
       "segments": [
-        { "text": "会场沉默了几秒。然后是一阵骚动。" },
-        { "speaker": "PDC轮值主席", "text": "面壁者罗辑——你确定？" },
-        { "speaker": "罗辑", "text": "确定。" },
-        { "text": "你关掉了视频。" },
-        { "text": "窗外，雪山在暮色中沉默着。你知道这意味着什么。你放弃了一个文明的可能性。但你累了。" }
+        {
+          "text": "会场沉默了几秒。然后是一阵骚动。"
+        },
+        {
+          "speaker": "PDC轮值主席",
+          "text": "面壁者罗辑——你确定？"
+        },
+        {
+          "speaker": "罗辑",
+          "text": "确定。"
+        },
+        {
+          "text": "你关掉了视频。"
+        },
+        {
+          "text": "窗外，雪山在暮色中沉默着。你知道这意味着什么。你放弃了一个文明的可能性。但你累了。"
+        }
       ],
       "next": "end_silence_closure_01"
     },
     "ch5_space_005": {
       "progress": 23,
       "segments": [
-        { "text": "你透过瞄准镜观察。白色气体从航天服上喷出。面罩裂了，血飞溅在内壁上，遇到真空立刻冷凝成冰晶。" },
-        { "text": "有人在惊叫。从口型上看——" },
-        { "effect": "noise" },
-        { "speaker": "（无声的嘴型）", "text": "陨石雨！" }
+        {
+          "text": "你透过瞄准镜观察。白色气体从航天服上喷出。面罩裂了，血飞溅在内壁上，遇到真空立刻冷凝成冰晶。"
+        },
+        {
+          "text": "有人在惊叫。从口型上看——"
+        },
+        {
+          "effect": "noise"
+        },
+        {
+          "speaker": "（无声的嘴型）",
+          "text": "陨石雨！"
+        }
       ],
       "changes": {
         "addFlag": "zhang_killed_three",
         "unlockAchievement": "three_shots"
       },
       "choices": [
-        { "text": "撤离——销毁证据", "next": "ch5_aftermath_001", "changes": { "set": { "zhang_stealth": 35 } } },
-        { "text": "留在现场观察", "next": "ch5_space_exposed", "changes": { "set": { "zhang_stealth": 25 } } }
+        {
+          "text": "撤离——销毁证据",
+          "next": "ch5_aftermath_001",
+          "changes": {
+            "set": {
+              "zhang_stealth": 35
+            }
+          }
+        },
+        {
+          "text": "留在现场观察",
+          "next": "ch5_space_exposed",
+          "changes": {
+            "set": {
+              "zhang_stealth": 25
+            }
+          }
+        }
       ]
     },
     "ch5_space_exposed": {
       "progress": 24,
       "segments": [
-        { "text": "你多留了三十秒。三十秒，足够让另一艘飞船的监视系统捕捉到你的航天服推进器的热信号。" },
-        { "text": "你回到一号基地时，气氛已经不对了。有人在等你。" }
+        {
+          "text": "你多留了三十秒。三十秒，足够让另一艘飞船的监视系统捕捉到你的航天服推进器的热信号。"
+        },
+        {
+          "text": "你回到一号基地时，气氛已经不对了。有人在等你。"
+        }
       ],
       "choices": [
-        { "text": "——", "next": "end_dark_closure_01" }
+        {
+          "text": "——",
+          "next": "end_dark_closure_01"
+        }
       ]
     },
     "ch8_deter_003_launch": {
       "progress": 6,
       "segments": [
-        { "text": "你按下了发射键。导弹以逼近光速的速度飞向「终极规律」号。" },
-        { "text": "它没有来得及反应。三颗小太阳在它的舰体周围亮起——然后熄灭了。" },
-        { "text": "你成功了。你是星舰地球唯一的幸存者。" }
+        {
+          "text": "你按下了发射键。导弹以逼近光速的速度飞向「终极规律」号。"
+        },
+        {
+          "text": "它没有来得及反应。三颗小太阳在它的舰体周围亮起——然后熄灭了。"
+        },
+        {
+          "text": "你成功了。你是星舰地球唯一的幸存者。"
+        }
       ],
       "choices": [
-        { "text": "——", "next": "end_fleet_closure_01" }
+        {
+          "text": "——",
+          "next": "end_fleet_closure_01"
+        }
       ]
     },
     "ch6_pdc_006": {
       "progress": 32,
       "segments": [
-        { "speaker": "欧洲舰队代表", "text": "这只是一个猜测。已经过去快两个世纪了，如果钢印族真的存在，为什么没有任何迹象？" },
-        { "speaker": "亚洲舰队代表", "text": "正因为没有迹象，这才可怕。" },
-        { "text": "会议在一片混乱中结束了。" }
+        {
+          "speaker": "欧洲舰队代表",
+          "text": "这只是一个猜测。已经过去快两个世纪了，如果钢印族真的存在，为什么没有任何迹象？"
+        },
+        {
+          "speaker": "亚洲舰队代表",
+          "text": "正因为没有迹象，这才可怕。"
+        },
+        {
+          "text": "会议在一片混乱中结束了。"
+        }
       ],
       "choices": [
-        { "text": "关掉视频，面对现实", "next": "ch6_shi_001" },
-        { "text": "关掉视频，什么都不想管了", "next": "ch6_give_up" }
+        {
+          "text": "关掉视频，面对现实",
+          "next": "ch6_shi_001"
+        },
+        {
+          "text": "关掉视频，什么都不想管了",
+          "next": "ch6_give_up"
+        }
       ]
     },
     "ch6_give_up": {
       "progress": 33,
       "segments": [
-        { "text": "你关掉了屏幕。面壁计划结束了。你自由了——但你不知道该拿这份自由怎么办。" },
-        { "text": "你走到窗前。地下城的天空是假的，蓝得不像真的。你突然很想念地面上的风沙。" },
-        { "text": "也许有些问题，不去寻找答案才是最好的选择。" }
+        {
+          "text": "你关掉了屏幕。面壁计划结束了。你自由了——但你不知道该拿这份自由怎么办。"
+        },
+        {
+          "text": "你走到窗前。地下城的天空是假的，蓝得不像真的。你突然很想念地面上的风沙。"
+        },
+        {
+          "text": "也许有些问题，不去寻找答案才是最好的选择。"
+        }
       ],
       "next": "end_wait_closure_01"
     }

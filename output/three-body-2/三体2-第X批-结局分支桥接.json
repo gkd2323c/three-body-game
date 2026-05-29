@@ -1,0 +1,420 @@
+{
+  "meta": {
+    "title": "三体2：黑暗森林",
+    "author": "刘慈欣",
+    "batchInterface": {
+      "entryFrom": [
+        "ch7_zhang_003",
+        "ch7_zhang_004",
+        "ch8_deter_023",
+        "ch8_deter_008",
+        "ch5_hines_010",
+        "ch8_deter_015",
+        "ch2_un_007",
+        "ch4_pdc_003",
+        "ch2_bunker_003",
+        "ch6_shi_006"
+      ],
+      "exitTo": [
+        "end_special_closure_01",
+        "ch5_space_exposed",
+        "rash_un_refuse",
+        "end_dark_closure_01",
+        "ch4_pdc_003_refuse",
+        "end_hines_closure_01",
+        "end_silence_closure_01",
+        "ch8_deter_023_silence",
+        "rash_zhang_caught_02",
+        "ch6_give_up",
+        "end_wait_closure_01",
+        "end_fleet_closure_01",
+        "ch5_hines_010_hide",
+        "rash_attack_guard",
+        "ch5_hines_010_destroy",
+        "end_hidden_closure_01",
+        "ch8_deter_008_cooperate",
+        "rash_nohibernate_02"
+      ],
+      "type": "ending_pack"
+    }
+  },
+  "startNodeId": "ch4_pdc_003",
+  "variables": {},
+  "achievements": {},
+  "nodes": {
+    "ch4_pdc_003": {
+      "scene": {
+        "id": "pdc",
+        "name": "PDC会议",
+        "type": "major"
+      },
+      "progress": 30,
+      "segments": [
+        {
+          "speaker": "罗辑",
+          "text": "这是一次实验。用于证实我自己的战略设想。真正的实施要在末日之战到来时。"
+        },
+        {
+          "speaker": "PDC轮值主席",
+          "text": "那在这一百年或更长的时间里——你打算做什么？"
+        },
+        {
+          "speaker": "罗辑",
+          "text": "冬眠。当观测到咒语在187J3X1星系上发生作用时叫醒我。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "冬眠——等待咒语的结果",
+          "next": "end_wait_closure_01",
+          "changes": {
+            "val": 10,
+            "addFlag": "chose_hibernate_wait",
+            "importantFlag": {
+              "flag": "chose_hibernate_wait",
+              "label": "选择冬眠等待"
+            }
+          }
+        },
+        {
+          "text": "拒绝发射咒语——我不干了",
+          "next": "ch4_pdc_003_refuse",
+          "changes": {
+            "val": -20,
+            "addFlag": "refused_spell",
+            "importantFlag": {
+              "flag": "refused_spell",
+              "label": "拒绝发射咒语"
+            }
+          }
+        },
+        {
+          "text": "“继续陈述。”",
+          "next": "ch4_pdc_004"
+        }
+      ]
+    },
+    "ch2_bunker_003": {
+      "scene": {
+        "id": "bunker",
+        "name": "地下人防工事",
+        "type": "major"
+      },
+      "progress": 15,
+      "segments": [
+        {
+          "text": "他明显在装傻。但你不确定他为什么装傻。"
+        },
+        {
+          "speaker": "史强",
+          "text": "汪教授，你知道你是谁吗？"
+        }
+      ],
+      "choices": [
+        {
+          "text": "「那起车祸——」",
+          "next": "ch2_bunker_004"
+        },
+        {
+          "text": "沉默，等他先开口",
+          "next": "ch2_bunker_004"
+        },
+        {
+          "text": "站起来朝门口走去",
+          "next": "rash_attack_guard"
+        }
+      ]
+    },
+    "ch5_hines_010": {
+      "scene": {
+        "id": "brain_lab",
+        "name": "脑科学实验室",
+        "type": "major"
+      },
+      "progress": 42,
+      "segments": [
+        {
+          "speaker": "希恩斯",
+          "text": "好。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "——",
+          "next": "ch5_closure_006"
+        },
+        {
+          "text": "拆毁所有设备——钢印的秘密到此为止",
+          "next": "ch5_hines_010_destroy",
+          "changes": {
+            "val": 10,
+            "addFlag": "destroyed_stamp"
+          }
+        },
+        {
+          "text": "保留最后一台设备——藏在暗格里",
+          "next": "ch5_hines_010_hide",
+          "changes": {
+            "val": -10,
+            "addFlag": "hid_stamp"
+          }
+        }
+      ]
+    },
+    "ch7_zhang_003": {
+      "scene": {
+        "id": "natural_selection",
+        "name": "「自然选择」号",
+        "type": "major"
+      },
+      "progress": 55,
+      "segments": [
+        {
+          "text": "那是一把手枪。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "接过手枪",
+          "next": "ch7_zhang_cb_take"
+        },
+        {
+          "text": "让她收回去",
+          "next": "ch7_zhang_cb_refuse"
+        },
+        {
+          "text": "接过枪，走向指挥舱",
+          "next": "end_fleet_closure_01",
+          "changes": {
+            "val": 15,
+            "addFlag": "zhang_mutiny",
+            "importantFlag": {
+              "flag": "zhang_mutiny",
+              "label": "章北海兵变"
+            }
+          }
+        }
+      ]
+    },
+    "ch8_deter_015": {
+      "scene": {
+        "id": "tomb",
+        "name": "杨冬墓前",
+        "type": "major"
+      },
+      "progress": 85,
+      "segments": [
+        {
+          "speaker": "（字幕）",
+          "text": "（长时间停顿）你想怎么样？"
+        }
+      ],
+      "choices": [
+        {
+          "text": "——",
+          "next": "ch8_deter_016"
+        },
+        {
+          "text": "打开那份文档",
+          "next": "end_hidden_closure_01",
+          "changes": {
+            "val": 20,
+            "addFlag": "negotiated_trisolaris",
+            "importantFlag": {
+              "flag": "negotiated_trisolaris",
+              "label": "与三体谈判"
+            }
+          }
+        }
+      ]
+    },
+    "ch8_deter_023": {
+      "scene": {
+        "id": "tomb",
+        "name": "杨冬墓前",
+        "type": "major"
+      },
+      "progress": 95,
+      "segments": [
+        {
+          "speaker": "罗辑",
+          "text": "我有一个梦。也许有一天，灿烂的阳光能照进黑暗森林。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "——",
+          "next": "ch8_deter_closure"
+        },
+        {
+          "text": "低头看墓碑上的褐蚁",
+          "next": "end_special_closure_01",
+          "changes": {
+            "val": 5,
+            "addFlag": "saw_ant_perspective"
+          }
+        },
+        {
+          "text": "沉默——转身走下墓碑基座",
+          "next": "ch8_deter_023_silence",
+          "changes": {
+            "val": -10,
+            "addFlag": "chose_silence"
+          }
+        }
+      ]
+    },
+    "ch8_deter_008": {
+      "scene": {
+        "id": "road",
+        "name": "公路旁·沙地",
+        "type": "major"
+      },
+      "progress": 80,
+      "segments": [
+        {
+          "speaker": "罗辑",
+          "text": "「我是对的。」"
+        },
+        {
+          "text": "你仰头看天。天是黑的。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "解释给史强听",
+          "next": "ch8_deter_009"
+        },
+        {
+          "text": "“也许——那是他们唯一会的方式。”",
+          "next": "ch8_deter_008_cooperate",
+          "changes": {
+            "val": -15,
+            "addFlag": "considered_cooperation"
+          }
+        }
+      ]
+    },
+    "ch6_shi_006": {
+      "scene": {
+        "id": "surface",
+        "name": "地面城市",
+        "type": "major"
+      },
+      "progress": 50,
+      "segments": [
+        {
+          "speaker": "史强",
+          "text": "这座城市里的所有东西都想杀你，这个时代你还没适应呢。走，先到我那儿去。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "跟大史走",
+          "next": "ch6_closure_007"
+        },
+        {
+          "text": "“我不想再参与了。”",
+          "next": "ch6_give_up",
+          "changes": {
+            "val": -20,
+            "addFlag": "gave_up_wallfacer"
+          }
+        }
+      ]
+    },
+    "ch2_un_007": {
+      "scene": {
+        "id": "un_hall",
+        "name": "联合国大会堂",
+        "type": "major"
+      },
+      "progress": 12,
+      "segments": [
+        {
+          "speaker": "（字幕）",
+          "text": "可以。您可以做任何事情。"
+        },
+        {
+          "text": "你站在那里。全世界都在看。你可以转身离开，也可以留下来。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "转身离开",
+          "next": "ch2_un_008"
+        },
+        {
+          "text": "真的转身离开——走出联合国",
+          "next": "rash_un_refuse",
+          "changes": {
+            "val": -25,
+            "addFlag": "refused_wallfacer"
+          }
+        }
+      ]
+    },
+    "ch4_sick_004": {
+      "scene": {
+        "id": "hibernation",
+        "name": "冬眠中心",
+        "type": "major"
+      },
+      "progress": 32,
+      "segments": [
+        {
+          "text": "庄颜。她围着一条红色的围巾，牵着孩子的手。孩子在雪中向你拼命挥着两只小手。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "想要追上去——但动不了",
+          "next": "ch4_sick_005"
+        },
+        {
+          "text": "拒绝冬眠——我要留在这里",
+          "next": "rash_nohibernate_02",
+          "changes": {
+            "val": -15,
+            "addFlag": "refused_hibernation"
+          }
+        }
+      ]
+    },
+    "ch7_zhang_004": {
+      "scene": {
+        "id": "natural_selection",
+        "name": "「自然选择」号·指挥舱",
+        "type": "major"
+      },
+      "progress": 58,
+      "segments": [
+        {
+          "text": "你站在指挥舱中央。舰长席就在你身后。你的手放在操作台上。"
+        }
+      ],
+      "choices": [
+        {
+          "text": "下令船体分离",
+          "next": "ch7_zhang_005"
+        },
+        {
+          "text": "在他们发现之前行动",
+          "next": "rash_zhang_caught_02",
+          "changes": {
+            "val": -10,
+            "addFlag": "zhang_exposed_early"
+          }
+        },
+        {
+          "text": "出舱活动——检查船体外部",
+          "next": "ch5_space_exposed",
+          "changes": {
+            "val": 5,
+            "addFlag": "zhang_eva_detected"
+          }
+        }
+      ]
+    }
+  }
+}
