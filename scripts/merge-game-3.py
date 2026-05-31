@@ -79,7 +79,9 @@ BATCH_TRANSITIONS = {
     "ch2_sword_conv_end": "ch2_aus_01",      # 快速收束→批次9（退选路线）
     "ch2_batch7_end": "ch2_deter_01",        # 批次7→批次8
     "ch2_batch8_end": "ch2_aus_01",          # 批次8→批次9
-    "ch2_batch9_end": "ch3_broadcast_01",    # 第2章→第3章
+    "ch2_batch9_end": "ch2_bc_01",          # 批次9→批次10
+    "ch2_batch10_end": "ch2_choice_01",     # 批次10→批次11
+    "ch2_batch11_end": "ch3_broadcast_01",  # 第2章→第3章
     # === 第3章内部（预设，批次写完后校验） ===
     "ch3_batch12_end": "ch3_tianming_01",    # 批次12→批次13
     "ch3_batch13_end": "ch3_decode_01",      # 批次13→批次14
